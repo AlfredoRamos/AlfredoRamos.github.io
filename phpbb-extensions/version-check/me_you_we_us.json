@@ -1,0 +1,11 @@
+{
+	"stable": {
+		"0.2": {
+			"current": "0.2.0",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-meyouweus/releases",
+			"download": "https://github.com/AlfredoRamos/phpbb-ext-meyouweus/releases/tag/0.2.0",
+			"eol": null,
+			"security": false
+		}
+	}
+}
