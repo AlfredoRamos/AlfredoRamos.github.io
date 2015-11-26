@@ -1,0 +1,30 @@
+/**
+ * Yet another simple grid system (made for personal use)
+ * @author Alfredo Ramos <alfredo.ramos@yandex.com>
+ * @copyright (c) 2015 Alfredo Ramos
+ * @license GNU GPL-3.0+ <https://www.gnu.org/licenses/gpl-3.0.txt>
+ */
+
+// Fluid by default
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	word-wrap: break-word; // Optional
+	@include rem(max-width, $grid-max-width);
+	@include rem(margin-bottom, $grid-spacing);
+	@include rem(padding-left, $grid-spacing);
+	@include rem(padding-right, $grid-spacing);
+}
+
+.row {
+	overflow: hidden;
+	@include rem(margin-left, -$grid-spacing);
+	@include rem(margin-right, -$grid-spacing);
+	@extend .clearfix;
+}
+
+@include grid-columns($grid-columns);
+
+@include grid-columns-responsive;

@@ -1,0 +1,106 @@
+@mixin border-box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+@mixin clearfix {
+	zoom: 1; // For IE
+	
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin grid-columns($columns: 12) {
+	[class*="col-"] {
+		float: left;
+		padding-left: $grid-spacing;
+		padding-right: $grid-spacing;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	@for $column from 1 through $columns {
+		// Normal
+		.col-#{$column} {
+			width: grid-width($column, $columns);
+		}
+		
+		// Pull
+		.col-pull-#{$column} {
+			right: grid-width($column, $columns);
+		}
+		
+		// Push
+		.col-push-#{$column} {
+			left: grid-width($column, $columns);
+		}
+		
+		// Offset
+		.col-offset-#{$column} {
+			margin-right: grid-width($column, $columns);
+		}
+	}
+}
+
+@mixin grid-columns-responsive {
+	@media only screen and (max-width: $screen-medium), (max-width: calc-pixels($screen-medium, 16)) {
+		[class*="col-"] {
+			width: 100%;
+		}
+	
+		[class*="col-push-"] {
+			left: 0;
+		}
+	
+		[class*="col-pull-"] {
+			right: 0;
+		}
+	
+		[class*="col-offset-"] {
+			margin-right: 0;
+		}
+		
+		@content;
+	}
+}
+
+// Slightly modified version of the rem() mixin by Hugo Giraudel
+// http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+@mixin rem($property, $values) {
+	$px : ();
+	$rem: ();
+
+	@each $value in $values {
+		@if $value == 0 or $value == auto {
+			$px : append($px , $value);
+			$rem: append($rem, $value);
+		} @else {
+			$unit: unit($value);
+			
+			@if $unit == "px" {
+				$px : append($px,  calc-pixels($value));
+				$rem: append($rem, calc-rems($value));
+			}
+			
+			@if $unit == "rem" {
+				$px : append($px,  calc-pixels($value));
+				$rem: append($rem, calc-rems($value));
+			}
+		}
+	}
+
+	@if $px == $rem {
+		#{$property}: $px;
+	} @else {
+		#{$property}: $px; // For IE < 8
+		#{$property}: $rem;
+	}
+}

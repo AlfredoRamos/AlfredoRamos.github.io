@@ -1,0 +1,361 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #767676;
+  font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+  font-size: 12px;
+  background-color: #f8f8f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+a, a:visited {
+  color: #069;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-style: dashed;
+  border-color: #aaa;
+  width: 95%;
+  margin-top: 10px;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.clearfix, .row {
+  zoom: 1;
+}
+
+.clearfix:before, .row:before, .clearfix:after, .row:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after, .row:after {
+  clear: both;
+}
+
+header {
+  position: fixed;
+}
+
+header > h1 > span {
+  color: #aaa;
+}
+
+.container {
+  margin-top: 20px;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/**
+ * Yet another simple grid system (made for personal use)
+ * @author Alfredo Ramos <alfredo.ramos@yandex.com>
+ * @copyright (c) 2015 Alfredo Ramos
+ * @license GNU GPL-3.0+ <https://www.gnu.org/licenses/gpl-3.0.txt>
+ */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-width: 992px;
+  max-width: 99.2rem;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-right: 10px;
+  padding-right: 1rem;
+}
+
+.row {
+  overflow: hidden;
+  margin-left: -10px;
+  margin-left: -1rem;
+  margin-right: -10px;
+  margin-right: -1rem;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-pull-1 {
+  right: 8.33333%;
+}
+
+.col-push-1 {
+  left: 8.33333%;
+}
+
+.col-offset-1 {
+  margin-right: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-pull-2 {
+  right: 16.66667%;
+}
+
+.col-push-2 {
+  left: 16.66667%;
+}
+
+.col-offset-2 {
+  margin-right: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-pull-3 {
+  right: 25%;
+}
+
+.col-push-3 {
+  left: 25%;
+}
+
+.col-offset-3 {
+  margin-right: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-pull-4 {
+  right: 33.33333%;
+}
+
+.col-push-4 {
+  left: 33.33333%;
+}
+
+.col-offset-4 {
+  margin-right: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-pull-5 {
+  right: 41.66667%;
+}
+
+.col-push-5 {
+  left: 41.66667%;
+}
+
+.col-offset-5 {
+  margin-right: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-pull-6 {
+  right: 50%;
+}
+
+.col-push-6 {
+  left: 50%;
+}
+
+.col-offset-6 {
+  margin-right: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-pull-7 {
+  right: 58.33333%;
+}
+
+.col-push-7 {
+  left: 58.33333%;
+}
+
+.col-offset-7 {
+  margin-right: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-pull-8 {
+  right: 66.66667%;
+}
+
+.col-push-8 {
+  left: 66.66667%;
+}
+
+.col-offset-8 {
+  margin-right: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-pull-9 {
+  right: 75%;
+}
+
+.col-push-9 {
+  left: 75%;
+}
+
+.col-offset-9 {
+  margin-right: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-pull-10 {
+  right: 83.33333%;
+}
+
+.col-push-10 {
+  left: 83.33333%;
+}
+
+.col-offset-10 {
+  margin-right: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-pull-11 {
+  right: 91.66667%;
+}
+
+.col-push-11 {
+  left: 91.66667%;
+}
+
+.col-offset-11 {
+  margin-right: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-pull-12 {
+  right: 100%;
+}
+
+.col-push-12 {
+  left: 100%;
+}
+
+.col-offset-12 {
+  margin-right: 100%;
+}
+
+@media only screen and (max-width: 62rem), (max-width: 992px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  [class*="col-push-"] {
+    left: 0;
+  }
+  [class*="col-pull-"] {
+    right: 0;
+  }
+  [class*="col-offset-"] {
+    margin-right: 0;
+  }
+}
+
+#main {
+  border-width: 0 0 0 1px;
+  border-style: dashed;
+  border-color: #aaa;
+}
+
+small,
+.small {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+.inline-list {
+  list-style: none;
+}
+
+.inline-list,
+.inline-list > li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.list-with-separator > li:before {
+  content: " / ";
+  color: #707070;
+}
+
+.list-with-separator > li:first-child:before {
+  content: "";
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  margin-top: 1rem;
+  padding-top: 10px;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}

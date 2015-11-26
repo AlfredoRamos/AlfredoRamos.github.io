@@ -1,0 +1,120 @@
+// Variables
+@import '_variables';
+
+// Functions
+@import '_functions';
+
+// Mixins
+@import '_mixins';
+
+// General
+* {
+	&,
+	&:before,
+	&:after {
+		@include border-box;
+	}
+}
+
+// Rem base 10
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: $light-gray;
+	font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+	font-size: 12px;
+	background-color: $bright-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $darker-gray;
+}
+
+a {
+	&,
+	&:visited {
+		color: $dark-blue;
+		text-decoration: none;
+	}
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+hr {
+	background-color: transparent;
+	border-width: 0 0 1px 0;
+	border-style: dashed;
+	border-color: $dark-gray;
+	width: 95%;
+	@include rem(margin-top, $grid-spacing);
+	@include rem(margin-bottom, $grid-spacing);
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+header {
+	position: fixed;
+	
+	& > h1 > span {
+		color: $dark-gray;
+	}
+}
+
+.container {
+	@include rem(margin-top, $grid-spacing * 2);
+	@include rem(margin-bottom, $grid-spacing * 2);
+}
+
+// Grids
+@import '_grids';
+
+#main {
+	border-width: 0 0 0 1px;
+	border-style: dashed;
+	border-color: $dark-gray;
+}
+
+small,
+.small {
+	@include rem(font-size, $grid-spacing);
+}
+
+.inline-list {
+	list-style: none;
+	
+	&,
+	& > li {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+}
+
+.list-with-separator {
+	& > li:before {
+		content: " / ";
+		color: $lighter-gray;
+	}
+	
+	& > li:first-child:before {
+		content: "";
+	}
+}
+
+footer {
+	text-align: center;
+	@include rem(margin-top, $grid-spacing);
+	@include rem(padding-top, $grid-spacing);
+	@include rem(padding-bottom, $grid-spacing);
+}
