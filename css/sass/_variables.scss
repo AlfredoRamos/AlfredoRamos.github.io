@@ -10,6 +10,11 @@ $screen-small: 48rem; // 768/16
 $screen-medium: 62rem; // 992/16
 $screen-large: 75rem; // 1200/16
 
+// Maximum width
+$screen-small-max-width: 75rem; // 750/10
+$screen-medium-max-width: 97rem; // 970/10
+$screen-large-max-width: 117rem; // 1170/10
+
 // Colors
 $light-gray: #767676;
 $lighter-gray: #707070;

@@ -18,6 +18,12 @@
 	}
 }
 
+@mixin responsive($property, $breakpoint) {
+	@media only screen and (#{$property}: $breakpoint), (#{$property}: calc-pixels($breakpoint, 16)) {
+		@content;
+	}
+}
+
 @mixin grid-columns($columns: 12) {
 	[class*="col-"] {
 		float: left;
@@ -48,10 +54,8 @@
 			margin-right: grid-width($column, $columns);
 		}
 	}
-}
-
-@mixin grid-columns-responsive {
-	@media only screen and (max-width: $screen-medium), (max-width: calc-pixels($screen-medium, 16)) {
+	
+	@include responsive(max-width, $screen-medium) {
 		[class*="col-"] {
 			width: 100%;
 		}
@@ -67,8 +71,6 @@
 		[class*="col-offset-"] {
 			margin-right: 0;
 		}
-		
-		@content;
 	}
 }
 

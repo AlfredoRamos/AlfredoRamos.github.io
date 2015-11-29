@@ -5,17 +5,30 @@
  * @license GNU GPL-3.0+ <https://www.gnu.org/licenses/gpl-3.0.txt>
  */
 
-// Fluid by default
 .container {
-	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	word-wrap: break-word; // Optional
-	@include rem(max-width, $grid-max-width);
+	word-wrap: break-word;
 	@include rem(margin-bottom, $grid-spacing);
 	@include rem(padding-left, $grid-spacing);
 	@include rem(padding-right, $grid-spacing);
+	
+	@include responsive(min-width, $screen-small) {
+		& {
+			@include rem(max-width, $screen-small-max-width);
+		}
+	}
+	@include responsive(min-width, $screen-medium) {
+		& {
+			@include rem(max-width, $screen-medium-max-width);
+		}
+	}
+	@include responsive(min-width, $screen-large) {
+		& {
+			@include rem(max-width, $screen-large-max-width);
+		}
+	}
 }
 
 .row {
@@ -26,5 +39,3 @@
 }
 
 @include grid-columns($grid-columns);
-
-@include grid-columns-responsive;

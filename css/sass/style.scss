@@ -83,6 +83,12 @@ header {
 	border-width: 0 0 0 1px;
 	border-style: dashed;
 	border-color: $dark-gray;
+	
+	@include responsive(max-width, $screen-medium) {
+		& {
+			border-width: 0;
+		}
+	}
 }
 
 small,
@@ -99,6 +105,10 @@ small,
 		padding: 0;
 		display: inline-block;
 	}
+}
+
+.badges {
+	display: block;
 }
 
 .list-with-separator {

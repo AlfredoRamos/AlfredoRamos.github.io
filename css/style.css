@@ -80,19 +80,37 @@ header > h1 > span {
  * @license GNU GPL-3.0+ <https://www.gnu.org/licenses/gpl-3.0.txt>
  */
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   word-wrap: break-word;
-  max-width: 992px;
-  max-width: 99.2rem;
   margin-bottom: 10px;
   margin-bottom: 1rem;
   padding-left: 10px;
   padding-left: 1rem;
   padding-right: 10px;
   padding-right: 1rem;
+}
+
+@media only screen and (min-width: 48rem), (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    max-width: 75rem;
+  }
+}
+
+@media only screen and (min-width: 62rem), (min-width: 992px) {
+  .container {
+    max-width: 970px;
+    max-width: 97rem;
+  }
+}
+
+@media only screen and (min-width: 75rem), (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    max-width: 117rem;
+  }
 }
 
 .row {
@@ -324,6 +342,12 @@ header > h1 > span {
   border-color: #aaa;
 }
 
+@media only screen and (max-width: 62rem), (max-width: 992px) {
+  #main {
+    border-width: 0;
+  }
+}
+
 small,
 .small {
   font-size: 10px;
@@ -339,6 +363,10 @@ small,
   margin: 0;
   padding: 0;
   display: inline-block;
+}
+
+.badges {
+  display: block;
 }
 
 .list-with-separator > li:before {
