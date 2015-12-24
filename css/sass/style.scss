@@ -23,7 +23,7 @@ html {
 
 body {
 	color: $light-gray;
-	font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace;
+	font-family: 'PT Mono',monospace;
 	font-size: 12px;
 	background-color: $bright-gray;
 }
@@ -54,7 +54,7 @@ hr {
 	border-width: 0 0 1px 0;
 	border-style: dashed;
 	border-color: $dark-gray;
-	width: 95%;
+	width: 98%;
 	@include rem(margin-top, $grid-spacing);
 	@include rem(margin-bottom, $grid-spacing);
 }

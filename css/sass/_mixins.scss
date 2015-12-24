@@ -26,50 +26,39 @@
 
 @mixin grid-columns($columns: 12) {
 	[class*="col-"] {
-		float: left;
 		padding-left: $grid-spacing;
 		padding-right: $grid-spacing;
 		position: relative;
 		overflow: hidden;
-	}
-	
-	@for $column from 1 through $columns {
-		// Normal
-		.col-#{$column} {
-			width: grid-width($column, $columns);
-		}
 		
-		// Pull
-		.col-pull-#{$column} {
-			right: grid-width($column, $columns);
-		}
-		
-		// Push
-		.col-push-#{$column} {
-			left: grid-width($column, $columns);
-		}
-		
-		// Offset
-		.col-offset-#{$column} {
-			margin-right: grid-width($column, $columns);
+		@include responsive(min-width, $screen-medium) {
+			& {
+				float: left;
+			}
 		}
 	}
 	
-	@include responsive(max-width, $screen-medium) {
-		[class*="col-"] {
-			width: 100%;
-		}
-	
-		[class*="col-push-"] {
-			left: 0;
-		}
-	
-		[class*="col-pull-"] {
-			right: 0;
-		}
-	
-		[class*="col-offset-"] {
-			margin-right: 0;
+	@include responsive(min-width, $screen-medium) {
+		@for $column from 1 through $columns {
+			// Normal
+			.col-#{$column} {
+				width: grid-width($column, $columns);
+			}
+			
+			// Pull
+			.col-pull-#{$column} {
+				right: grid-width($column, $columns);
+			}
+			
+			// Push
+			.col-push-#{$column} {
+				left: grid-width($column, $columns);
+			}
+			
+			// Offset
+			.col-offset-#{$column} {
+				margin-right: grid-width($column, $columns);
+			}
 		}
 	}
 }
