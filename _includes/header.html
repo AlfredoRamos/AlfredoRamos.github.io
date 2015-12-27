@@ -1,0 +1,22 @@
+<header class="col-3">
+	<h1><span>{</span>{{ site.title }}<span>}</span></h1>
+	<p>{{ site.description }}</p>
+	
+	{% if site.github_username or site.twitter_username %}
+	<ul class="inline-list list-with-separator">
+		{% if site.github_username %}
+		<li>
+			<a href="https://github.com/{{ site.github_username }}" title="GitHub profile">Github</a>
+		</li>
+		{% endif %}
+		{% if site.twitter_username %}
+		<li>
+			<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter profile">Twitter</a>
+		</li>
+		{% endif %}
+		<li>
+			<a href="{{ site.baseurl }}/feed.xml">Feed RSS</a>
+		</li>
+	</ul>
+	{% endif %}
+</header>

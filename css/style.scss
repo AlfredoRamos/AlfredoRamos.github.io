@@ -1,26 +1,20 @@
-// Variables
-@import '_variables';
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
 
-// Functions
-@import '_functions';
+// Colors
+$light-gray: #767676;
+$lighter-gray: #707070;
+$bright-gray: #f8f8f8;
+$dark-gray: #aaa;
+$darker-gray: #333;
+$dark-blue: #069;
 
-// Mixins
-@import '_mixins';
+// Grids
+@import '_grids';
 
 // General
-* {
-	&,
-	&:before,
-	&:after {
-		@include border-box;
-	}
-}
-
-// Rem base 10
-html {
-	font-size: 62.5%;
-}
-
 body {
 	color: $light-gray;
 	font-family: 'PT Mono',monospace;
@@ -59,10 +53,6 @@ hr {
 	@include rem(margin-bottom, $grid-spacing);
 }
 
-.clearfix {
-	@include clearfix;
-}
-
 header {
 	position: fixed;
 	
@@ -75,9 +65,6 @@ header {
 	@include rem(margin-top, $grid-spacing * 2);
 	@include rem(margin-bottom, $grid-spacing * 2);
 }
-
-// Grids
-@import '_grids';
 
 #main {
 	border-width: 0 0 0 1px;
@@ -105,10 +92,6 @@ small,
 		padding: 0;
 		display: inline-block;
 	}
-}
-
-.badges {
-	display: block;
 }
 
 .list-with-separator {
