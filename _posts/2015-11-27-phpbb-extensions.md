@@ -2,7 +2,7 @@
 layout: post
 title:  "phpBB Extensions"
 date:   2015-11-27 05:12:31 -0600
-categories: phpbb
+categories: [phpbb]
 ---
 
 [**Default Avatar**](https://github.com/AlfredoRamos/phpbb-ext-default-avatar)

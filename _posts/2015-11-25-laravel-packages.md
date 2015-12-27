@@ -2,7 +2,7 @@
 layout: post
 title:  "Laravel Packages"
 date:   2015-11-25 04:07:34 -0600
-categories: laravel
+categories: [laravel]
 ---
 
 [**Parsedown Extra**](https://github.com/AlfredoRamos/parsedown-extra-laravel)
