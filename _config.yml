@@ -13,4 +13,4 @@ markdown: kramdown
 encoding: "utf-8"
 permalink: /post/:title.html
 timezone: America/Mexico_City
-exclude: [phpbb-extensions, LICENSE, Rakefile]
+exclude: [LICENSE, Rakefile]
