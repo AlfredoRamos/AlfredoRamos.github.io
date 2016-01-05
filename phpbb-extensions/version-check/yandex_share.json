@@ -1,9 +1,9 @@
 {
 	"stable": {
 		"0.2": {
-			"current": "0.2.1",
+			"current": "0.2.2",
 			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-yandex-share",
-			"download": "https://github.com/AlfredoRamos/phpbb-ext-yandex-share/releases/tag/0.2.1",
+			"download": "https://github.com/AlfredoRamos/phpbb-ext-yandex-share/releases/tag/0.2.2",
 			"eol": null,
 			"security": false
 		}
