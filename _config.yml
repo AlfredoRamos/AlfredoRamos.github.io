@@ -1,16 +1,16 @@
 # Site settings
 title: Alfredo Ramos
 #email: your-email@domain.com
-description: "Personal GitHub page"
+description: 'Personal GitHub page'
 #baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://alfredoramos.github.io" # the base hostname & protocol for your site
+url: 'https://alfredoramos.github.io' # the base hostname & protocol for your site
 twitter_username: AbaddonOrmuz
 github_username:  AlfredoRamos
 
 # Build settings
 markdown: kramdown
 
-encoding: "utf-8"
-permalink: /post/:title.html
+encoding: 'utf-8'
+permalink: 'none'
 timezone: America/Mexico_City
 exclude: [LICENSE, Rakefile]
