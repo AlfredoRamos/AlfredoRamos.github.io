@@ -2,8 +2,8 @@
 layout: post
 title: 'Clean Reddit theme'
 date: 2016-01-19 16:59:34 -0600
-categories: ['reddit']
-tags: ['theme', 'sass']
+categories: ['theming']
+tags: ['sass', 'reddit']
 ---
 
 GitHub repository: [AlfredoRamos/clean-reddit-theme](https://github.com/AlfredoRamos/clean-reddit-theme)
