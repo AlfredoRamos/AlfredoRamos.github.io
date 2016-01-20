@@ -3,23 +3,26 @@
 ---
 @charset "utf-8";
 
-// Colors
-$light-gray: #767676;
-$lighter-gray: #707070;
-$bright-gray: #f8f8f8;
-$dark-gray: #aaa;
-$darker-gray: #333;
-$dark-blue: #069;
+// Background colors
+$bg-body: #f8f8f8;
+
+// Foreground colors
+$fg-body: #767676;
+$fg-link: #069;
+$fg-headline: #333;
+
+// Border colors
+$br-color: #ccc;
 
 // Grids
 @import '_grids';
 
 // General
 body {
-	color: $light-gray;
+	color: $fg-body;
 	font-family: 'PT Mono',monospace;
 	font-size: 12px;
-	background-color: $bright-gray;
+	background-color: $bg-body;
 }
 
 h1,
@@ -28,13 +31,13 @@ h3,
 h4,
 h5,
 h6 {
-	color: $darker-gray;
+	color: $fg-headline;
 }
 
 a {
 	&,
 	&:visited {
-		color: $dark-blue;
+		color: $fg-link;
 		text-decoration: none;
 	}
 	
@@ -47,7 +50,7 @@ hr {
 	background-color: transparent;
 	border-width: 0 0 1px 0;
 	border-style: dashed;
-	border-color: $dark-gray;
+	border-color: $br-color;
 	width: 98%;
 	@include rem(margin-top, $grid-spacing);
 	@include rem(margin-bottom, $grid-spacing);
@@ -57,7 +60,7 @@ header {
 	position: fixed;
 	
 	& > h1 > span {
-		color: $dark-gray;
+		color: $br-color;
 	}
 }
 
@@ -69,10 +72,20 @@ header {
 #main {
 	border-width: 0 0 0 1px;
 	border-style: dashed;
-	border-color: $dark-gray;
+	border-color: $br-color;
 	
 	@include responsive(max-width, $screen-medium) {
 		& {
+			border-width: 0;
+		}
+	}
+	
+	article {
+		border-width: 0 0 1px;
+		border-style: dashed;
+		border-color: $br-color;
+		
+		&:last-child {
 			border-width: 0;
 		}
 	}
@@ -83,7 +96,7 @@ small,
 	@include rem(font-size, $grid-spacing);
 }
 
-.inline-list {
+.list-inline {
 	list-style: none;
 	
 	&,
@@ -97,7 +110,7 @@ small,
 .list-with-separator {
 	& > li:before {
 		content: " / ";
-		color: $lighter-gray;
+		color: $br-color;
 	}
 	
 	& > li:first-child:before {

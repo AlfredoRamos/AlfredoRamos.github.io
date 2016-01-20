@@ -3,9 +3,10 @@ layout: post
 title: 'Simple Spoiler'
 date: 2016-01-15 03:26:55 -0600
 categories: ['phpbb']
+tags: ['extension']
 ---
 
-GitHub repository: [https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler)
+GitHub repository: [AlfredoRamos/phpbb-ext-simple-spoiler](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler)
 
 Simple Spoiler BBCode Extension for phpBB 3.1.x
 

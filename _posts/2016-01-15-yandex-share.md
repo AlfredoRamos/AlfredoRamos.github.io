@@ -3,9 +3,10 @@ layout: post
 title: 'Yandex Share'
 date: 2016-01-15 03:32:14 -0600
 categories: ['phpbb']
+tags: ['extension']
 ---
 
-GitHub repository: [https://github.com/AlfredoRamos/phpbb-ext-yandex-share](https://github.com/AlfredoRamos/phpbb-ext-yandex-share)
+GitHub repository: [AlfredoRamos/phpbb-ext-yandex-share](https://github.com/AlfredoRamos/phpbb-ext-yandex-share)
 
 Yandex Share Extension for phpBB 3.1.x
 

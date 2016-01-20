@@ -3,9 +3,10 @@ layout: post
 title: 'Default Avatar'
 date: 2016-01-15 03:25:59 -0600
 categories: ['phpbb']
+tags: ['extension']
 ---
 
-GitHub repository: [https://github.com/AlfredoRamos/phpbb-ext-default-avatar](https://github.com/AlfredoRamos/phpbb-ext-default-avatar)
+GitHub repository: [AlfredoRamos/phpbb-ext-default-avatar](https://github.com/AlfredoRamos/phpbb-ext-default-avatar)
 
 Default Avatar Extension for phpBB 3.1.x
 

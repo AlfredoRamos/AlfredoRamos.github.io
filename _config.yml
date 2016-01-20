@@ -1,11 +1,22 @@
 # Site settings
 title: Alfredo Ramos
-#email: your-email@domain.com
 description: 'Personal GitHub page'
-#baseurl: "" # the subpath of your site, e.g. /blog/
+#baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.github.io' # the base hostname & protocol for your site
-twitter_username: AbaddonOrmuz
-github_username:  AlfredoRamos
+social_networks: {
+    github: {
+        user: 'AlfredoRamos',
+        url: 'https://github.com/AlfredoRamos',
+    },
+    twitter: {
+        user: 'AbaddonOrmuz',
+        url: 'https://twitter.com/AbaddonOrmuz'
+    },
+    reddit: {
+        user: 'AbaddonOrmuz',
+        url: 'https://reddit.com/u/AbaddonOrmuz'
+    }
+}
 
 # Build settings
 markdown: kramdown

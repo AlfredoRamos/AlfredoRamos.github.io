@@ -3,9 +3,10 @@ layout: post
 title: 'Parsedown Extra Laravel'
 date: 2016-01-15 03:24:22 -0600
 categories: ['laravel']
+tags: ['package']
 ---
 
-Github repository: [https://github.com/AlfredoRamos/parsedown-extra-laravel](https://github.com/AlfredoRamos/parsedown-extra-laravel)
+Github repository: [AlfredoRamos/parsedown-extra-laravel](https://github.com/AlfredoRamos/parsedown-extra-laravel)
 
 A Parsedown Extra package for Laravel 5.1.x
 
