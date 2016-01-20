@@ -118,6 +118,20 @@ small,
 	}
 }
 
+.list-categories,
+.list-tags {
+	padding: 0;
+	list-style: none;
+	
+	& > li {
+		margin: 0 0 10px;
+		
+		& > h4 {
+			margin: 0;
+		}
+	}
+}
+
 footer {
 	text-align: center;
 	@include rem(margin-top, $grid-spacing);
