@@ -24,4 +24,4 @@ markdown: kramdown
 encoding: 'utf-8'
 permalink: 'none'
 timezone: America/Mexico_City
-exclude: [LICENSE, Rakefile]
+exclude: [LICENSE, Rakefile, README.md, Gemfile, Gemfile.lock]
