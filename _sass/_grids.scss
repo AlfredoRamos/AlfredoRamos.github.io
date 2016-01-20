@@ -1,39 +1,54 @@
 /**
  * Yet another simple grid system (made for personal use)
+ * GitHub <https://github.com/AlfredoRamos/simple-grid-system>
  * @author Alfredo Ramos <alfredo.ramos@yandex.com>
+ * @version 0.1.0
  * @copyright (c) 2015 Alfredo Ramos
  * @license GNU GPL-3.0+ <https://www.gnu.org/licenses/gpl-3.0.txt>
  */
 
-@charset "utf-8";
+//-------------------------------------------------------
+// VARIABLES
+//-------------------------------------------------------
 
-// Variables
-// rem base 10: html {font-size: 62.5%;}
+// Number of columns
 $grid-columns: 12;
-$grid-max-width: 99.2rem; // 992/10
+
+// Column spacing (rem base 16)
+// It should be < 4.5rem
 $grid-spacing: 1rem; // 10/10
 
-// Media queries breakpoints
-// rem base 16
+// Media queries breakpoints (rem base 16)
 $screen-x-small: 30rem; // 480/16
 $screen-small: 48rem; // 768/16
 $screen-medium: 62rem; // 992/16
 $screen-large: 75rem; // 1200/16
 
-// Maximum width
+// Maximum width (rem base 10)
 $screen-small-max-width: 75rem; // 750/10
 $screen-medium-max-width: 97rem; // 970/10
 $screen-large-max-width: 117rem; // 1170/10
 
-// Functions
+//-------------------------------------------------------
+// FUNCTIONS
+//-------------------------------------------------------
+
+// Get grid width
+// @param	$column		Current column index
+// @param	$columns	Number of columns (see $grid-columns)
 @function grid-width($column, $columns) {
 	@return $column * (100% / $columns);
 }
 
+// Convert a given value to integer
+// @param	$n		The value to convert
 @function parse-int($n) {
 	@return $n / ($n * 0 + 1);
 }
 
+// Convert given pixels to rems
+// @param	$pixels		The pixels to convert
+// @param	$base		The rem base (optional).
 @function calc-rems($pixels, $base: 10) {
 	$rems: #{parse-int($pixels) / $base}rem;
 	
@@ -44,6 +59,9 @@ $screen-large-max-width: 117rem; // 1170/10
 	@return $rems;
 }
 
+// Convert given rems to pixels
+// @param	$rems		The rems to convert
+// @param	$base		The rem base (optional).
 @function calc-pixels($rems, $base: 10) {
 	$pixels: #{parse-int($rems) * $base}px;
 	
@@ -54,11 +72,13 @@ $screen-large-max-width: 117rem; // 1170/10
 	@return $pixels;
 }
 
-// Mixins
+//-------------------------------------------------------
+// MIXINS
+//-------------------------------------------------------
 @mixin border-box {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @mixin clearfix {
@@ -89,9 +109,7 @@ $screen-large-max-width: 117rem; // 1170/10
 		overflow: hidden;
 		
 		@include responsive(min-width, $screen-medium) {
-			& {
-				float: left;
-			}
+			float: left;
 		}
 	}
 	
@@ -153,7 +171,9 @@ $screen-large-max-width: 117rem; // 1170/10
 	}
 }
 
-// Usage
+//-------------------------------------------------------
+// USAGE
+//-------------------------------------------------------
 * {
 	&,
 	&:before,
@@ -162,11 +182,12 @@ $screen-large-max-width: 117rem; // 1170/10
 	}
 }
 
-// Rem base 10
+// Required to set the rem base to 10
 html {
 	font-size: 62.5%;
 }
 
+// Clearfix helper
 .clearfix {
 	@include clearfix;
 }
@@ -175,25 +196,19 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	word-wrap: break-word;
+	word-wrap: break-word; // Optional
 	@include rem(margin-bottom, $grid-spacing);
 	@include rem(padding-left, $grid-spacing);
 	@include rem(padding-right, $grid-spacing);
 	
 	@include responsive(min-width, $screen-small) {
-		& {
-			@include rem(max-width, $screen-small-max-width);
-		}
+		@include rem(max-width, $screen-small-max-width);
 	}
 	@include responsive(min-width, $screen-medium) {
-		& {
-			@include rem(max-width, $screen-medium-max-width);
-		}
+		@include rem(max-width, $screen-medium-max-width);
 	}
 	@include responsive(min-width, $screen-large) {
-		& {
-			@include rem(max-width, $screen-large-max-width);
-		}
+		@include rem(max-width, $screen-large-max-width);
 	}
 }
 
@@ -204,4 +219,5 @@ html {
 	@extend .clearfix;
 }
 
+// Generate grid columns
 @include grid-columns($grid-columns);
