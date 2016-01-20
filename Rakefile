@@ -61,6 +61,7 @@ namespace :new do
   end
 
   # Page
+  desc 'Create new page'
   task :page do |page|
     # Page default data
     page = {
@@ -111,5 +112,4 @@ namespace :new do
       warn "Couldn\'t create page in the root path. Do you have write permissions?"
     end
   end
-
 end
