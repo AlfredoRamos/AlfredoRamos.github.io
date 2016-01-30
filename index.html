@@ -2,11 +2,14 @@
 layout: default
 title: 'Home'
 ---
-{% for post in site.posts %}
-<article id="article-{{ forloop.index }}">
-	<h2>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	</h2>
-	{{ post.content }}
-</article>
-{% endfor %}
+<h2>Latest posts</h2>
+<ul id="article-index">
+	{% for post in site.posts %}
+	<li class="clearfix">
+		<h3 class="article-title col-10">
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</h3>
+		<time class="article-date small col-2" datetime="{{ post.date | date: '%Y-%m-%d %H:%M:%S%:z' }}">{{ post.date | date: "%F" }}</time>
+	</li>
+	{% endfor %}	
+</ul>

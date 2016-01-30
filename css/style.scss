@@ -17,6 +17,13 @@ $br-color: #ccc;
 // Grids
 @import '_grids';
 
+// Extra mixins
+@mixin border-radius($radius: 0) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
 // General
 body {
 	color: $fg-body;
@@ -57,10 +64,19 @@ hr {
 }
 
 header {
-	position: fixed;
+	text-align: center;
 	
 	& > h1 > span {
 		color: $br-color;
+	}
+	
+	& .icon {
+		vertical-align: text-bottom;
+	}
+	
+	& > #header-avatar {
+		display: inline-block;
+		@include border-radius(100%);
 	}
 }
 
@@ -69,24 +85,30 @@ header {
 	@include rem(margin-bottom, $grid-spacing * 2);
 }
 
-#main {
-	border-width: 0 0 0 1px;
-	border-style: dashed;
-	border-color: $br-color;
-	
-	@include responsive(max-width, $screen-medium) {
-		& {
-			border-width: 0;
-		}
-	}
-	
-	article {
-		border-width: 0 0 1px;
-		border-style: dashed;
-		border-color: $br-color;
+#main {	
+	#article-index {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 		
-		&:last-child {
-			border-width: 0;
+		& .article-title {
+			margin: 0;
+		}
+		
+		& .article-date {
+			display: block;
+			text-align: right;
+		}
+		
+		& li {
+			border-width: 0 0 1px;
+			border-style: dashed;
+			border-color: $br-color;
+			padding: 7px 0;
+		
+			&:last-child {
+				border: none;
+			}
 		}
 	}
 }
@@ -132,9 +154,25 @@ small,
 	}
 }
 
+.icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 footer {
 	text-align: center;
 	@include rem(margin-top, $grid-spacing);
 	@include rem(padding-top, $grid-spacing);
 	@include rem(padding-bottom, $grid-spacing);
+	
+	.credits {
+		display: block;
+		margin: 0 0 5px;
+		
+		&:last-child {
+			margin: 0;
+		}
+	}
 }

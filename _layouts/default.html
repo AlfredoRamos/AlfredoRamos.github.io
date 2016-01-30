@@ -2,14 +2,19 @@
 <html lang="en">
 	{% include head.html %}
 	<body>
+		{% include icons.html %}
+		
 		<div class="container">
 			<div class="row">
-				{% include header.html %}
-				<section id="main" class="col-9">
-					{{ content }}	
-				</section>
-				{% include footer.html %}
+				<div class="col-8 col-pull-2 col-push-2">
+					{% include header.html %}
+				
+					<section id="main">{{ content }}</section>
+					
+					{% include footer.html %}
+				</div>
 			</div>
 		</div>
+		
 	</body>
 </html>

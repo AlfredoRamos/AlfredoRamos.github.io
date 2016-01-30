@@ -1,21 +1,18 @@
-<header class="col-3">
-	<h1>
-		<span>{</span><a href="/">{{ site.title }}</a><span>}</span>
-	</h1>
-	<p>{{ site.description }}</p>
+<header>
+	{% if site.gravatar.size > 0 %}<img id="header-avatar" src="{{ site.gravatar.url }}{{ site.gravatar.hash }}.{{ site.gravatar.ext }}?s={{ site.gravatar.size }}&d={{ site.gravatar.default }}&r={{ site.gravatar.rating }}" width="{{ site.gravatar.size }}" height="{{ site.gravatar.size }}" alt="{{ site.title }}" />{% endif %}
+	<h1><a href="/">{{ site.title }}</a></h1>
+	<h2>{{ site.description }}</h2>
 	
-	<ul class="list-inline list-with-separator">
 	{% if site.social_networks.size > 0 %}
+	<ul class="list-inline list-with-separator">
 		{% for network in site.social_networks %}
 		<li>
+			<svg class="icon icon-{{ network.first | downcase }}"><use xlink:href="#icon-{{ network.first | downcase }}"></use></svg>
 			<a href="{{ network.last.url }}" target="_blank" rel="nofollow" title="{{ network.last.user }} @ {{ network.first | capitalize }}">{{ network.first | capitalize }}</a>
 		</li>
 		{% endfor %}
-	{% endif %}
-		<li>
-			<a href="{{ site.baseurl }}/feed.xml">Feed RSS</a>
-		</li>
 	</ul>
-	<div>
-	</div>
+	{% endif %}
+	
+	<hr />
 </header>

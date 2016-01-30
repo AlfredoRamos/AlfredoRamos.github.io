@@ -5,7 +5,11 @@ layout: default
 	<h2>{{ page.title }}</h2>
 	<ul class="article-meta small list-inline list-with-separator">
 		<li><time datetime="{{ page.date | date: '%Y-%m-%d %H:%M:%S%:z' }}">{{ page.date | date: "%b %-d, %Y" }}</time></li>
-		{% if site.social_networks.github.user %}<li>{{ site.social_networks.github.user }}</li>{% endif %}
+		{% if site.social_networks.github.name and site.social_networks.github.url %}
+		<li>
+			<a href="{{ site.social_networks.github.url }}" target="_blank">{{ site.social_networks.github.name }}</a>
+		</li>
+		{% endif %}
 	</ul>
 	{{ content }}
 </article>

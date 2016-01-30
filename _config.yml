@@ -6,6 +6,7 @@ url: 'https://alfredoramos.github.io' # the base hostname & protocol for your si
 social_networks: {
     github: {
         user: 'AlfredoRamos',
+        name: 'Alfredo Ramos',
         url: 'https://github.com/AlfredoRamos',
     },
     twitter: {
@@ -15,7 +16,19 @@ social_networks: {
     reddit: {
         user: 'AbaddonOrmuz',
         url: 'https://reddit.com/u/AbaddonOrmuz'
+    },
+    vkontakte: {
+        user: 'abaddon.ormuz',
+        url: 'https://vk.com/abaddon.ormuz'
     }
+}
+gravatar: {
+    url: 'https://secure.gravatar.com/avatar/',
+    hash: 'a2fcac05632962d1be9cbebd9025bb1d',
+    ext: 'jpg',
+    size: 125,
+    default: 'identicon',
+    rating: 'g'
 }
 
 # Build settings
