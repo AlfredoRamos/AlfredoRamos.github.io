@@ -5,6 +5,7 @@
 
 // Background colors
 $bg-body: #f8f8f8;
+$bg-badge: #f5f5f5;
 
 // Foreground colors
 $fg-body: #767676;
@@ -28,7 +29,7 @@ $br-color: #ccc;
 body {
 	color: $fg-body;
 	font-family: 'PT Mono',monospace;
-	font-size: 12px;
+	font-size: 1.2em;
 	background-color: $bg-body;
 }
 
@@ -159,6 +160,13 @@ small,
 	height: 16px;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.badge {
+	background-color: $bg-badge;
+	padding: 1px 2px;
+	border: 1px solid $br-color;
+	@include border-radius(3px);
 }
 
 footer {
