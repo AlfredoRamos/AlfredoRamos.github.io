@@ -34,8 +34,10 @@ gravatar: {
 # Build settings
 markdown: kramdown
 encoding: 'utf-8'
-permalink: 'none'
+paginate_path: /page:num
+paginate: 10
 timezone: America/Mexico_City
 exclude: [LICENSE, Rakefile, README.md, Gemfile, Gemfile.lock]
 sass:
     style: compressed
+gems: [jekyll-paginate]

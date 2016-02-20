@@ -86,7 +86,9 @@ header {
 	@include rem(margin-bottom, $grid-spacing * 2);
 }
 
-#main {	
+#main {
+	@include rem(margin-bottom, $grid-spacing);
+
 	#article-index {
 		list-style: none;
 		padding: 0;
@@ -169,9 +171,14 @@ small,
 	@include border-radius(3px);
 }
 
+.pagination {
+	display: block;
+	text-align: center;
+	@include rem(margin-bottom, $grid-spacing);
+}
+
 footer {
 	text-align: center;
-	@include rem(margin-top, $grid-spacing);
 	@include rem(padding-top, $grid-spacing);
 	@include rem(padding-bottom, $grid-spacing);
 	
