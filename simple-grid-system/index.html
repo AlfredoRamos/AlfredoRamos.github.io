@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SASS Grid System</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css" rel="stylesheet" />
+		<link href="css/general.css" rel="stylesheet" />
+		
+		<!-- Simple Grid System -->
+		<link href="css/grids.min.css" rel="stylesheet" />
+		<!-- Simple Grid System -->
+		
+		<script>
+			window.onload = function() {
+				// Show class names
+				var cols = document.querySelectorAll('[class*="col-"]');
+				for (var i = 0; i < cols.length; i++) {
+					var col = cols.item(i);
+					col.innerHTML += '<code>.' + col.getAttribute("class") + '</code>';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		
+		<!-- .container -->
+		<div class="container">
+			
+			<!-- Normal grid -->
+			<h4>Normal grid</h4>
+			<div class="row">
+				<div class="col-1">&nbsp;</div>
+				<div class="col-11">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-2">&nbsp;</div>
+				<div class="col-10">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-3">&nbsp;</div>
+				<div class="col-9">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-4">&nbsp;</div>
+				<div class="col-8">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-5">&nbsp;</div>
+				<div class="col-7">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-6">&nbsp;</div>
+				<div class="col-6">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-7">&nbsp;</div>
+				<div class="col-5">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-8">&nbsp;</div>
+				<div class="col-4">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-9">&nbsp;</div>
+				<div class="col-3">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-10">&nbsp;</div>
+				<div class="col-2">&nbsp;</div>
+			</div>
+			<div class="row">
+				<div class="col-11">&nbsp;</div>
+				<div class="col-1">&nbsp;</div>
+			</div>
+			<!-- Normal grid -->
+
+			<!-- Offset grid -->
+			<h4>Offset grid</h4>
+			<div class="row">
+				<div class="col-3 col-offset-6">&nbsp;</div>
+				<div class="col-3">&nbsp;</div>
+			</div>
+			<!-- Offset grid -->
+
+			<!-- Order swap -->
+			<h4>Order swap</h4>
+			<div class="row">
+				<div class="col-4 col-push-8">&nbsp;</div>
+				<div class="col-8 col-pull-4">&nbsp;</div>
+			</div>
+			<!-- Order swap -->
+
+			<!-- Nested grids -->
+			<h4>Nested grids</h4>
+			<div class="row">
+				<div class="col-10 col-pull-1 col-push-1">
+					<div class="row">
+						<div class="col-9 col-push-3"><code>.col-9 col-push-3</code></div>
+						<div class="col-3 col-pull-9"><code>.col-3 col-pull-9</code></div>
+					</div>
+				</div>
+			</div>
+			<!-- Nested grids -->
+			
+		</div>
+		<!-- .container -->
+		
+		<footer>
+			<p style="text-align: center">
+				<a href="https://github.com/AlfredoRamos/simple-grid-system">Simple Grid System</a> by <a href="https://github.com/AlfredoRamos">Alfredo Ramos</a> is released under <a href="https://raw.githubusercontent.com/AlfredoRamos/simple-grid-system/master/LICENSE" target="_blank">GNU GPL-3.0+</a>
+			</p>
+			<a class="github-ribbon" href="https://github.com/AlfredoRamos/simple-grid-system">&nbsp;</a>
+		</footer>
+		
+	</body>
+</html>

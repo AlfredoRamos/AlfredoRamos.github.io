@@ -1,0 +1,45 @@
+html {
+	background-color: #eee;
+}
+body {
+	font-size: 1.5em;
+}
+h4 {
+	text-align: center;
+}
+.row {
+	background-color: #aaa;
+}
+[class*="col-"] {
+	border: 1px solid black;
+	text-align: center;
+	background-color: #fff;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+code {
+	font-size: 0.7em;
+}
+a,a:visited {
+	color: #069;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+footer {
+	color: #333;
+	font-size: 0.8em;
+}
+.github-ribbon {
+	background-image: url('../images/forkme.png');
+	background-color: transparent;
+	background-repeat: none;
+	background-size: 150px;
+	width: 150px;
+	height: 150px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
