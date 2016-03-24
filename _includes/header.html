@@ -7,8 +7,12 @@
 	<ul class="list-inline list-with-separator">
 		{% for network in site.social_networks %}
 		<li>
-			<svg class="icon icon-{{ network.first | downcase }}"><use xlink:href="#icon-{{ network.first | downcase }}"></use></svg>
+			<span class="icon icon-{{ network.first | downcase }}"></span>
+			{% if network.last.url and network.last.url.size > 0 %}
 			<a href="{{ network.last.url }}" target="_blank" rel="nofollow" title="{{ network.last.user }} @ {{ network.first | capitalize }}">{{ network.first | capitalize }}</a>
+			{% else %}
+			<span title="{{ network.last.user }} @ {{ network.first | capitalize }}">{{ network.last.user }}</span>
+			{% endif %}
 		</li>
 		{% endfor %}
 	</ul>

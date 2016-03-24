@@ -15,6 +15,9 @@ $fg-headline: #333;
 // Border colors
 $br-color: #ccc;
 
+// SVG Icons
+$svg-icons: (github, twitter, reddit, vkontakte, irc);
+
 // Grids
 @import '_grids';
 
@@ -158,10 +161,17 @@ small,
 }
 
 .icon {
-	width: 16px;
-	height: 16px;
 	display: inline-block;
-	vertical-align: middle;
+	min-width: 16px;
+	min-height: 16px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+@each $network in $svg-icons {
+	.icon-#{$network} {
+		background-image: url('../images/#{$network}.svg');
+	}
 }
 
 .badge {
