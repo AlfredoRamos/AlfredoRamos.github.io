@@ -4,24 +4,20 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>SASS Grid System</title>
+		<meta name="author" content="Alfredo Ramos">
+		<title>SASS Grid System by Alfredo Ramos</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css" rel="stylesheet" />
-		<link href="css/general.css" rel="stylesheet" />
+		<link href="css/general.css?1" rel="stylesheet" />
 		
 		<!-- Simple Grid System -->
-		<link href="css/grids.min.css" rel="stylesheet" />
+		<link href="css/grids.min.css?1" rel="stylesheet" />
 		<!-- Simple Grid System -->
 		
-		<script>
-			window.onload = function() {
-				// Show class names
-				var cols = document.querySelectorAll('[class*="col-"]');
-				for (var i = 0; i < cols.length; i++) {
-					var col = cols.item(i);
-					col.innerHTML += '<code>.' + col.getAttribute("class") + '</code>';
-				}
-			}
-		</script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono" />
+		
+		<!--[if lt IE 9]>
+    	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
 	</head>
 	<body>
 		
@@ -31,78 +27,99 @@
 			<!-- Normal grid -->
 			<h4>Normal grid</h4>
 			<div class="row">
-				<div class="col-1">&nbsp;</div>
-				<div class="col-11">&nbsp;</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-11">.col-md-11</div>
 			</div>
 			<div class="row">
-				<div class="col-2">&nbsp;</div>
-				<div class="col-10">&nbsp;</div>
+				<div class="col-md-2">.col-md-2</div>
+				<div class="col-md-10">.col-md-10</div>
 			</div>
 			<div class="row">
-				<div class="col-3">&nbsp;</div>
-				<div class="col-9">&nbsp;</div>
+				<div class="col-md-3">.col-md-3</div>
+				<div class="col-md-9">.col-md-9</div>
 			</div>
 			<div class="row">
-				<div class="col-4">&nbsp;</div>
-				<div class="col-8">&nbsp;</div>
+				<div class="col-md-4">.col-md-4</div>
+				<div class="col-md-8">.col-md-8</div>
 			</div>
 			<div class="row">
-				<div class="col-5">&nbsp;</div>
-				<div class="col-7">&nbsp;</div>
+				<div class="col-md-5">.col-md-5</div>
+				<div class="col-md-7">.col-md-7</div>
 			</div>
 			<div class="row">
-				<div class="col-6">&nbsp;</div>
-				<div class="col-6">&nbsp;</div>
+				<div class="col-md-6">.col-md-6</div>
+				<div class="col-md-6">.col-md-6</div>
 			</div>
 			<div class="row">
-				<div class="col-7">&nbsp;</div>
-				<div class="col-5">&nbsp;</div>
+				<div class="col-md-7">.col-md-7</div>
+				<div class="col-md-5">.col-md-5</div>
 			</div>
 			<div class="row">
-				<div class="col-8">&nbsp;</div>
-				<div class="col-4">&nbsp;</div>
+				<div class="col-md-8">.col-md-8</div>
+				<div class="col-md-4">.col-md-4</div>
 			</div>
 			<div class="row">
-				<div class="col-9">&nbsp;</div>
-				<div class="col-3">&nbsp;</div>
+				<div class="col-md-9">.col-md-9</div>
+				<div class="col-md-3">.col-md-3</div>
 			</div>
 			<div class="row">
-				<div class="col-10">&nbsp;</div>
-				<div class="col-2">&nbsp;</div>
+				<div class="col-md-10">.col-md-10</div>
+				<div class="col-md-2">.col-md-2</div>
 			</div>
 			<div class="row">
-				<div class="col-11">&nbsp;</div>
-				<div class="col-1">&nbsp;</div>
+				<div class="col-md-11">.col-md-11</div>
+				<div class="col-md-1">.col-md-1</div>
 			</div>
 			<!-- Normal grid -->
 
 			<!-- Offset grid -->
 			<h4>Offset grid</h4>
 			<div class="row">
-				<div class="col-3 col-offset-6">&nbsp;</div>
-				<div class="col-3">&nbsp;</div>
+				<div class="col-md-3">.col-md-3</div>
+				<div class="col-md-3 col-md-offset-6">.col-md-3 .col-md-offset-6</div>
 			</div>
 			<!-- Offset grid -->
 
 			<!-- Order swap -->
 			<h4>Order swap</h4>
 			<div class="row">
-				<div class="col-4 col-push-8">&nbsp;</div>
-				<div class="col-8 col-pull-4">&nbsp;</div>
+				<div class="col-md-4 col-md-push-8">.col-md-4 .col-md-push-8</div>
+				<div class="col-md-8 col-md-pull-4">.col-md-8 .col-md-pull-4</div>
 			</div>
 			<!-- Order swap -->
 
 			<!-- Nested grids -->
 			<h4>Nested grids</h4>
 			<div class="row">
-				<div class="col-10 col-pull-1 col-push-1">
+				<div class="col-md-10 col-md-pull-1 col-md-push-1">
+					.col-md-10 .col-md-pull-1 .col-md-push-1
 					<div class="row">
-						<div class="col-9 col-push-3"><code>.col-9 col-push-3</code></div>
-						<div class="col-3 col-pull-9"><code>.col-3 col-pull-9</code></div>
+						<div class="col-md-9 col-md-push-3">.col-9 col-md-push-3</div>
+						<div class="col-md-3 col-md-pull-9">.col-3 col-md-pull-9</div>
 					</div>
 				</div>
 			</div>
 			<!-- Nested grids -->
+			
+			<!-- Mixed mobile and desktop -->
+			<h4>Mixed: mobile and desktop</h4>
+			<div class="row">
+				<div class="col-xs-6 col-md-8">.col-xs-6 .col-md-8</div>
+				<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			</div>
+			<!-- Mixed mobile and desktop -->
+			
+			<!-- Offset, push, and pull resets -->
+			<h4>Offset, push, and pull resets</h4>
+			<div class="row">
+				<div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+				<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+				<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+			</div>
+			<!-- Offset, push, and pull resets -->
 			
 		</div>
 		<!-- .container -->
