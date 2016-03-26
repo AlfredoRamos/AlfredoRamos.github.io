@@ -2,10 +2,20 @@
  * Simple Grid System
  * GitHub <https://github.com/AlfredoRamos/simple-grid-system>
  * @author Alfredo Ramos <alfredo.ramos@yandex.com>
- * @version 0.2.1
+ * @version 0.2.2
  * @copyright (c) 2015 Alfredo Ramos
  * @license GNU GPL-3.0+ <https://www.gnu.org/licenses/gpl-3.0.txt>
  */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .clearfix, .row {
   zoom: 1;
 }
@@ -17,7 +27,7 @@
   clear: both;
 }
 
-.container, .container-fluid {
+.container-fluid, .container {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -28,16 +38,6 @@
   padding-left: 1rem;
   padding-right: 10px;
   padding-right: 1rem;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 @media only screen and (min-width: 48rem), (min-width: 768px) {
