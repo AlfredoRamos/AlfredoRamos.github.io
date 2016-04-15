@@ -6,10 +6,10 @@ title: 'Home'
 <ul id="article-index">
 	{% for post in paginator.posts %}
 	<li class="clearfix">
-		<h3 class="article-title col-10">
+		<h3 class="article-title col-md-10">
 			<a href="{{ post.url }}">{{ post.title }}</a>
 		</h3>
-		<time class="article-date small col-2" datetime="{{ post.date | date: '%Y-%m-%d %H:%M:%S%:z' }}">{{ post.date | date: "%F" }}</time>
+		<time class="article-date small col-md-2" datetime="{{ post.date | date: '%Y-%m-%d %H:%M:%S%:z' }}">{{ post.date | date: "%F" }}</time>
 	</li>
 	{% endfor %}	
 </ul>

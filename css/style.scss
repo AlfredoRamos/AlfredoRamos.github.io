@@ -19,7 +19,7 @@ $br-color: #ccc;
 $svg-icons: (github, twitter, reddit, vkontakte);
 
 // Grids
-@import '_grids';
+@import 'grids';
 
 // Extra mixins
 @mixin border-radius($radius: 0) {
