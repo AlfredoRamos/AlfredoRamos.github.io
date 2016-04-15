@@ -42,3 +42,6 @@ footer {
 	top: 0;
 	right: 0;
 }
+.github-ribbon:hover {
+	text-decoration: none;
+}
