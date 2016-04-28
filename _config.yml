@@ -1,5 +1,5 @@
 # Site settings
-title: Alfredo Ramos
+title: 'Alfredo Ramos'
 description: 'Personal GitHub page'
 #baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.github.io' # the base hostname & protocol for your site
@@ -22,14 +22,6 @@ social_networks: {
         url: 'https://vk.com/abaddon.ormuz'
     }
 }
-gravatar: {
-    url: 'https://secure.gravatar.com/avatar/',
-    hash: 'a2fcac05632962d1be9cbebd9025bb1d',
-    ext: 'jpg',
-    size: 125,
-    default: 'identicon',
-    rating: 'g'
-}
 
 # Build settings
 markdown: kramdown
@@ -40,4 +32,4 @@ timezone: America/Mexico_City
 exclude: [LICENSE, Rakefile, README.md, Gemfile, Gemfile.lock]
 sass:
     style: compressed
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-github-metadata]

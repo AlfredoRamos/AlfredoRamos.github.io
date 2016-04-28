@@ -1,5 +1,5 @@
 <header>
-	{% if site.gravatar.size > 0 %}<img id="header-avatar" src="{{ site.gravatar.url }}{{ site.gravatar.hash }}.{{ site.gravatar.ext }}?s={{ site.gravatar.size }}&d={{ site.gravatar.default }}&r={{ site.gravatar.rating }}" width="{{ site.gravatar.size }}" height="{{ site.gravatar.size }}" alt="{{ site.title }}" />{% endif %}
+	{% if site.github.owner_gravatar_url.size > 0 %}<img id="header-avatar" src="{{ site.github.owner_gravatar_url }}" width="125" height="125" alt="{{ site.title }}" />{% endif %}
 	<h1><a href="/">{{ site.title }}</a></h1>
 	<h2>{{ site.description }}</h2>
 	
