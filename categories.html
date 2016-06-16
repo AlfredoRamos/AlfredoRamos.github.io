@@ -8,17 +8,17 @@ title: 'Categories'
 	{% for category in site.categories %}
 	<li id="category-{{ category.first }}">
 		<h4>{{ category.first }}</h4>
-		
+
 		<ul class="list-posts">
-		{% for post in site.posts %}
-				{% for cat in post.categories %}
-					{% if cat == category.first %}
-					<li>
-						<a href="{{ post.url }}">{{ post.title }}</a>
-					</li>
-					{% endif %}
-				{% endfor %}
-		{% endfor %}
+			{% for post in site.posts %}
+			{% for cat in post.categories %}
+			{% if cat == category.first %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+			{% endfor %}
 		</ul>
 	</li>
 	{% endfor %}

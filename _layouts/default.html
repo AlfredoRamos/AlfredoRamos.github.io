@@ -2,20 +2,36 @@
 <html lang="en">
 	{% include head.html %}
 	<body>
-		
-		<div class="container">
+
+		<!-- header -->
+		<div id="header-wrapper" class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-pull-2 col-md-push-2">
 					{% include header.html %}
-				
-					<section id="main">{{ content }}</section>
-
-					{% include pagination.html %}
-					
-					{% include footer.html %}
 				</div>
 			</div>
 		</div>
-		
+		<!-- header -->
+
+		<!-- content -->
+		<div id="content-wrapper" class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-pull-2 col-md-push-2">
+
+					<section id="content">{{ content }}</section>
+
+					{% include pagination.html %}
+
+				</div>
+			</div>
+		</div>
+		<!-- content -->
+
+		<!-- footer -->
+		<div id="footer-wrapper">
+			{% include footer.html %}
+		</div>
+		<!-- footer -->
+
 	</body>
 </html>

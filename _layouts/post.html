@@ -5,7 +5,7 @@ layout: default
 	<h2>{{ page.title }}</h2>
 	<ul class="article-meta small list-inline list-with-separator">
 		<li>
-			<time datetime="{{ page.date | date: '%Y-%m-%d %H:%M:%S%:z' }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+			<time datetime="{{ page.date | date: '%F %T%:z' }}">{{ page.date | date: '%b %-d, %Y' }}</time>
 		</li>
 		{% if page.tags.size > 0 %}
 		<li>

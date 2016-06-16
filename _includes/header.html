@@ -2,7 +2,7 @@
 	{% if site.github.owner_gravatar_url.size > 0 %}<img id="header-avatar" src="{{ site.github.owner_gravatar_url }}" width="125" height="125" alt="{{ site.title }}" />{% endif %}
 	<h1><a href="/">{{ site.title }}</a></h1>
 	<h2>{{ site.description }}</h2>
-	
+
 	{% if site.social_networks.size > 0 %}
 	<ul class="list-inline list-with-separator">
 		{% for network in site.social_networks %}
@@ -17,6 +17,6 @@
 		{% endfor %}
 	</ul>
 	{% endif %}
-	
+
 	<hr />
 </header>
