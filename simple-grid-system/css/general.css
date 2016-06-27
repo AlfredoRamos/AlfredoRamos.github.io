@@ -46,12 +46,3 @@ footer {
 .github-ribbon:hover {
 	text-decoration: none;
 }
-.responsive-utilities .row,
-.responsive-utilities [class*="col-"] {
-	background-color: transparent;
-	border: 0;
-}
-.responsive-utilities h4,
-.responsive-utilities p {
-	font-size: 1.5em;
-}
