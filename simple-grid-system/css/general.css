@@ -29,6 +29,7 @@ a:hover {
 footer {
 	color: #333;
 	font-size: 0.8em;
+	text-align: center;
 }
 .github-ribbon {
 	background-image: url('../images/forkme.png');
@@ -44,4 +45,13 @@ footer {
 }
 .github-ribbon:hover {
 	text-decoration: none;
+}
+.responsive-utilities .row,
+.responsive-utilities [class*="col-"] {
+	background-color: transparent;
+	border: 0;
+}
+.responsive-utilities h4,
+.responsive-utilities p {
+	font-size: 1.5em;
 }

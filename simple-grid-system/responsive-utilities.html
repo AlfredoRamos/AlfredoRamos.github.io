@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Alfredo Ramos">
+		<title>Responsive utilities - SASS Grid System by Alfredo Ramos</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet" />
+		<link href="css/general.css?2" rel="stylesheet" />
+
+		<!-- Simple Grid System -->
+		<link href="https://gistcdn.githack.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/6e943aa4607763c5d7fa5046a73330614371d697/grids.min.css" rel="stylesheet" />
+		<!-- Simple Grid System -->
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono" />
+
+		<!--[if lt IE 9]>
+			<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!-- .container -->
+		<div class="container responsive-utilities">
+
+			<!-- .row -->
+			<div class="row">
+
+				<!-- .col-md-8 -->
+				<div class="col-md-8 col-md-pull-2 col-md-push-2">
+
+					<!-- IFRAME video -->
+					<h4>IFRAME video</h4>
+					<div class="row">
+
+						<div class="responsive-media responsive-media-16-9">
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+
+					</div>
+					<!-- IFRAME video -->
+
+					<!-- HTML5 video -->
+					<h4>HTML5 video</h4>
+					<div class="row">
+
+						<div class="responsive-media responsive-media-16-9">
+							<video controls="true" height="360" width="640">
+								<!-- MP4 must be first for iPad! -->
+								<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4" /><!-- Safari / iOS, IE9 -->
+									<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm" /><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+										<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg" /><!-- Firefox3.6+ / Opera 10.5+ -->
+							</video>
+						</div>
+
+					</div>
+					<!-- HTML5 video -->
+
+					<!-- OBJECT video -->
+					<h4>OBJECT video</h4>
+					<div class="row">
+
+						<div class="responsive-media responsive-media-16-9">
+							<object type="application/x-shockwave-flash" data="http://camendesign.com/code/video_for_everybody/player.swf" height="360" width="640">
+								<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+								<param name="movie" value="http://camendesign.com/code/video_for_everybody/player.swf">
+								<param name="flashvars" value="autostart=false&amp;controlbar=over&amp;image=poster.jpg&amp;file=http://clips.vorwaerts-gmbh.de/VfE_flash.mp4">
+							</object>
+						</div>
+
+					</div>
+					<!-- OBJECT video -->
+
+					<!-- Grids -->
+					<h4>Grids</h4>
+					<p style="text-align: center;">See <a href="index.html">Grids</a>.</p>
+					<!-- Grids -->
+
+				</div>
+				<!-- .col-md-8 -->
+
+			</div>
+			<!-- .row -->
+
+
+		</div>
+		<!-- .container -->
+
+		<footer>
+			<p>
+			Some video files and HTML5 markup were borrowed from
+			<a href="http://camendesign.com/code/video_for_everybody/test.html" target="_blank" rel="nofollow">“Video For Everybody” Test Page</a>.</p>
+			<p>
+			<a href="https://github.com/AlfredoRamos/simple-grid-system">Simple Grid System</a> by <a href="https://github.com/AlfredoRamos">Alfredo Ramos</a> is released under <a href="https://raw.githubusercontent.com/AlfredoRamos/simple-grid-system/master/LICENSE" target="_blank">GNU GPL-3.0+</a>
+			</p>
+			<a class="github-ribbon" href="https://github.com/AlfredoRamos/simple-grid-system">&nbsp;</a>
+		</footer>
+
+	</body>
+</html>
