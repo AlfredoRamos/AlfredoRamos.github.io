@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Auto-embed video by Alfredo Ramos</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+		<link rel="stylesheet" href="https://gistcdn.githack.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/6e943aa4607763c5d7fa5046a73330614371d697/grids.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-pull-2 col-md-push-2">
+
+					<h2>Preview</h2>
+					<p>Put the cursor over a video to load it</p>
+
+					<div class="responsive-media" data-url="https://www.youtube.com/watch?v=Z4C82eyhwgU"></div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="responsive-media" data-url="https://vimeo.com/190537820"></div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="responsive-media" data-url="http://dai.ly/x38wj6i"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.min.js"></script>
+		<script src="https://rawcdn.githack.com/AlfredoRamos/snippets/305790f3062f3ff1105bd9c492c4520b1353c998/javascript/auto-embed-video/auto-embed-services.js"></script>
+		<script src="https://rawcdn.githack.com/AlfredoRamos/snippets/305790f3062f3ff1105bd9c492c4520b1353c998/javascript/auto-embed-video/auto-embed.js"></script>
+		<script>
+		$(function() {
+			$('.responsive-media').generateEmbedHtml({
+				itemClass: 'responsive-media-item',
+				showUrl: true
+			});
+		});
+		</script>
+	</body>
+</html>

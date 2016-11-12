@@ -1,0 +1,25 @@
+html {
+	background-color: #eee;
+}
+h2,
+p {
+	text-align: center;
+}
+.responsive-media,
+.video-info {
+	margin-bottom: 15px;
+}
+.responsive-media:last-child {
+	margin-bottom: 0;
+}
+.responsive-media.load {
+	background-image: url(../images/play.svg);
+	background-repeat: no-repeat;
+	background-size: 15%;
+	background-position: center;
+	background-color: #555;
+}
+.video-info {
+	text-align: center;
+	white-space: pre-wrap;
+}
