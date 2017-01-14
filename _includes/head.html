@@ -2,15 +2,15 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relative_url }}" />
 
-	<title>{% if page.title %}{{ page.title }}{% if paginator.total_pages > 1 and paginator.page >= 2 %} - Page {{ paginator.page}} of {{paginator.total_pages}}{% endif %} :: {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="description" content="{{ site.description }}" />
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+	<title>{% if page.title %}{{ page.title | escape }}{% if paginator.total_pages > 1 and paginator.page >= 2 %} - Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %} :: {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 	<link rel="stylesheet" href="https://gistcdn.githack.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/67f512017dd0311ab34b5b7d4d6851db8d70efa5/grids.min.css" />
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	<link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono" />
 
 	<!--[if lt IE 9]>

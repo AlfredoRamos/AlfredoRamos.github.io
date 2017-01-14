@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-<div class="page-content error-page">
-	<h2>{{ page.title }}</h2>
-	{{ content }}
+<div class="error">
+	<header class="error-header">
+		<h2 class="error-title">{{ page.title | escape }}</h2>
+	</header>
+	<div class="error-body">
+		{{ content }}
+	</div>
 </div>

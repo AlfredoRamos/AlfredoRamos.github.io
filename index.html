@@ -2,16 +2,28 @@
 layout: default
 title: 'Home'
 ---
-<article class="article-content">
-	<h2>Latest articles</h2>
-	<ul id="article-index">
+<div class="index">
+	<header class="index-header">
+		<h2 class="index-title">Latest posts</h2>
+	</header>
+	<div class="index-body">
+		{% if paginator.posts.size > 0 %}
 		{% for post in paginator.posts %}
-		<li class="clearfix">
-			<h3 class="article-title col-md-10">
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</h3>
-			<time class="article-date small col-md-2" datetime="{{ post.date | date: '%F %T%:z' }}">{{ post.date | date: '%F' }}</time>
-		</li>
-		{% endfor %}	
-	</ul>
-</article>
+		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<header class="post-header clearfix">
+				<h3 class="post-title col-md-10" itemprop="name headline">
+					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+				</h3>
+				<ul class="post-meta small list-inline list-with-separator col-md-2">
+					<li>
+						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%F' }}</time>
+					</li>
+				</ul>
+			</header>
+		</article>
+		{% endfor %}
+		{% else %}
+		<p>No posts to show :(</p>
+		{% endif %}
+	</div>
+</div>

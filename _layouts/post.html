@@ -1,21 +1,25 @@
 ---
 layout: default
 ---
-<article class="article-content">
-	<h2>{{ page.title }}</h2>
-	<ul class="article-meta small list-inline list-with-separator">
-		<li>
-			<time datetime="{{ page.date | date: '%F %T%:z' }}">{{ page.date | date: '%b %-d, %Y' }}</time>
-		</li>
-		{% if page.tags.size > 0 %}
-		<li>
-			<ul class="article-tags list-inline">
-				{% for tag in page.tags %}
-				<li><span class="badge">{{ tag }}</span></li>
-				{% endfor %}
-			</ul>
-		</li>
-		{% endif %}
-	</ul>
-	{{ content }}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<header class="post-header">
+		<h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+		<ul class="post-meta small list-inline list-with-separator">
+			<li>
+				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %-d, %Y' }}</time>
+			</li>
+			{% if page.tags.size > 0 %}
+			<li>
+				<ul class="post-tags list-inline">
+					{% for tag in page.tags %}
+					<li><span class="badge">{{ tag }}</span></li>
+					{% endfor %}
+				</ul>
+			</li>
+			{% endif %}
+		</ul>
+	</header>
+	<div class="post-body" itemprop="articleBody">
+		{{ content }}
+	</div>
 </article>

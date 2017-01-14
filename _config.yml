@@ -1,7 +1,7 @@
 # Site settings
 title: 'Alfredo Ramos'
 description: 'Personal GitHub page'
-#baseurl: '' # the subpath of your site, e.g. /blog/
+baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.github.io' # the base hostname & protocol for your site
 social_networks: {
     github: {
@@ -25,11 +25,24 @@ social_networks: {
 
 # Build settings
 markdown: kramdown
+theme: minima
 encoding: 'utf-8'
 paginate_path: /page:num
 paginate: 10
 timezone: America/Mexico_City
-exclude: [LICENSE, Rakefile, README.md, Gemfile, Gemfile.lock]
+exclude:
+  - LICENSE
+  - Rakefile
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 sass:
     style: compressed
-gems: [jekyll-paginate, jekyll-github-metadata]
+gems:
+  - jekyll-paginate
+  - jekyll-github-metadata
+
+
+# Needed to build locally
+# https://help.github.com/articles/repository-metadata-on-github-pages/
+repository: AlfredoRamos/AlfredoRamos.github.io

@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-<div class="page-content">
-	<h2>{{ page.title }}</h2>
-	{{ content }}
+<div class="page">
+	<header class="page-header">
+		<h2 class="page-title">{{ page.title | escape }}</h2>
+	</header>
+	<div class="page-body">
+		{{ content }}
+	</div>
 </div>

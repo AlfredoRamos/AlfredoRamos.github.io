@@ -172,33 +172,27 @@ hr {
 
 #content-wrapper {
 	#content {
-		#article-index {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-
-			& .article-title {
-				margin: 0;
-			}
-
-			& .article-date {
-				display: block;
-				text-align: right;
-			}
-
-			& li {
+		.index {
+			.post {
+				padding: 7px 0;
 				border-width: 0 0 1px;
 				border-style: dashed;
 				border-color: $br-color;
-				padding: 7px 0;
 
 				&:last-child {
 					border: none;
 				}
+
+				.post-header {
+					.post-title {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 
-		.error-page {
+		.error {
 			text-align: center;
 		}
 	}
