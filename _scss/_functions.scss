@@ -1,0 +1,31 @@
+// Convert a given value to integer
+// @param	$n		The value to convert
+@function parse-int($n) {
+	@return $n / ($n * 0 + 1);
+}
+
+// Convert given pixels to rems
+// @param	$pixels		The pixels to convert
+// @param	$base		The rem base (optional).
+@function calc-rems($pixels, $base: 10) {
+	$rems: #{parse-int($pixels) / $base}rem;
+
+	@if unit($pixels) == 'rem' {
+		$rems: $pixels;
+	}
+
+	@return $rems;
+}
+
+// Convert given rems to pixels
+// @param	$rems		The rems to convert
+// @param	$base		The rem base (optional).
+@function calc-pixels($rems, $base: 10) {
+	$pixels: #{parse-int($rems) * $base}px;
+
+	@if unit($rems) == 'px' {
+		$pixels: $rems;
+	}
+
+	@return $pixels;
+}

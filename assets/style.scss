@@ -1,107 +1,17 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-
-// Background colors
-$bg-body: #f8f8f8;
-$bg-badge: #f5f5f5;
-$bg-avatar: #fafafa;
-
-// Foreground colors
-$fg-body: #767676;
-$fg-link: #069;
-$fg-headline: #333;
-
-// Border colors
-$br-color: #ccc;
-$br-avatar: #ddd;
-
-// SVG Icons
-$svg-icons: (github, twitter, reddit, vkontakte);
-
-// Column spacing (rem base 10)
-// It should be < 4.5rem
-$grid-spacing: 1rem; // 10/10
-
-// Convert a given value to integer
-// @param	$n		The value to convert
-@function parse-int($n) {
-	@return $n / ($n * 0 + 1);
-}
-
-// Convert given pixels to rems
-// @param	$pixels		The pixels to convert
-// @param	$base		The rem base (optional).
-@function calc-rems($pixels, $base: 10) {
-	$rems: #{parse-int($pixels) / $base}rem;
-
-	@if unit($pixels) == 'rem' {
-		$rems: $pixels;
-	}
-
-	@return $rems;
-}
-
-// Convert given rems to pixels
-// @param	$rems		The rems to convert
-// @param	$base		The rem base (optional).
-@function calc-pixels($rems, $base: 10) {
-	$pixels: #{parse-int($rems) * $base}px;
-
-	@if unit($rems) == 'px' {
-		$pixels: $rems;
-	}
-
-	@return $pixels;
-}
-
-// Get border radius
-@mixin border-radius($radius: 0) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	border-radius: $radius;
-}
-
-// Slightly modified version of the rem() mixin by Hugo Giraudel
-// http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
-@mixin rem($property, $values) {
-	$px : ();
-	$rem: ();
-
-	@each $value in $values {
-		@if $value == 0 or $value == auto {
-			$px : append($px , $value);
-			$rem: append($rem, $value);
-		} @else {
-			$unit: unit($value);
-
-			@if $unit == 'px' {
-				$px : append($px,  calc-pixels($value));
-				$rem: append($rem, calc-rems($value));
-			}
-
-			@if $unit == 'rem' {
-				$px : append($px,  calc-pixels($value));
-				$rem: append($rem, calc-rems($value));
-			}
-		}
-	}
-
-	@if $px == $rem {
-		#{$property}: $px;
-	} @else {
-		#{$property}: $px; // For IE < 8
-		#{$property}: $rem;
-	}
-}
+// Resources
+@import 'variables';
+@import 'functions';
+@import 'mixins';
 
 // General
 body {
 	color: $fg-body;
 	font-family: 'PT Mono',monospace;
-	font-size: 1.2em;
 	background-color: $bg-body;
+	@include rem(font-size, 1.3rem);
 }
 
 h1,

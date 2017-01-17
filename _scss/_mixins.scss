@@ -1,0 +1,39 @@
+// Get border radius
+@mixin border-radius($radius: 0) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// Slightly modified version of the rem() mixin by Hugo Giraudel
+// http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+@mixin rem($property, $values) {
+	$px : ();
+	$rem: ();
+
+	@each $value in $values {
+		@if $value == 0 or $value == auto {
+			$px : append($px , $value);
+			$rem: append($rem, $value);
+		} @else {
+			$unit: unit($value);
+
+			@if $unit == 'px' {
+				$px : append($px,  calc-pixels($value));
+				$rem: append($rem, calc-rems($value));
+			}
+
+			@if $unit == 'rem' {
+				$px : append($px,  calc-pixels($value));
+				$rem: append($rem, calc-rems($value));
+			}
+		}
+	}
+
+	@if $px == $rem {
+		#{$property}: $px;
+	} @else {
+		#{$property}: $px; // For IE < 8
+		#{$property}: $rem;
+	}
+}
