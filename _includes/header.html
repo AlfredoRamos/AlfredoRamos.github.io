@@ -9,7 +9,9 @@
 	<ul class="list-inline list-with-separator">
 		{% for network in site.social_networks %}
 		<li>
-			<span class="icon icon-{{ network.first | downcase | escape }}"></span>
+			<svg class="icon icon-{{ network.first | downcase | escape }}">
+				<use xlink:href="#{{ network.first | downcase | escape }}" />
+			</svg>
 			{% if network.last.url and network.last.url.size > 0 %}
 			<a href="{{ network.last.url | uri_escape }}" target="_blank" rel="nofollow" title="{{ network.last.user | escape }} @ {{ network.first | capitalize | escape }}">{{ network.first | capitalize | escape }}</a>
 			{% else %}

@@ -159,16 +159,9 @@ small,
 
 .icon {
 	display: inline-block;
-	min-width: 16px;
-	min-height: 16px;
-	background-repeat: no-repeat;
-	background-position: 50%;
-}
-
-@each $network in $svg-icons {
-	.icon-#{$network} {
-		background-image: url('../images/#{$network}.svg');
-	}
+	width: 16px;
+	height: 16px;
+	fill: $fg-headline;
 }
 
 .badge {

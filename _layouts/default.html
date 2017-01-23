@@ -33,5 +33,13 @@
 		</div>
 		<!-- footer -->
 
+		{% if site.social_networks.size > 0 %}
+		<!-- svg -->
+		{% for network in site.social_networks %}
+		{% include {{ network.first | downcase | escape }}.svg %}
+		{% endfor %}
+		<!-- svg-->
+		{% endif  %}
+
 	</body>
 </html>
