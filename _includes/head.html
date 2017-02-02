@@ -10,10 +10,18 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 	<link rel="stylesheet" href="https://gistcdn.githack.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/be408cf1d60795876d33b10f2a1d0855129c8f66/grids.min.css" />
-	<link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+	<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono" />
+
+	<!-- stylesheets -->
+	{% include head_stylesheets.html %}
+	<!-- stylesheets -->
 
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
+
+	<!-- scripts -->
+	{% include head_scripts.html %}
+	<!-- scripts -->
 </head>

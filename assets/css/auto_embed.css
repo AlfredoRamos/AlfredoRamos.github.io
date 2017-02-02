@@ -1,25 +1,22 @@
-html {
-	background-color: #eee;
-}
-h2,
-p {
+.post-body h4 {
 	text-align: center;
 }
-.responsive-media,
-.video-info {
+.post-body .responsive-media,
+.post-body .video-info {
+	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.responsive-media:last-child {
+.post-body .responsive-media:last-child {
 	margin-bottom: 0;
 }
-.responsive-media.load {
+.post-body .responsive-media.load {
 	background-image: url(../images/play.svg);
 	background-repeat: no-repeat;
 	background-size: 15%;
 	background-position: center;
 	background-color: #555;
 }
-.video-info {
+.post-body .video-info {
 	text-align: center;
 	white-space: pre-wrap;
 }

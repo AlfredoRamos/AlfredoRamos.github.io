@@ -1,0 +1,15 @@
+{% for head_style in page.stylesheets.head %}
+	{% for style in site.data.stylesheets %}
+		{% if head_style == style.group %}
+			{% for file in style.files %}
+				{% if file.cdn == 'cdnjs' %}
+				<link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/" | append: stylegroup | append: "/" | append: file.version | append: "/" | append: file.name | append: ".css" | uri_escape }}" /></script>
+				{% elsif file.cdn == 'githack' %}
+				<link rel="stylesheet" href="{{ "https://rawcdn.githack.com/" | append: file.name | append: ".css" | uri_escape }}" />
+				{% else %}
+				<link rel="stylesheet" href="{{ "/assets/css/" | append: file.name | append: ".css" | uri_escape | relative_url }}" />
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}

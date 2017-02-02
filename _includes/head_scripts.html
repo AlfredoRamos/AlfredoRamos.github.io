@@ -1,0 +1,16 @@
+{% for head_script in page.scripts.head %}
+	{% for script in site.data.scripts %}
+		{% if head_script == script.group %}
+			{% for file in script.files %}
+				{% if file.cdn == 'cdnjs' %}
+				<script src="{{ "https://cdnjs.cloudflare.com/ajax/libs/" | append: script.group | append: "/" | append: file.version | append: "/" | append: file.name | append: ".js" | uri_escape }}"></script>
+				{% elsif file.cdn == 'githack' %}
+				<script src="{{ "https://rawcdn.githack.com/" | append: file.name | append: ".js" | uri_escape }}"></script>
+				{% else %}
+				<script src="{{ "/assets/js/" | append: file.name | append: ".js" | uri_escape | relative_url }}"></script>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+

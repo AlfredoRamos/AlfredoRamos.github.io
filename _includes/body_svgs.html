@@ -1,0 +1,3 @@
+{% for network in site.social_networks %}
+{% include {{ network.first | downcase | escape }}.svg %}
+{% endfor %}

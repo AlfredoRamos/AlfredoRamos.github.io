@@ -1,0 +1,18 @@
+.post-body h4 {
+	text-align: center;
+}
+.post-body .row {
+	background-color: #aaa;
+}
+.post-body [class*="col-"] {
+	border: 1px solid black;
+	text-align: center;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 10px;
+}
+
+.post-body [class*="col-"] [class*="col-"] {
+	background-color: #eee;
+}

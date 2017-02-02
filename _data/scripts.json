@@ -1,0 +1,42 @@
+[
+	{
+		"group": "jquery",
+		"files": [
+			{
+				"name": "jquery.slim.min",
+				"version": "3.1.1",
+				"cdn": "cdnjs"
+			}
+		]
+	},
+	{
+		"group": "sprintf",
+		"files": [
+			{
+				"name": "sprintf.min",
+				"version": "1.0.3",
+				"cdn": "cdnjs"
+			}
+		]
+	},
+	{
+		"group": "auto_embed",
+		"files": [
+			{
+				"name": "AlfredoRamos/snippets/305790f3062f3ff1105bd9c492c4520b1353c998/javascript/auto-embed-video/auto-embed-services",
+				"version": "1.0.3",
+				"cdn": "githack"
+			},
+			{
+				"name": "AlfredoRamos/snippets/305790f3062f3ff1105bd9c492c4520b1353c998/javascript/auto-embed-video/auto-embed",
+				"version": "1.0.3",
+				"cdn": "githack"
+			},
+			{
+				"name": "auto_embed_init",
+				"version": null,
+				"cdn": "local"
+			}
+		]
+	}
+]
