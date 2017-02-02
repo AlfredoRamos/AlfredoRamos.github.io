@@ -11,7 +11,7 @@ body {
 	color: $fg-body;
 	font-family: 'PT Mono',monospace;
 	background-color: $bg-body;
-	@include rem(font-size, 1.3rem);
+	@include rem(font-size, 13px);
 }
 
 h1,
@@ -41,21 +41,21 @@ hr {
 	border-style: dashed;
 	border-color: $br-color;
 	width: 98%;
-	@include rem(margin-top, $grid-spacing);
-	@include rem(margin-bottom, $grid-spacing);
+	margin-top: $spacing;
+	margin-bottom: $spacing;
 }
 
 #header-wrapper {
 	margin-bottom: 0;
-	@include rem(margin-top, $grid-spacing * 2);
+	margin-top: ($spacing * 2);
 
 	header {
 		text-align: center;
 
 		h1,
 		h2 {
-			margin-top: 5px;
-			margin-bottom: 5px;
+			margin-top: ($spacing / 2);
+			margin-bottom: ($spacing / 2);
 		}
 
 		& .icon {
@@ -69,7 +69,7 @@ hr {
 			border-width: 1px;
 			border-style: solid;
 			border-color: $br-avatar;
-			padding: 4px;
+			@include rem(padding, 4px);
 			background-color: $bg-avatar;
 			@include border-radius(50%);
 		}
@@ -106,6 +106,12 @@ hr {
 			}
 		}
 
+		.post {
+			.post-body {
+				@include rem(font-size, 15px);
+			}
+		}
+
 		.error {
 			text-align: center;
 		}
@@ -114,7 +120,7 @@ hr {
 
 small,
 .small {
-	@include rem(font-size, $grid-spacing);
+	@include rem(font-size, 11px);
 }
 
 .list-inline {
@@ -149,7 +155,7 @@ small,
 	list-style: none;
 
 	& > li {
-		margin: 0 0 10px;
+		margin: 0 0 $spacing;
 
 		& > h4 {
 			margin: 0;
@@ -174,17 +180,17 @@ small,
 .pagination {
 	display: block;
 	text-align: center;
-	@include rem(margin-bottom, $grid-spacing);
+	margin-bottom: $spacing;
 }
 
 #footer-wrapper {
 	footer {
 		text-align: center;
-		@include rem(margin-top, $grid-spacing);
-		@include rem(margin-bottom, $grid-spacing);
+		margin-top: $spacing;
+		margin-bottom: $spacing;
 
 		.credits {
-			margin: 0 0 5px;
+			margin: 0 0 ($spacing / 2);
 
 			&:last-child {
 				margin: 0;

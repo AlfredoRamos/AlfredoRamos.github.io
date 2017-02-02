@@ -1,3 +1,9 @@
+// Usually (but not always) 1rem = 16px
+$rem-base: 16;
+
+// Column spacing
+$spacing: 10px;
+
 // Background colors
 $bg-body: #f8f8f8;
 $bg-badge: #f5f5f5;
@@ -11,7 +17,3 @@ $fg-headline: #333;
 // Border colors
 $br-color: #ccc;
 $br-avatar: #ddd;
-
-// Column spacing (rem base 10)
-// It should be < 4.5rem
-$grid-spacing: 1rem; // 10/10
