@@ -14,8 +14,8 @@ h4 {
 	border: 1px solid black;
 	text-align: center;
 	background-color: #fff;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 10px;
 }
 a,a:visited {
@@ -27,7 +27,7 @@ a:hover {
 }
 footer {
 	color: #333;
-	font-size: 0.8em;
+	font-size: 11px;
 	text-align: center;
 }
 .github-ribbon {
