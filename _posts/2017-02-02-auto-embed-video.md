@@ -12,6 +12,8 @@ stylesheets: {
 	head: [auto_embed]
 }
 ---
+A script to auto-embed videos using the *lazy loading* technique.
+
 Links:
 
 - [<svg class="icon icon-github"><use xlink:href="#github"></use></svg> **AlfredoRamos/snippets/tree/master/javascript/auto-embed-video**](https://github.com/AlfredoRamos/snippets/tree/master/javascript/auto-embed-video)
