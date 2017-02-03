@@ -5,17 +5,17 @@
 	<h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
 	<h2>{{ site.description | escape }}</h2>
 
-	{% if site.social_networks.size > 0 %}
+	{% if site.data.networks.size > 0 %}
 	<ul class="list-inline list-with-separator">
-		{% for network in site.social_networks %}
+		{% for network in site.data.networks %}
 		<li>
-			<svg class="icon icon-{{ network.first | downcase | escape }}">
-				<use xlink:href="#{{ network.first | downcase | escape }}" />
+			<svg class="icon icon-{{ network.name | downcase | escape }}">
+				<use xlink:href="#{{ network.name | downcase | escape }}" />
 			</svg>
-			{% if network.last.url and network.last.url.size > 0 %}
-			<a href="{{ network.last.url | uri_escape }}" target="_blank" rel="nofollow" title="{{ network.last.user | escape }} @ {{ network.first | capitalize | escape }}">{{ network.first | capitalize | escape }}</a>
+			{% if network.url.size > 0 %}
+			<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">{{ network.name | capitalize | escape }}</a>
 			{% else %}
-			<span title="{{ network.last.user | escape }} @ {{ network.first | capitalize | escape }}">{{ network.last.user | escape }}</span>
+			<span title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">{{ network.user | escape }}</span>
 			{% endif %}
 		</li>
 		{% endfor %}

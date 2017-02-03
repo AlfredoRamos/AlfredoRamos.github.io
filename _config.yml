@@ -3,25 +3,6 @@ title: 'Alfredo Ramos'
 description: 'Personal GitHub page'
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.github.io' # the base hostname & protocol for your site
-social_networks: {
-    github: {
-        user: 'AlfredoRamos',
-        name: 'Alfredo Ramos',
-        url: 'https://github.com/AlfredoRamos',
-    },
-    twitter: {
-        user: 'AbaddonOrmuz',
-        url: 'https://twitter.com/AbaddonOrmuz'
-    },
-    reddit: {
-        user: 'AbaddonOrmuz',
-        url: 'https://reddit.com/u/AbaddonOrmuz'
-    },
-    vkontakte: {
-        user: 'abaddon.ormuz',
-        url: 'https://vk.com/abaddon.ormuz'
-    }
-}
 
 # Build settings
 markdown: kramdown
