@@ -1,4 +1,5 @@
-.post-body h4 {
+.post-body h4,
+.post-body h5 {
 	text-align: center;
 }
 .post-body .row {

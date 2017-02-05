@@ -63,6 +63,54 @@ Links:
 		<div class="col-md-11" title=".col-md-11">&nbsp;</div>
 		<div class="col-md-1" title=".col-md-1">&nbsp;</div>
 	</div>
+
+	<h5>Code</h5>
+{% highlight html %}<div class="container">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-11"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-10"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-9"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-8"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-7"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-6"></div>
+		<div class="col-md-6"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-7"></div>
+		<div class="col-md-5"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-8"></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-9"></div>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-10"></div>
+		<div class="col-md-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-11"></div>
+		<div class="col-md-1"></div>
+	</div>
+</div>{% endhighlight %}
 	<!-- Normal grid -->
 
 	<!-- Offset grid -->
@@ -71,6 +119,14 @@ Links:
 		<div class="col-md-3" title=".col-md-3">&nbsp;</div>
 		<div class="col-md-3 col-md-offset-6" title=".col-md-3 col-md-offset-6">&nbsp;</div>
 	</div>
+
+	<h5>Code</h5>
+{% highlight html %}<div class="container">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-3 col-md-offset-6"></div>
+	</div>
+</div>{% endhighlight %}
 	<!-- Offset grid -->
 
 	<!-- Order swap -->
@@ -79,6 +135,14 @@ Links:
 		<div class="col-md-4 col-md-push-8" title=".col-md-4 col-md-push-8">&nbsp;</div>
 		<div class="col-md-8 col-md-pull-4" title=".col-md-8 col-md-pull-4">&nbsp;</div>
 	</div>
+
+	<h5>Code</h5>
+{% highlight html %}<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-push-8"></div>
+		<div class="col-md-8 col-md-pull-4"></div>
+	</div>
+</div>{% endhighlight %}
 	<!-- Order swap -->
 
 	<!-- Nested grids -->
@@ -91,6 +155,18 @@ Links:
 			</div>
 		</div>
 	</div>
+
+	<h5>Code</h5>
+{% highlight html %}<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-pull-1 col-md-push-1">
+			<div class="row">
+				<div class="col-md-9 col-md-push-3"></div>
+				<div class="col-md-3 col-md-pull-9"></div>
+			</div>
+		</div>
+	</div>
+</div>{% endhighlight %}
 	<!-- Nested grids -->
 
 	<!-- Mixed mobile and desktop -->
@@ -99,6 +175,14 @@ Links:
 		<div class="col-xs-6 col-md-8" title=".col-xs-6 .col-md-8">&nbsp;</div>
 		<div class="col-xs-6 col-md-4" title=".col-xs-6 .col-md-4">&nbsp;</div>
 	</div>
+
+	<h5>Code</h5>
+{% highlight html %}<div class"container">
+	<div class="row">
+		<div class="col-xs-6 col-md-8"></div>
+		<div class="col-xs-6 col-md-4"></div>
+	</div>
+</div>{% endhighlight %}
 	<!-- Mixed mobile and desktop -->
 
 	<!-- Offset, push, and pull resets -->
@@ -111,5 +195,17 @@ Links:
 		<div class="col-sm-6 col-md-5 col-lg-6" title=".col-sm-6 .col-md-5 .col-lg-6">&nbsp;</div>
 		<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0" title=".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0">&nbsp;</div>
 	</div>
+
+	<h5>Code</h5>
+{% highlight html%}<div class="container">
+	<div class="row">
+		<div class="col-sm-5 col-md-6"></div>
+		<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-6"></div>
+		<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0"></div>
+	</div>
+</div>{% endhighlight %}
 	<!-- Offset, push, and pull resets -->
 </div>
