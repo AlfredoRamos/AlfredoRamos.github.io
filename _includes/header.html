@@ -12,11 +12,7 @@
 			<svg class="icon icon-{{ network.name | downcase | escape }}">
 				<use xlink:href="#{{ network.name | downcase | escape }}" />
 			</svg>
-			{% if network.url.size > 0 %}
-			<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">{{ network.name | capitalize | escape }}</a>
-			{% else %}
-			<span title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">{{ network.user | escape }}</span>
-			{% endif %}
+			<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">{{ network.user | escape }}</a>
 		</li>
 		{% endfor %}
 	</ul>
