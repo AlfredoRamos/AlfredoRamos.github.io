@@ -4,13 +4,8 @@ title: Auto Embed Video
 date: 2017-02-02 13:19:26 -0600
 categories: [development]
 tags: [javascript, library]
-scripts: {
-	head: [jquery],
-	body: [sprintf, auto_embed]
-}
-stylesheets: {
-	head: [auto_embed]
-}
+scripts: [jquery, sprintf, auto_embed]
+stylesheets: [auto_embed]
 ---
 A script to auto-embed videos using the *lazy loading* technique.
 

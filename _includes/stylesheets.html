@@ -1,6 +1,6 @@
-{% for head_style in page.stylesheets.head %}
+{% for page_style in page.stylesheets %}
 	{% for style in site.data.stylesheets %}
-		{% if head_style == style.group %}
+		{% if page_style == style.group %}
 			{% for file in style.files %}
 				{% if file.cdn == 'cdnjs' %}
 				<link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/" | append: stylegroup | append: "/" | append: file.version | append: "/" | append: file.name | append: ".css" | uri_escape }}" /></script>
