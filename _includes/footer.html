@@ -1,12 +1,14 @@
 <footer>
-	<ul class="small list-inline list-with-separator credits">
-		<li>Copyright &copy; 2015-{{ site.time | date: '%Y' }} <a href="{{ site.github.owner_url | replace: 'http://', 'https://' }}" target="_blank">Alfredo Ramos</a></li>
-		<li><a href="{{ "/categories/" | relative_url }}">Categories</a></li>
-		<li><a href="{{ "/tags/" | relative_url }}">Tags</a></li>
-		<li><a href="{{ "/feed.xml" | relative_url }}">Feed RSS</a></li>
-	</ul>
-	<ul class="small list-inline list-with-separator credits">
-		<li>Hosted on GitHub Pages</li>
-		<li>Powered by Jekyll</li>
-	</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-pull-2 col-md-push-2">
+				<hr />
+				<ul class="small list-inline list-with-separator credits">
+					<li>Copyright &copy; 2015-{{ site.time | date: '%Y' }} <a href="{{ site.github.owner_url | replace: 'http://', 'https://' }}" target="_blank">Alfredo Ramos</a></li>
+					<li>Hosted on GitHub Pages</li>
+					<li>Powered by Jekyll</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </footer>

@@ -1,22 +1,44 @@
 <header>
-	{% if site.github.owner_gravatar_url.size > 0 %}
-	<img id="header-avatar" src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" />
-	{% endif %}
-	<h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-	<h2>{{ site.description | escape }}</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-pull-2 col-md-push-2">
 
-	{% if site.data.networks.size > 0 %}
-	<ul class="list-inline list-with-separator">
-		{% for network in site.data.networks %}
-		<li>
-			<svg class="icon icon-{{ network.name | downcase | escape }}">
-				<use xlink:href="#{{ network.name | downcase | escape }}" />
-			</svg>
-			<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">{{ network.user | escape }}</a>
-		</li>
-		{% endfor %}
-	</ul>
-	{% endif %}
+				<div class="row">
+					<div id="avatar">
+						{% if site.github.owner_gravatar_url.size > 0 %}
+						<img src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" />
+						{% endif %}
+					</div>
 
-	<hr />
+					<div id="description">
+						<h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+						<p>{{ site.description | escape }}</p>
+
+						{% if site.data.networks.size > 0 %}
+						<ul id="social-networks" class="list-inline">
+							{% for network in site.data.networks %}
+							<li>
+								<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
+									<svg class="icon icon-{{ network.name | downcase | escape }}">
+										<use xlink:href="#{{ network.name | downcase | escape }}" />
+									</svg>
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+					</div>
+				</div>
+
+				<nav id="pages">
+					<ul class="list-inline list-with-separator">
+						<li><a href="{{ "/categories/" | relative_url }}">Categories</a></li>
+						<li><a href="{{ "/tags/" | relative_url }}">Tags</a></li>
+						<li><a href="{{ "/feed.xml" | relative_url }}">Feed RSS</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
 </header>

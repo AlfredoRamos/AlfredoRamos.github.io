@@ -14,15 +14,6 @@ body {
 	@include rem(font-size, 13px);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: $fg-headline;
-}
-
 a {
 	&,
 	&:visited {
@@ -45,27 +36,36 @@ hr {
 	margin-bottom: $spacing;
 }
 
-#header-wrapper {
-	margin-bottom: 0;
-	margin-top: ($spacing * 2);
+body > header {
+	background-color: $bg-header;
+	color: $br-color;
+	padding: 20px 0 1px;
 
-	header {
-		text-align: center;
+	h1 {
+		margin-top: ($spacing / 2);
+		margin-bottom: ($spacing / 2);
+	}
 
-		h1,
-		h2 {
-			margin-top: ($spacing / 2);
-			margin-bottom: ($spacing / 2);
+	a {
+		&,
+		&:visited {
+			color: $fg-dark-link;
 		}
+	}
 
-		& .icon {
-			vertical-align: text-bottom;
-		}
+	#avatar,
+	#description {
+		display: inline-block;
+		vertical-align: middle;
+	}
 
-		& > #header-avatar {
+	#avatar {
+		margin-right: 10px;
+
+		& > img {
 			display: inline-block;
-			width: 135px;
-			height: 135px;
+			width: 120px;
+			height: 120px;
 			border-width: 1px;
 			border-style: solid;
 			border-color: $br-avatar;
@@ -75,12 +75,40 @@ hr {
 		}
 	}
 
-	hr {
-		margin-bottom: 0;
+	#description {
+		text-align: left;
+	}
+
+	#social-networks {
+		.icon {
+			vertical-align: text-bottom;
+			fill: $br-color;
+		}
+	}
+
+	#pages {
+		text-align: right;
+
+		a {
+			&,
+			&:visited {
+				color: $br-avatar;
+			}
+		}
+
+		.list-with-separator {
+			& > li:before {
+				color: $fg-body;
+			}
+		}
 	}
 }
 
-#content-wrapper {
+hr {
+	margin-bottom: 0;
+}
+
+body > main {
 	#content {
 		.index {
 			.post {
@@ -183,19 +211,21 @@ small,
 	margin-bottom: $spacing;
 }
 
-#footer-wrapper {
-	footer {
-		text-align: center;
-		margin-top: $spacing;
-		margin-bottom: $spacing;
+body > footer {
+	text-align: center;
+	margin-top: $spacing;
+	margin-bottom: $spacing;
 
-		.credits {
-			margin: 0 0 ($spacing / 2);
+	.credits {
+		margin: 0 0 ($spacing / 2);
 
-			&:last-child {
-				margin: 0;
-			}
+		&:last-child {
+			margin: 0;
 		}
+	}
+
+	hr {
+		margin-bottom: 20px;
 	}
 }
 
