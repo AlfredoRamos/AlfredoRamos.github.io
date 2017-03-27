@@ -6,7 +6,6 @@
 
 	<title>{% if page.title %}{{ page.title | escape }}{% if paginator.total_pages > 1 and paginator.page >= 2 %} - Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %} :: {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 	<link rel="stylesheet" href="https://gistcdn.githack.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/be408cf1d60795876d33b10f2a1d0855129c8f66/grids.min.css" />
