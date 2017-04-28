@@ -1,14 +1,15 @@
-// Get border radius
+/// Set border radius
+/// @param	$radius	The border radius value
 @mixin border-radius($radius: 0) {
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 	border-radius: $radius;
 }
 
-// Slightly modified version of the rem() mixin by Hugo Giraudel
-// http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
-// @param	$property	The property which will receive the values
-// @param	$values		Values which will be assigned to the property
+/// Slightly modified version of the rem() mixin by Hugo Giraudel
+/// http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+/// @param	$property	The property which will receive the values
+/// @param	$values		Values which will be assigned to the property
 @mixin rem($property, $values) {
 	$px : ();
 	$rem: ();
@@ -19,13 +20,13 @@
 			$rem: append($rem, $value);
 		} @else {
 			@if unit($value) == 'px' {
-				$px : append($px,  calc-pixels($value));
-				$rem: append($rem, calc-rems($value));
+				$px : append($px,  calc-pixels($value, $rem-base));
+				$rem: append($rem, calc-rems($value, $rem-base));
 			}
 
 			@if unit($value) == 'rem' {
-				$px : append($px,  calc-pixels($value));
-				$rem: append($rem, calc-rems($value));
+				$px : append($px,  calc-pixels($value, $rem-base));
+				$rem: append($rem, calc-rems($value, $rem-base));
 			}
 		}
 	}

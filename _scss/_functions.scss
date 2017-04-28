@@ -1,15 +1,15 @@
-// Convert a given value to integer
-// @param	$n		The value to convert
-// @param	number	Unitless
+/// Convert a given value to integer
+/// @param	$n		The value to convert
+/// @param	number	Unitless
 @function parse-int($n) {
 	@return ($n / (($n * 0) + 1));
 }
 
-// Convert given pixels to rems
-// @param	number	$pixels		The pixels to convert
-// @param	number	$base		The rem base (optional)
-// @return	number	Rems
-@function calc-rems($pixels, $base: $rem-base) {
+/// Convert given pixels to rems
+/// @param	number	$pixels		The pixels to convert
+/// @param	number	$base		The rem base
+/// @return	number	Rems
+@function calc-rems($pixels, $base) {
 	$rems: ((parse-int($pixels) / $base) * 1rem);
 
 	@if unit($pixels) == 'rem' {
@@ -19,11 +19,11 @@
 	@return $rems;
 }
 
-// Convert given rems to pixels
-// @param	number	$rems	The rems to convert
-// @param	number	$base	The rem base (optional).
-// @return	number	Pixels
-@function calc-pixels($rems, $base: $rem-base) {
+/// Convert given rems to pixels
+/// @param	number	$rems	The rems to convert
+/// @param	number	$base	The rem base
+/// @return	number	Pixels
+@function calc-pixels($rems, $base) {
 	$pixels: ((parse-int($rems) * $base) * 1px);
 
 	@if unit($rems) == 'px' {

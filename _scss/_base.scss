@@ -1,12 +1,3 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-// Resources
-@import 'variables';
-@import 'functions';
-@import 'mixins';
-
-// General
 body {
 	color: $fg-body;
 	font-family: 'PT Mono',monospace;
