@@ -20,7 +20,7 @@
 							<li>
 								<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
 									<svg class="icon icon-{{ network.name | downcase | escape }}">
-										<use xlink:href="{{ "/assets/images/social_sprite.svg#" | append: network.name | downcase | uri_escape | relative_url }}" />
+										<use xlink:href="#{{ network.name | downcase | escape }}" />
 									</svg>
 								</a>
 							</li>
