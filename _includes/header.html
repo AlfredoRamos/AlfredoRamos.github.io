@@ -18,7 +18,7 @@
 						<ul id="social-networks" class="list-inline">
 							{% for network in site.data.networks %}
 							<li>
-								<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
+								<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
 									<svg class="icon icon-{{ network.name | downcase | escape }}">
 										<use xlink:href="#{{ network.name | downcase | escape }}" />
 									</svg>
