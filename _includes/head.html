@@ -2,6 +2,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="referrer" content="same-origin" />
 	<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relative_url }}" />
 
 	<title>{% if page.title %}{{ page.title | escape }}{% if paginator.total_pages > 1 and paginator.page >= 2 %} - Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %} :: {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
