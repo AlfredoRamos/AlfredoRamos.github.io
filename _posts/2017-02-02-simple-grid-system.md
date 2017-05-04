@@ -2,7 +2,7 @@
 layout: post
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-categories: [development]
+category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
 ---

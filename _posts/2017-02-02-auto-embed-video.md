@@ -2,7 +2,7 @@
 layout: post
 title: Auto Embed Video
 date: 2017-02-02 13:19:26 -0600
-categories: [development]
+category: development
 tags: [javascript, library]
 scripts: [jquery, sprintf, auto_embed]
 stylesheets: [auto_embed]
