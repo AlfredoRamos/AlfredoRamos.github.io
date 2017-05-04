@@ -72,7 +72,6 @@ body > header {
 
 	#social-networks {
 		.icon {
-			vertical-align: text-bottom;
 			fill: $br-color;
 		}
 	}
@@ -186,6 +185,7 @@ small,
 	display: inline-block;
 	width: 16px;
 	height: 16px;
+	vertical-align: text-bottom;
 	fill: $fg-headline;
 }
 
