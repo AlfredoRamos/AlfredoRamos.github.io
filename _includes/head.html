@@ -2,10 +2,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="referrer" content="same-origin" />
-	<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relative_url }}" />
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
 	<title>{% if page.title %}{{ page.title | escape }}{% if paginator.total_pages > 1 and paginator.page >= 2 %} - Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %} :: {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relative_url }}" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 	<link rel="stylesheet" href="https://gistcdn.githack.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/71664f0e4dfad58463c7769eeeeb6c6d280e9e9d/grids.min.css" />
