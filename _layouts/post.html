@@ -6,20 +6,26 @@ layout: default
 		<h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
 		<ul class="post-meta small list-inline list-with-separator">
 			<li>
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+					<span itemprop="name">{{ site.data.members[page.author].name | escape }}</span>
+				</span>
+			</li>
+			<li>
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %-d, %Y' }}</time>
 			</li>
+			{% if page.category %}
+			<li><span itemprop="keywords" rel="category" class="badge">{{ page.category }}</span></li>
+			{% endif %}
 			{% if page.tags.size > 0 %}
 			<li>
-				<ul class="post-tags list-inline">
+				<ul class="post-tags list-inline" itemprop="keywords">
 					{% for tag in page.tags %}
-					<li><span class="badge">{{ tag }}</span></li>
+					<li><span rel="tag" class="badge">{{ tag }}</span></li>
 					{% endfor %}
 				</ul>
 			</li>
 			{% endif %}
 		</ul>
 	</header>
-	<div class="post-body" itemprop="articleBody">
-		{{ content }}
-	</div>
+	<div class="post-body" itemprop="articleBody">{{ content }}</div>
 </article>

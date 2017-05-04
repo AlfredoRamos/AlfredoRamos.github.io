@@ -11,7 +11,7 @@
 		{% if page == paginator.page %}
 		<li><span class="current">{{ page }}</span></li>
 		{% elsif page == 1 %}
-		<li><a href="{{ site.paginate_path | replace: 'page:num', '' | relative_url }}">{{ page }}</a></li>
+		<li><a href="{{ site.paginate_path | replace: 'page-:num', '' | relative_url }}">{{ page }}</a></li>
 		{% else %}
 		<li><a href="{{ site.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a></li>
 		{% endif %}

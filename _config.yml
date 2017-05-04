@@ -4,12 +4,38 @@ description: 'Personal GitHub page'
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.github.io' # the base hostname & protocol for your site
 
+# Default settings
+defaults:
+  -
+    scope:
+      path: '' # all files
+      type: drafts
+    values:
+      layout: post
+      author: AlfredoRamos
+      permalink: /:title
+  -
+    scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      author: AlfredoRamos
+      permalink: /:title
+  -
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+      author: AlfredoRamos
+
 # Build settings
 markdown: kramdown
 theme: minima
 encoding: 'utf-8'
-paginate_path: /page:num
-paginate: 10
+paginate_path: /page-:num
+paginate: 1
 timezone: America/Mexico_City
 exclude:
   - LICENSE
