@@ -35,7 +35,7 @@ markdown: kramdown
 theme: minima
 encoding: 'utf-8'
 paginate_path: /page-:num
-paginate: 1
+paginate: 10
 timezone: America/Mexico_City
 exclude:
   - LICENSE

@@ -1,11 +1,11 @@
-### Create a new post
+### Usage
 
+Create new post
 ```shell
 rake new:post title='Title'
 ```
 
-### Create a new page
-
+Create new page
 ```shell
 rake new:page title='Title'
 ```

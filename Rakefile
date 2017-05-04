@@ -7,10 +7,18 @@ namespace :new do
   # Post
   desc 'Create new post'
   task :post do
+    # Get title as string
+    ENV['title'] = ENV['title'].to_s.strip
+
+    # Title check
+    if ENV['title'].empty?
+      abort 'Specify a title'
+    end
+
     # Post default data
     post = {
       :slug   => '',
-      :title  => !ENV['title'].nil? ? ENV['title'] : 'Untitled',
+      :title  => ENV['title'],
       :date   => Time.now,
       :path   => '_posts',
       :ext    => 'md'
@@ -34,10 +42,9 @@ namespace :new do
       # Create post
       File.open(file, 'w') do |p|
         p.puts '---'
-        p.puts 'layout: post'
         p.puts 'title: %s' % post[:title]
         p.puts 'date: %s' % post[:date].strftime('%Y-%m-%d %H:%M:%S %z')
-        p.puts 'categories: []'
+        p.puts 'category: '
         p.puts 'tags: []'
         p.puts '---'
         p.puts
@@ -56,10 +63,18 @@ namespace :new do
   # Page
   desc 'Create new page'
   task :page do |page|
+    # Get title as string
+    ENV['title'] = ENV['title'].to_s.strip
+
+    # Title check
+    if ENV['title'].empty?
+      abort 'Specify a title'
+    end
+
     # Page default data
     page = {
       :slug   => '',
-      :title  => !ENV['title'].nil? ? ENV['title'] : 'Untitled',
+      :title  => ENV['title'],
       :date   => Time.now,
       :path   => '',
       :ext    => 'html'
@@ -83,8 +98,8 @@ namespace :new do
       # Create page
       File.open(file, 'w') do |p|
         p.puts '---'
-        p.puts 'layout: page'
         p.puts 'title: %s' % page[:title]
+        p.puts 'permalink: /%s/' % page[:slug]
         p.puts '---'
         p.puts
       end
