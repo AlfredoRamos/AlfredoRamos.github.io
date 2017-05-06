@@ -1,0 +1,10 @@
+{
+	"unstable": {
+		"0.0": {
+			"current": "0.1.0",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/",
+			"eol": null,
+			"security": false
+		}
+	}
+}
