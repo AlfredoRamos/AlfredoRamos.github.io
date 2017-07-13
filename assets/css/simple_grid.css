@@ -2,18 +2,16 @@
 .post-body h5 {
 	text-align: center;
 }
-.post-body .row {
-	background-color: #aaa;
-}
+
 .post-body [class*="col-"] {
-	border: 1px solid black;
+	border: 1px solid #2b3942;
 	text-align: center;
-	background-color: #fff;
+	background-color: #8a9ba1;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 10px;
 }
 
 .post-body [class*="col-"] [class*="col-"] {
-	background-color: #eee;
+	background-color: #b4bfc3;
 }

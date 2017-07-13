@@ -17,31 +17,31 @@ a {
 	}
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $fg-headline;
+}
+
 hr {
 	background-color: transparent;
 	border-width: 0 0 1px 0;
 	border-style: dashed;
-	border-color: $br-color;
+	border-color: $fg-link;
 	width: 98%;
 	margin-top: $spacing;
 	margin-bottom: $spacing;
 }
 
 body > header {
-	background-color: $bg-header;
-	color: $br-color;
 	padding: 20px 0 1px;
 
 	h1 {
 		margin-top: ($spacing / 2);
 		margin-bottom: ($spacing / 2);
-	}
-
-	a {
-		&,
-		&:visited {
-			color: $fg-dark-link;
-		}
 	}
 
 	#avatar,
@@ -70,21 +70,8 @@ body > header {
 		text-align: left;
 	}
 
-	#social-networks {
-		.icon {
-			fill: $br-color;
-		}
-	}
-
 	#pages {
 		text-align: right;
-
-		a {
-			&,
-			&:visited {
-				color: $br-avatar;
-			}
-		}
 
 		.list-with-separator {
 			& > li:before {
@@ -105,7 +92,7 @@ body > main {
 				padding: 7px 0;
 				border-width: 0 0 1px;
 				border-style: dashed;
-				border-color: $br-color;
+				border-color: $fg-link;
 
 				&:last-child {
 					border: none;
@@ -159,7 +146,7 @@ small,
 .list-with-separator {
 	& > li:before {
 		content: " / ";
-		color: $br-color;
+		color: $fg-link;
 	}
 
 	& > li:first-child:before {
@@ -186,13 +173,12 @@ small,
 	width: 16px;
 	height: 16px;
 	vertical-align: text-bottom;
-	fill: $fg-headline;
+	fill: currentColor;
 }
 
 .badge {
 	background-color: $bg-badge;
-	padding: 1px 2px;
-	border: 1px solid $br-color;
+	padding: 2px 4px;
 	@include border-radius(3px);
 }
 
