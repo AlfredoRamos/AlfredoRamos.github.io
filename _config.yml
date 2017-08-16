@@ -46,7 +46,7 @@ exclude:
 sass:
     sass_dir: _scss
     style: compressed
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-github-metadata
 
