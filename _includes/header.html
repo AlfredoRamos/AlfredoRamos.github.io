@@ -3,14 +3,14 @@
 		<div class="row center-md">
 			<div class="col-md-8">
 
-				<div class="row">
-					<div id="avatar">
+				<div class="row center-xs middle-xs">
+					<div class="col-sm-auto" id="avatar">
 						{% if site.github.owner_gravatar_url.size > 0 %}
 						<img src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" />
 						{% endif %}
 					</div>
 
-					<div id="description">
+					<div class="col-sm" id="description">
 						<h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
 						<p>{{ site.description | escape }}</p>
 
@@ -30,13 +30,15 @@
 					</div>
 				</div>
 
-				<nav id="pages">
-					<ul class="list-inline list-with-separator">
-						<li><a href="{{ "/categories/" | relative_url }}">Categories</a></li>
-						<li><a href="{{ "/tags/" | relative_url }}">Tags</a></li>
-						<li><a href="{{ "/feed.atom" | relative_url }}">Atom Feed</a></li>
-					</ul>
-				</nav>
+				<div class="row">
+					<nav class="col-xs" id="pages">
+						<ul class="list-inline list-with-separator">
+							<li><a href="{{ "/categories/" | relative_url }}">Categories</a></li>
+							<li><a href="{{ "/tags/" | relative_url }}">Tags</a></li>
+							<li><a href="{{ "/feed.atom" | relative_url }}">Atom Feed</a></li>
+						</ul>
+					</nav>
+				</div>
 
 			</div>
 		</div>
