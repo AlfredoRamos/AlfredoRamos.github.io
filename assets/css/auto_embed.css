@@ -1,15 +1,15 @@
 .post-body h4 {
 	text-align: center;
 }
-.post-body .responsive-media,
+.post-body .media,
 .post-body .video-info {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.post-body .responsive-media:last-child {
+.post-body .media:last-child {
 	margin-bottom: 0;
 }
-.post-body .responsive-media.load {
+.post-body .media.load {
 	background-image: url(../images/play.svg);
 	background-repeat: no-repeat;
 	background-size: 15%;

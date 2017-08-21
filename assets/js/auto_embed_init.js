@@ -1,6 +1,6 @@
 $(function() {
-	$('.responsive-media').generateEmbedHtml({
-		itemClass: 'responsive-media-item',
+	$('.media').generateEmbedHtml({
+		itemClass: 'media-item',
 		showUrl: true
 	});
 });

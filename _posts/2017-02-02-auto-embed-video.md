@@ -17,17 +17,17 @@ Links:
 
 	<div class="row">
 		<div class="col-md">
-			<div class="responsive-media" data-url="https://www.youtube.com/watch?v=Z4C82eyhwgU"></div>
+			<div class="media" data-url="https://www.youtube.com/watch?v=Z4C82eyhwgU"></div>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-md-6">
-			<div class="responsive-media" data-url="https://vimeo.com/190537820"></div>
+			<div class="media" data-url="https://vimeo.com/190537820"></div>
 		</div>
 
 		<div class="col-md-6">
-			<div class="responsive-media" data-url="http://dai.ly/x38wj6i"></div>
+			<div class="media" data-url="http://dai.ly/x38wj6i"></div>
 		</div>
 	</div>
 
