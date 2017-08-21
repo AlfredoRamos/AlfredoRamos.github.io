@@ -1,8 +1,9 @@
-// Usually (but not always) 1rem = 16px
+/// Rem base
+/// @type number
 $rem-base: 16;
 
 // Column spacing
-$spacing: 10px;
+$spacing: 15px;
 
 // Background colors
 $bg-body: #1e2a31;

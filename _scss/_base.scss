@@ -2,7 +2,7 @@ body {
 	color: $fg-body;
 	font-family: 'PT Mono',monospace;
 	background-color: $bg-body;
-	@include rem(font-size, 13px);
+	font-size: 13px;
 }
 
 a {
@@ -32,16 +32,16 @@ hr {
 	border-style: dashed;
 	border-color: $fg-link;
 	width: 98%;
-	margin-top: $spacing;
-	margin-bottom: $spacing;
+	margin-top: get-rems($spacing);
+	margin-bottom: get-rems($spacing);
 }
 
 body > header {
 	padding: 20px 0 1px;
 
 	h1 {
-		@include rem(margin-top, ($spacing / 2));
-		@include rem(margin-bottom, ($spacing / 2));
+		margin-top: get-rems($spacing / 2);
+		margin-bottom: get-rems($spacing / 2);
 	}
 
 	#avatar {
@@ -52,15 +52,15 @@ body > header {
 			border-width: 1px;
 			border-style: solid;
 			border-color: $br-avatar;
-			@include rem(padding, 4px);
+			padding: 4px;
 			background-color: $bg-avatar;
-			@include border-radius(50%);
+			border-radius: 50%;
 		}
 	}
 
 	#pages {
 		text-align: right;
-		@include rem(margin-top, 16px);
+		margin-top: get-rems($spacing);
 
 		.list-with-separator {
 			& > li:before {
@@ -102,7 +102,7 @@ body > main {
 
 		.post {
 			.post-body {
-				@include rem(font-size, 15px);
+				font-size: 15px;
 			}
 		}
 
@@ -114,7 +114,7 @@ body > main {
 
 small,
 .small {
-	@include rem(font-size, 11px);
+	font-size: 11px;
 }
 
 .list-inline {
@@ -168,7 +168,7 @@ small,
 .badge {
 	background-color: $bg-badge;
 	padding: 2px 4px;
-	@include border-radius(3px);
+	border-radius: 3px;
 }
 
 .pagination {
@@ -183,7 +183,7 @@ body > footer {
 	margin-bottom: $spacing;
 
 	.credits {
-		margin: 0 0 ($spacing / 2);
+		margin: 0 0 get-rems($spacing / 2);
 
 		&:last-child {
 			margin: 0;
@@ -191,7 +191,7 @@ body > footer {
 	}
 
 	hr {
-		margin-bottom: 20px;
+		margin-bottom: get-rems(20px);
 	}
 }
 
@@ -200,5 +200,5 @@ body > footer {
 	padding: 1px 10px;
 	margin: 0;
 	overflow: auto;
-	@include border-radius(3px);
+	border-radius: 3px;
 }
