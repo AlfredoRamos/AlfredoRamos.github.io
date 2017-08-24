@@ -129,15 +129,15 @@ Links:
 	<!-- Order swap -->
 	<h4>Order swap</h4>
 	<div class="row">
-		<div class="col-md-4 order-12" title=".col-md-4 .order-12"></div>
-		<div class="col-md-8 order-1" title=".col-md-8 .order-1"></div>
+		<div class="col-md-4 order-md-12" title=".col-md-4 .order-md-12"></div>
+		<div class="col-md-8 order-md-1" title=".col-md-8 .order-md-1"></div>
 	</div>
 
 	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row">
-		<div class="col-md-4 order-12"></div>
-		<div class="col-md-8 order-1"></div>
+		<div class="col-md-4 order-md-12"></div>
+		<div class="col-md-8 order-md-1"></div>
 	</div>
 </div>{% endhighlight %}
 	<!-- Order swap -->
@@ -147,8 +147,8 @@ Links:
 	<div class="row center-md">
 		<div class="col-md-10" title=".col-md-10">
 			<div class="row">
-				<div class="col-md-9 order-12" title=".col-md-9 .order-12"></div>
-				<div class="col-md-3 order-1" title=".col-md-3 .order-1"></div>
+				<div class="col-md-9 order-md-12" title=".col-md-9 .order-md-12"></div>
+				<div class="col-md-3 order-md-1" title=".col-md-3 .order-md-1"></div>
 			</div>
 		</div>
 	</div>
@@ -158,8 +158,8 @@ Links:
 	<div class="row center-md">
 		<div class="col-md-10">
 			<div class="row">
-				<div class="col-md-9 order-12"></div>
-				<div class="col-md-3 order-1"></div>
+				<div class="col-md-9 order-md-12"></div>
+				<div class="col-md-3 order-md-1"></div>
 			</div>
 		</div>
 	</div>
