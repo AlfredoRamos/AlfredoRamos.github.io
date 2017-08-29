@@ -1,9 +1,9 @@
-.post-body h4,
-.post-body h5 {
+.post .body h4,
+.post .body h5 {
 	text-align: center;
 }
 
-.post-body [class*="col-"] {
+.post .body [class*="col-"] {
 	border: 1px solid #2b3942;
 	text-align: center;
 	background-color: #8a9ba1;
@@ -12,6 +12,6 @@
 	font-size: 10px;
 }
 
-.post-body [class*="col-"] [class*="col-"] {
+.post .body [class*="col-"] [class*="col-"] {
 	background-color: #b4bfc3;
 }
