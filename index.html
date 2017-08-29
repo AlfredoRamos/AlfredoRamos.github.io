@@ -11,14 +11,16 @@ title: Home
 		{% for post in paginator.posts %}
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 			<header class="post-header row">
-				<h3 class="post-title col-md-10" itemprop="name headline">
+				<h3 class="post-title col-sm order-sm-12" itemprop="name headline">
 					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 				</h3>
-				<ul class="post-meta small list-inline list-with-separator col-md-2">
-					<li>
-						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%F' }}</time>
-					</li>
-				</ul>
+				<div class="post-meta col-sm-auto order-sm-1">
+					<ul class="small list-inline list-with-separator">
+						<li>
+							<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%F' }}</time>
+						</li>
+					</ul>
+				</div>
 			</header>
 		</article>
 		{% endfor %}
