@@ -3,18 +3,18 @@ layout: default
 title: Home
 ---
 <div class="index">
-	<header class="index-header">
-		<h2 class="index-title">Latest posts</h2>
+	<header class="header">
+		<h2 class="title">Latest posts</h2>
 	</header>
-	<div class="index-body">
+	<div class="body">
 		{% if paginator.posts.size > 0 %}
 		{% for post in paginator.posts %}
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<header class="post-header row">
-				<h3 class="post-title col-sm order-sm-12" itemprop="name headline">
+			<header class="header row">
+				<h3 class="title col-sm order-sm-12" itemprop="name headline">
 					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 				</h3>
-				<div class="post-meta col-sm-auto order-sm-1">
+				<div class="meta col-sm-auto order-sm-1">
 					<ul class="small list-inline list-with-separator">
 						<li>
 							<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%F' }}</time>

@@ -87,8 +87,8 @@ body > main {
 					border: none;
 				}
 
-				.post-header {
-					.post-title {
+				.header {
+					.title {
 						margin-top: 0;
 						margin-bottom: 0;
 					}
@@ -97,7 +97,15 @@ body > main {
 		}
 
 		.post {
-			.post-body {
+			.header {
+				.meta {
+					& > li {
+						line-height: 1.5;
+					}
+				}
+			}
+
+			.body {
 				font-size: 15px;
 			}
 		}
