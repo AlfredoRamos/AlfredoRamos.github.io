@@ -1,0 +1,46 @@
+body {
+	color: $fg-body;
+	font-family: 'PT Mono',monospace;
+	background-color: $bg-body;
+	font-size: 13px;
+}
+
+a {
+	&,
+	&:visited {
+		color: $fg-link;
+		text-decoration: none;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $fg-headline;
+}
+
+hr {
+	background-color: transparent;
+	border-width: 0 0 1px 0;
+	border-style: dashed;
+	border-color: $fg-link;
+	width: 98%;
+	margin-top: get-rems($spacing);
+	margin-bottom: get-rems($spacing);
+}
+
+hr {
+	margin-bottom: 0;
+}
+
+small,
+.small {
+	font-size: 11px;
+}

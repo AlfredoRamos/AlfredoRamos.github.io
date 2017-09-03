@@ -1,0 +1,33 @@
+body > header {
+	padding: 20px 0 1px;
+
+	h1 {
+		margin-top: get-rems($spacing / 2);
+		margin-bottom: get-rems($spacing / 2);
+	}
+
+	#avatar {
+		& > img {
+			display: inline-block;
+			width: 120px;
+			height: 120px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: $br-avatar;
+			padding: 4px;
+			background-color: $bg-avatar;
+			border-radius: 50%;
+		}
+	}
+
+	#pages {
+		text-align: right;
+		margin-top: get-rems($spacing);
+
+		.list-with-separator {
+			& > li:before {
+				color: $fg-body;
+			}
+		}
+	}
+}

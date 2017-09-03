@@ -1,0 +1,41 @@
+body > main {
+	#content {
+		.index {
+			.post {
+				padding: 7px 0;
+				border-width: 0 0 1px;
+				border-style: dashed;
+				border-color: $fg-link;
+
+				&:last-child {
+					border: none;
+				}
+
+				.header {
+					.title {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.post {
+			.header {
+				.meta {
+					& > li {
+						line-height: 1.5;
+					}
+				}
+			}
+
+			.body {
+				font-size: 15px;
+			}
+		}
+
+		.error {
+			text-align: center;
+		}
+	}
+}

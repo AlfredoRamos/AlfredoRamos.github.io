@@ -1,0 +1,44 @@
+.list {
+	// Inline
+	&-inline {
+		list-style: none;
+
+		&,
+		> li {
+			margin: 0;
+			padding: 0;
+		}
+
+		& &,
+		> li {
+			display: inline-block;
+		}
+	}
+
+	// With separator
+	&-with-separator {
+		> li::before {
+			content: " / ";
+			color: $fg-link;
+		}
+
+		> li:first-child::before {
+			content: "";
+		}
+	}
+
+	// Categories and tags
+	&-categories,
+	&-tags {
+		padding: 0;
+		list-style: none;
+
+		> li {
+			margin: 0 0 $spacing;
+
+			> h4 {
+				margin: 0;
+			}
+		}
+	}
+}
