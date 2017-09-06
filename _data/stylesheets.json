@@ -1,15 +1,5 @@
 [
 	{
-		"group": "auto_embed",
-		"files": [
-			{
-				"name": "auto_embed",
-				"version": null,
-				"cdn": "local"
-			}
-		]
-	},
-	{
 		"group": "simple_grid",
 		"files": [
 			{
