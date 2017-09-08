@@ -1,15 +1,24 @@
-{% for page_style in page.stylesheets %}
-	{% for style in site.data.stylesheets %}
-		{% if page_style == style.group %}
-			{% for file in style.files %}
-				{% if file.cdn == 'cdnjs' %}
-				<link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/" | append: stylegroup | append: "/" | append: file.version | append: "/" | append: file.name | append: ".css" | uri_escape }}" /></script>
-				{% elsif file.cdn == 'githack' %}
-				<link rel="stylesheet" href="{{ "https://rawcdn.githack.com/" | append: file.name | append: ".css" | uri_escape }}" />
-				{% else %}
-				<link rel="stylesheet" href="{{ "/assets/css/" | append: file.name | append: ".css" | uri_escape | relative_url }}" />
+{%- for page_style in page.stylesheets -%}
+	{%- for style in site.data.stylesheets -%}
+		{%- if page_style == style.group -%}
+			{%- for file in style.files -%}
+				{%- case file.cdn -%}
+					{%- when 'cdnjs' -%}
+						{% assign stylesheet_url = 'https://cdnjs.cloudflare.com/ajax/libs/' | append: style.group | append: '/' | append: file.version | append: '/' | append: file.name | append: '.css' %}
+					{%- when 'githack' -%}
+						{% assign stylesheet_url = 'https://rawcdn.githack.com/' | append: file.name | append: '.css' %}
+					{%- when 'local' -%}
+						{% assign stylesheet_url = '/assets/css/' | append: file.name | append: '.css' | relative_url %}
+					{%- else -%}
+						{% assign stylesheet_url = nil %}
+				{%- endcase -%}
+				{% if stylesheet_url.size > 0 %}
+					<link rel="stylesheet" href="{{ stylesheet_url | uri_escape }}" />
 				{% endif %}
-			{% endfor %}
-		{% endif %}
-	{% endfor %}
-{% endfor %}
+			{%- endfor -%}
+			{% break %}
+		{%- else -%}
+			{% continue %}
+		{%- endif -%}
+	{%- endfor -%}
+{%- endfor -%}

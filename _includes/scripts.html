@@ -1,15 +1,24 @@
-{% for page_script in page.scripts %}
-	{% for script in site.data.scripts %}
-		{% if page_script == script.group %}
-			{% for file in script.files %}
-				{% if file.cdn == 'cdnjs' %}
-				<script src="{{ "https://cdnjs.cloudflare.com/ajax/libs/" | append: script.group | append: "/" | append: file.version | append: "/" | append: file.name | append: ".js" | uri_escape }}"></script>
-				{% elsif file.cdn == 'githack' %}
-				<script src="{{ "https://rawcdn.githack.com/" | append: file.name | append: ".js" | uri_escape }}"></script>
-				{% else %}
-				<script src="{{ "/assets/js/" | append: file.name | append: ".js" | uri_escape | relative_url }}"></script>
+{%- for page_script in page.scripts -%}
+	{%- for script in site.data.scripts -%}
+		{%- if page_script == script.group -%}
+			{%- for file in script.files -%}
+				{%- case file.cdn -%}
+					{%- when 'cdnjs' -%}
+						{% assign script_url = 'https://cdnjs.cloudflare.com/ajax/libs/' | append: script.group | append: '/' | append: file.version | append: '/' | append: file.name | append: '.js' %}
+					{%- when 'githack' -%}
+						{% assign script_url = 'https://rawcdn.githack.com/' | append: file.name | append: '.js' %}
+					{%- when 'local' -%}
+						{% assign script_url = '/assets/js/' | append: file.name | append: '.js' | relative_url %}
+					{%- else -%}
+						{% assign script_url = nil %}
+				{%- endcase -%}
+				{% if script_url.size > 0 %}
+					<script type="text/javascript" src="{{ script_url | uri_escape }}"></script>
 				{% endif %}
-			{% endfor %}
-		{% endif %}
-	{% endfor %}
-{% endfor %}
+			{%- endfor -%}
+			{% break %}
+		{%- else -%}
+			{% continue %}
+		{%- endif -%}
+	{%- endfor -%}
+{%- endfor -%}
