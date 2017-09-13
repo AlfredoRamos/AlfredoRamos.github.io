@@ -1,24 +1,37 @@
 {%- for page_style in page.stylesheets -%}
-	{%- for style in site.data.stylesheets -%}
-		{%- if page_style == style.group -%}
-			{%- for file in style.files -%}
-				{%- case file.cdn -%}
-					{%- when 'cdnjs' -%}
-						{% assign stylesheet_url = 'https://cdnjs.cloudflare.com/ajax/libs/' | append: style.group | append: '/' | append: file.version | append: '/' | append: file.name | append: '.css' %}
-					{%- when 'githack' -%}
-						{% assign stylesheet_url = 'https://rawcdn.githack.com/' | append: file.name | append: '.css' %}
-					{%- when 'local' -%}
-						{% assign stylesheet_url = '/assets/css/' | append: file.name | append: '.css' | relative_url %}
-					{%- else -%}
-						{% assign stylesheet_url = nil %}
-				{%- endcase -%}
-				{% if stylesheet_url.size > 0 %}
-					<link rel="stylesheet" href="{{ stylesheet_url | uri_escape }}" />
-				{% endif %}
-			{%- endfor -%}
-			{% break %}
-		{%- else -%}
-			{% continue %}
-		{%- endif -%}
-	{%- endfor -%}
+	{%- assign style = site.data.stylesheets | where: "group", page_style | first -%}
+	{%- if style.size > 0 -%}
+		{%- for file in style.files -%}
+			{% assign style_url = nil %}
+			{%- case file.cdn -%}
+				{%- when 'local' -%}
+					{% assign style_url = style_url | append: '/assets/css/'
+					| append: file.name %}
+					{%- if file.minified -%}
+						{% assign style_url = style_url | append: '.min' %}
+					{%- endif -%}
+					{% assign style_url = style_url | append: '.css' | relative_url %}
+				{%- when 'cdnjs' -%}
+					{% assign style_url = style_url
+					| append: 'https://cdnjs.cloudflare.com/ajax/libs/'
+					| append: style.group | append: '/'
+					| append: file.version | append: '/'
+					| append: file.name %}
+					{%- if file.minified -%}
+						{% assign style_url = style_url | append: '.min' %}
+					{% endif %}
+					{% assign style_url = style_url | append: '.css' %}
+				{%- when 'githack' -%}
+					{% assign style_url = style_url
+					| append: 'https://rawcdn.githack.com/' | append: file.name %}
+					{%- if file.minified -%}
+						{% assign style_url = style_url | append: '.min' %}
+					{% endif %}
+					{% assign style_url = style_url | append: '.css' %}
+			{%- endcase -%}
+			{% if style_url.size > 0 %}
+			<link rel="stylesheet" href="{{ style_url | uri_escape }}" />
+			{% endif %}
+		{%- endfor -%}
+	{%- endif -%}
 {%- endfor -%}

@@ -1,24 +1,37 @@
 {%- for page_script in page.scripts -%}
-	{%- for script in site.data.scripts -%}
-		{%- if page_script == script.group -%}
-			{%- for file in script.files -%}
-				{%- case file.cdn -%}
-					{%- when 'cdnjs' -%}
-						{% assign script_url = 'https://cdnjs.cloudflare.com/ajax/libs/' | append: script.group | append: '/' | append: file.version | append: '/' | append: file.name | append: '.js' %}
-					{%- when 'githack' -%}
-						{% assign script_url = 'https://rawcdn.githack.com/' | append: file.name | append: '.js' %}
-					{%- when 'local' -%}
-						{% assign script_url = '/assets/js/' | append: file.name | append: '.js' | relative_url %}
-					{%- else -%}
-						{% assign script_url = nil %}
-				{%- endcase -%}
-				{% if script_url.size > 0 %}
-					<script type="text/javascript" src="{{ script_url | uri_escape }}"></script>
-				{% endif %}
-			{%- endfor -%}
-			{% break %}
-		{%- else -%}
-			{% continue %}
-		{%- endif -%}
-	{%- endfor -%}
+	{%- assign script = site.data.scripts | where: "group", page_script | first -%}
+	{%- if script.size > 0 -%}
+		{%- for file in script.files -%}
+			{% assign script_url = nil %}
+			{%- case file.cdn -%}
+				{%- when 'local' -%}
+					{% assign script_url = script_url | append: '/assets/js/'
+					| append: file.name %}
+					{%- if file.minified -%}
+						{% assign script_url = script_url | append: '.min' %}
+					{%- endif -%}
+					{% assign script_url = script_url | append: '.js' | relative_url %}
+				{%- when 'cdnjs' -%}
+					{% assign script_url = script_url
+					| append: 'https://cdnjs.cloudflare.com/ajax/libs/'
+					| append: script.group | append: '/'
+					| append: file.version | append: '/'
+					| append: file.name %}
+					{%- if file.minified -%}
+						{% assign script_url = script_url | append: '.min' %}
+					{% endif %}
+					{% assign script_url = script_url | append: '.js' %}
+				{%- when 'githack' -%}
+					{% assign script_url = script_url
+					| append: 'https://rawcdn.githack.com/' | append: file.name %}
+					{%- if file.minified -%}
+						{% assign script_url = script_url | append: '.min' %}
+					{% endif %}
+					{% assign script_url = script_url | append: '.js' %}
+			{%- endcase -%}
+			{% if script_url.size > 0 %}
+			<script type="text/javascript" src="{{ script_url | uri_escape }}"></script>
+			{% endif %}
+		{%- endfor -%}
+	{%- endif -%}
 {%- endfor -%}

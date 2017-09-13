@@ -5,6 +5,7 @@
 			{
 				"name": "simple_grid",
 				"version": null,
+				"minified": false,
 				"cdn": "local"
 			}
 		]

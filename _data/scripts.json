@@ -3,8 +3,9 @@
 		"group": "jquery",
 		"files": [
 			{
-				"name": "jquery.slim.min",
+				"name": "jquery.slim",
 				"version": "3.2.1",
+				"minified": true,
 				"cdn": "cdnjs"
 			}
 		]
