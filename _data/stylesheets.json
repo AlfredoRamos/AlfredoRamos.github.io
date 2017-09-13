@@ -1,5 +1,50 @@
 [
 	{
+		"group": "normalize",
+		"files": [
+			{
+				"name": "normalize",
+				"version": "7.0.0",
+				"minified": true,
+				"cdn": "cdnjs"
+			}
+		]
+	},
+	{
+		"group": "grids",
+		"files": [
+			{
+				"name": "AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/5a76a82b6f7a3120270f9694bd2603124c50d3a4/grids",
+				"version": null,
+				"minified": true,
+				"cdn": "githack",
+				"type": "gist"
+			}
+		]
+	},
+	{
+		"group": "main",
+		"files": [
+			{
+				"name": "main",
+				"version": null,
+				"minified": false,
+				"cdn": "local"
+			}
+		]
+	},
+	{
+		"group": "tomorrow_night",
+		"files": [
+			{
+				"name": "mozmorris/tomorrow-pygments/c6ca1a308e7e93cb18a54f93bf964f56e4d07acf/css/tomorrow_night",
+				"version": null,
+				"minified": false,
+				"cdn": "githack"
+			}
+		]
+	},
+	{
 		"group": "simple_grid",
 		"files": [
 			{

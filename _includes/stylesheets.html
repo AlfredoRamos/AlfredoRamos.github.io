@@ -1,37 +1,50 @@
-{%- for page_style in page.stylesheets -%}
+{%- if include.content.size > 0 -%}
+	{%- assign stylesheets = include.content -%}
+{%- elsif page.stylesheets.size > 0 -%}
+	{%- assign stylesheets = page.stylesheets -%}
+{%- else -%}
+	{%- assign stylesheets = nil -%}
+{%- endif -%}
+{%- for page_style in stylesheets -%}
 	{%- assign style = site.data.stylesheets | where: "group", page_style | first -%}
 	{%- if style.size > 0 -%}
 		{%- for file in style.files -%}
-			{% assign style_url = nil %}
+			{%- assign style_url = nil -%}
 			{%- case file.cdn -%}
 				{%- when 'local' -%}
-					{% assign style_url = style_url | append: '/assets/css/'
-					| append: file.name %}
+					{%- assign style_url = style_url | append: '/assets/css/'
+					| append: file.name -%}
 					{%- if file.minified -%}
-						{% assign style_url = style_url | append: '.min' %}
+						{%- assign style_url = style_url | append: '.min' -%}
 					{%- endif -%}
-					{% assign style_url = style_url | append: '.css' | relative_url %}
+					{%- assign style_url = style_url | append: '.css' | relative_url -%}
 				{%- when 'cdnjs' -%}
-					{% assign style_url = style_url
+					{%- assign style_url = style_url
 					| append: 'https://cdnjs.cloudflare.com/ajax/libs/'
 					| append: style.group | append: '/'
 					| append: file.version | append: '/'
-					| append: file.name %}
+					| append: file.name -%}
 					{%- if file.minified -%}
-						{% assign style_url = style_url | append: '.min' %}
-					{% endif %}
-					{% assign style_url = style_url | append: '.css' %}
+						{%- assign style_url = style_url | append: '.min' -%}
+					{%- endif -%}
+					{%- assign style_url = style_url | append: '.css' -%}
 				{%- when 'githack' -%}
-					{% assign style_url = style_url
-					| append: 'https://rawcdn.githack.com/' | append: file.name %}
+					{%- if file.type != 'gist' -%}
+						{%- assign style_url = style_url
+						| append: 'https://rawcdn.githack.com/' -%}
+					{%- else -%}
+						{%- assign style_url = style_url
+						| append: 'https://gistcdn.githack.com/' -%}
+					{%- endif -%}
+					{%- assign style_url = style_url | append: file.name -%}
 					{%- if file.minified -%}
-						{% assign style_url = style_url | append: '.min' %}
-					{% endif %}
-					{% assign style_url = style_url | append: '.css' %}
+						{%- assign style_url = style_url | append: '.min' -%}
+					{%- endif -%}
+					{%- assign style_url = style_url | append: '.css' -%}
 			{%- endcase -%}
-			{% if style_url.size > 0 %}
+			{%- if style_url.size > 0 %}
 			<link rel="stylesheet" href="{{ style_url | uri_escape }}" />
-			{% endif %}
+			{%- endif %}
 		{%- endfor -%}
 	{%- endif -%}
 {%- endfor -%}
