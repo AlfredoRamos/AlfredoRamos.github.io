@@ -2,11 +2,31 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="referrer" content="same-origin" />
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 | normalize_whitespace | escape }}">
 
-	<title>{% if page.title %}{{ page.title | escape }}{% if paginator.total_pages > 1 and paginator.page >= 2 %} - Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %} :: {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relative_url }}" />
-	<link rel="alternate" href="{{ "/feed.atom" | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}" />
+	<title>
+		{%- if page.title -%}
+			{%- if paginator.total_pages > 1 and paginator.page > 1 -%}
+				{{ page.title
+				| append: ' - Page '
+				| append: paginator.page
+				| append: ' of '
+				| append: paginator.total_pages
+				| append: ' :: '
+				| append: site.title
+				| escape }}
+			{%- else -%}
+				{{ page.title
+				| append: ' :: '
+				| append: site.title
+				| escape }}
+			{%- endif -%}
+		{%- else -%}
+			{{ site.title | escape }}
+		{%- endif -%}
+	</title>
+	<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
+	<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}" />
 	{% include stylesheets.html content=site.data.head_stylesheets %}
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono" />

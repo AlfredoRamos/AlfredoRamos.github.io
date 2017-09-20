@@ -14,18 +14,36 @@ layout: default
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %-d, %Y' }}</time>
 			</li>
 			{%- if page.category %}
-			<li><span itemprop="keywords" rel="category" class="badge">{{ page.category }}</span></li>
+			<li>
+				<span itemprop="keywords" rel="category" class="badge">{{ page.category }}</span>
+			</li>
 			{%- endif %}
 			{%- if page.tags.size > 0 %}
 			<li>
 				<ul class="tags list-inline" itemprop="keywords">
 					{%- for tag in page.tags %}
-					<li><span rel="tag" class="badge">{{ tag }}</span></li>
+					<li>
+						<span rel="tag" class="badge">{{ tag }}</span>
+					</li>
 					{%- endfor %}
 				</ul>
 			</li>
 			{%- endif %}
 		</ul>
 	</header>
-	<div class="body" itemprop="articleBody">{{ content }}</div>
+	<div class="body" itemprop="articleBody">
+		{{ content }}
+	</div>
+	{%- if page.updated_at %}
+	<footer class="footer">
+		<ul class="meta small list-inline list-width-separator">
+			<li>
+				Last modified at
+				<time datetime="{{ page.updated_at | date_to_xmlschema }}" itemprop="dateModified">
+					{{ page.updated_at | date: '%b %-d, %Y' }}
+				</time>
+			</li>
+		</ul>
+	</footer>
+	{%- endif %}
 </article>
