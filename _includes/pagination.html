@@ -1,27 +1,27 @@
-{% if paginator.total_pages > 1 %}
+{%- if paginator.total_pages > 1 %}
 <nav class="pagination">
 	<ul class="list-inline">
-		{% if paginator.previous_page %}
+		{%- if paginator.previous_page %}
 		<li><a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a></li>
-		{% else %}
+		{%- else %}
 		<li><span>&laquo; Prev</span></li>
-		{% endif %}
+		{%- endif %}
 
-		{% for page in (1..paginator.total_pages) %}
-		{% if page == paginator.page %}
+		{%- for page in (1..paginator.total_pages) %}
+		{%- if page == paginator.page %}
 		<li><span class="current">{{ page }}</span></li>
 		{% elsif page == 1 %}
 		<li><a href="{{ site.paginate_path | replace: 'page-:num', '' | relative_url }}">{{ page }}</a></li>
 		{% else %}
 		<li><a href="{{ site.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a></li>
-		{% endif %}
-		{% endfor %}
+		{%- endif %}
+		{%- endfor %}
 
-		{% if paginator.next_page %}
+		{%- if paginator.next_page %}
 		<li><a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></li>
-		{% else %}
+		{%- else %}
 		<li><span>Next &raquo;</span></li>
-		{% endif %}
+		{%- endif %}
 	</ul>
 </nav>
-{% endif %}
+{%- endif %}

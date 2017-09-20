@@ -5,18 +5,18 @@
 
 				<div class="row center-xs middle-xs">
 					<div class="col-sm-auto" id="avatar">
-						{% if site.github.owner_gravatar_url.size > 0 %}
+						{%- if site.github.owner_gravatar_url.size > 0 %}
 						<img src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" />
-						{% endif %}
+						{%- endif %}
 					</div>
 
 					<div class="col-sm" id="description">
 						<h1><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
 						<p>{{ site.description | escape }}</p>
 
-						{% if site.data.networks.size > 0 %}
+						{%- if site.data.networks.size > 0 %}
 						<ul id="social-networks" class="list-inline">
-							{% for network in site.data.networks %}
+							{%- for network in site.data.networks %}
 							<li>
 								<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
 									<svg class="icon icon-{{ network.name | downcase | escape }}">
@@ -24,9 +24,9 @@
 									</svg>
 								</a>
 							</li>
-							{% endfor %}
+							{%- endfor %}
 						</ul>
-						{% endif %}
+						{%- endif %}
 					</div>
 				</div>
 

@@ -13,18 +13,18 @@ layout: default
 			<li>
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %-d, %Y' }}</time>
 			</li>
-			{% if page.category %}
+			{%- if page.category %}
 			<li><span itemprop="keywords" rel="category" class="badge">{{ page.category }}</span></li>
-			{% endif %}
-			{% if page.tags.size > 0 %}
+			{%- endif %}
+			{%- if page.tags.size > 0 %}
 			<li>
 				<ul class="tags list-inline" itemprop="keywords">
-					{% for tag in page.tags %}
+					{%- for tag in page.tags %}
 					<li><span rel="tag" class="badge">{{ tag }}</span></li>
-					{% endfor %}
+					{%- endfor %}
 				</ul>
 			</li>
-			{% endif %}
+			{%- endif %}
 		</ul>
 	</header>
 	<div class="body" itemprop="articleBody">{{ content }}</div>
