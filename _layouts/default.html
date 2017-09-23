@@ -7,23 +7,12 @@
 		{% include header.html %}
 		<!-- header -->
 
+		<!-- navbar -->
+		{% include navbar.html %}
+		<!-- navbar -->
+
 		<!-- main -->
-		<main>
-			<div class="container">
-				<div class="row center-md">
-					<div class="col-md-8">
-
-						<!-- content -->
-						<section id="content">{{ content }}</section>
-						<!-- content -->
-
-						<!-- pagination -->
-						{% include pagination.html %}
-						<!-- pagination -->
-					</div>
-				</div>
-			</div>
-		</main>
+		{% include main.html %}
 		<!-- main -->
 
 		<!-- footer -->
@@ -31,7 +20,7 @@
 		<!-- footer -->
 
 		<!-- svg -->
-		{% include social_sprite.svg %}
+		{% include icons.svg %}
 		<!-- svg -->
 
 		<!-- scripts -->

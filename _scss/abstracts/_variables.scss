@@ -1,3 +1,22 @@
+/// Grid system breakpoints in pixels
+/// @type list
+$grid-breakpoints: (
+	xs: 0px,
+	sm:	576px,
+	md:	768px,
+	lg:	992px,
+	xl: 1200px
+);
+
+/// Container maximum widths in pixels
+/// @type list
+$container-max-widths: (
+	sm:	540px,
+	md:	720px,
+	lg:	960px,
+	xl: 1140px
+);
+
 /// Rem base
 /// @type number
 $rem-base: 16;

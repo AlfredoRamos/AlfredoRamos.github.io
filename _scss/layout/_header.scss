@@ -1,5 +1,10 @@
 body > header {
 	padding: 20px 0 1px;
+	text-align: center;
+
+	@include responsive(min-width, map-get($grid-breakpoints, sm)) {
+		text-align: left;
+	}
 
 	h1 {
 		margin-top: get-rems($spacing / 2);
@@ -17,17 +22,6 @@ body > header {
 			padding: 4px;
 			background-color: $bg-avatar;
 			border-radius: 50%;
-		}
-	}
-
-	#pages {
-		text-align: right;
-		margin-top: get-rems($spacing);
-
-		.list-with-separator {
-			& > li:before {
-				color: $fg-body;
-			}
 		}
 	}
 }

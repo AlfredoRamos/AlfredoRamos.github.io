@@ -1,0 +1,13 @@
+body > nav {
+	text-align: center;
+
+	@include responsive(min-width, map-get($grid-breakpoints, sm)) {
+		text-align: right;
+	}
+
+	.list-with-separator {
+		& > li:before {
+			color: $fg-body;
+		}
+	}
+}
