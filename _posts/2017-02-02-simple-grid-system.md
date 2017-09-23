@@ -1,18 +1,19 @@
 ---
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-updated_at: 2017-09-20 14:52:22 -0600
+updated_at: 2017-09-23 18:38:41 -0600
 category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
 ---
 A Simple SASS Grid System.
 
-[![Build Status](https://img.shields.io/travis/AlfredoRamos/simple-grid-system.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/simple-grid-system) [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/simple-grid-system.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/simple-grid-system/releases) [![License](https://img.shields.io/github/license/AlfredoRamos/simple-grid-system.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/simple-grid-system/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/AlfredoRamos/simple-grid-system.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/simple-grid-system) [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/simple-grid-system.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/simple-grid-system/releases) [![Code Quality](https://img.shields.io/codacy/grade/305ccf33491f4e2ba5405a0cff204b0f.svg?style=flat-square&maxAge=3600)](https://www.codacy.com/app/AlfredoRamos/simple-grid-system) [![License](https://img.shields.io/github/license/AlfredoRamos/simple-grid-system.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/simple-grid-system/master/LICENSE)
 
 Links:
 
-- [<svg class="icon icon-github"><use xlink:href="#github"></use></svg> **AlfredoRamos/simple-grid-system**](https://github.com/AlfredoRamos/simple-grid-system)
+- [<svg class="icon icon-github"><use xlink:href="#github" /></use></svg> **AlfredoRamos/simple-grid-system**](https://github.com/AlfredoRamos/simple-grid-system)
+- [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **grids.css** and **grids.min.css**](https://gist.github.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0)
 
 <div class="container">
 	<!-- Normal grid -->
