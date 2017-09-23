@@ -6,7 +6,7 @@
 	{%- assign stylesheets = nil -%}
 {%- endif -%}
 {%- for page_style in stylesheets -%}
-	{%- assign style = site.data.stylesheets | where: "group", page_style | first -%}
+	{%- assign style = site.data.stylesheets | where: 'group', page_style | first -%}
 	{%- if style.size > 0 -%}
 		{%- for file in style.files -%}
 			{%- assign style_url = nil -%}

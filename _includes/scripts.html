@@ -6,7 +6,7 @@
 	{%- assign scripts = nil -%}
 {%- endif -%}
 {%- for page_script in scripts -%}
-	{%- assign script = site.data.scripts | where: "group", page_script | first -%}
+	{%- assign script = site.data.scripts | where: 'group', page_script | first -%}
 	{%- if script.size > 0 -%}
 		{%- for file in script.files -%}
 			{%- assign script_url = nil -%}

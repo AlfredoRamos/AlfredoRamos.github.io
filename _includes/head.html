@@ -2,11 +2,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="referrer" content="same-origin" />
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 | normalize_whitespace | escape }}">
-	{%- if jekyll.version %}
-	<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
-	{%- endif %}
-
 	<title>
 		{%- if page.title -%}
 			{%- if paginator.total_pages > 1 and paginator.page > 1 -%}
@@ -28,13 +23,24 @@
 			{{ site.title | escape }}
 		{%- endif -%}
 	</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 | normalize_whitespace | escape }}">
+	{%- if jekyll.version %}
+	<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+	{%- endif %}
+
 	<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
 	<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}" />
-	{% include stylesheets.html content=site.data.head_stylesheets %}
+	{%- if paginator.previous_page %}
+	<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}" />
+	{%- endif %}
+	{%- if paginator.next_page %}
+	<link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
+	{%- endif %}
 
+	{%- include stylesheets.html content=site.data.head_stylesheets %}
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono" />
 
 	<!-- stylesheets -->
-	{% include stylesheets.html %}
+	{%- include stylesheets.html %}
 	<!-- stylesheets -->
 </head>

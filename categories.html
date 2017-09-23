@@ -2,26 +2,28 @@
 title: Categories
 permalink: /categories/
 ---
-{% if site.categories.size > 0 %}
+{%- if site.categories.size > 0 %}
 <ul class="list-categories">
-	{% for category in site.categories %}
+	{%- for category in site.categories %}
 	<li id="category-{{ category.first | escape }}">
 		<h4>{{ category.first | escape }}</h4>
-
 		<ul class="list-posts">
-			{% for post in site.posts %}
-			{% for cat in post.categories %}
-			{% if cat == category.first %}
+			{%- for post in site.posts -%}
+			{%- for cat in post.categories -%}
+			{%- if cat == category.first %}
 			<li>
 				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 			</li>
-			{% endif %}
-			{% endfor %}
-			{% endfor %}
+			{%- break -%}
+			{%- else %}
+			{%- continue -%}
+			{%- endif %}
+			{%- endfor -%}
+			{%- endfor -%}
 		</ul>
 	</li>
-	{% endfor %}
+	{%- endfor %}
 </ul>
-{% else %}
+{%- else %}
 <p>Nothing interesting to show :/</p>
-{% endif %}
+{%- endif %}
