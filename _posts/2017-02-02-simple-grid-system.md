@@ -1,7 +1,7 @@
 ---
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-updated_at: 2017-09-23 18:38:41 -0600
+updated_at: 2017-10-08 16:49:51 -0600
 category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
@@ -226,8 +226,8 @@ Links:
 </div>{% endhighlight %}
 	<!-- Mixed mobile and desktop alignment -->
 
-	<!-- Video embedding -->
-	<h4>Video embedding</h4>
+	<!-- Responsive embedding -->
+	<h4>Responsive embedding</h4>
 
 	<div class="media">
 		<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
@@ -237,5 +237,5 @@ Links:
 {% highlight html %}<div class="media">
 	<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
 </div>{% endhighlight %}
-	<!-- Video embedding -->
+	<!-- Responsive embedding -->
 </div>
