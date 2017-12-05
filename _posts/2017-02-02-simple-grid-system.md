@@ -176,7 +176,7 @@ Links:
 	</div>
 
 	<h5>Code</h5>
-{% highlight html %}<div class"container">
+{% highlight html %}<div class="container">
 	<div class="row">
 		<div class="col-xs-6 col-md-8"></div>
 		<div class="col-xs-6 col-md-4"></div>
