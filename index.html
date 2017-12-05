@@ -10,7 +10,7 @@ title: Home
 		{% if paginator.posts.size > 0 %}
 		{% for post in paginator.posts %}
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<header class="header row">
+			<header class="header row middle-xs">
 				<h3 class="title col-sm order-sm-12" itemprop="name headline">
 					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 				</h3>

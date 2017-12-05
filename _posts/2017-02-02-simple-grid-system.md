@@ -1,7 +1,7 @@
 ---
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-updated_at: 2017-10-08 16:49:51 -0600
+updated_at: 2017-12-05 15:35:32 -0600
 category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
