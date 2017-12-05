@@ -26,6 +26,10 @@ h6 {
 	color: $fg-headline;
 }
 
+p img {
+	max-width: 100%;
+}
+
 hr {
 	background-color: transparent;
 	border-width: 0 0 1px 0;
