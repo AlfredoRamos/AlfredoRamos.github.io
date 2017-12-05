@@ -21,16 +21,8 @@ body > main {
 		}
 
 		.post {
-			.header {
-				.meta {
-					& > li {
-						line-height: 1.5;
-					}
-				}
-			}
-
 			.body {
-				font-size: 15px;
+				font-size: get-rems((1 - (1 / 10)), 1); // 1rem - 10%
 			}
 
 			.footer {

@@ -4,7 +4,7 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<header class="header">
 		<h2 class="title" itemprop="name headline">{{ page.title | escape }}</h2>
-		<ul class="meta small list-inline list-with-separator">
+		<ul class="meta list-inline list-with-separator">
 			<li>
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<span itemprop="name">{{ site.data.members[page.author].name | escape }}</span>
@@ -36,7 +36,7 @@ layout: default
 	</div>
 	{%- if page.updated_at %}
 	<footer class="footer">
-		<ul class="meta small list-inline list-width-separator">
+		<ul class="meta list-inline list-width-separator">
 			<li>
 				Last modified at
 				<time datetime="{{ page.updated_at | date_to_xmlschema }}" itemprop="dateModified">

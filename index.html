@@ -14,8 +14,8 @@ title: Home
 				<h3 class="title col-sm order-sm-12" itemprop="name headline">
 					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 				</h3>
-				<div class="meta col-sm-auto order-sm-1">
-					<ul class="small list-inline list-with-separator">
+				<div class="col-sm-auto order-sm-1">
+					<ul class="meta list-inline list-with-separator">
 						<li>
 							<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%F' }}</time>
 						</li>

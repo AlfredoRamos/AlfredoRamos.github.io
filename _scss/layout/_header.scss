@@ -21,7 +21,7 @@ body > header {
 			border-color: $br-avatar;
 			padding: 4px;
 			background-color: $bg-avatar;
-			border-radius: 50%;
+			border-radius: percentage(1/2);
 		}
 	}
 }
