@@ -1,7 +1,7 @@
 ---
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-updated_at: 2017-12-05 15:35:32 -0600
+updated_at: 2017-12-17 02:08:47 -0600
 category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
@@ -16,7 +16,7 @@ Links:
 - [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **grids.css** and **grids.min.css**](https://gist.github.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0)
 
 <div class="container">
-	<!-- Normal grid -->
+
 	<h4>Normal grid</h4>
 	<div class="row">
 		<div class="col-md-1" title=".col-md-1"></div>
@@ -63,7 +63,6 @@ Links:
 		<div class="col-md-1" title=".col-md-1"></div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row">
 		<div class="col-md-1"></div>
@@ -110,41 +109,39 @@ Links:
 		<div class="col-md-1"></div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Normal grid -->
 
-	<!-- Offset grid -->
+	<hr />
+
 	<h4>Offset grid</h4>
 	<div class="row">
 		<div class="col-md-3" title=".col-md-3"></div>
-		<div class="col-md-3 offset-md-0" title=".col-md-3 .offset-md-0"></div>
+		<div class="col-md-3 offset-md-auto" title=".col-md-3 .offset-md-auto"></div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row">
 		<div class="col-md-3"></div>
-		<div class="col-md-3 offset-md-0"></div>
+		<div class="col-md-3 offset-md-auto"></div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Offset grid -->
 
-	<!-- Order swap -->
+	<hr />
+
 	<h4>Order swap</h4>
 	<div class="row">
 		<div class="col-md-4 order-md-12" title=".col-md-4 .order-md-12"></div>
 		<div class="col-md-8 order-md-1" title=".col-md-8 .order-md-1"></div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row">
 		<div class="col-md-4 order-md-12"></div>
 		<div class="col-md-8 order-md-1"></div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Order swap -->
 
-	<!-- Nested grids -->
+	<hr />
+
 	<h4>Nested grids</h4>
 	<div class="row center-md">
 		<div class="col-md-10" title=".col-md-10">
@@ -155,7 +152,6 @@ Links:
 		</div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row center-md">
 		<div class="col-md-10">
@@ -166,25 +162,24 @@ Links:
 		</div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Nested grids -->
 
-	<!-- Mixed mobile and desktop -->
+	<hr />
+
 	<h4>Mixed: mobile and desktop</h4>
 	<div class="row">
 		<div class="col-xs-6 col-md-8" title=".col-xs-6 .col-md-8"></div>
 		<div class="col-xs-6 col-md-4" title=".col-xs-6 .col-md-4"></div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row">
 		<div class="col-xs-6 col-md-8"></div>
 		<div class="col-xs-6 col-md-4"></div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Mixed mobile and desktop -->
 
-	<!-- Auto width -->
+	<hr />
+
 	<h4>Auto width</h4>
 	<div class="row">
 		<div class="col-xs" title=".col-xs"></div>
@@ -194,7 +189,6 @@ Links:
 		<div class="col-xs" title=".col-xs"></div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row">
 		<div class="col-xs"></div>
@@ -204,9 +198,9 @@ Links:
 		<div class="col-xs"></div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Auto width -->
 
-	<!-- Mixed mobile and desktop alignment -->
+	<hr />
+
 	<h4>Mixed: mobile and desktop alignment</h4>
 	<div class="row top-sm middle-md bottom-lg">
 		<div class="col-xs" title=".col-xs">
@@ -216,7 +210,6 @@ Links:
 		<div class="col-xs" title=".col.xs"></div>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="container">
 	<div class="row top-sm middle-md bottom-lg">
 		<div class="col-xs"></div>
@@ -224,18 +217,16 @@ Links:
 		<div class="col-xs"></div>
 	</div>
 </div>{% endhighlight %}
-	<!-- Mixed mobile and desktop alignment -->
 
-	<!-- Responsive embedding -->
+	<hr />
+
 	<h4>Responsive embedding</h4>
-
 	<div class="media">
 		<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
 	</div>
 
-	<h5>Code</h5>
 {% highlight html %}<div class="media">
 	<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
 </div>{% endhighlight %}
-	<!-- Responsive embedding -->
+
 </div>
