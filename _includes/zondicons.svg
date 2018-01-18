@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
+	<symbol id="calendar" viewBox="0 0 20 20">
+		<path d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 2v12h14V6H3zm2-6h2v2H5V0zm8 0h2v2h-2V0zM5 9h2v2H5V9zm0 4h2v2H5v-2zm4-4h2v2H9V9zm0 4h2v2H9v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"/>
+	</symbol>
+	<symbol id="folder" viewBox="0 0 20 20">
+		<path d="M0 4c0-1.1.9-2 2-2h7l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
+	</symbol>
+	<symbol id="tag" viewBox="0 0 20 20">
+		<path d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+	</symbol>
+	<symbol id="user" viewBox="0 0 20 20">
+		<path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z"/>
+	</symbol>
+</svg>

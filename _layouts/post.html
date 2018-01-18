@@ -6,20 +6,32 @@ layout: default
 		<h2 class="title" itemprop="name headline">{{ page.title | escape }}</h2>
 		<ul class="meta list-inline list-with-separator">
 			<li>
+				<svg class="icon icon-user">
+					<use xlink:href="#user" />
+				</svg>
 				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 					<span itemprop="name">{{ site.data.members[page.author].name | escape }}</span>
 				</span>
 			</li>
 			<li>
+				<svg class="icon icon-calendar">
+					<use xlink:href="#calendar" />
+				</svg>
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %-d, %Y' }}</time>
 			</li>
 			{%- if page.category %}
 			<li>
+				<svg class="icon icon-folder">
+					<use xlink:href="#folder" />
+				</svg>
 				<span itemprop="keywords" rel="category" class="badge">{{ page.category }}</span>
 			</li>
 			{%- endif %}
 			{%- if page.tags.size > 0 %}
 			<li>
+				<svg class="icon icon-tag">
+					<use xlink:href="#tag" />
+				</svg>
 				<ul class="tags list-inline" itemprop="keywords">
 					{%- for tag in page.tags %}
 					<li>
@@ -38,6 +50,9 @@ layout: default
 	<footer class="footer">
 		<ul class="meta list-inline list-width-separator">
 			<li>
+				<svg class="icon icon-calendar">
+					<use xlink:href="#calendar" />
+				</svg>
 				Last modified at
 				<time datetime="{{ page.updated_at | date_to_xmlschema }}" itemprop="dateModified">
 					{{ page.updated_at | date: '%b %-d, %Y' }}
