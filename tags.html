@@ -3,22 +3,30 @@ title: Tags
 permalink: /tags/
 ---
 {%- if site.tags.size > 0 %}
+<p>Click on a tag to see its posts.</p>
+<ul class="list-tags list-inline">
+	{%- for tag in site.tags %}
+	<li>
+		<a href="#tag-{{ tag.first | uri_escape }}">
+			<span class="badge">{{ tag.first | escape}}</span>
+		</a>
+	</li>
+	{%- endfor %}
+</ul>
+
+<hr />
+
 <ul class="list-tags">
 	{%- for tag in site.tags %}
-	<li id="tag-{{ tag.first | escape }}">
+	{%- assign posts = site.posts
+	| where_exp: 'post', 'post.tags contains tag.first' -%}
+	<li id="tag-{{ tag.first | uri_escape }}">
 		<h4>{{ tag.first | escape }}</h4>
 		<ul class="list-posts">
-			{%- for post in site.posts -%}
-			{%- for t in post.tags -%}
-			{%- if t == tag.first %}
+			{%- for post in posts -%}
 			<li>
 				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 			</li>
-			{%- break -%}
-			{%- else %}
-			{%- continue -%}
-			{%- endif %}
-			{%- endfor -%}
 			{%- endfor -%}
 		</ul>
 	</li>

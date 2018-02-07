@@ -3,22 +3,30 @@ title: Categories
 permalink: /categories/
 ---
 {%- if site.categories.size > 0 %}
+<p>Click on a category to see its posts.</p>
+<ul class="list-categories list-inline">
+	{%- for category in site.categories %}
+	<li>
+		<a href="#category-{{ category.first | uri_escape }}">
+			<span class="badge">{{ category.first | escape}}</span>
+		</a>
+	</li>
+	{%- endfor %}
+</ul>
+
+<hr />
+
 <ul class="list-categories">
 	{%- for category in site.categories %}
-	<li id="category-{{ category.first | escape }}">
+	{%- assign posts = site.posts
+	| where_exp: 'post', 'post.categories contains category.first' -%}
+	<li id="category-{{ category.first | uri_escape }}">
 		<h4>{{ category.first | escape }}</h4>
 		<ul class="list-posts">
-			{%- for post in site.posts -%}
-			{%- for cat in post.categories -%}
-			{%- if cat == category.first %}
+			{%- for post in posts -%}
 			<li>
 				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 			</li>
-			{%- break -%}
-			{%- else %}
-			{%- continue -%}
-			{%- endif %}
-			{%- endfor -%}
 			{%- endfor -%}
 		</ul>
 	</li>
