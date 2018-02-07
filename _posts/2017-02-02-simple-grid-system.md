@@ -1,7 +1,7 @@
 ---
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-updated_at: 2018-01-18 11:29:47 -0600
+updated_at: 2018-02-07 11:55:39 -0600
 category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
@@ -12,7 +12,7 @@ A Simple SASS Grid System.
 
 Links:
 
-- [<svg class="icon icon-github"><use xlink:href="#github" /></use></svg> **AlfredoRamos/simple-grid-system**](https://github.com/AlfredoRamos/simple-grid-system)
+- [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **AlfredoRamos/simple-grid-system**](https://github.com/AlfredoRamos/simple-grid-system)
 - [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **grids.css** and **grids.min.css**](https://gist.github.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0)
 
 <div class="example">

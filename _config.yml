@@ -31,7 +31,6 @@ defaults:
       author: AlfredoRamos
 
 # Build settings
-markdown: kramdown
 theme: minima
 encoding: 'utf-8'
 paginate_path: /page-:num
@@ -49,7 +48,6 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-github-metadata
-
 
 # Needed to build locally
 # https://help.github.com/articles/repository-metadata-on-github-pages/
