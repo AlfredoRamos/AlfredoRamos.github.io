@@ -7,7 +7,7 @@ permalink: /tags/
 <ul class="list-tags list-inline">
 	{%- for tag in site.tags %}
 	<li>
-		<a href="#tag-{{ tag.first | uri_escape }}">
+		<a href="#{{ tag.first | uri_escape }}">
 			<span class="badge">{{ tag.first | escape}}</span>
 		</a>
 	</li>
@@ -20,7 +20,7 @@ permalink: /tags/
 	{%- for tag in site.tags %}
 	{%- assign posts = site.posts
 	| where_exp: 'post', 'post.tags contains tag.first' -%}
-	<li id="tag-{{ tag.first | uri_escape }}">
+	<li id="{{ tag.first | uri_escape }}">
 		<h4>{{ tag.first | escape }}</h4>
 		<ul class="list-posts">
 			{%- for post in posts -%}

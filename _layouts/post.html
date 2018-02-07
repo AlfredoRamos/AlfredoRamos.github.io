@@ -24,7 +24,9 @@ layout: default
 				<svg class="icon icon-folder">
 					<use xlink:href="#folder" />
 				</svg>
-				<span itemprop="keywords" rel="category" class="badge">{{ page.category }}</span>
+				<span itemprop="keywords">
+					<a href="{{ '/categories/#' | append: page.category | uri_escape | relative_url }}" rel="category" class="badge">{{ page.category | escape }}</a>
+				</span>
 			</li>
 			{%- endif %}
 			{%- if page.tags.size > 0 %}
@@ -35,7 +37,7 @@ layout: default
 				<ul class="tags list-inline" itemprop="keywords">
 					{%- for tag in page.tags %}
 					<li>
-						<span rel="tag" class="badge">{{ tag }}</span>
+						<a href="{{ '/tags/#' | append: tag | uri_escape | relative_url }}" rel="tag" class="badge">{{ tag | escape }}</a>
 					</li>
 					{%- endfor %}
 				</ul>
