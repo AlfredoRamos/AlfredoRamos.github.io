@@ -1,7 +1,7 @@
 ---
 title: Simple Grid System
 date: 2017-02-02 16:45:31 -0600
-updated_at: 2018-02-07 11:55:39 -0600
+updated_at: 2018-02-24 13:52:01 -0600
 category: development
 tags: [sass, grids]
 stylesheets: [simple_grid]
@@ -15,56 +15,8 @@ Links:
 - [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **AlfredoRamos/simple-grid-system**](https://github.com/AlfredoRamos/simple-grid-system)
 - [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **grids.css** and **grids.min.css**](https://gist.github.com/AlfredoRamos/7373ba3506e10358bb84648af9a808b0)
 
-<div class="example">
-	<h4>Normal grid</h4>
-	<div class="container">	
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-11"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-10"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-9"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-8"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-5"></div>
-			<div class="col-md-7"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-6"></div>
-			<div class="col-md-6"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-7"></div>
-			<div class="col-md-5"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-8"></div>
-			<div class="col-md-4"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-9"></div>
-			<div class="col-md-3"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-10"></div>
-			<div class="col-md-2"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-11"></div>
-			<div class="col-md-1"></div>
-		</div>
-	</div>
-
-	{% highlight html %}<div class="container">
+<h4>Normal grid</h4>
+<div class="container">
 	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-11"></div>
@@ -109,63 +61,99 @@ Links:
 		<div class="col-md-11"></div>
 		<div class="col-md-1"></div>
 	</div>
-</div>{% endhighlight %}
 </div>
 
-<hr />
-
-<div class="example">
-	<h4>Offset grid</h4>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-3 offset-md-auto"></div>
-		</div>
+```html
+<div class="container">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-11"></div>
 	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-10"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-9"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-8"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-5"></div>
+		<div class="col-md-7"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-6"></div>
+		<div class="col-md-6"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-7"></div>
+		<div class="col-md-5"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-8"></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-9"></div>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-10"></div>
+		<div class="col-md-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-11"></div>
+		<div class="col-md-1"></div>
+	</div>
+</div>
+```
 
-	{% highlight html %}<div class="container">
+___
+
+<h4>Offset grid</h4>
+<div class="container">
 	<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-3 offset-md-auto"></div>
 	</div>
-</div>{% endhighlight %}
 </div>
 
-<hr />
-
-<div class="example">
-	<h4>Order swap</h4>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 order-md-12"></div>
-			<div class="col-md-8 order-md-1"></div>
-		</div>
+```html
+<div class="container">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-3 offset-md-auto"></div>
 	</div>
+</div>
+```
 
-	{% highlight html %}<div class="container">
+___
+
+<h4>Order swap</h4>
+<div class="container">
 	<div class="row">
 		<div class="col-md-4 order-md-12"></div>
 		<div class="col-md-8 order-md-1"></div>
 	</div>
-</div>{% endhighlight %}
 </div>
 
-<hr />
-
-<div class="example">
-	<h4>Nested grids</h4>
-	<div class="container">
-		<div class="row center-md">
-			<div class="col-md-10">
-				<div class="row">
-					<div class="col-md-9 order-md-12"></div>
-					<div class="col-md-3 order-md-1"></div>
-				</div>
-			</div>
-		</div>
+```html
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 order-md-12"></div>
+		<div class="col-md-8 order-md-1"></div>
 	</div>
+</div>
+```
 
-	{% highlight html %}<div class="container">
+___
+
+<h4>Nested grids</h4>
+<div class="container">
 	<div class="row center-md">
 		<div class="col-md-10">
 			<div class="row">
@@ -174,43 +162,44 @@ Links:
 			</div>
 		</div>
 	</div>
-</div>{% endhighlight %}
 </div>
 
-<hr />
-
-<div class="example">
-	<h4>Mixed: mobile and desktop</h4>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-6 col-md-8"></div>
-			<div class="col-xs-6 col-md-4"></div>
+```html
+<div class="container">
+	<div class="row center-md">
+		<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-9 order-md-12"></div>
+				<div class="col-md-3 order-md-1"></div>
+			</div>
 		</div>
 	</div>
+</div>
+```
 
-	{% highlight html %}<div class="container">
+___
+
+<h4>Mixed: mobile and desktop</h4>
+<div class="container">
 	<div class="row">
 		<div class="col-xs-6 col-md-8"></div>
 		<div class="col-xs-6 col-md-4"></div>
 	</div>
-</div>{% endhighlight %}
 </div>
 
-<hr />
-
-<div class="example">
-	<h4>Auto width</h4>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs"></div>
-			<div class="col-xs"></div>
-			<div class="col-xs"></div>
-			<div class="col-xs"></div>
-			<div class="col-xs"></div>
-		</div>
+```html
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 col-md-8"></div>
+		<div class="col-xs-6 col-md-4"></div>
 	</div>
+</div>
+```
 
-	{% highlight html %}<div class="container">
+___
+
+<h4>Auto width</h4>
+<div class="container">
 	<div class="row">
 		<div class="col-xs"></div>
 		<div class="col-xs"></div>
@@ -218,43 +207,58 @@ Links:
 		<div class="col-xs"></div>
 		<div class="col-xs"></div>
 	</div>
-</div>{% endhighlight %}
 </div>
 
-<hr />
-
-<div class="example">
-	<h4>Mixed: mobile and desktop alignment</h4>
-	<div class="container">
-		<div class="row top-sm middle-md bottom-lg">
-			<div class="col-xs">
-				<div style="height: 65px"></div>
-			</div>
-			<div class="col-xs"></div>
-			<div class="col-xs"></div>
-		</div>
+```html
+<div class="container">
+	<div class="row">
+		<div class="col-xs"></div>
+		<div class="col-xs"></div>
+		<div class="col-xs"></div>
+		<div class="col-xs"></div>
+		<div class="col-xs"></div>
 	</div>
+</div>
+```
 
-	{% highlight html %}<div class="container">
+___
+
+<h4>Mixed: mobile and desktop alignment</h4>
+<div class="container">
 	<div class="row top-sm middle-md bottom-lg">
-		<div class="col-xs"></div>
-		<div class="col-xs"></div>
-		<div class="col-xs"></div>
-	</div>
-</div>{% endhighlight %}
-</div>
-
-<hr />
-
-<div class="example">
-	<h4>Responsive embedding</h4>
-	<div class="container">
-		<div class="media">
-			<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
+		<div class="col-xs">
+			<div style="height: 65px"></div>
 		</div>
+		<div class="col-xs"></div>
+		<div class="col-xs"></div>
 	</div>
-
-	{% highlight html %}<div class="media">
-	<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
-</div>{% endhighlight %}
 </div>
+
+```html
+<div class="container">
+	<div class="row top-sm middle-md bottom-lg">
+		<div class="col-xs">
+			<div style="height: 65px"></div>
+		</div>
+		<div class="col-xs"></div>
+		<div class="col-xs"></div>
+	</div>
+</div>
+```
+
+___
+
+<h4>Responsive embedding</h4>
+<div class="container">
+	<div class="media">
+		<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
+	</div>
+</div>
+
+```html
+<div class="container">
+	<div class="media">
+		<iframe class="media-item" src="https://www.youtube-nocookie.com/embed/SkVqJ1SGeL0?rel=0" allowfullscreen></iframe>
+	</div>
+</div>
+```

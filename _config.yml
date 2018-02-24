@@ -42,6 +42,9 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+kramdown:
+    input: GFM
+    hard_wrap: false
 sass:
     sass_dir: _scss
     style: compressed
