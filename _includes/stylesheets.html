@@ -34,6 +34,15 @@
 						{%- assign style_url = style_url | append: '.min' -%}
 					{%- endif -%}
 					{%- assign style_url = style_url | append: '.css' -%}
+				{%- when 'googlefonts' -%}
+					{%- assign style_url = style_url
+					| append: 'https://fonts.googleapis.com/css?family='
+					| append: file.name -%}
+					{%- if file.subset.size > 0 -%}
+						{%- assign subset = file.subset | compact | join: ',' -%}
+						{%- assign style_url = style_url
+						| append: '&amp;subset=' | append: subset -%}
+					{%- endif -%}
 				{%- else -%}
 					{%- assign style_url = style_url | append: '/assets/css/'
 					| append: file.name -%}

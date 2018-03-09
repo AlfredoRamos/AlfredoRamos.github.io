@@ -54,5 +54,17 @@
 				"cdn": null
 			}
 		]
+	},
+	{
+		"group": "pt_mono",
+		"files": [
+			{
+				"name": "PT+Mono",
+				"version": null,
+				"minified": false,
+				"subset": [],
+				"cdn": "googlefonts"
+			}
+		]
 	}
 ]
