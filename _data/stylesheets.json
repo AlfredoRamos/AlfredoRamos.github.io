@@ -29,7 +29,7 @@
 				"name": "main",
 				"version": null,
 				"minified": false,
-				"cdn": "local"
+				"cdn": null
 			}
 		]
 	},
@@ -51,7 +51,7 @@
 				"name": "simple_grid",
 				"version": null,
 				"minified": false,
-				"cdn": "local"
+				"cdn": null
 			}
 		]
 	}

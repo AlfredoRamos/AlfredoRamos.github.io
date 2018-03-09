@@ -11,13 +11,6 @@
 		{%- for file in style.files -%}
 			{%- assign style_url = nil -%}
 			{%- case file.cdn -%}
-				{%- when 'local' -%}
-					{%- assign style_url = style_url | append: '/assets/css/'
-					| append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign style_url = style_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign style_url = style_url | append: '.css' | relative_url -%}
 				{%- when 'cdnjs' -%}
 					{%- assign style_url = style_url
 					| append: 'https://cdnjs.cloudflare.com/ajax/libs/'
@@ -41,6 +34,13 @@
 						{%- assign style_url = style_url | append: '.min' -%}
 					{%- endif -%}
 					{%- assign style_url = style_url | append: '.css' -%}
+				{%- else -%}
+					{%- assign style_url = style_url | append: '/assets/css/'
+					| append: file.name -%}
+					{%- if file.minified -%}
+						{%- assign style_url = style_url | append: '.min' -%}
+					{%- endif -%}
+					{%- assign style_url = style_url | append: '.css' | relative_url -%}
 			{%- endcase -%}
 			{%- if style_url.size > 0 %}
 			<link rel="stylesheet" href="{{ style_url | uri_escape }}" />
