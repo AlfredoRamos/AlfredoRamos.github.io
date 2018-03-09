@@ -4,7 +4,7 @@
 		"files": [
 			{
 				"name": "normalize",
-				"version": "7.0.0",
+				"version": "8.0.0",
 				"minified": true,
 				"cdn": "cdnjs"
 			}
