@@ -11,13 +11,6 @@
 		{%- for file in script.files -%}
 			{%- assign script_url = nil -%}
 			{%- case file.cdn -%}
-				{%- when 'local' -%}
-					{%- assign script_url = script_url | append: '/assets/js/'
-					| append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign script_url = script_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign script_url = script_url | append: '.js' | relative_url -%}
 				{%- when 'cdnjs' -%}
 					{%- assign script_url = script_url
 					| append: 'https://cdnjs.cloudflare.com/ajax/libs/'
@@ -41,6 +34,13 @@
 						{%- assign script_url = script_url | append: '.min' -%}
 					{%- endif -%}
 					{%- assign script_url = script_url | append: '.js' -%}
+				{%- else -%}
+					{%- assign script_url = script_url | append: '/assets/js/'
+					| append: file.name -%}
+					{%- if file.minified -%}
+						{%- assign script_url = script_url | append: '.min' -%}
+					{%- endif -%}
+					{%- assign script_url = script_url | append: '.js' | relative_url -%}
 			{%- endcase -%}
 			{%- if script_url.size > 0 %}
 			<script type="text/javascript" src="{{ script_url | uri_escape }}"></script>
