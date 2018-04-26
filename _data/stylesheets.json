@@ -56,6 +56,18 @@
 		]
 	},
 	{
+		"group": "marquee",
+		"files": [
+			{
+				"name": "AlfredoRamos/241ebc49763fd6d8d805878e29b9c804/raw/53f3b1b4b2e40349433df414c4ab998637d59901/marquee",
+				"version": null,
+				"minified": true,
+				"cdn": "githack",
+				"type": "gist"
+			}
+		]
+	},
+	{
 		"group": "pt_mono",
 		"files": [
 			{
