@@ -4,11 +4,6 @@
 
 .post {
 	.body {
-		h4,
-		h5 {
-			text-align: center;
-		}
-
 		[class*="col-"] {
 			border: 1px solid $bg-badge;
 			text-align: center;
