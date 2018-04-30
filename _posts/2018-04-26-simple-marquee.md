@@ -1,6 +1,7 @@
 ---
 title: Simple Marquee
 date: 2018-04-26 14:06:16 -0500
+updated_at: 2018-04-29 19-10-23 -0500
 category: development
 tags: [sass, marquee]
 stylesheets: [marquee]
@@ -16,12 +17,12 @@ Links:
 
 <h4>Single element</h4>
 <div class="marquee">
-	<p class="marquee-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p class="marquee-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 
 ```html
 <div class="marquee">
-	<p class="marquee-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p class="marquee-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 ```
 
@@ -29,7 +30,7 @@ ___
 
 <h4>Multiple elements</h4>
 <div class="marquee">
-	<ul class="marquee-wrapper">
+	<ul class="marquee-content">
 		<li>Cras volutpat ante a risus eleifend fringilla in maximus nulla.</li>
 		<li>Duis pretium, dolor vitae placerat scelerisque, sem magna posuere nisi, ac tempus lacus eros in ex.</li>
 		<li>Morbi luctus condimentum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.</li>
@@ -38,10 +39,84 @@ ___
 
 ```html
 <div class="marquee">
-	<ul class="marquee-wrapper">
+	<ul class="marquee-content">
 		<li>Cras volutpat ante a risus eleifend fringilla in maximus nulla.</li>
 		<li>Duis pretium, dolor vitae placerat scelerisque, sem magna posuere nisi, ac tempus lacus eros in ex.</li>
 		<li>Morbi luctus condimentum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.</li>
 	</ul>
+</div>
+```
+
+___
+
+<h4>Reverse order</h4>
+<div class="marquee marquee-reverse">
+	<p class="marquee-content">Vestibulum hendrerit dapibus placerat. Etiam bibendum mollis ipsum ac pellentesque.</p>
+</div>
+
+```html
+<div class="marquee marquee-reverse">
+	<p class="marquee-content">Vestibulum hendrerit dapibus placerat. Etiam bibendum mollis ipsum ac pellentesque.</p>
+</div>
+```
+
+___
+
+<h4>Marquee speed</h4>
+**Slow** (from `sx2` to `sx5`)
+<div class="marquee marquee-speed-sx2">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-sx3">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-sx4">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-sx5">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+
+```html
+<div class="marquee marquee-speed-sx2">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-sx3">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-sx4">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-sx5">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+```
+
+**Fast** (from `fx2` to `fx5`)
+<div class="marquee marquee-speed-fx2">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-fx3">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-fx4">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-fx5">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+
+```html
+<div class="marquee marquee-speed-fx2">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-fx3">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-fx4">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
+</div>
+<div class="marquee marquee-speed-fx5">
+	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
 </div>
 ```
