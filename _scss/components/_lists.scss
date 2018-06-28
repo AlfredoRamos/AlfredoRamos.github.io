@@ -18,12 +18,12 @@
 	// With separator
 	&-with-separator {
 		> li::before {
-			content: " / ";
 			color: $fg-link;
+			content: ' / ';
 		}
 
 		> li:first-child::before {
-			content: "";
+			content: '';
 		}
 	}
 

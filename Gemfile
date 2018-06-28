@@ -1,7 +1,17 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem 'rake'
 gem 'github-pages', group: :jekyll_plugins
 gem 'to_slug'
-gem 'therubyracer'
+
+group :development do
+  gem 'mini_racer'
+  gem 'rake'
+end
+
+group :test do
+  gem 'rubocop', require: false
+  gem 'scss_lint', require: false
+end

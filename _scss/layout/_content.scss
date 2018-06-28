@@ -2,10 +2,10 @@ body > main {
 	#content {
 		.index {
 			.post {
-				padding: 7px 0;
 				border-width: 0 0 1px;
 				border-style: dashed;
 				border-color: $fg-body;
+				padding: 7px 0;
 
 				&:last-child {
 					border: none;

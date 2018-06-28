@@ -6,10 +6,10 @@
 	.body {
 		[class*="col-"] {
 			border: 1px solid $bg-badge;
-			text-align: center;
 			background-color: $fg-body;
 			padding-top: 10px;
 			padding-bottom: 10px;
+			text-align: center;
 			font-size: 10px;
 
 			[class*="col-"] {

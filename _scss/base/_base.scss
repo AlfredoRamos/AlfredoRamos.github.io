@@ -1,15 +1,15 @@
 body {
+	background-color: $bg-body;
 	color: $fg-body;
 	font-family: 'PT Mono',monospace;
-	background-color: $bg-body;
 	font-size: get-rems((1 - (2 / 10)), 1); // 1rem - 20%
 }
 
 a {
 	&,
 	&:visited {
-		color: $fg-link;
 		text-decoration: none;
+		color: $fg-link;
 	}
 
 	&:hover {
@@ -31,15 +31,11 @@ p img {
 }
 
 hr {
-	background-color: transparent;
-	border-width: 0 0 1px 0;
-	border-style: dashed;
-	border-color: $fg-body;
-	width: percentage(1) - 2;
 	margin-top: get-rems($spacing);
 	margin-bottom: get-rems($spacing);
-}
-
-hr {
-	margin-bottom: 0;
+	border-width: 0 0 1px;
+	border-style: dashed;
+	border-color: $fg-body;
+	background-color: transparent;
+	width: percentage(1) - 2;
 }

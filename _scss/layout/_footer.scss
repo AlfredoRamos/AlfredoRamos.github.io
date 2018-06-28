@@ -1,7 +1,7 @@
 body > footer {
-	text-align: center;
 	margin-top: $spacing;
 	margin-bottom: $spacing;
+	text-align: center;
 
 	.credits {
 		margin: 0 0 get-rems($spacing / 2);

@@ -12,16 +12,16 @@ body > header {
 	}
 
 	#avatar {
-		& > img {
+		> img {
 			display: inline-block;
-			width: 120px;
-			height: 120px;
 			border-width: 1px;
 			border-style: solid;
+			border-radius: percentage(1 / 2);
 			border-color: $br-avatar;
-			padding: 4px;
 			background-color: $bg-avatar;
-			border-radius: percentage(1/2);
+			padding: 4px;
+			width: 120px;
+			height: 120px;
 		}
 	}
 }

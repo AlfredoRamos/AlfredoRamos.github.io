@@ -1,0 +1,28 @@
+scss_files:
+  - '_scss/**/*.scss'
+  - 'assets/**/*.scss'
+
+preprocess_command: "sed '1{/^---$/{:a N;/---$/!ba;d}}'"
+
+linters:
+  BorderZero:
+    enabled: true
+    convention: none
+  ChainedClasses:
+    enabled: true
+  IdSelector:
+    enabled: false
+  Indentation:
+    enabled: true
+    character: tab
+    width: 1
+  PlaceholderInExtend:
+    enabled: true
+  PropertySortOrder:
+    enabled: true
+    order: concentric
+  PropertyUnits:
+    enabled: true
+    global: ['px', 'rem', '%']
+  TrailingZero:
+    enabled: true

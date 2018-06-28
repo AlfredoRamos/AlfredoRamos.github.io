@@ -1,4 +1,5 @@
-# encoding: UTF-8
+# frozen_string_literal: true
+
 $stdout.sync = $stderr.sync = true
 
 require 'to_slug'
@@ -11,28 +12,33 @@ namespace :new do
     ENV['title'] = ENV['title'].to_s.strip
 
     # Title check
-    if ENV['title'].empty?
-      abort 'Specify a title'
-    end
+    abort 'Specify a title' if ENV['title'].empty?
 
     # Post default data
     post = {
-      :slug   => '',
-      :title  => ENV['title'],
-      :date   => Time.now,
-      :path   => '_posts',
-      :ext    => 'md'
+      slug: '',
+      title: ENV['title'],
+      date: Time.now,
+      path: '_posts',
+      ext: 'md'
     }
 
     # Slug
-    post[:slug] = '%1$s-%2$s' % [post[:date].strftime('%Y-%m-%d'), post[:title]]
-    post[:slug] = post[:slug].to_slug.chomp('-')
+    post[:slug] = format(
+      '%<date>s-%<title>s',
+      date: post[:date].strftime('%Y-%m-%d'),
+      title: post[:title]
+    ).to_slug.chomp('-')
 
     # Create post
     file = File.join(
       File.dirname(__FILE__),
       post[:path],
-      '%1$s.%2$s' % [post[:slug], post[:ext]]
+      format(
+        '%<slug>s.%<ext>s',
+        slug: post[:slug],
+        ext: post[:ext]
+      )
     )
 
     # Check if already exists
@@ -42,8 +48,8 @@ namespace :new do
       # Create post
       File.open(file, 'w') do |p|
         p.puts '---'
-        p.puts 'title: %s' % post[:title]
-        p.puts 'date: %s' % post[:date].strftime('%Y-%m-%d %H:%M:%S %z')
+        p.puts format('title: %<title>s', title: post[:title])
+        p.puts format('date: %<date>s', date: post[:date].strftime('%Y-%m-%d %H:%M:%S %z'))
         p.puts 'category: '
         p.puts 'tags: []'
         p.puts '---'
@@ -52,43 +58,55 @@ namespace :new do
     end
 
     # Check if the post has been created successfully
-    if File.exists?(file)
-      puts 'Post written to %1$s/%2$s' % [post[:path], File.basename(file)]
-      system('%1$s %2$s' % [ENV['EDITOR'], file])
+    if File.exist?(file)
+      puts format(
+        'Post written to %<path>s/%<file>s',
+        path: post[:path],
+        file: File.basename(file)
+      )
+      system(format(
+        '%<editor>s %<file>s',
+        editor: ENV['EDITOR'],
+        file: file
+      ))
     else
-      warn 'Couldn\'t create post'
+      warn 'Could nott create post'
     end
   end
 
   # Page
   desc 'Create new page'
-  task :page do |page|
+  task :page do
     # Get title as string
     ENV['title'] = ENV['title'].to_s.strip
 
     # Title check
-    if ENV['title'].empty?
-      abort 'Specify a title'
-    end
+    abort 'Specify a title' if ENV['title'].empty?
 
     # Page default data
     page = {
-      :slug   => '',
-      :title  => ENV['title'],
-      :date   => Time.now,
-      :path   => '',
-      :ext    => 'html'
+      slug: '',
+      title: ENV['title'],
+      date: Time.now,
+      path: '',
+      ext: 'html'
     }
 
     # Slug
-    page[:slug] = '%s' % page[:title]
-    page[:slug] = page[:slug].to_slug.chomp('-')
+    page[:slug] = format(
+      '%<title>s',
+      title: page[:title]
+    ).to_slug.chomp('-')
 
     # Create post
     file = File.join(
       File.dirname(__FILE__),
       page[:path],
-      '%1$s.%2$s' % [page[:slug], page[:ext]]
+      format(
+        '%<slug>s.%<ext>',
+        slug: page[:slug],
+        ext: page[:ext]
+      )
     )
 
     # Check if page exists
@@ -98,19 +116,27 @@ namespace :new do
       # Create page
       File.open(file, 'w') do |p|
         p.puts '---'
-        p.puts 'title: %s' % page[:title]
-        p.puts 'permalink: /%s/' % page[:slug]
+        p.puts format('title: %<title>s', title: page[:title])
+        p.puts format('permalink: /%<slug>s/', slug: page[:slug])
         p.puts '---'
         p.puts
       end
     end
 
     # Check if the page has been created successfully
-    if File.exists?(file)
-      puts 'Page written to %1$s/%2$s' % [page[:path], File.basename(file)]
-      system('%1$s %2$s' % [ENV['EDITOR'], file])
+    if File.exist?(file)
+      puts format(
+        'Page written to %<path>s/%<file>s',
+        path: page[:path],
+        file: File.basename(file)
+      )
+      system(format(
+        '%<editor>s %<file>s',
+        editor: ENV['EDITOR'],
+        file: file
+      ))
     else
-      warn 'Couldn\'t create page.'
+      warn 'Could not create page'
     end
   end
 end
