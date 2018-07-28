@@ -1,0 +1,10 @@
+{
+	"unstable": {
+		"0.4": {
+			"current": "0.4.0-dev",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
+			"eol": null,
+			"security": false
+		}
+	}
+}
