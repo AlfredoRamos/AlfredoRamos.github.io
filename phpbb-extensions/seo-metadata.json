@@ -1,7 +1,7 @@
 {
 	"unstable": {
-		"0.6": {
-			"current": "0.6.0-dev",
+		"0.7": {
+			"current": "0.7.0-beta",
 			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
 			"eol": null,
 			"security": false
