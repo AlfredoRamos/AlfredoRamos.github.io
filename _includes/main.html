@@ -2,14 +2,12 @@
 	<div class="container">
 		<div class="row center-xs">
 			<!-- content -->
-			<section id="content" class="col-md-9">
-				{{ content }}
-
-				<!-- pagination -->
-				{% include pagination.html %}
-				<!-- pagination -->
-			</section>
+			{% include content.html %}
 			<!-- content -->
+
+			<!-- sidebar -->
+			{% include sidebar.html %}
+			<!-- sidebar -->
 		</div>
 	</div>
 </main>

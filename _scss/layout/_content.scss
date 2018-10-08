@@ -9,7 +9,7 @@ body > main {
 			.post {
 				border-width: 0 0 1px;
 				border-style: dashed;
-				border-color: $fg-body;
+				border-color: darken($fg-body, 15%);
 				padding: 7px 0;
 
 				&:last-child {

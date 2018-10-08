@@ -1,13 +1,15 @@
 body > nav {
-	text-align: center;
-
-	@include responsive(min-width, map-get($grid-breakpoints, sm)) {
-		text-align: right;
+	> .container {
+		border-width: 1px 0;
+		border-style: dashed;
+		border-color: darken($fg-body, 15%);
+		padding: $spacing 0;
+		margin-bottom:  0;
 	}
 
-	.list-with-separator {
-		> li::before {
-			color: $fg-body;
+	.search {
+		> [type="search"] {
+			width: 100%;
 		}
 	}
 }

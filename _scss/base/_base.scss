@@ -35,7 +35,7 @@ hr {
 	margin-bottom: get-rems($spacing);
 	border-width: 0 0 1px;
 	border-style: dashed;
-	border-color: $fg-body;
+	border-color: darken($fg-body, 15%);
 	background-color: transparent;
 	width: percentage(1) - 2;
 }

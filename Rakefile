@@ -103,7 +103,7 @@ namespace :new do
       File.dirname(__FILE__),
       page[:path],
       format(
-        '%<slug>s.%<ext>',
+        '%<slug>s.%<ext>s',
         slug: page[:slug],
         ext: page[:ext]
       )

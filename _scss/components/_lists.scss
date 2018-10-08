@@ -18,7 +18,7 @@
 	// With separator
 	&-with-separator {
 		> li::before {
-			color: $fg-link;
+			color: darken($fg-body, 15%);
 			content: ' / ';
 		}
 
@@ -27,7 +27,8 @@
 		}
 	}
 
-	// Categories and tags
+	// Archives, categories and tags
+	&-archives,
 	&-categories,
 	&-tags {
 		padding: 0;

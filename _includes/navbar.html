@@ -4,30 +4,28 @@
 			<div class="col-md-9">
 				<ul class="list-inline list-with-separator">
 					<li>
-						<a href="{{ '/categories/' | relative_url }}">
-							<svg class="icon icon-folder">
-								<use xlink:href="#folder" />
-							</svg>
-							Categories
-						</a>
+						<a href="{{ '/' | relative_url }}">Home</a>
 					</li>
 					<li>
-						<a href="{{ '/tags/' | relative_url }}">
-							<svg class="icon icon-tag">
-								<use xlink:href="#tag" />
-							</svg>
-							Tags
-						</a>
+						<a href="{{ '/archives/' | relative_url }}">Archives</a>
 					</li>
 					<li>
-						<a href="{{ '/feed.atom' | relative_url }}">
-							<svg class="icon icon-feed">
-								<use xlink:href="#feed" />
-							</svg>
-							Atom Feed
-						</a>
+						<a href="{{ '/categories/' | relative_url }}">Categories</a>
+					</li>
+					<li>
+						<a href="{{ '/tags/' | relative_url }}">Tags</a>
+					</li>
+					<li>
+						<a href="{{ '/feed.atom' | relative_url }}">Atom Feed</a>
 					</li>
 				</ul>
+			</div>
+			<div class="col-md">
+				<form action="https://duckduckgo.com/" target="ddg" class="search">
+					<input type="search" name="q" placeholder="Search…" title="Search with DuckDuckGo" />
+					<input type="hidden" name="sites" value="alfredoramos.github.io" />
+					<input type="hidden" name="HTTPS" value="1" />
+				</form>
 			</div>
 		</div>
 	</div>

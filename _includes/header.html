@@ -1,32 +1,11 @@
 <header>
 	<div class="container">
 		<div class="row center-xs">
-			<div class="col-md-9">
-
+			<div class="col-md">
 				<div class="row center-xs middle-xs">
-					{%- if site.github.owner_gravatar_url.size > 0 %}
-					<div class="col-sm-auto" id="avatar">
-						<img src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" />
-					</div>
-					{%- endif %}
-
 					<div class="col-sm" id="description">
 						<h1><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></h1>
 						<p>{{ site.description | escape }}</p>
-
-						{%- if site.data.networks.size > 0 %}
-						<ul id="social-networks" class="list-inline">
-							{%- for network in site.data.networks %}
-							<li>
-								<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
-									<svg class="icon icon-{{ network.name | downcase | escape }}">
-										<use xlink:href="#{{ network.name | downcase | escape }}" />
-									</svg>
-								</a>
-							</li>
-							{%- endfor %}
-						</ul>
-						{%- endif %}
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,28 @@
+<aside id="sidebar" class="col-md">
+	{%- if site.data.networks.size > 0 %}
+	<section id="about" class="widget">
+		<header class="header">
+			<h3>About</h3>
+		</header>
+		<div class="body">
+			{%- if site.github.owner_gravatar_url.size > 0 %}
+			<div class="col-sm-auto" id="avatar">
+				<img src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" />
+			</div>
+			{%- endif %}
+			<p>I'm a student of computer systems engineering, open-source software enthusiast, passionate about GNU/Linux and a proudly user of Arch Linux.</p>
+			<ul id="social-networks" class="list-inline">
+				{%- for network in site.data.networks %}
+				<li>
+					<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
+						<svg class="icon icon-{{ network.name | downcase | escape }}">
+							<use xlink:href="#{{ network.name | downcase | escape }}" />
+						</svg>
+					</a>
+				</li>
+				{%- endfor %}
+			</ul>
+		</div>
+	</section>
+	{%- endif %}
+</aside>

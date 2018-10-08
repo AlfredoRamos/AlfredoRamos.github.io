@@ -1,0 +1,37 @@
+---
+title: Archives
+permalink: /archives/
+---
+{%- if site.posts.size > 0 %}
+{%- assign archives = site.posts
+| group_by_exp: 'post','post.date | date: "%Y"' -%}
+<p>Click on a year to see its posts.</p>
+<ul class="list-archives list-inline">
+	{%- for archive in archives %}
+	<li>
+		<a href="#{{ archive.name | uri_escape }}">
+			<span class="badge">{{ archive.name | escape}}</span>
+		</a>
+	</li>
+	{%- endfor %}
+</ul>
+
+<hr />
+
+<ul class="list-archives">
+	{%- for archive in archives %}
+	<li id="{{ archive.name | uri_escape }}">
+		<h4>{{ archive.name | escape }}</h4>
+		<ul class="list-posts">
+			{%- for post in archive.items -%}
+			<li>
+				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</li>
+	{%- endfor %}
+</ul>
+{%- else %}
+<p>Nothing interesting to show :/</p>
+{%- endif %}

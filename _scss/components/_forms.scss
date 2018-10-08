@@ -1,0 +1,9 @@
+input[type="text"],
+input[type="search"] {
+	color: $fg-body;
+	background-color: transparent;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: $bg-badge;
+	max-width: 100%;
+}
