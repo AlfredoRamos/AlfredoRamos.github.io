@@ -1,11 +1,11 @@
 body > nav {
 	> .container {
+		margin-bottom: 0;
 		border-width: 1px 0;
 		border-style: dashed;
 		border-color: darken($fg-body, 15%);
 		padding-top: $spacing;
 		padding-bottom: $spacing;
-		margin-bottom: 0;
 	}
 
 	.search {

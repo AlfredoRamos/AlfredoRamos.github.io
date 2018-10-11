@@ -3,6 +3,12 @@
 $stdout.sync = $stderr.sync = true
 
 require 'to_slug'
+require 'scss_lint/rake_task'
+require 'rubocop/rake_task'
+
+SCSSLint::RakeTask.new
+
+RuboCop::RakeTask.new
 
 namespace :new do
   # Post
