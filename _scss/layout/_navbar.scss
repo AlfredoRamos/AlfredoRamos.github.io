@@ -3,8 +3,9 @@ body > nav {
 		border-width: 1px 0;
 		border-style: dashed;
 		border-color: darken($fg-body, 15%);
-		padding: $spacing 0;
-		margin-bottom:  0;
+		padding-top: $spacing;
+		padding-bottom: $spacing;
+		margin-bottom: 0;
 	}
 
 	.search {
