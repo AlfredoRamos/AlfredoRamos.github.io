@@ -13,4 +13,19 @@ body > nav {
 			width: 100%;
 		}
 	}
+
+	@include responsive(max-width, map-get($grid-breakpoints, md)) {
+		.list-inline li {
+			padding-top: ($spacing - 10);
+			padding-bottom: ($spacing - 10);
+		}
+
+		.list-with-separator li::before {
+			content: '';
+		}
+
+		.search {
+			margin-top: ($spacing - 10);
+		}
+	}
 }
