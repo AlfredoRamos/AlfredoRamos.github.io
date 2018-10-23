@@ -13,6 +13,18 @@
 		> li {
 			display: inline-block;
 		}
+
+		@include responsive(max-width, map-get($grid-breakpoints, md)) {
+			> li {
+				padding-top: ($spacing - 10);
+				padding-bottom: ($spacing - 10);
+
+				li {
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
 	}
 
 	// With separator
@@ -22,15 +34,18 @@
 			content: ' / ';
 		}
 
+		@include responsive(max-width, map-get($grid-breakpoints, md)) {
+			> li::before {
+				content: '';
+			}
+		}
+
 		> li:first-child::before {
 			content: '';
 		}
 	}
 
-	// Archives, categories and tags
-	&-archives,
-	&-categories,
-	&-tags {
+	&-links {
 		padding: 0;
 		list-style: none;
 

@@ -4,7 +4,7 @@ permalink: /categories/
 ---
 {%- if site.categories.size > 0 %}
 <p>Click on a category to see its posts.</p>
-<ul class="list-categories list-inline">
+<ul class="list-inline">
 	{%- for category in site.categories %}
 	<li>
 		<a href="#{{ category.first | uri_escape }}">
@@ -16,7 +16,7 @@ permalink: /categories/
 
 <hr />
 
-<ul class="list-categories">
+<ul class="list-links">
 	{%- for category in site.categories %}
 	{%- assign posts = site.posts
 	| where_exp: 'post', 'post.categories contains category.first' -%}

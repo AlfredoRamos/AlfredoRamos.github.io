@@ -4,7 +4,7 @@ permalink: /tags/
 ---
 {%- if site.tags.size > 0 %}
 <p>Click on a tag to see its posts.</p>
-<ul class="list-tags list-inline">
+<ul class="list-inline">
 	{%- for tag in site.tags %}
 	<li>
 		<a href="#{{ tag.first | uri_escape }}">
@@ -16,7 +16,7 @@ permalink: /tags/
 
 <hr />
 
-<ul class="list-tags">
+<ul class="list-links">
 	{%- for tag in site.tags %}
 	{%- assign posts = site.posts
 	| where_exp: 'post', 'post.tags contains tag.first' -%}

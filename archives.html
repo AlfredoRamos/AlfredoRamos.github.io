@@ -6,7 +6,7 @@ permalink: /archives/
 {%- assign archives = site.posts
 | group_by_exp: 'post','post.date | date: "%Y"' -%}
 <p>Click on a year to see its posts.</p>
-<ul class="list-archives list-inline">
+<ul class="list-inline">
 	{%- for archive in archives %}
 	<li>
 		<a href="#{{ archive.name | uri_escape }}">
@@ -18,7 +18,7 @@ permalink: /archives/
 
 <hr />
 
-<ul class="list-archives">
+<ul class="list-links">
 	{%- for archive in archives %}
 	<li id="{{ archive.name | uri_escape }}">
 		<h4>{{ archive.name | escape }}</h4>
