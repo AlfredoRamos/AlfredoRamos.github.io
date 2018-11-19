@@ -11,6 +11,12 @@
 			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-imgur/releases/tag/1.1.1",
 			"eol": null,
 			"security": false
+		},
+		"1.2": {
+			"current": "1.2.0",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-imgur/releases/tag/1.2.0",
+			"eol": null,
+			"security": false
 		}
 	}
 }
