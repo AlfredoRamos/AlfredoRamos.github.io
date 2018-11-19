@@ -1,17 +1,21 @@
 .list {
-	// Inline
 	&-inline {
 		list-style: none;
+		margin: 0;
 
 		&,
 		> li {
-			margin: 0;
 			padding: 0;
 		}
 
 		& &,
 		> li {
 			display: inline-block;
+		}
+
+		> li {
+			margin-bottom: ($spacing - 10);
+			margin-top: ($spacing - 10);
 		}
 
 		@include responsive(max-width, map-get($grid-breakpoints, md)) {
@@ -27,7 +31,6 @@
 		}
 	}
 
-	// With separator
 	&-with-separator {
 		> li::before {
 			color: darken($fg-body, 15%);
@@ -57,4 +60,8 @@
 			}
 		}
 	}
+}
+
+#social-networks {
+	list-style: none;
 }

@@ -19,4 +19,10 @@ body > nav {
 			margin-top: ($spacing - 10);
 		}
 	}
+
+	.list-inline {
+		> li {
+			margin: 0;
+		}
+	}
 }
