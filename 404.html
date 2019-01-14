@@ -3,4 +3,4 @@ layout: error
 title: HTTP 404 - Not Found
 ---
 <p>This page doesn't exist or has been deleted.</p>
-<p>Return to <a href="{{ "/" | relative_url }}">homepage</a>.</p>
+<p>Return to <a href="{{ site.data.pages | where: 'name', 'home' | map: 'uri' | first | relative_url }}">{{ site.data.pages | where: 'name', 'home' | map: 'title' | first | escape }}</a>.</p>
