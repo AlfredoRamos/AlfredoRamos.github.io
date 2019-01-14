@@ -11,7 +11,7 @@
 			</div>
 			{%- endif %}
 			<p>I'm a student of computer systems engineering, open-source software enthusiast, passionate about GNU/Linux and a proudly user of Arch Linux.</p>
-			<ul id="social-networks">
+			<ul id="social-networks" class="col-xs">
 				{%- for network in site.data.networks %}
 				<li>
 					<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="nofollow noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | capitalize | escape }}">
