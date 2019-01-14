@@ -1,0 +1,27 @@
+[
+	{
+		"name": "home",
+		"title": "Home",
+		"uri": "/"
+	},
+	{
+		"name": "archives",
+		"title": "Archives",
+		"uri": "/archives/"
+	},
+	{
+		"name": "categories",
+		"title": "Categories",
+		"uri": "/categories/"
+	},
+	{
+		"name": "tags",
+		"title": "Tags",
+		"uri": "/tags/"
+	},
+	{
+		"name": "feed",
+		"title": "Feed",
+		"uri": "feed.atom"
+	}
+]

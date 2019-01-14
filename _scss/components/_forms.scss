@@ -3,7 +3,7 @@ input[type="search"] {
 	border-width: 1px;
 	border-style: dashed;
 	border-color: $bg-badge;
-	background-color: transparent;
+	background-color: $bg-badge;
 	max-width: 100%;
 	color: $fg-body;
 }

@@ -1,23 +1,16 @@
+{%- if site.data.pages.size > 0 %}
 <nav id="pages">
 	<div class="container">
 		<div class="row center-xs">
 			<div class="col-md-9">
 				<ul class="list-inline list-with-separator">
+					{%- for page in site.data.pages %}
 					<li>
-						<a href="{{ '/' | relative_url }}">Home</a>
+						<a href="{{ page.uri | uri_escape | relative_url }}">
+							{{ page.title | escape }}
+						</a>
 					</li>
-					<li>
-						<a href="{{ '/archives/' | relative_url }}">Archives</a>
-					</li>
-					<li>
-						<a href="{{ '/categories/' | relative_url }}">Categories</a>
-					</li>
-					<li>
-						<a href="{{ '/tags/' | relative_url }}">Tags</a>
-					</li>
-					<li>
-						<a href="{{ '/feed.atom' | relative_url }}">Atom Feed</a>
-					</li>
+					{%- endfor %}
 				</ul>
 			</div>
 			<div class="col-md">
@@ -30,3 +23,4 @@
 		</div>
 	</div>
 </nav>
+{%- endif %}

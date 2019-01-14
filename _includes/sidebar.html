@@ -36,7 +36,7 @@
 			<ul class="list-archives list-inline">
 				{%- for archive in archives %}
 				<li>
-					<a href="{{ '/archives/' | relative_url }}#{{ archive.name | uri_escape }}">
+					<a href="{{ site.data.pages | where: 'name', 'archives' | map: 'uri' | first | relative_url }}#{{ archive.name | uri_escape }}">
 						<span class="badge">{{ archive.name | escape}}</span>
 					</a>
 				</li>
@@ -54,7 +54,7 @@
 			<ul class="list-categories list-inline">
 				{%- for category in site.categories %}
 				<li>
-					<a href="{{ '/categories/' | relative_url }}#{{ category.first | uri_escape }}">
+					<a href="{{ site.data.pages | where: 'name', 'categories' | map: 'uri' | first | relative_url }}#{{ category.first | uri_escape }}">
 						<span class="badge">{{ category.first | escape}}</span>
 					</a>
 				</li>
@@ -72,7 +72,7 @@
 			<ul class="list-tags list-inline">
 				{%- for tag in site.tags %}
 				<li>
-					<a href="{{ '/tags/' | relative_url }}#{{ tag.first | uri_escape }}">
+					<a href="{{ site.data.pages | where: 'name', 'tags' | map: 'uri' | first | relative_url }}#{{ tag.first | uri_escape }}">
 						<span class="badge">{{ tag.first | escape}}</span>
 					</a>
 				</li>
