@@ -2,10 +2,10 @@
 
 Create new post
 ```shell
-rake new:post title='Title'
+bundle exec rake new:post 'Title'
 ```
 
 Create new page
 ```shell
-rake new:page title='Title'
+bundle exec rake new:page 'Title'
 ```

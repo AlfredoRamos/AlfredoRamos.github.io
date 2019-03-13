@@ -14,16 +14,19 @@ namespace :new do
   # Post
   desc 'Create new post'
   task :post do
-    # Get title as string
-    ENV['title'] = ENV['title'].to_s.strip
+    # Prevent rake tasks errors
+    ARGV.each { |arg| task arg.to_sym do ; end }
+
+    # Get title
+    title = ARGV[1].to_s.strip unless ARGV[1].nil?
 
     # Title check
-    abort 'Specify a title' if ENV['title'].empty?
+    abort 'Specify a title' if title.empty?
 
     # Post default data
     post = {
       slug: '',
-      title: ENV['title'],
+      title: title,
       date: Time.now,
       path: '_posts',
       ext: 'md'
@@ -56,6 +59,7 @@ namespace :new do
         p.puts '---'
         p.puts format('title: %<title>s', title: post[:title])
         p.puts format('date: %<date>s', date: post[:date].strftime('%Y-%m-%d %H:%M:%S %z'))
+        p.puts format('updated_at: %<date>s', date: post[:date].strftime('%Y-%m-%d %H:%M:%S %z'))
         p.puts 'category: '
         p.puts 'tags: []'
         p.puts '---'
@@ -66,7 +70,7 @@ namespace :new do
     # Check if the post has been created successfully
     if File.exist?(file)
       puts format(
-        'Post written to %<path>s/%<file>s',
+        'Post created at %<path>s/%<file>s',
         path: post[:path],
         file: File.basename(file)
       )
@@ -76,23 +80,26 @@ namespace :new do
         file: file
       ))
     else
-      warn 'Could nott create post'
+      warn 'Could not create post'
     end
   end
 
   # Page
   desc 'Create new page'
   task :page do
-    # Get title as string
-    ENV['title'] = ENV['title'].to_s.strip
+    # Prevent rake tasks errors
+    ARGV.each { |arg| task arg.to_sym do ; end }
+
+    # Get title
+    title = ARGV[1].to_s.strip unless ARGV[1].nil?
 
     # Title check
-    abort 'Specify a title' if ENV['title'].empty?
+    abort 'Specify a title' if title.empty?
 
     # Page default data
     page = {
       slug: '',
-      title: ENV['title'],
+      title: title,
       date: Time.now,
       path: '',
       ext: 'html'

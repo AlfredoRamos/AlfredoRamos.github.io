@@ -48,7 +48,7 @@ layout: default
 	<div class="body" itemprop="articleBody">
 		{{ content }}
 	</div>
-	{%- if page.updated_at %}
+	{%- if page.updated_at and page.updated_at != page.date %}
 	<footer class="footer">
 		<ul class="meta list-inline list-width-separator">
 			<li>
