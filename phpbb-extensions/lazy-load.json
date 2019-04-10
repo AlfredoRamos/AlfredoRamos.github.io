@@ -1,7 +1,7 @@
 {
 	"unstable": {
-		"0.2": {
-			"current": "0.2.0-alpha",
+		"0.3": {
+			"current": "0.3.0-beta",
 			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/releases",
 			"eol": null,
 			"security": false
