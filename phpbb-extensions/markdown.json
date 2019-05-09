@@ -1,7 +1,7 @@
 {
 	"unstable": {
-		"0.8": {
-			"current": "0.8.0-beta",
+		"0.9": {
+			"current": "0.9.0-beta",
 			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
 			"eol": null,
 			"security": false
