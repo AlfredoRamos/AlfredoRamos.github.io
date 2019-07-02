@@ -14,6 +14,7 @@ Links:
 
 - [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **AlfredoRamos/simple-marquee**](https://github.com/AlfredoRamos/simple-marquee)
 - [<svg class="icon icon-github"><use xlink:href="#github" /></svg> **marquee.css** and **marquee.min.css**](https://gist.github.com/AlfredoRamos/241ebc49763fd6d8d805878e29b9c804)
+<!-- more -->
 
 <h4>Single element</h4>
 <div class="marquee">
