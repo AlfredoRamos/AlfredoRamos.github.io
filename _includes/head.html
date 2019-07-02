@@ -1,7 +1,7 @@
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="referrer" content="same-origin" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="referrer" content="same-origin">
 	<title>
 		{%- if page.title -%}
 			{%- if paginator.total_pages > 1 and paginator.page > 1 -%}
@@ -28,13 +28,13 @@
 
 	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
-	<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
-	<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}" />
+	<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+	<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}">
 	{%- if paginator.previous_page %}
-	<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}" />
+	<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
 	{%- endif %}
 	{%- if paginator.next_page %}
-	<link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
+	<link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 	{%- endif %}
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

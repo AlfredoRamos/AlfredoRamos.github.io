@@ -43,7 +43,7 @@
 					{%- assign script_url = script_url | append: '.js' | relative_url -%}
 			{%- endcase -%}
 			{%- if script_url.size > 0 %}
-			<script type="text/javascript" src="{{ script_url | uri_escape }}"></script>
+			<script src="{{ script_url | uri_escape }}"></script>
 			{%- endif %}
 		{%- endfor -%}
 	{%- endif -%}
