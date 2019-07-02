@@ -52,6 +52,9 @@ plugins:
   - jekyll-paginate
   - jekyll-github-metadata
 
+verifications:
+    google: 'sgG6KmCJADN3NqJaCyaVjnhYBciwR2LM2uz8rgdGTJU'
+
 # Needed to build locally
 # https://help.github.com/articles/repository-metadata-on-github-pages/
 repository: AlfredoRamos/AlfredoRamos.github.io

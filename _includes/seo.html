@@ -24,3 +24,7 @@
 {%- if page.category %}
 <meta property="article:section" content="{{ page.category | escape }}">
 {%- endif %}
+{%- if site.verifications.google %}
+<meta name="google-site-verification" content="{{ site.verifications.google }}">
+{%- endif %}
+
