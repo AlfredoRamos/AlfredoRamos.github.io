@@ -5,7 +5,7 @@
 <meta property="og:locale" content="{{ page.locale | default: site.locale | default: 'en_US' }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{% if page.id%}article{% else %}website{% endif %}">
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 {%- if page.image.url %}
