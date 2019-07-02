@@ -1,44 +1,11 @@
-body > main {
-	#content {
-		> article,
-		> div {
-			margin-bottom: get-rems($spacing);
-		}
+.post {
+	pre.highlight {
+		padding: get-rems($spacing);
+	}
 
-		.index {
-			.post {
-				border-width: 0 0 1px;
-				border-style: dashed;
-				border-color: darken($fg-body, 15%);
-				padding: 7px 0;
-
-				&:last-child {
-					border: none;
-				}
-
-				.header {
-					.title {
-						margin-top: 0;
-						margin-bottom: 0;
-					}
-				}
-			}
-		}
-
-		.post {
-			.body {
-				font-size: get-rems((1 - (1 / 10)), 1); // 1rem - 10%
-			}
-
-			.footer {
-				.meta {
-					text-align: right;
-				}
-			}
-		}
-
-		.error {
-			text-align: center;
+	.footer {
+		.tags {
+			display: inline-block;
 		}
 	}
 }

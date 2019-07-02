@@ -21,17 +21,11 @@ $container-max-widths: (
 /// @type number
 $rem-base: 16;
 
-// Column spacing
+// Column/row spacing
 $spacing: 15px;
 
 // Background colors
-$bg-body: #1e2a31;
-$bg-badge: #2b3942;
-$bg-avatar: #edeff0;
+$bg-body: #f6f9fc;
 
 // Foreground colors
-$fg-body: #8a9ba1;
-$fg-link: #b4bfc3;
-
-// Border colors
-$br-avatar: #edeff0;
+$fg-body: #4a4a4a;

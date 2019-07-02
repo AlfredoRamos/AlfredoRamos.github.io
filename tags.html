@@ -6,9 +6,9 @@ permalink: /tags/
 <p>Click on a tag to see its posts.</p>
 <ul class="list-inline">
 	{%- for tag in site.tags %}
-	<li>
-		<a href="#{{ tag.first | uri_escape }}">
-			<span class="badge">{{ tag.first | escape}}</span>
+	<li class="list-inline-item">
+		<a href="#{{ tag.first | uri_escape }}" class="badge badge-primary">
+			{{ tag.first | escape}}
 		</a>
 	</li>
 	{%- endfor %}

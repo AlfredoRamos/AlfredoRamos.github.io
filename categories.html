@@ -6,9 +6,9 @@ permalink: /categories/
 <p>Click on a category to see its posts.</p>
 <ul class="list-inline">
 	{%- for category in site.categories %}
-	<li>
-		<a href="#{{ category.first | uri_escape }}">
-			<span class="badge">{{ category.first | escape}}</span>
+	<li class="list-inline-item">
+		<a href="#{{ category.first | uri_escape }}" class="badge badge-primary">
+			{{ category.first | escape}}
 		</a>
 	</li>
 	{%- endfor %}

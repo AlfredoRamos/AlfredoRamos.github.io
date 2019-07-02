@@ -1,26 +1,29 @@
-{%- if site.data.pages.size > 0 %}
-<nav id="pages">
-	<div class="container">
-		<div class="row center-xs">
-			<div class="col-md-9">
-				<ul class="list-inline list-with-separator">
-					{%- for page in site.data.pages %}
-					<li>
-						<a href="{{ page.uri | uri_escape | relative_url }}">
-							{{ page.title | escape }}
-						</a>
-					</li>
-					{%- endfor %}
-				</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+	<a class="navbar-brand" href="{{ site.data.pages | where: 'name', 'home' | map: 'uri' | first | relative_url }}">{{ site.title | escape }}</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		{%- if site.data.pages.size > 0 %}
+		<ul class="navbar-nav">
+			{%- for p in site.data.pages %}
+			<li class="nav-item{% if p.uri == page.url %} active{% endif %}">
+				<a class="nav-link" href="{{ p.uri | uri_escape | relative_url }}">{{ p.title | escape }}{% if p.uri == page.url %}<span class="sr-only"> (current)</span>{% endif %}</a>
+			</li>
+			{%- endfor %}
+		</ul>
+		{%- endif %}
+		<form action="https://duckduckgo.com/" target="ddg" class="form-inline ml-auto my-2 my-lg-0">
+			<div class="input-group input-group-sm">
+				<input name="q" class="form-control" type="search" placeholder="Keywords…" title="Search with DuckDuckGo" aria-label="Search">
+				<input type="hidden" name="sites" value="{{ site.url | absolute_url | remove_first: 'https://' | remove_first: 'http://' }}">
+				<input type="hidden" name="HTTPS" value="1">
+
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+				</div>
 			</div>
-			<div class="col-md">
-				<form action="https://duckduckgo.com/" target="ddg" class="search">
-					<input type="search" name="q" placeholder="Search…" title="Search with DuckDuckGo" />
-					<input type="hidden" name="sites" value="{{ site.url | absolute_url | remove_first: 'https://' | remove_first: 'http://' }}" />
-					<input type="hidden" name="HTTPS" value="1" />
-				</form>
-			</div>
-		</div>
+		</form>
 	</div>
 </nav>
-{%- endif %}

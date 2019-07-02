@@ -8,9 +8,9 @@ permalink: /archives/
 <p>Click on a year to see its posts.</p>
 <ul class="list-inline">
 	{%- for archive in archives %}
-	<li>
-		<a href="#{{ archive.name | uri_escape }}">
-			<span class="badge">{{ archive.name | escape}}</span>
+	<li class="list-inline-item">
+		<a href="#{{ archive.name | uri_escape }}" class="badge badge-primary">
+			{{ archive.name | escape}}
 		</a>
 	</li>
 	{%- endfor %}

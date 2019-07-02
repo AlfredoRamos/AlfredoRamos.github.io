@@ -2,30 +2,26 @@
 layout: default
 title: Home
 ---
-<div class="index">
-	<header class="header">
-		<h2 class="title">Latest posts</h2>
-	</header>
-	<div class="body">
-		{% if paginator.posts.size > 0 %}
-		{% for post in paginator.posts %}
-		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<header class="header row middle-xs">
-				<h3 class="title col-sm" itemprop="name headline">
-					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-				</h3>
-				<div class="col-sm-auto">
-					<ul class="meta list-inline list-with-separator">
-						<li>
-							<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%F' }}</time>
-						</li>
-					</ul>
-				</div>
-			</header>
-		</article>
-		{% endfor %}
-		{% else %}
-		<p>Nothing interesting to show :/</p>
-		{% endif %}
-	</div>
-</div>
+<h2 class="title">Latest posts</h2>
+<hr>
+{% if paginator.posts.size > 0 %}
+	{% for post in paginator.posts %}
+	<article class="post mb-4" itemscope itemtype="http://schema.org/BlogPosting">
+		<header class="header">
+			<h3 class="title" itemprop="name headline">
+				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+			</h3>
+				<ul class="meta list-inline list-with-separator text-muted">
+					<li class="list-inline-item">
+						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
+					</li>
+					<li class="list-inline-item">
+						{{ post.content | strip_html | normalize_whitespace | number_of_words | divided_by: 180 }} min read
+					</li>
+				</ul>
+		</header>
+	</article>
+	{% endfor %}
+{% else %}
+<p>Nothing interesting to show.</p>
+{% endif %}

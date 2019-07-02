@@ -23,10 +23,10 @@
 			{{ site.title | escape }}
 		{%- endif -%}
 	</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 | normalize_whitespace | escape }}">
-	{%- if jekyll.version %}
-	<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
-	{%- endif %}
+
+	{%- include seo.html %}
+
+	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
 	<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
 	<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}" />
@@ -37,6 +37,8 @@
 	<link rel="next" href="{{ paginator.next_page_path | absolute_url }}" />
 	{%- endif %}
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://rawcdn.githack.com/mozmorris/tomorrow-pygments/c6ca1a308e7e93cb18a54f93bf964f56e4d07acf/css/tomorrow.css">
 	{%- include stylesheets.html content=site.data.stylesheet_list %}
 
 	<!-- stylesheets -->

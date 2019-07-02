@@ -1,28 +1,5 @@
 [
 	{
-		"group": "normalize",
-		"files": [
-			{
-				"name": "normalize",
-				"version": "8.0.1",
-				"minified": true,
-				"cdn": "cdnjs"
-			}
-		]
-	},
-	{
-		"group": "grids",
-		"files": [
-			{
-				"name": "AlfredoRamos/7373ba3506e10358bb84648af9a808b0/raw/975ab5028fa2fddfe548bc9d361a5e3ea794445c/grids",
-				"version": null,
-				"minified": true,
-				"cdn": "githack",
-				"type": "gist"
-			}
-		]
-	},
-	{
 		"group": "main",
 		"files": [
 			{
@@ -34,24 +11,13 @@
 		]
 	},
 	{
-		"group": "tomorrow_night",
+		"group": "github",
 		"files": [
 			{
-				"name": "mozmorris/tomorrow-pygments/c6ca1a308e7e93cb18a54f93bf964f56e4d07acf/css/tomorrow_night",
+				"name": "PhilipTrauner/pygments-github-css/daec645dc5b56864b5940d6fc95615477487b793/github",
 				"version": null,
 				"minified": false,
 				"cdn": "githack"
-			}
-		]
-	},
-	{
-		"group": "simple_grid",
-		"files": [
-			{
-				"name": "simple_grid",
-				"version": null,
-				"minified": false,
-				"cdn": null
 			}
 		]
 	},

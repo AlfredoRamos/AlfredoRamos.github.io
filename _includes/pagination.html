@@ -1,37 +1,37 @@
 {%- if paginator.total_pages > 1 %}
-<nav class="pagination">
-	<ul class="list-inline">
+<nav>
+	<ul class="pagination justify-content-center">
 		{%- if paginator.previous_page %}
-		<li>
-			<a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+		<li class="page-item">
+			<a href="{{ paginator.previous_page_path | relative_url }}" class="page-link">&laquo; Prev</a>
 		</li>
 		{%- else %}
-		<li>
-			<span>&laquo; Prev</span>
+		<li class="page-item disabled">
+			<span class="page-link" tabindex="-1" aria-disabled="true">&laquo; Prev</span>
 		</li>
 		{%- endif %}
 		{%- for page in (1..paginator.total_pages) -%}
 		{%- if page == paginator.page %}
-		<li>
-			<span class="current">{{ page }}</span>
+		<li class="page-item active" aria-current="page">
+			<span class="page-link">{{ page }}<span class="sr-only"> (current)</span></span>
 		</li>
 		{%- elsif page == 1 %}
-		<li>
-			<a href="{{ site.paginate_path | replace: 'page-:num', '' | relative_url }}">{{ page }}</a>
+		<li class="page-item">
+			<a href="{{ site.paginate_path | replace: 'page-:num', '' | relative_url }}" class="page-link">{{ page }}</a>
 		</li>
 		{%- else %}
-		<li>
-			<a href="{{ site.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a>
+		<li class="page-item">
+			<a href="{{ site.paginate_path | replace: ':num', page | relative_url }}" class="page-link">{{ page }}</a>
 		</li>
 		{%- endif %}
 		{%- endfor -%}
 		{%- if paginator.next_page %}
-		<li>
-			<a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+		<li class="page-item">
+			<a href="{{ paginator.next_page_path | relative_url }}" class="page-link">Next &raquo;</a>
 		</li>
 		{%- else %}
-		<li>
-			<span>Next &raquo;</span>
+		<li class="page-item disabled">
+			<span class="page-link" tabindex="-1" aria-disabled="true">Next &raquo;</span>
 		</li>
 		{%- endif %}
 	</ul>

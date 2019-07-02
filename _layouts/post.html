@@ -4,63 +4,49 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<header class="header">
 		<h2 class="title" itemprop="name headline">{{ page.title | escape }}</h2>
-		<ul class="meta list-inline list-with-separator">
-			<li>
-				<svg class="icon icon-user">
-					<use xlink:href="#user" />
-				</svg>
-				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-					<span itemprop="name">{{ site.data.members[page.author].name | escape }}</span>
-				</span>
+		<ul class="meta list-inline list-with-separator text-muted">
+			<li class="list-inline-item">
+				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %-d, %Y' }}</time>
 			</li>
-			<li>
-				<svg class="icon icon-calendar">
-					<use xlink:href="#calendar" />
-				</svg>
-				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %-d, %Y' }}</time>
+			<li class="list-inline-item">
+				{{ page.content | strip_html | normalize_whitespace | number_of_words | divided_by: 180 }} min read
 			</li>
+		</ul>
+	</header>
+	<div class="body content" itemprop="articleBody">
+		{{ content }}
+	</div>
+	<hr>
+	<footer class="footer">
+		<ul class="meta list-unstyled">
+			{%- if page.updated_at and page.updated_at != page.date %}
+			<li>
+				<strong>Modified:</strong>
+				<time datetime="{{ page.updated_at | date_to_xmlschema }}" itemprop="dateModified">
+					{{ page.updated_at | date: '%b %-d, %Y' }}
+				</time>
+			</li>
+			{%- endif %}
 			{%- if page.category %}
 			<li>
-				<svg class="icon icon-folder">
-					<use xlink:href="#folder" />
-				</svg>
+				<strong>Category:</strong>
 				<span itemprop="keywords">
-					<a href="{{ site.data.pages | where: 'name', 'categories' | map: 'uri' | first | relative_url }}#{{ page.category | uri_escape }}" rel="category" class="badge">{{ page.category | escape }}</a>
+					<a href="{{ site.data.pages | where: 'name', 'categories' | map: 'uri' | first | relative_url }}#{{ page.category | uri_escape }}" rel="category" class="badge badge-light">{{ page.category | escape }}</a>
 				</span>
 			</li>
 			{%- endif %}
 			{%- if page.tags.size > 0 %}
-			<li>
-				<svg class="icon icon-tag">
-					<use xlink:href="#tag" />
-				</svg>
+			<li class="list-inline-item">
+				<strong>Tags:</strong>
 				<ul class="tags list-inline" itemprop="keywords">
 					{%- for tag in page.tags %}
-					<li>
-						<a href="{{ site.data.pages | where: 'name', 'tags' | map: 'uri' | first | relative_url }}#{{ tag | uri_escape }}" rel="tag" class="badge">{{ tag | escape }}</a>
+					<li class="list-inline-item">
+						<a href="{{ site.data.pages | where: 'name', 'tags' | map: 'uri' | first | relative_url }}#{{ tag | uri_escape }}" rel="tag" class="badge badge-light">{{ tag | escape }}</a>
 					</li>
 					{%- endfor %}
 				</ul>
 			</li>
 			{%- endif %}
 		</ul>
-	</header>
-	<div class="body" itemprop="articleBody">
-		{{ content }}
-	</div>
-	{%- if page.updated_at and page.updated_at != page.date %}
-	<footer class="footer">
-		<ul class="meta list-inline list-width-separator">
-			<li>
-				<svg class="icon icon-calendar">
-					<use xlink:href="#calendar" />
-				</svg>
-				Last modified at
-				<time datetime="{{ page.updated_at | date_to_xmlschema }}" itemprop="dateModified">
-					{{ page.updated_at | date: '%b %-d, %Y' }}
-				</time>
-			</li>
-		</ul>
 	</footer>
-	{%- endif %}
 </article>

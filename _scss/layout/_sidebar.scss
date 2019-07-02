@@ -1,23 +1,13 @@
-#sidebar {
-	#about {
-		#avatar {
-			text-align: center;
+.sidebar {
+	.avatar {
+		> img {
+			display: block;
 		}
-	}
-
-	#avatar {
-		margin-bottom: $spacing;
 
 		> img {
-			display: inline-block;
-			border-width: 1px;
-			border-style: solid;
-			border-radius: percentage(1 / 2);
-			border-color: $br-avatar;
-			background-color: $bg-avatar;
 			padding: 4px;
-			width: 150px;
-			height: 150px;
+			background-color: #fff;
+			border: 1px solid #e6e6e6;
 		}
 	}
 }

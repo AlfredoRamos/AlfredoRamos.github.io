@@ -15,8 +15,12 @@
 					{%- assign style_url = style_url
 					| append: 'https://cdnjs.cloudflare.com/ajax/libs/'
 					| append: style.group | append: '/'
-					| append: file.version | append: '/'
-					| append: file.name -%}
+					| append: file.version | append: '/' -%}
+					{%- if file.path -%}
+						{%- assign style_url = style_url
+						| append: file.path | append: '/' -%}
+					{%- endif -%}
+					{%- assign style_url = style_url | append: file.name -%}
 					{%- if file.minified -%}
 						{%- assign style_url = style_url | append: '.min' -%}
 					{%- endif -%}

@@ -1,62 +1,13 @@
 .list {
-	&-inline {
-		margin: 0;
-		list-style: none;
-
-		&,
-		> li {
-			padding: 0;
-		}
-
-		& &,
-		> li {
-			display: inline-block;
-		}
-
-		@include responsive(max-width, map-get($grid-breakpoints, md)) {
-			> li {
-				padding-top: ($spacing - 10);
-				padding-bottom: ($spacing - 10);
-
-				li {
-					padding-top: 0;
-					padding-bottom: 0;
-				}
-			}
-		}
-	}
-
 	&-with-separator {
-		> li::before {
-			color: darken($fg-body, 15%);
-			content: ' / ';
+		> li::after {
+			content: '•';
+			margin-left: .5rem;
 		}
 
-		@include responsive(max-width, map-get($grid-breakpoints, md)) {
-			> li::before {
-				content: '';
-			}
-		}
-
-		> li:first-child::before {
+		> li:last-child::after {
 			content: '';
+			margin-left: 0;
 		}
 	}
-
-	&-links {
-		padding: 0;
-		list-style: none;
-
-		> li {
-			margin: 0 0 $spacing;
-
-			> h4 {
-				margin: 0;
-			}
-		}
-	}
-}
-
-#social-networks {
-	list-style: none;
 }
