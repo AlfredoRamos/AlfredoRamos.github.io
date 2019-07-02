@@ -5,8 +5,6 @@ updated_at: 2017-01-14 23:53:37 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 ---
-### About
-
 Simple Spoiler BBCode extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/phpbb-ext-simple-spoiler.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/phpbb-ext-simple-spoiler)
@@ -17,6 +15,7 @@ Simple Spoiler BBCode extension for phpBB.
 Write `[spoiler]text[/spoiler]` or `[spoiler title=title]text[/spoiler]` and it will hide the content on anywhere that you can render BBCodes.
 
 You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
+<!-- more -->
 
 ### Dependencies
 

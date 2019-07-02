@@ -51,6 +51,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-github-metadata
+excerpt_separator: <!-- more -->
 
 verifications:
     google: 'sgG6KmCJADN3NqJaCyaVjnhYBciwR2LM2uz8rgdGTJU'

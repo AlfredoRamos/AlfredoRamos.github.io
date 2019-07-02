@@ -5,8 +5,6 @@ updated_at: 2019-05-24 14:29:05 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 ---
-### About
-
 Markdown extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-markdown.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-markdown)
@@ -20,6 +18,7 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 
 - [Litedown: Syntax](https://s9etextformatter.readthedocs.io/Plugins/Litedown/Syntax/)
 - [PipeTables: Syntax](https://s9etextformatter.readthedocs.io/Plugins/PipeTables/Syntax/)
+<!-- more -->
 
 ### Dependencies
 

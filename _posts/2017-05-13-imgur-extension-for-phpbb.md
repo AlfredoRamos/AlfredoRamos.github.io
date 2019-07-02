@@ -5,8 +5,6 @@ updated_at: 2017-05-13 18:29:16 -0500
 category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 ---
-### About
-
 Imgur extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/phpbb-ext-imgur.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/phpbb-ext-imgur)
@@ -17,6 +15,7 @@ Imgur extension for phpBB.
 Click on the `Imgur` posting button and select the image(s) you want to upload.
 
 If the upload is successful it will add the image in the topic, private message or signature content. You can choose in the `Administration Control Panel` to show the uploaded image as plan text or with BBCode as URL, image (default) or thumbnail.
+<!-- more -->
 
 ### Dependencies
 

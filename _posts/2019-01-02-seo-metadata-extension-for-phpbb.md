@@ -5,8 +5,6 @@ updated_at: 2019-01-02 19:52:50 -0500
 category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 ---
-### About
-
 SEO Metadata extension for phpBB
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-seo-metadata.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-seo-metadata)
@@ -14,7 +12,10 @@ SEO Metadata extension for phpBB
 [![Code Quality](https://img.shields.io/codacy/grade/fb43678c76ca48acad229d1631169aa7.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-seo-metadata)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-seo-metadata.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-seo-metadata/master/license.txt)
 
+Add Open Graph, Twitter Cards and JSON-LD data in posts.
+
 If available, it will dynamically generate and include the following data inside the `<head>` tag:
+<!-- more -->
 
 Meta description:
 

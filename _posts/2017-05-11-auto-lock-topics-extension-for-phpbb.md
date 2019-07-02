@@ -5,8 +5,6 @@ updated_at: 2017-05-11 18:52:54 -0500
 category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
 ---
-### About
-
 Auto-lock Topics extension for phpBB
 
 [![Build Status](https://img.shields.io/travis/AlfredoRamos/phpbb-ext-auto-lock-topics.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/phpbb-ext-auto-lock-topics)
@@ -15,6 +13,7 @@ Auto-lock Topics extension for phpBB
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-auto-lock-topics.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-auto-lock-topics/master/license.txt)
 
 It will run automatically using phpBB's cron functionality.
+<!-- more -->
 
 ### Dependencies
 
