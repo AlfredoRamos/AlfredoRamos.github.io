@@ -54,6 +54,7 @@ plugins:
 
 verifications:
     google: 'sgG6KmCJADN3NqJaCyaVjnhYBciwR2LM2uz8rgdGTJU'
+    yandex: '9342b30f7f9146b5'
 
 # Needed to build locally
 # https://help.github.com/articles/repository-metadata-on-github-pages/
