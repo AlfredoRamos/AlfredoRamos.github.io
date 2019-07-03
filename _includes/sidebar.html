@@ -26,6 +26,22 @@
 		</div>
 	</section>
 	{%- endif %}
+	{%- if site.related_posts.size > 0 %}
+	<section id="related-posts" class="widget mb-4">
+		<header class="header">
+			<h3>Related posts</h3>
+		</header>
+		<div class="body">
+			<ul class="list-related-posts list-group list-group-flush">
+				{%- for p in site.related_posts %}
+				<li class="list-group-item px-0 py-1">
+					<a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+				</li>
+				{%- endfor %}
+			</ul>
+		</div>
+	</section>
+	{%- endif %}
 	{%- if site.posts.size > 0 %}
 	{%- assign archives = site.posts | group_by_exp: 'post','post.date | date: "%Y"' -%}
 	<section id="archives" class="widget mb-4">
