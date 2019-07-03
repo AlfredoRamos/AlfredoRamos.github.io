@@ -1,7 +1,6 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14 23:53:37 -0500
-updated_at: 2017-01-14 23:53:37 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 ---

@@ -51,6 +51,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-github-metadata
+  - jekyll-sitemap
 excerpt_separator: <!-- more -->
 
 verifications:

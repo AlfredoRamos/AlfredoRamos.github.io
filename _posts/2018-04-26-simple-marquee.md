@@ -1,7 +1,7 @@
 ---
 title: Simple Marquee
 date: 2018-04-26 14:06:16 -0600
-updated_at: 2018-04-29 19:10:23 -0600
+last_modified_at: 2018-04-29 19:10:23 -0600
 category: development
 tags: [sass, marquee]
 stylesheets: [marquee]

@@ -1,7 +1,6 @@
 ---
 title: Imgur extension for phpBB
 date: 2017-05-13 18:29:16 -0500
-updated_at: 2017-05-13 18:29:16 -0500
 category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 ---

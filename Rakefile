@@ -59,7 +59,6 @@ namespace :new do
         p.puts '---'
         p.puts format('title: %<title>s', title: post[:title])
         p.puts format('date: %<date>s', date: post[:date].strftime('%Y-%m-%d %H:%M:%S %z'))
-        p.puts format('updated_at: %<date>s', date: post[:date].strftime('%Y-%m-%d %H:%M:%S %z'))
         p.puts 'category: '
         p.puts 'tags: []'
         p.puts '---'
