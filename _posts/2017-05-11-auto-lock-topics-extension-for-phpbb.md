@@ -3,6 +3,8 @@ title: Auto-lock topics extension for phpBB
 date: 2017-05-11 18:52:54 -0500
 category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
+stylesheets: [lightcase]
+scripts: [lightcase]
 ---
 Auto-lock Topics extension for phpBB
 
@@ -21,10 +23,10 @@ It will run automatically using phpBB's cron functionality.
 
 ### Preview
 
-[![Forums](https://i.imgur.com/aBjwVBpt.png)](https://i.imgur.com/aBjwVBp.png)
-[![Forum settings](https://i.imgur.com/mBCEbSft.png)](https://i.imgur.com/mBCEbSf.png)
-[![Topics loked](https://i.imgur.com/uM7dkoGt.png)](https://i.imgur.com/uM7dkoG.png)
-[![Admin log](https://i.imgur.com/PIOhYf7t.png)](https://i.imgur.com/PIOhYf7.png)
+[![Forums](https://i.imgur.com/aBjwVBpt.png)](https://i.imgur.com/aBjwVBp.png){: data-rel="lightcase:preview"}
+[![Forum settings](https://i.imgur.com/mBCEbSft.png)](https://i.imgur.com/mBCEbSf.png){: data-rel="lightcase:preview"}
+[![Topics loked](https://i.imgur.com/uM7dkoGt.png)](https://i.imgur.com/uM7dkoG.png){: data-rel="lightcase:preview"}
+[![Admin log](https://i.imgur.com/PIOhYf7t.png)](https://i.imgur.com/PIOhYf7.png){: data-rel="lightcase:preview"}
 
 *(Click to view in full size)*
 

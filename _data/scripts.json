@@ -9,5 +9,23 @@
 				"cdn": "cdnjs"
 			}
 		]
+	},
+	{
+		"group": "lightcase",
+		"files": [
+			{
+				"name": "lightcase",
+				"version": "2.5.0",
+				"path": "js",
+				"minified": true,
+				"cdn": "cdnjs"
+			},
+			{
+				"name": "lightcase.init",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
 	}
 ]
