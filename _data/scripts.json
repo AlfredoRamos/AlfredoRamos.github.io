@@ -4,7 +4,31 @@
 		"files": [
 			{
 				"name": "jquery.slim",
-				"version": "3.3.1",
+				"version": "3.4.1",
+				"minified": true,
+				"cdn": "cdnjs"
+			}
+		]
+	},
+	{
+		"group": "popper.js",
+		"files": [
+			{
+				"name": "popper",
+				"version": "1.15.0",
+				"path": "umd",
+				"minified": true,
+				"cdn": "cdnjs"
+			}
+		]
+	},
+	{
+		"group": "twitter-bootstrap",
+		"files": [
+			{
+				"name": "bootstrap",
+				"version": "4.3.1",
+				"path": "js",
 				"minified": true,
 				"cdn": "cdnjs"
 			}

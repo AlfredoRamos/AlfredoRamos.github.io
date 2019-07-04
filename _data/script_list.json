@@ -1,1 +1,5 @@
-[]
+[
+	"jquery",
+	"popper.js",
+	"twitter-bootstrap"
+]

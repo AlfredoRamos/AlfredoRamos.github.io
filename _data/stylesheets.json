@@ -1,5 +1,17 @@
 [
 	{
+		"group": "twitter-bootstrap",
+		"files": [
+			{
+				"name": "bootstrap",
+				"version": "4.3.1",
+				"path": "css",
+				"minified": true,
+				"cdn": "cdnjs"
+			}
+		]
+	},
+	{
 		"group": "main",
 		"files": [
 			{
