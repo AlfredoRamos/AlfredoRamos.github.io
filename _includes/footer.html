@@ -4,8 +4,8 @@
 		<ul class="credits list-inline list-with-separator text-center text-muted">
 			<li class="list-inline-item">
 				&copy; 2015-{{ site.time | date: '%Y' }}
-				<a href="{{ site.data.members[site.github.owner_name].url }}" target="_blank">
-					{{ site.data.members[site.github.owner_name].name }}
+				<a href="{% if site.github.owner.blog.size > 0 %}{{ site.github.owner.blog }}{% else %}{{ '/' | relative_url }}{% endif %}" target="_blank">
+					{{ site.github.owner.name }}
 				</a>
 			</li>
 			<li class="list-inline-item">Powered by Jekyll</li>

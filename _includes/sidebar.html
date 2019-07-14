@@ -5,12 +5,14 @@
 			<h3>About</h3>
 		</header>
 		<div class="body">
-			{%- if site.github.owner_gravatar_url.size > 0 %}
+			{%- if site.github.owner.avatar_url.size > 0 %}
 			<figure class="avatar">
-				<img src="{{ site.github.owner_gravatar_url | uri_escape }}" alt="{{ site.title | escape }}" class="img-thumbnail rounded-circle mx-auto" width="150" height="150">
+				<img src="{{ site.github.owner.avatar_url | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-thumbnail rounded-circle mx-auto" width="150" height="150">
 			</figure>
 			{%- endif %}
-			<p>I'm a student of computer systems engineering, open-source software enthusiast, passionate about GNU/Linux and a proudly user of Arch Linux.</p>
+			{%- if site.github.owner.bio.size > 0 %}
+			<p>{{ site.github.owner.bio | escape }}</p>
+			{%- endif %}
 			<ul id="social-networks" class="list-unstyled">
 				{%- for network in site.data.networks %}
 				<li>
