@@ -1,6 +1,7 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14 23:53:37 -0500
+last_modified_at: 2019-07-23 12:08:16 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 ---
@@ -15,6 +16,11 @@ Write `[spoiler]text[/spoiler]` or `[spoiler title=title]text[/spoiler]` and it 
 
 You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 <!-- more -->
+
+### Support
+
+- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues) GitHub issues
+- [Support area](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/support) at phpbb.com
 
 ### Dependencies
 
