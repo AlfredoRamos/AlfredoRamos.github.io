@@ -40,6 +40,9 @@ exclude:
   - LICENSE
   - Rakefile
   - README.md
+  - composer.json
+  - composer.lock
+  - satis.json
   - Gemfile
   - Gemfile.lock
 kramdown:
