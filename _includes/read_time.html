@@ -1,0 +1,17 @@
+{%- if include.content.size > 0 -%}
+	{%- assign words_per_minute = site.words_per_minute | default: 180 -%}
+	{%- assign words_per_minute = words_per_minute | times: 1.0 -%}
+	{%- assign image_view_time = site.image_view_time | default: 3 -%}
+	{%- assign read_time = include.content | strip_html | normalize_whitespace | number_of_words | divided_by: words_per_minute -%}
+	{%- assign number_of_images = include.content | split: '<img' | size | minus: 1 -%}
+	{%- if number_of_images > 0 -%}
+		{%- assign images_time = image_view_time | divided_by: 60.0 -%}
+		{%- assign images_time = images_time | times: number_of_images -%}
+		{%- assign read_time = read_time | plus: images_time -%}
+	{%- endif -%}
+	{%- assign read_time = read_time | round -%}
+	{%- if read_time <= 0 -%}
+		{%- assign read_time = 1 -%}
+	{%- endif -%}
+	{{ read_time | append: ' min read' }}
+{%- endif -%}

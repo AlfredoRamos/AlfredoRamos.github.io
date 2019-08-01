@@ -17,7 +17,7 @@ description: A collection of latest post of my projects, extensions and more.
 						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
 					</li>
 					<li class="list-inline-item">
-						{{ post.content | strip_html | normalize_whitespace | number_of_words | divided_by: 180 }} min read
+						{% include read_time.html content=post.content %}
 					</li>
 				</ul>
 		</header>
