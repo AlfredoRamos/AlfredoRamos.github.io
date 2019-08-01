@@ -1,0 +1,45 @@
+{
+	"name": "phpBB extension by Alfredo Ramos",
+	"description": "Personal Composer repository",
+	"homepage": "https://alfredoramos.github.io/satis/",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-highlightjs.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git"
+		}
+	],
+	"output-dir": "satis",
+	"require-all": true
+}

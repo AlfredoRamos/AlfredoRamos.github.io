@@ -1,0 +1,17 @@
+{
+	"name": "alfredo-ramos/phpbb-extensions",
+	"description": "Personal Composer repository powered by Satis",
+	"type": "project",
+	"license": "GPL-2.0-only",
+	"require": {
+		"composer/satis": "dev-master"
+	},
+	"authors": [
+		{
+			"name": "Alfredo Ramos",
+			"email": "alfredo.ramos@yandex.com",
+			"homepage": "https://github.com/AlfredoRamos",
+			"role": "Lead Developer"
+		}
+	]
+}
