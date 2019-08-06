@@ -592,12 +592,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "f8e91fc8e1e7a8c464d9ffd8534881501f5a6d5e"
+                    "reference": "3857b66f469b2dd848d328febc5c867df97a3558"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/f8e91fc8e1e7a8c464d9ffd8534881501f5a6d5e",
-                    "reference": "f8e91fc8e1e7a8c464d9ffd8534881501f5a6d5e",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/3857b66f469b2dd848d328febc5c867df97a3558",
+                    "reference": "3857b66f469b2dd848d328febc5c867df97a3558",
                     "shasum": ""
                 },
                 "require": {
