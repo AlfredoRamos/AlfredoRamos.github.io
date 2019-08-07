@@ -7,7 +7,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "36ebc1c10397295c4bc50fed23a7a40e541c5820"
                 },
                 "dist": {
@@ -57,7 +57,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "1.0.1": {
                 "name": "alfredoramos/autolocktopics",
@@ -65,7 +69,7 @@
                 "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "737552e42c53a96ff0e4c2f1abc7ad4d08c6796b"
                 },
                 "dist": {
@@ -115,7 +119,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "1.0.2": {
                 "name": "alfredoramos/autolocktopics",
@@ -123,7 +131,7 @@
                 "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "590bebafd26f43acd7f173255b82f9977c9d2af0"
                 },
                 "dist": {
@@ -173,7 +181,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.2",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "1.0.3": {
                 "name": "alfredoramos/autolocktopics",
@@ -181,7 +193,7 @@
                 "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "84d1502a8b3ed4a6ace82f7b588b82e0f0339d79"
                 },
                 "dist": {
@@ -231,7 +243,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.3",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "1.1.0": {
                 "name": "alfredoramos/autolocktopics",
@@ -239,7 +255,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "a1cce3ff0051cb63802e8cc550d9dfbaa63cf662"
                 },
                 "dist": {
@@ -289,7 +305,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "1.1.1": {
                 "name": "alfredoramos/autolocktopics",
@@ -297,7 +317,7 @@
                 "version_normalized": "1.1.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "2cc89b4c7ad1d45f58b5588763dad07a5134a49b"
                 },
                 "dist": {
@@ -347,7 +367,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.1.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "1.1.2": {
                 "name": "alfredoramos/autolocktopics",
@@ -355,7 +379,7 @@
                 "version_normalized": "1.1.2.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "a63fb3a03d618e858c3036963d89868e29a77cf2"
                 },
                 "dist": {
@@ -405,7 +429,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.1.2",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             },
             "dev-master": {
                 "name": "alfredoramos/autolocktopics",
@@ -413,7 +441,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "9f1090283741b5486d1b358a4da4fe7468b88dde"
                 },
                 "dist": {
@@ -463,7 +491,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             }
         },
         "alfredoramos/hide": {
@@ -473,7 +505,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "dde9bbb2578096308a06a45912d8ad32845d8ae9"
                 },
                 "dist": {
@@ -522,7 +554,11 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
+                }
             }
         },
         "alfredoramos/highlightjs": {
@@ -532,7 +568,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-highlightjs.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-highlightjs.git",
                     "reference": "ad48034f80a9eccbbac29cf12ec37b313d6d29d5"
                 },
                 "dist": {
@@ -581,7 +617,11 @@
                     "highlighter",
                     "highlightjs",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-highlightjs/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-highlightjs/issues"
+                }
             }
         },
         "alfredoramos/imagealt": {
@@ -591,7 +631,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "3857b66f469b2dd848d328febc5c867df97a3558"
                 },
                 "dist": {
@@ -640,7 +680,11 @@
                     "extension",
                     "image",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
+                }
             }
         },
         "alfredoramos/imgur": {
@@ -650,7 +694,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "665419be2313de6bc1ce882fe3b7ebcd5d699a27"
                 },
                 "dist": {
@@ -700,7 +744,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.0.1": {
                 "name": "alfredoramos/imgur",
@@ -708,7 +756,7 @@
                 "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "87422b96f4d9591cd5b83baa1c227bd7d9750abc"
                 },
                 "dist": {
@@ -758,7 +806,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.0.2": {
                 "name": "alfredoramos/imgur",
@@ -766,7 +818,7 @@
                 "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "1e3483005a9aa89ac7376987de1230f74814e749"
                 },
                 "dist": {
@@ -816,7 +868,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.2",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.0.3": {
                 "name": "alfredoramos/imgur",
@@ -824,7 +880,7 @@
                 "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "ac5c1b6d406db62024c174a853a567d7ae4b0ca1"
                 },
                 "dist": {
@@ -874,7 +930,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.3",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.0.4": {
                 "name": "alfredoramos/imgur",
@@ -882,7 +942,7 @@
                 "version_normalized": "1.0.4.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "6052f9c06d5c742bdb57846d016787fb125f5551"
                 },
                 "dist": {
@@ -932,7 +992,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.4",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.0.5": {
                 "name": "alfredoramos/imgur",
@@ -940,7 +1004,7 @@
                 "version_normalized": "1.0.5.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "d5b87119b1b27c2b7968f26cf11a9bdd5b834d2c"
                 },
                 "dist": {
@@ -990,7 +1054,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.5",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.0.6": {
                 "name": "alfredoramos/imgur",
@@ -998,7 +1066,7 @@
                 "version_normalized": "1.0.6.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "4cfb439ff67adb16f5649b13c25509bc37693d4a"
                 },
                 "dist": {
@@ -1048,7 +1116,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.6",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.1.0": {
                 "name": "alfredoramos/imgur",
@@ -1056,7 +1128,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "9deb9c341cc43547469d704ed40bdf3e2df78820"
                 },
                 "dist": {
@@ -1106,7 +1178,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.1.1": {
                 "name": "alfredoramos/imgur",
@@ -1114,7 +1190,7 @@
                 "version_normalized": "1.1.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "c19cd39be0a8ed75d3b53a6ccba37f258e5e4865"
                 },
                 "dist": {
@@ -1164,7 +1240,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.1.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.2.0": {
                 "name": "alfredoramos/imgur",
@@ -1172,7 +1252,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "9398486f69e1b88966e4b829f75ca24afeca87ef"
                 },
                 "dist": {
@@ -1222,7 +1302,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.2.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.2.1": {
                 "name": "alfredoramos/imgur",
@@ -1230,7 +1314,7 @@
                 "version_normalized": "1.2.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "731d645b438cbc7c051739ae9af330ef561f0168"
                 },
                 "dist": {
@@ -1280,7 +1364,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.2.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.2.2": {
                 "name": "alfredoramos/imgur",
@@ -1288,7 +1376,7 @@
                 "version_normalized": "1.2.2.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "68bd086c4454be14f3c83208ba6a9ed5a97a658e"
                 },
                 "dist": {
@@ -1338,7 +1426,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.2.2",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.2.3": {
                 "name": "alfredoramos/imgur",
@@ -1346,7 +1438,7 @@
                 "version_normalized": "1.2.3.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "d49f2c3553d0771b41022c3a05ed8fdb1883332a"
                 },
                 "dist": {
@@ -1396,7 +1488,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.2.3",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "1.3.0": {
                 "name": "alfredoramos/imgur",
@@ -1404,7 +1500,7 @@
                 "version_normalized": "1.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "403e6407875a7cd084212052f475c62e9421a914"
                 },
                 "dist": {
@@ -1454,7 +1550,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             },
             "dev-master": {
                 "name": "alfredoramos/imgur",
@@ -1462,7 +1562,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "403e6407875a7cd084212052f475c62e9421a914"
                 },
                 "dist": {
@@ -1512,7 +1612,11 @@
                     "imgur",
                     "phpbb",
                     "uploader"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                }
             }
         },
         "alfredoramos/lazyload": {
@@ -1522,7 +1626,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-lazy-load.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
                     "reference": "59b36bf105954d41db6f9c4274ed93995f415b6b"
                 },
                 "dist": {
@@ -1570,7 +1674,11 @@
                     "extension",
                     "lazy-load",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/issues"
+                }
             }
         },
         "alfredoramos/markdown": {
@@ -1580,7 +1688,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "1dbce886c0ad96352d31c5245eea8e14ebb42f89"
                 },
                 "dist": {
@@ -1634,7 +1742,11 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                }
             },
             "1.1.0": {
                 "name": "alfredoramos/markdown",
@@ -1642,7 +1754,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "066435bfc59546cce31dafff416d917b6ebff78b"
                 },
                 "dist": {
@@ -1696,7 +1808,11 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                }
             },
             "dev-master": {
                 "name": "alfredoramos/markdown",
@@ -1704,7 +1820,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "dcfa1fe571e27255e522df08b05f5435f17f7a17"
                 },
                 "dist": {
@@ -1758,7 +1874,11 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                }
             }
         },
         "alfredoramos/seometadata": {
@@ -1768,7 +1888,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "64c3d8535fe1a4ae062b8de21887ac478e13bd87"
                 },
                 "dist": {
@@ -1824,7 +1944,11 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                }
             },
             "1.1.0": {
                 "name": "alfredoramos/seometadata",
@@ -1832,7 +1956,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "7443a13d9554b48cdc8be05fc7787067396cee1e"
                 },
                 "dist": {
@@ -1888,7 +2012,11 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                }
             },
             "dev-master": {
                 "name": "alfredoramos/seometadata",
@@ -1896,7 +2024,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "4faa6016d1997ae25cc7e471f2f5f2bdf3421089"
                 },
                 "dist": {
@@ -1952,7 +2080,11 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                }
             }
         },
         "alfredoramos/simplespoiler": {
@@ -1962,7 +2094,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "2840a52a651a5dd3db3a63a51c11257a36c58057"
                 },
                 "dist": {
@@ -2010,7 +2142,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.1": {
                 "name": "alfredoramos/simplespoiler",
@@ -2018,7 +2154,7 @@
                 "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "751823acc2f37c77d6046d02dfe72dd619bdc76a"
                 },
                 "dist": {
@@ -2066,7 +2202,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.2": {
                 "name": "alfredoramos/simplespoiler",
@@ -2074,7 +2214,7 @@
                 "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "c90514b42d0e1bf1ff0cb62a24e97017751771ca"
                 },
                 "dist": {
@@ -2122,7 +2262,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.2",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.3": {
                 "name": "alfredoramos/simplespoiler",
@@ -2130,7 +2274,7 @@
                 "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "446c5a2cd9def6abb345d24c4be1f7a2c46a6755"
                 },
                 "dist": {
@@ -2178,7 +2322,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.3",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.4": {
                 "name": "alfredoramos/simplespoiler",
@@ -2186,7 +2334,7 @@
                 "version_normalized": "1.0.4.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "cc1412a9079156c310bf8da1c141c5262b5f9a0d"
                 },
                 "dist": {
@@ -2234,7 +2382,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.4",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.5": {
                 "name": "alfredoramos/simplespoiler",
@@ -2242,7 +2394,7 @@
                 "version_normalized": "1.0.5.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "cd334338d3fb7f535d70c6917b43749f9288bb0a"
                 },
                 "dist": {
@@ -2290,7 +2442,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.5",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.6": {
                 "name": "alfredoramos/simplespoiler",
@@ -2298,7 +2454,7 @@
                 "version_normalized": "1.0.6.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "00ad79dd6d06c10492626058fcdad6d46cea7dc7"
                 },
                 "dist": {
@@ -2346,7 +2502,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.6",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.7": {
                 "name": "alfredoramos/simplespoiler",
@@ -2354,7 +2514,7 @@
                 "version_normalized": "1.0.7.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "ca4680bd78afce3e98ce9518132f79a90a539dff"
                 },
                 "dist": {
@@ -2403,7 +2563,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.7",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.8": {
                 "name": "alfredoramos/simplespoiler",
@@ -2411,7 +2575,7 @@
                 "version_normalized": "1.0.8.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "da6d3049bc7e7dd87375bf69f4ed299cd952f61f"
                 },
                 "dist": {
@@ -2460,7 +2624,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.8",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.0.9": {
                 "name": "alfredoramos/simplespoiler",
@@ -2468,7 +2636,7 @@
                 "version_normalized": "1.0.9.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "606361d51f31eae12fae8e3354e53c834bc7280c"
                 },
                 "dist": {
@@ -2517,7 +2685,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.9",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.1.0": {
                 "name": "alfredoramos/simplespoiler",
@@ -2525,7 +2697,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "a970ae2dd5ff2a860833d5b906e8e7df6d6d7692"
                 },
                 "dist": {
@@ -2574,7 +2746,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.2.0": {
                 "name": "alfredoramos/simplespoiler",
@@ -2582,7 +2758,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "eabc80b63d76b00afd14be4658335b735d5acd63"
                 },
                 "dist": {
@@ -2631,7 +2807,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.2.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.2.1": {
                 "name": "alfredoramos/simplespoiler",
@@ -2639,7 +2819,7 @@
                 "version_normalized": "1.2.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "4cc64387afdc4035a4c48d8356be2ee09b98bbb6"
                 },
                 "dist": {
@@ -2688,7 +2868,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.2.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.3.0": {
                 "name": "alfredoramos/simplespoiler",
@@ -2696,7 +2880,7 @@
                 "version_normalized": "1.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "80eeaa3e2b9b639a1ae3a6e7abcaa32865e71a18"
                 },
                 "dist": {
@@ -2745,7 +2929,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "1.3.1": {
                 "name": "alfredoramos/simplespoiler",
@@ -2753,7 +2941,7 @@
                 "version_normalized": "1.3.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "65c21f16c4b591a88378ee8971d4004098cba8d1"
                 },
                 "dist": {
@@ -2802,7 +2990,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.3.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             },
             "dev-master": {
                 "name": "alfredoramos/simplespoiler",
@@ -2810,7 +3002,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "65c21f16c4b591a88378ee8971d4004098cba8d1"
                 },
                 "dist": {
@@ -2859,7 +3051,11 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.3.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                }
             }
         }
     }

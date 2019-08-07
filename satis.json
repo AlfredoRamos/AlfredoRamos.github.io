@@ -40,6 +40,6 @@
 			"url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git"
 		}
 	],
-	"output-dir": "satis",
-	"require-all": true
+	"require-all": true,
+	"output-dir": "satis"
 }
