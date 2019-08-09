@@ -1,7 +1,7 @@
 ---
 title: Image Alternate Text extension for phpBB
 date: 2019-07-31 19:18:13 -0500
-last_modified_at: 2019-08-01 16:49:02 -0500
+last_modified_at: 2019-08-09 13:28:35 -0500
 category: phpbb
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
 ---
@@ -49,3 +49,20 @@ ___
 - Copy the files and directories inside `{PHPBB_ROOT}/ext/alfredoramos/imagealt/`
 - Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
 - Click on `Enable` and confirm
+
+### Configuration
+
+It doesn't require any configuration.
+
+### Uninstallation
+
+- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
+- Click on `Disable` and confirm
+- Go back to `Manage extensions` > `Image Alternate Text` > `Delete data` and confirm
+
+### Upgrade
+
+- Uninstall the extension
+- Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/imagealt/`
+- Download the new version
+- Install the extension
