@@ -30,8 +30,8 @@ ___
 ```html
 <img src="url" class="postimage" alt="text">
 ```
-<!-- more -->
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues)

@@ -13,8 +13,9 @@ Hide BBCode extension for phpBB.
 
 Write `[hide]text[/hide]` or `[hide inline=1]text[/hide]` and it will hide the content to guests.
 
-You can nest `[hide]` and use other BBCodes inside it.<!-- more -->
+You can nest `[hide]` and use other BBCodes inside it.
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-hide/issues) GitHub issues

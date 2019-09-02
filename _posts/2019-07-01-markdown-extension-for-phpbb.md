@@ -20,8 +20,8 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 
 - [Litedown: Syntax](https://s9etextformatter.readthedocs.io/Plugins/Litedown/Syntax/)
 - [PipeTables: Syntax](https://s9etextformatter.readthedocs.io/Plugins/PipeTables/Syntax/)
-<!-- more -->
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-markdown/issues)

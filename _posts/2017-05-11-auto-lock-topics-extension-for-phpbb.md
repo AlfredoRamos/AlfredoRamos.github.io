@@ -15,8 +15,8 @@ Auto-lock Topics extension for phpBB
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-auto-lock-topics.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-auto-lock-topics/master/license.txt)
 
 It will run automatically using phpBB's cron functionality.
-<!-- more -->
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues)

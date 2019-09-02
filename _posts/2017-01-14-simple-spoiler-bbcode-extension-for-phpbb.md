@@ -15,8 +15,8 @@ Simple Spoiler BBCode extension for phpBB.
 Write `[spoiler]text[/spoiler]` or `[spoiler title=title]text[/spoiler]` and it will hide the content on anywhere that you can render BBCodes.
 
 You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
-<!-- more -->
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues) GitHub issues
@@ -41,8 +41,6 @@ You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 ```
 [spoiler title=🇩🇪 🇲🇽 🇺🇸 Title with emojis 😁 🤗 🔱]Some text 🦏[/spoiler]
 ```
-
-*(Click to view in full size)*
 
 ### Configuration
 

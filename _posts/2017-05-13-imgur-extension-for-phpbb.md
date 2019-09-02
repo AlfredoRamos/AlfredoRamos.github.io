@@ -17,8 +17,8 @@ Imgur extension for phpBB.
 Click on the `Imgur` posting button and select the image(s) you want to upload.
 
 If the upload is successful it will add the image in the topic, private message or signature content. You can choose in the `Administration Control Panel` to show the uploaded image as plan text or with BBCode as URL, image (default) or thumbnail.
-<!-- more -->
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-imgur/issues)

@@ -15,8 +15,8 @@ SEO Metadata extension for phpBB
 Add Open Graph, Twitter Cards and JSON-LD data in posts.
 
 If available, it will dynamically generate and include the following data inside the `<head>` tag:
-<!-- more -->
 
+<!-- more -->
 ### Support
 
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues)
