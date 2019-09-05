@@ -5,6 +5,12 @@
 			"announcement": "https://alfredoramos.github.io",
 			"eol": null,
 			"security": false
+		},
+		"0.2": {
+			"current": "0.2.0",
+			"announcement": "https://alfredoramos.github.io",
+			"eol": null,
+			"security": false
 		}
 	}
 }
