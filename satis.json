@@ -33,10 +33,6 @@
 		},
 		{
 			"type": "vcs",
-			"url": "https://github.com/AlfredoRamos/phpbb-ext-highlightjs.git"
-		},
-		{
-			"type": "vcs",
 			"url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git"
 		}
 	],

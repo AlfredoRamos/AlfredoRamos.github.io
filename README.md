@@ -19,5 +19,5 @@ composer update --prefer-dist
 
 Build repository
 ```shell
-vendor/bin/satis build -n
+vendor/bin/satis build -nv
 ```
