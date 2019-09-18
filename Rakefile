@@ -2,6 +2,7 @@
 
 $stdout.sync = $stderr.sync = true
 
+require 'pathname'
 require 'to_slug'
 require 'scss_lint/rake_task'
 require 'rubocop/rake_task'
@@ -11,144 +12,116 @@ SCSSLint::RakeTask.new
 RuboCop::RakeTask.new
 
 namespace :new do
-  # Post
-  desc 'Create new post'
-  task :post do
+  # Base content
+  task :base, [:opts] do |_t, args|
     # Prevent rake tasks errors
     ARGV.each { |arg| task arg.to_sym do ; end }
 
-    # Get title
-    title = ARGV[1].to_s.strip unless ARGV[1].nil?
+    # Allowed content types
+    types = ['draft', 'post', 'page']
 
-    # Title check
-    abort 'Specify a title' if title.empty?
+    # Set content title
+    args[:opts][:title] = ARGV[1].to_s.strip
+    abort 'Please specify a title' if args[:opts][:title].empty?
 
-    # Post default data
-    post = {
-      slug: '',
-      title: title,
-      date: Time.now,
-      path: '_posts',
-      ext: 'md'
+    # Set default content type
+    args[:opts][:type] = args[:opts][:type].to_s.strip
+    args[:opts][:type] = 'draft' unless types.include?(args[:opts][:type])
+
+    # Set default content path
+    args[:opts][:path] = case args[:opts][:type]
+                         when 'draft' then '_drafts'
+                         when 'post' then '_posts'
+                         else '' # page
+                         end
+
+    # Set default content extension
+    args[:opts][:ext] = case args[:opts][:type]
+                        when 'page' then 'html'
+                        else 'md' # draft, post
+                        end
+
+    # Assign default content data
+    content = {
+      title: args[:opts][:title],
+      date: Time.now
     }
 
-    # Slug
-    post[:slug] = format(
-      '%<date>s-%<title>s',
-      date: post[:date].strftime('%Y-%m-%d'),
-      title: post[:title]
+    # Generate content slug
+    content[:slug] = format(
+      args[:opts][:type].eql?('page') ? '%<title>s' : '%<date>s-%<title>s',
+      date: content[:date].strftime('%F'),
+      title: content[:title]
     ).to_slug.chomp('-')
 
-    # Create post
-    file = File.join(
-      File.dirname(__FILE__),
-      post[:path],
+    # Create file
+    file = Pathname.new(Pathname.new(__FILE__).dirname,).join(
+      args[:opts][:path],
       format(
         '%<slug>s.%<ext>s',
-        slug: post[:slug],
-        ext: post[:ext]
+        slug: content[:slug],
+        ext: args[:opts][:ext]
       )
     )
 
-    # Check if already exists
-    if File.exist?(file)
-      abort 'Post already exists'
-    else
-      # Create post
-      File.open(file, 'w') do |p|
-        p.puts '---'
-        p.puts format('title: %<title>s', title: post[:title])
-        p.puts format('date: %<date>s', date: post[:date].strftime('%Y-%m-%d %H:%M:%S %z'))
-        p.puts 'category: '
-        p.puts 'tags: []'
-        p.puts '---'
-        p.puts
+    # Check if file already exists
+    abort format(
+      'File already exists: %<file>s',
+      file: file.relative_path_from(Pathname.new(__FILE__).dirname)
+    ) if file.exist?
+
+    # Create content
+    File.open(file, 'w') do |c|
+      c.puts '---'
+      c.puts format('title: %<title>s', title: content[:title])
+      c.puts format('permalink: /%<slug>s/', slug: content[:slug]) if args[:opts][:type].to_s.eql?('page')
+
+      if ['draft', 'post'].include?(args[:opts][:type])
+        c.puts format('date: %<date>s', date: content[:date].strftime('%F %T %z'))
+        c.puts 'category: '
+        c.puts 'tags: []'
       end
+
+      c.puts '---'
+      c.puts
     end
 
-    # Check if the post has been created successfully
-    if File.exist?(file)
-      puts format(
-        'Post created at %<path>s/%<file>s',
-        path: post[:path],
-        file: File.basename(file)
-      )
-      system(format(
-        '%<editor>s %<file>s',
-        editor: ENV['EDITOR'],
-        file: file
-      ))
-    else
-      warn 'Could not create post'
-    end
+    # Check if file was created successfully
+    abort format(
+      'Could not create file: %<file>s',
+      file: file.relative_path_from(Pathname.new(__FILE__).dirname)
+    ) unless file.exist?
+
+    # Open with editor
+    puts format(
+      'File created: %<file>s',
+      file: file.relative_path_from(Pathname.new(__FILE__).dirname)
+    )
+    system(format(
+      '%<editor>s %<file>s',
+      editor: ENV['EDITOR'],
+      file: file
+    ))
+  end
+
+  # Post
+  desc 'Create new draft'
+  task :draft do
+    Rake::Task['new:base'].reenable
+    Rake::Task['new:base'].invoke(type: 'draft')
+  end
+
+  # Post
+  desc 'Create new post'
+  task :post do
+    Rake::Task['new:base'].reenable
+    Rake::Task['new:base'].invoke(type: 'post')
   end
 
   # Page
   desc 'Create new page'
   task :page do
-    # Prevent rake tasks errors
-    ARGV.each { |arg| task arg.to_sym do ; end }
-
-    # Get title
-    title = ARGV[1].to_s.strip unless ARGV[1].nil?
-
-    # Title check
-    abort 'Specify a title' if title.empty?
-
-    # Page default data
-    page = {
-      slug: '',
-      title: title,
-      date: Time.now,
-      path: '',
-      ext: 'html'
-    }
-
-    # Slug
-    page[:slug] = format(
-      '%<title>s',
-      title: page[:title]
-    ).to_slug.chomp('-')
-
-    # Create post
-    file = File.join(
-      File.dirname(__FILE__),
-      page[:path],
-      format(
-        '%<slug>s.%<ext>s',
-        slug: page[:slug],
-        ext: page[:ext]
-      )
-    )
-
-    # Check if page exists
-    if File.exist?(file)
-      abort 'Page already exist'
-    else
-      # Create page
-      File.open(file, 'w') do |p|
-        p.puts '---'
-        p.puts format('title: %<title>s', title: page[:title])
-        p.puts format('permalink: /%<slug>s/', slug: page[:slug])
-        p.puts '---'
-        p.puts
-      end
-    end
-
-    # Check if the page has been created successfully
-    if File.exist?(file)
-      puts format(
-        'Page written to %<path>s/%<file>s',
-        path: page[:path],
-        file: File.basename(file)
-      )
-      system(format(
-        '%<editor>s %<file>s',
-        editor: ENV['EDITOR'],
-        file: file
-      ))
-    else
-      warn 'Could not create page'
-    end
+    Rake::Task['new:base'].reenable
+    Rake::Task['new:base'].invoke(type: 'page')
   end
 end
