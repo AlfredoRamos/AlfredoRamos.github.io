@@ -442,12 +442,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "c82f6181d8f2a3e9fd5a36efa2a2dd3b7a4bb13b"
+                    "reference": "0879199ae7a5944105891a070cfc07e5f27313e1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/c82f6181d8f2a3e9fd5a36efa2a2dd3b7a4bb13b",
-                    "reference": "c82f6181d8f2a3e9fd5a36efa2a2dd3b7a4bb13b",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/0879199ae7a5944105891a070cfc07e5f27313e1",
+                    "reference": "0879199ae7a5944105891a070cfc07e5f27313e1",
                     "shasum": ""
                 },
                 "require": {
@@ -505,7 +505,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35"
                 },
                 "dist": {
@@ -554,11 +554,7 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
-                }
+                ]
             },
             "dev-master": {
                 "name": "alfredoramos/hide",
@@ -566,7 +562,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35"
                 },
                 "dist": {
@@ -615,11 +611,64 @@
                     "extension",
                     "hide",
                     "phpbb"
+                ]
+            },
+            "dev-tests": {
+                "name": "alfredoramos/hide",
+                "version": "dev-tests",
+                "version_normalized": "dev-tests",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "reference": "e61a7221781d1ed44b5e1b4280d714e8c4bfa78e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/e61a7221781d1ed44b5e1b4280d714e8c4bfa78e",
+                    "reference": "e61a7221781d1ed44b5e1b4280d714e8c4bfa78e",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2019-09-02T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Hide",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "hide.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
                 ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
-                }
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Hide BBCode extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-hide",
+                "keywords": [
+                    "bbcode",
+                    "extension",
+                    "hide",
+                    "phpbb"
+                ]
             }
         },
         "alfredoramos/imagealt": {
@@ -629,7 +678,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "ea57516f8e30ff18e27cb10b0330bbb5c7f195f6"
                 },
                 "dist": {
@@ -678,11 +727,7 @@
                     "extension",
                     "image",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
-                }
+                ]
             },
             "dev-master": {
                 "name": "alfredoramos/imagealt",
@@ -690,7 +735,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "ea57516f8e30ff18e27cb10b0330bbb5c7f195f6"
                 },
                 "dist": {
@@ -739,11 +784,7 @@
                     "extension",
                     "image",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
-                }
+                ]
             }
         },
         "alfredoramos/imgur": {
@@ -1622,12 +1663,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "1f03d61aa49dbabc9eabd169e795a08b0ee69239"
+                    "reference": "a656b858aa02cf11d6d3a53e7c6d19217c258632"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/1f03d61aa49dbabc9eabd169e795a08b0ee69239",
-                    "reference": "1f03d61aa49dbabc9eabd169e795a08b0ee69239",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/a656b858aa02cf11d6d3a53e7c6d19217c258632",
+                    "reference": "a656b858aa02cf11d6d3a53e7c6d19217c258632",
                     "shasum": ""
                 },
                 "require": {
@@ -1685,13 +1726,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
-                    "reference": "a03e9ef6d00a18185ab7f4980c882db3c332d602"
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-lazy-load.git",
+                    "reference": "ce761997aaf4137437e37a931fdb8592cbf6d7ea"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/a03e9ef6d00a18185ab7f4980c882db3c332d602",
-                    "reference": "a03e9ef6d00a18185ab7f4980c882db3c332d602",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/ce761997aaf4137437e37a931fdb8592cbf6d7ea",
+                    "reference": "ce761997aaf4137437e37a931fdb8592cbf6d7ea",
                     "shasum": ""
                 },
                 "require": {
@@ -1733,11 +1774,7 @@
                     "extension",
                     "lazy-load",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/issues"
-                }
+                ]
             }
         },
         "alfredoramos/markdown": {
@@ -1747,7 +1784,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "1dbce886c0ad96352d31c5245eea8e14ebb42f89"
                 },
                 "dist": {
@@ -1801,11 +1838,7 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
-                }
+                ]
             },
             "1.1.0": {
                 "name": "alfredoramos/markdown",
@@ -1813,7 +1846,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "066435bfc59546cce31dafff416d917b6ebff78b"
                 },
                 "dist": {
@@ -1867,11 +1900,7 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.1.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
-                }
+                ]
             },
             "dev-master": {
                 "name": "alfredoramos/markdown",
@@ -1879,7 +1908,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "c42520ffcf93f7f2c385733d3c4e8c1698595070"
                 },
                 "dist": {
@@ -1932,222 +1961,14 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
-                }
+                ]
             }
         },
         "alfredoramos/seometadata": {
-            "1.0.0": {
-                "name": "alfredoramos/seometadata",
-                "version": "1.0.0",
-                "version_normalized": "1.0.0.0",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "64c3d8535fe1a4ae062b8de21887ac478e13bd87"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/64c3d8535fe1a4ae062b8de21887ac478e13bd87",
-                    "reference": "64c3d8535fe1a4ae062b8de21887ac478e13bd87",
-                    "shasum": ""
-                },
-                "require": {
-                    "composer/installers": "^1.6.0",
-                    "php": ">=5.6"
-                },
-                "require-dev": {
-                    "pear/archive_tar": "^1.4.0",
-                    "phing/phing": "^2.16.0"
-                },
-                "time": "2019-01-02T00:00:00+00:00",
-                "type": "phpbb-extension",
-                "extra": {
-                    "display-name": "SEO Metadata",
-                    "soft-require": {
-                        "phpbb/phpbb": "~3.2.0"
-                    },
-                    "version-check": {
-                        "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
-                        "filename": "seo-metadata.json",
-                        "ssl": true
-                    }
-                },
-                "license": [
-                    "GPL-2.0-only"
-                ],
-                "authors": [
-                    {
-                        "name": "Alfredo Ramos",
-                        "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
-                        "role": "Lead Developer"
-                    }
-                ],
-                "description": "SEO Metadata extension for phpBB",
-                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
-                "keywords": [
-                    "extension",
-                    "json-ld",
-                    "metadata",
-                    "microdata",
-                    "microformat",
-                    "open-graph",
-                    "phpbb",
-                    "rdf",
-                    "schema-org",
-                    "seo",
-                    "twitter-cards"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
-                }
-            },
-            "1.1.0": {
-                "name": "alfredoramos/seometadata",
-                "version": "1.1.0",
-                "version_normalized": "1.1.0.0",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "7443a13d9554b48cdc8be05fc7787067396cee1e"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/7443a13d9554b48cdc8be05fc7787067396cee1e",
-                    "reference": "7443a13d9554b48cdc8be05fc7787067396cee1e",
-                    "shasum": ""
-                },
-                "require": {
-                    "composer/installers": "^1.6.0",
-                    "php": ">=5.6"
-                },
-                "require-dev": {
-                    "pear/archive_tar": "^1.4.0",
-                    "phing/phing": "^2.16.0"
-                },
-                "time": "2019-04-08T00:00:00+00:00",
-                "type": "phpbb-extension",
-                "extra": {
-                    "display-name": "SEO Metadata",
-                    "soft-require": {
-                        "phpbb/phpbb": "~3.2.0"
-                    },
-                    "version-check": {
-                        "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
-                        "filename": "seo-metadata.json",
-                        "ssl": true
-                    }
-                },
-                "license": [
-                    "GPL-2.0-only"
-                ],
-                "authors": [
-                    {
-                        "name": "Alfredo Ramos",
-                        "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
-                        "role": "Lead Developer"
-                    }
-                ],
-                "description": "SEO Metadata extension for phpBB",
-                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
-                "keywords": [
-                    "extension",
-                    "json-ld",
-                    "metadata",
-                    "microdata",
-                    "microformat",
-                    "open-graph",
-                    "phpbb",
-                    "rdf",
-                    "schema-org",
-                    "seo",
-                    "twitter-cards"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.1.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
-                }
-            },
             "1.2.0": {
                 "name": "alfredoramos/seometadata",
                 "version": "1.2.0",
                 "version_normalized": "1.2.0.0",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "dd7fce8c40891285f06999beb09261ed09da934f"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/dd7fce8c40891285f06999beb09261ed09da934f",
-                    "reference": "dd7fce8c40891285f06999beb09261ed09da934f",
-                    "shasum": ""
-                },
-                "require": {
-                    "composer/installers": "^1.6.0",
-                    "php": ">=5.6"
-                },
-                "require-dev": {
-                    "pear/archive_tar": "^1.4.0",
-                    "phing/phing": "^2.16.0"
-                },
-                "time": "2019-09-06T00:00:00+00:00",
-                "type": "phpbb-extension",
-                "extra": {
-                    "display-name": "SEO Metadata",
-                    "soft-require": {
-                        "phpbb/phpbb": "~3.2.0"
-                    },
-                    "version-check": {
-                        "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
-                        "filename": "seo-metadata.json",
-                        "ssl": true
-                    }
-                },
-                "license": [
-                    "GPL-2.0-only"
-                ],
-                "authors": [
-                    {
-                        "name": "Alfredo Ramos",
-                        "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
-                        "role": "Lead Developer"
-                    }
-                ],
-                "description": "SEO Metadata extension for phpBB",
-                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
-                "keywords": [
-                    "extension",
-                    "json-ld",
-                    "metadata",
-                    "microdata",
-                    "microformat",
-                    "open-graph",
-                    "phpbb",
-                    "rdf",
-                    "schema-org",
-                    "seo",
-                    "twitter-cards"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.2.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
-                }
-            },
-            "dev-master": {
-                "name": "alfredoramos/seometadata",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
@@ -3129,12 +2950,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "0160f7dcee57c4cba926d2750a4e92ff3dc8a55c"
+                    "reference": "2b94a2cd5980945a3054c3281b3baa98582e7e8f"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/0160f7dcee57c4cba926d2750a4e92ff3dc8a55c",
-                    "reference": "0160f7dcee57c4cba926d2750a4e92ff3dc8a55c",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/2b94a2cd5980945a3054c3281b3baa98582e7e8f",
+                    "reference": "2b94a2cd5980945a3054c3281b3baa98582e7e8f",
                     "shasum": ""
                 },
                 "require": {
@@ -3145,7 +2966,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2019-09-02T00:00:00+00:00",
+                "time": "2019-09-11T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Simple Spoiler",

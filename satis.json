@@ -1,7 +1,7 @@
 {
-	"name": "phpBB extension by Alfredo Ramos",
+	"name": "alfredoramos/phpbb-extensions-repository",
 	"description": "Personal Composer repository",
-	"homepage": "https://alfredoramos.github.io/satis/",
+	"homepage": "https://alfredoramos.github.io/phpbb-extensions-repository/",
 	"repositories": [
 		{
 			"type": "vcs",
@@ -37,5 +37,5 @@
 		}
 	],
 	"require-all": true,
-	"output-dir": "satis"
+	"output-dir": "phpbb-extensions-repository"
 }
