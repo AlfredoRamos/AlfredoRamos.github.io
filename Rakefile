@@ -18,7 +18,7 @@ namespace :new do
     ARGV.each { |arg| task arg.to_sym do ; end }
 
     # Allowed content types
-    types = ['draft', 'post', 'page']
+    types = %w['draft post page']
 
     # Set content title
     args[:opts][:title] = ARGV[1].to_s.strip
@@ -55,7 +55,7 @@ namespace :new do
     ).to_slug.chomp('-')
 
     # Create file
-    file = Pathname.new(Pathname.new(__FILE__).dirname,).join(
+    file = Pathname.new(Pathname.new(__FILE__).dirname).join(
       args[:opts][:path],
       format(
         '%<slug>s.%<ext>s',
@@ -65,18 +65,20 @@ namespace :new do
     )
 
     # Check if file already exists
-    abort format(
-      'File already exists: %<file>s',
-      file: file.relative_path_from(Pathname.new(__FILE__).dirname)
-    ) if file.exist?
+    if file.exist?
+      abort format(
+        'File already exists: %<file>s',
+        file: file.relative_path_from(Pathname.new(__FILE__).dirname)
+      )
+    end
 
     # Create content
     File.open(file, 'w') do |c|
       c.puts '---'
       c.puts format('title: %<title>s', title: content[:title])
-      c.puts format('permalink: /%<slug>s/', slug: content[:slug]) if args[:opts][:type].to_s.eql?('page')
+      c.puts format('permalink: /%<slug>s/', slug: content[:slug]) if args[:opts][:type].eql?('page')
 
-      if ['draft', 'post'].include?(args[:opts][:type])
+      if %w['draft post'].include?(args[:opts][:type])
         c.puts format('date: %<date>s', date: content[:date].strftime('%F %T %z'))
         c.puts 'category: '
         c.puts 'tags: []'
@@ -87,10 +89,12 @@ namespace :new do
     end
 
     # Check if file was created successfully
-    abort format(
-      'Could not create file: %<file>s',
-      file: file.relative_path_from(Pathname.new(__FILE__).dirname)
-    ) unless file.exist?
+    unless file.exist?
+      abort format(
+        'Could not create file: %<file>s',
+        file: file.relative_path_from(Pathname.new(__FILE__).dirname)
+      )
+    end
 
     # Open with editor
     puts format(

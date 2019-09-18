@@ -7,9 +7,9 @@ gem 'github-pages', group: :jekyll_plugins
 gem 'to_slug'
 
 group :development do
+  gem 'dotenv'
   gem 'mini_racer'
   gem 'rake'
-  gem 'dotenv'
 end
 
 group :test do
