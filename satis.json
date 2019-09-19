@@ -37,5 +37,5 @@
 		}
 	],
 	"require-all": true,
-	"output-dir": "phpbb-extensions-repository"
+	"output-dir": "phpbb-extensions"
 }
