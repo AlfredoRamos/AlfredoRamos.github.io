@@ -18,7 +18,7 @@ namespace :new do
     ARGV.each { |arg| task arg.to_sym do ; end }
 
     # Allowed content types
-    types = %w['draft post page']
+    types = %w[draft post page]
 
     # Set content title
     args[:opts][:title] = ARGV[1].to_s.strip
@@ -78,7 +78,7 @@ namespace :new do
       c.puts format('title: %<title>s', title: content[:title])
       c.puts format('permalink: /%<slug>s/', slug: content[:slug]) if args[:opts][:type].eql?('page')
 
-      if %w['draft post'].include?(args[:opts][:type])
+      if %w[draft post].include?(args[:opts][:type])
         c.puts format('date: %<date>s', date: content[:date].strftime('%F %T %z'))
         c.puts 'category: '
         c.puts 'tags: []'
