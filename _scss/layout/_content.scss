@@ -1,6 +1,8 @@
 .post {
-	pre.highlight {
-		padding: get-rems($spacing);
+	.highlight {
+		> pre {
+			padding: get-pixels($spacing);
+		}
 	}
 
 	.footer {

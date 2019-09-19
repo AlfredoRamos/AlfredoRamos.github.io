@@ -2,12 +2,9 @@
 	.avatar {
 		> img {
 			display: block;
-		}
-
-		> img {
-			padding: 4px;
-			background-color: #fff;
 			border: 1px solid #e6e6e6;
+			background-color: #fff;
+			padding: 4px;
 		}
 	}
 }
