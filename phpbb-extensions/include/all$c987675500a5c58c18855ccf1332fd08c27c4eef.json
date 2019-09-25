@@ -442,12 +442,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "0879199ae7a5944105891a070cfc07e5f27313e1"
+                    "reference": "1feabf0d7fab775501128be1363b6dcfdfcf6bb5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/0879199ae7a5944105891a070cfc07e5f27313e1",
-                    "reference": "0879199ae7a5944105891a070cfc07e5f27313e1",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/1feabf0d7fab775501128be1363b6dcfdfcf6bb5",
+                    "reference": "1feabf0d7fab775501128be1363b6dcfdfcf6bb5",
                     "shasum": ""
                 },
                 "require": {
@@ -467,7 +467,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
                     }
@@ -567,12 +567,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
-                    "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35"
+                    "reference": "724807d478dc57a76d9de44d0fcf452e7fd0e85b"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35",
-                    "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/724807d478dc57a76d9de44d0fcf452e7fd0e85b",
+                    "reference": "724807d478dc57a76d9de44d0fcf452e7fd0e85b",
                     "shasum": ""
                 },
                 "require": {
@@ -592,7 +592,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "hide.json",
                         "ssl": true
                     }
@@ -617,7 +617,7 @@
                     "phpbb"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/1.0.0",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
                 }
             },
@@ -752,12 +752,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "ea57516f8e30ff18e27cb10b0330bbb5c7f195f6"
+                    "reference": "c9ec21b998dd5797d39a2a93765882783056f3d0"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/ea57516f8e30ff18e27cb10b0330bbb5c7f195f6",
-                    "reference": "ea57516f8e30ff18e27cb10b0330bbb5c7f195f6",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/c9ec21b998dd5797d39a2a93765882783056f3d0",
+                    "reference": "c9ec21b998dd5797d39a2a93765882783056f3d0",
                     "shasum": ""
                 },
                 "require": {
@@ -777,7 +777,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "image-alt.json",
                         "ssl": true
                     }
@@ -802,7 +802,7 @@
                     "phpbb"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.0.0",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
                 }
             }
@@ -1683,12 +1683,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "a656b858aa02cf11d6d3a53e7c6d19217c258632"
+                    "reference": "893ab28b87860ad06da8be493fa4da30ffe87d05"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/a656b858aa02cf11d6d3a53e7c6d19217c258632",
-                    "reference": "a656b858aa02cf11d6d3a53e7c6d19217c258632",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/893ab28b87860ad06da8be493fa4da30ffe87d05",
+                    "reference": "893ab28b87860ad06da8be493fa4da30ffe87d05",
                     "shasum": ""
                 },
                 "require": {
@@ -1709,7 +1709,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
                     }
@@ -1747,12 +1747,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
-                    "reference": "ce761997aaf4137437e37a931fdb8592cbf6d7ea"
+                    "reference": "916d34e1b5c9ee904b26b9d2aed7dcf7489b65a9"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/ce761997aaf4137437e37a931fdb8592cbf6d7ea",
-                    "reference": "ce761997aaf4137437e37a931fdb8592cbf6d7ea",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/916d34e1b5c9ee904b26b9d2aed7dcf7489b65a9",
+                    "reference": "916d34e1b5c9ee904b26b9d2aed7dcf7489b65a9",
                     "shasum": ""
                 },
                 "require": {
@@ -1772,7 +1772,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "lazy-load.json",
                         "ssl": true
                     }
@@ -1941,12 +1941,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "c42520ffcf93f7f2c385733d3c4e8c1698595070"
+                    "reference": "cddb45d660670fe4a27ee8a77be5979b5fb0597e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/c42520ffcf93f7f2c385733d3c4e8c1698595070",
-                    "reference": "c42520ffcf93f7f2c385733d3c4e8c1698595070",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/cddb45d660670fe4a27ee8a77be5979b5fb0597e",
+                    "reference": "cddb45d660670fe4a27ee8a77be5979b5fb0597e",
                     "shasum": ""
                 },
                 "require": {
@@ -1969,7 +1969,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "markdown.json",
                         "ssl": true
                     }
@@ -2212,12 +2212,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "53e3866d3b6289becefc4db79f3c165e44261358"
+                    "reference": "211366c1cee084d964d34edd6d186fcf0f3de73e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/53e3866d3b6289becefc4db79f3c165e44261358",
-                    "reference": "53e3866d3b6289becefc4db79f3c165e44261358",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/211366c1cee084d964d34edd6d186fcf0f3de73e",
+                    "reference": "211366c1cee084d964d34edd6d186fcf0f3de73e",
                     "shasum": ""
                 },
                 "require": {
@@ -2228,7 +2228,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2019-09-06T00:00:00+00:00",
+                "time": "2019-09-25T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "SEO Metadata",
@@ -2237,7 +2237,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "seo-metadata.json",
                         "ssl": true
                     }
@@ -3190,12 +3190,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "2b94a2cd5980945a3054c3281b3baa98582e7e8f"
+                    "reference": "1150be091d926095cb346f36f0ac257ef999ebbe"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/2b94a2cd5980945a3054c3281b3baa98582e7e8f",
-                    "reference": "2b94a2cd5980945a3054c3281b3baa98582e7e8f",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/1150be091d926095cb346f36f0ac257ef999ebbe",
+                    "reference": "1150be091d926095cb346f36f0ac257ef999ebbe",
                     "shasum": ""
                 },
                 "require": {
@@ -3215,7 +3215,7 @@
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions",
+                        "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
                     }
