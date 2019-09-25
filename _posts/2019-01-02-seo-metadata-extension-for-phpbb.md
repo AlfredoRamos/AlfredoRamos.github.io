@@ -1,7 +1,7 @@
 ---
 title: SEO Metadata extension for phpBB
 date: 2019-01-02 19:52:50 -0500
-last_modified_at: 2019-07-23 12:17:47 -0500
+last_modified_at: 2019-09-25 14:42:53 -0500
 category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 ---
@@ -67,7 +67,18 @@ JSON-LD:
 	"@id": "...",
 	"headline": "...",
 	"description": "...",
-	"image": "..."
+	"image": "...",
+	"author": {
+		"@type": "Person",
+		"name": "..."
+	},
+	"datePublished": "..."
+	"publisher": {
+		"@type": "Organization",
+		"name": "...",
+		"url": "...",
+		"logo": "..."
+	}
 }
 </script>
 ```
