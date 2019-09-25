@@ -1,5 +1,10 @@
 ### Jekyll
 
+Create new draft
+```shell
+bundle exec rake new:draft 'Title'
+```
+
 Create new post
 ```shell
 bundle exec rake new:post 'Title'
