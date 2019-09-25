@@ -1,0 +1,27 @@
+language: php
+dist: xenial
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
+install:
+  - travis_retry composer install --prefer-dist --no-interaction --no-suggest
+
+script:
+  - vendor/bin/satis build -nv
+
+deploy:
+  provider: pages
+  target_branch: master
+  keep_history: true
+  committer_from_gh: true
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  verbose: true
