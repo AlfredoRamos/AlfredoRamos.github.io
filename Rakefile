@@ -2,6 +2,7 @@
 
 $stdout.sync = $stderr.sync = true
 
+require 'jekyll'
 require 'pathname'
 require 'to_slug'
 require 'scss_lint/rake_task'
@@ -22,7 +23,7 @@ namespace :new do
 
     # Set content title
     args[:opts][:title] = ARGV[1].to_s.strip
-    abort 'Please specify a title' if args[:opts][:title].empty?
+    Jekyll.logger.abort_with 'Please specify a title' if args[:opts][:title].empty?
 
     # Set default content type
     args[:opts][:type] = args[:opts][:type].to_s.strip
@@ -66,7 +67,7 @@ namespace :new do
 
     # Check if file already exists
     if file.exist?
-      abort format(
+      Jekyll.logger.abort_with format(
         'File already exists: %<file>s',
         file: file.relative_path_from(Pathname.new(__FILE__).dirname)
       )
@@ -90,14 +91,14 @@ namespace :new do
 
     # Check if file was created successfully
     unless file.exist?
-      abort format(
+      Jekyll.logger.abort_with format(
         'Could not create file: %<file>s',
         file: file.relative_path_from(Pathname.new(__FILE__).dirname)
       )
     end
 
     # Open with editor
-    puts format(
+    Jekyll.logger.info format(
       'File created: %<file>s',
       file: file.relative_path_from(Pathname.new(__FILE__).dirname)
     )

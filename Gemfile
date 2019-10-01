@@ -4,15 +4,16 @@ source 'https://rubygems.org'
 ruby RUBY_VERSION
 
 gem 'github-pages', group: :jekyll_plugins
-gem 'to_slug'
 
 group :development do
   gem 'dotenv'
   gem 'mini_racer'
   gem 'rake'
+  gem 'to_slug'
 end
 
 group :test do
   gem 'rubocop', require: false
+  gem 'rubocop-jekyll', '~> 0.10.0'
   gem 'scss_lint', require: false
 end
