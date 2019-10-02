@@ -1683,12 +1683,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "893ab28b87860ad06da8be493fa4da30ffe87d05"
+                    "reference": "816c1d4e834d0306e83aab98a831ee3f76742adc"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/893ab28b87860ad06da8be493fa4da30ffe87d05",
-                    "reference": "893ab28b87860ad06da8be493fa4da30ffe87d05",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/816c1d4e834d0306e83aab98a831ee3f76742adc",
+                    "reference": "816c1d4e834d0306e83aab98a831ee3f76742adc",
                     "shasum": ""
                 },
                 "require": {
@@ -2212,12 +2212,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "211366c1cee084d964d34edd6d186fcf0f3de73e"
+                    "reference": "20700f005d29a03e94583e24be1eaacdec6bba46"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/211366c1cee084d964d34edd6d186fcf0f3de73e",
-                    "reference": "211366c1cee084d964d34edd6d186fcf0f3de73e",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/20700f005d29a03e94583e24be1eaacdec6bba46",
+                    "reference": "20700f005d29a03e94583e24be1eaacdec6bba46",
                     "shasum": ""
                 },
                 "require": {
@@ -2228,7 +2228,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2019-09-25T00:00:00+00:00",
+                "time": "2019-09-29T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "SEO Metadata",
@@ -3190,12 +3190,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "1150be091d926095cb346f36f0ac257ef999ebbe"
+                    "reference": "69b26850c35a64738a355b64f07640ba2f112383"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/1150be091d926095cb346f36f0ac257ef999ebbe",
-                    "reference": "1150be091d926095cb346f36f0ac257ef999ebbe",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/69b26850c35a64738a355b64f07640ba2f112383",
+                    "reference": "69b26850c35a64738a355b64f07640ba2f112383",
                     "shasum": ""
                 },
                 "require": {
@@ -3206,12 +3206,12 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2019-09-11T00:00:00+00:00",
+                "time": "2019-10-01T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Simple Spoiler",
                     "soft-require": {
-                        "phpbb/phpbb": "~3.2.8-RC1"
+                        "phpbb/phpbb": "~3.2.8"
                     },
                     "version-check": {
                         "host": "alfredoramos.github.io",
