@@ -16,7 +16,7 @@ namespace :new do
   # Base content
   task :base, [:opts] do |_t, args|
     # Prevent rake tasks errors
-    ARGV.each { |arg| task arg.to_sym do ; end }
+    ARGV.each { |arg| task arg.to_sym }
 
     # Allowed content types
     types = %w[draft post page]
