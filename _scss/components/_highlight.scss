@@ -1,6 +1,8 @@
-code.highlighter-rouge {
-	border-radius: 3px;
-	background-color: #f5f5f5;
-	padding: 3px 6px;
-	color: #24292e;
+code {
+	&.highlighter-rouge {
+		border-radius: 3px;
+		background-color: $bg-highlight;
+		padding: 3px 6px;
+		color: $fg-highlight;
+	}
 }

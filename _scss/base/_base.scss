@@ -4,12 +4,12 @@
 	font-weight: bold;
 
 	.navbar-light & {
-		color: #666;
+		color: $fg-brand;
 	}
 
 	&::before,
 	&::after {
-		color: #08c;
+		color: $fg-logo;
 	}
 
 	&::before {

@@ -2,8 +2,8 @@
 	.avatar {
 		> img {
 			display: block;
-			border: 1px solid #e6e6e6;
-			background-color: #fff;
+			border: 1px solid $br-avatar;
+			background-color: $bg-avatar;
 			padding: 4px;
 		}
 	}
