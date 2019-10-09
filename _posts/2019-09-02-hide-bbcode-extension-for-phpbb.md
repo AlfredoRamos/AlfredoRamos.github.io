@@ -28,9 +28,9 @@ You can nest `[hide]` and use other BBCodes inside it.
 
 ### Preview
 
-![Content as logged-in user](https://i.imgur.com/OajNWkc.png)
+![Content as logged-in user](https://i.imgur.com/OajNWkc.png){:class="img-fluid d-block mx-auto"}
 
-![Content as guest](https://i.imgur.com/xDbK3oU.png)
+![Content as guest](https://i.imgur.com/xDbK3oU.png){:class="img-fluid d-block mx-auto"}
 
 ### Configuration
 

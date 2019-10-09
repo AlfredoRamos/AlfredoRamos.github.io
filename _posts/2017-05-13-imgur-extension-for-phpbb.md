@@ -33,10 +33,10 @@ If the upload is successful it will add the image in the topic, private message 
 
 ### Preview
 
-[![ACP settings](https://i.imgur.com/FDKbWoqt.png)](https://i.imgur.com/FDKbWoq.png){: data-rel="lightcase:preview"}
-[![ACP settings API](https://i.imgur.com/xxCEse7t.png)](https://i.imgur.com/xxCEse7.png){: data-rel="lightcase:preview"}
-[![ACP output settings](https://i.imgur.com/CKcYnY2t.png)](https://i.imgur.com/CKcYnY2.png){: data-rel="lightcase:preview"}
-[![Topic](https://i.imgur.com/8C7sMR2t.png)](https://i.imgur.com/8C7sMR2.png){: data-rel="lightcase:preview"}
+[![ACP settings](https://i.imgur.com/FDKbWoqt.png)](https://i.imgur.com/FDKbWoq.png){:data-rel="lightcase:preview"}
+[![ACP settings API](https://i.imgur.com/xxCEse7t.png)](https://i.imgur.com/xxCEse7.png){:data-rel="lightcase:preview"}
+[![ACP output settings](https://i.imgur.com/CKcYnY2t.png)](https://i.imgur.com/CKcYnY2.png){:data-rel="lightcase:preview"}
+[![Topic](https://i.imgur.com/8C7sMR2t.png)](https://i.imgur.com/8C7sMR2.png){:data-rel="lightcase:preview"}
 
 *(Click to view in full size)*
 
