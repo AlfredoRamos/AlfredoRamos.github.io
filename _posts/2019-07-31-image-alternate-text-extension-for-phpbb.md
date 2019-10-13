@@ -1,7 +1,7 @@
 ---
 title: Image Alternate Text extension for phpBB
 date: 2019-07-31 19:18:13 -0500
-last_modified_at: 2019-08-09 13:28:35 -0500
+last_modified_at: 2019-10-13 11:29:40 -0500
 category: phpbb
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
 ---
@@ -12,19 +12,13 @@ Image Alternate Text extension for phpBB.
 [![Code Quality](https://img.shields.io/codacy/grade/0ef34fce1e3f4c32990fcb495efe98d8.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-image-alt)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-image-alt/master/license.txt)
 
-Allows you to set alternate text to image tags. Example:
+Allows you to set alternate text to image tags, for SEO purposes. Example:
 
 **BBCode input**
 ```
 [img alt="text"]url[/img]
 ```
 
-**Markdown input** (requires the [Markdown phpBB extension](https://github.com/AlfredoRamos/phpbb-ext-image-alt))
-```markdown
-![text](url)
-```
-
-___
 **HTML output**
 
 ```html
@@ -32,12 +26,24 @@ ___
 ```
 
 <!-- more -->
+### Features
+
+- It doesn't require additional configuration
+- Compatibility with [Markdown]({% post_url 2019-07-01-markdown-extension-for-phpbb %}) extension
+- Full support for Unicode text, including emojis
+- The engine sanitizes the text, so no unsafe text is used
+
+### Preview
+
+![Image Alternate Text](https://i.imgur.com/yLgDJpG.png){:class="img-fluid d-block mx-auto"}
+
 ### Support
 
+- [**Download page**](https://www.phpbb.com/customise/db/extension/image_alternate_text/)
+- [Support area](https://www.phpbb.com/customise/db/extension/image_alternate_text/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues)
-- [Development topic](https://www.phpbb.com/community/viewtopic.php?t=2518201) at phpbb.com
 
-### Dependencies
+### Requirements
 
 - PHP 5.6 or greater
 - phpBB 3.2 or greater
