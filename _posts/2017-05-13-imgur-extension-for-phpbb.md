@@ -1,7 +1,7 @@
 ---
 title: Imgur extension for phpBB
 date: 2017-05-13 18:29:16 -0500
-last_modified_at: 2019-07-23 12:17:23 -0500
+last_modified_at: 2019-10-13 11:13:35 -0500
 category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 stylesheets: [lightcase]
@@ -14,31 +14,53 @@ Imgur extension for phpBB.
 [![Code Quality](https://img.shields.io/codacy/grade/96ac8d6766cb481483284c89cca8b347.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-imgur)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-imgur.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-imgur/master/license.txt)
 
-Click on the `Imgur` posting button and select the image(s) you want to upload.
+With this extension you can click on the `Imgur` posting button and select the image(s) you want to upload.
 
 If the upload is successful it will add the image in the topic, private message or signature content. You can choose in the `Administration Control Panel` to show the uploaded image as plan text or with BBCode as URL, image (default) or thumbnail.
 
+Other extensions, such as [Markdown]({% post_url 2019-07-01-markdown-extension-for-phpbb %}), can add custom output types.
+
 <!-- more -->
-### Support
+### Features
 
-- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-imgur/issues)
-- [Support area](https://www.phpbb.com/customise/db/extension/imgur/support) at phpbb.com
+- Change Imgur API data though the ACP
+- Optionally, set an album where all the images will be uploaded to
+- Compatibility with ABBC3 extension
+- CSRF protection
+- Administrator log on configuration changes
+- Insert BBCode/text at cursor position
+- Album download link in the ACP for backup
+- Upload progress bar
+- Compatibility with QuickReply Reloaded extension
+- Compatibility with mChat extension
+- Drop-down menu in posting box button
+- Imgur tab in posting box options
+- Save some user preferences using `localStorage` and `sessionStorage`
 
-### Dependencies
+### Preview
+
+[![ACP settings](https://i.imgur.com/FDKbWoqb.png)](https://i.imgur.com/FDKbWoq.png){:data-rel="lightcase:preview"}
+[![ACP settings API](https://i.imgur.com/xxCEse7b.png)](https://i.imgur.com/xxCEse7.png){:data-rel="lightcase:preview"}
+[![ACP output settings](https://i.imgur.com/CKcYnY2b.png)](https://i.imgur.com/CKcYnY2.png){:data-rel="lightcase:preview"}
+[![Topic](https://i.imgur.com/8C7sMR2b.png)](https://i.imgur.com/8C7sMR2.png){:data-rel="lightcase:preview"}
+[![Output menu](https://i.imgur.com/YZNmOxeb.png)](https://i.imgur.com/YZNmOxe.png){:data-rel="lightcase:preview"}
+[![Output tab](https://i.imgur.com/a7UUoEYb.png)](https://i.imgur.com/a7UUoEY.png){:data-rel="lightcase:preview"}
+
+*(Click to view in full size)*
+
+### Requirements
 
 - PHP 5.6 or greater
 - phpBB 3.2 or greater
 - Composer (for development only)
 - Imgur API data (`client_id` and `client_secret`)
 
-### Preview
+### Support
 
-[![ACP settings](https://i.imgur.com/FDKbWoqt.png)](https://i.imgur.com/FDKbWoq.png){:data-rel="lightcase:preview"}
-[![ACP settings API](https://i.imgur.com/xxCEse7t.png)](https://i.imgur.com/xxCEse7.png){:data-rel="lightcase:preview"}
-[![ACP output settings](https://i.imgur.com/CKcYnY2t.png)](https://i.imgur.com/CKcYnY2.png){:data-rel="lightcase:preview"}
-[![Topic](https://i.imgur.com/8C7sMR2t.png)](https://i.imgur.com/8C7sMR2.png){:data-rel="lightcase:preview"}
-
-*(Click to view in full size)*
+- [**Download page**](https://www.phpbb.com/customise/db/extension/imgur/)
+- [FAQ](https://www.phpbb.com/customise/db/extension/imgur/faq)
+- [Support area](https://www.phpbb.com/customise/db/extension/imgur/support)
+- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-imgur/issues)
 
 ### Imgur API
 - Create an Imgur account, if you don't have one already
