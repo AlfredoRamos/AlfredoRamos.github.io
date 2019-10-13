@@ -37,16 +37,16 @@ Allows you to set alternate text to image tags, for SEO purposes. Example:
 
 ![Image Alternate Text](https://i.imgur.com/yLgDJpG.png){:class="img-fluid d-block mx-auto"}
 
+### Requirements
+
+- PHP 5.6 or greater
+- phpBB 3.2 or greater
+
 ### Support
 
 - [**Download page**](https://www.phpbb.com/customise/db/extension/image_alternate_text/)
 - [Support area](https://www.phpbb.com/customise/db/extension/image_alternate_text/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues)
-
-### Requirements
-
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
 
 ### Installation
 
