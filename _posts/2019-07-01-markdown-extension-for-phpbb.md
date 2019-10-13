@@ -1,7 +1,7 @@
 ---
 title: Markdown extension for phpBB
 date: 2019-05-24 14:29:05 -0500
-last_modified_at: 2019-07-23 12:18:05 -0500
+last_modified_at: 2019-10-13 11:39:02 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
@@ -22,23 +22,17 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 - [PipeTables: Syntax](https://s9etextformatter.readthedocs.io/Plugins/PipeTables/Syntax/)
 
 <!-- more -->
-### Support
+### Features
 
-- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-markdown/issues)
-- [Support area](https://www.phpbb.com/customise/db/extension/markdown/support) at phpbb.com
-
-### Dependencies
-
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
-
-### Installation
-
-- Download the [latest release](https://github.com/AlfredoRamos/phpbb-ext-markdown/releases)
-- Decompress the `*.zip` or `*.tar.gz` file
-- Copy the files and directories inside `{PHPBB_ROOT}/ext/alfredoramos/markdown/`
-- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
-- Click on `Enable` and confirm
+- Use Markdown in posts, personal messages and signatures
+- Can be used instead of or alongside text formatted with BBCode
+- Configuration to enable/disable the use of Markdown globally in the ACP
+- Configuration to enable/disable the use of Markdown per user in the UCP
+- Set per user group permissions to use Markdown
+- Set per forum permissions to use Markdown
+- Posting option to disable Markdown only in the current message (see note below)
+- Add help page to explain users how write messages in Markdown
+- Support for [Imgur]({% post_url 2017-05-13-imgur-extension-for-phpbb %}) extension
 
 ### Preview
 
@@ -57,6 +51,27 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 [![Posting editor option](https://i.imgur.com/1Z7CDDrb.png)](https://i.imgur.com/1Z7CDDr.png){:data-rel="lightcase:preview"}
 
 *(Click to view in full size)*
+
+### Requirements
+
+- PHP 5.6 or greater
+- phpBB 3.2 or greater
+
+**Note:** You need phpBB 3.2.6 or greater ([PHPBB3-15949](https://tracker.phpbb.com/browse/PHPBB3-15949), [#5519](https://github.com/phpbb/phpbb/pull/5519)) to use the custom posting editor option to disable Markdown in the signature.
+
+### Support
+
+- [**Download page**](https://www.phpbb.com/customise/db/extension/markdown/)
+- [Support area](https://www.phpbb.com/customise/db/extension/markdown/support)
+- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-markdown/issues)
+
+### Installation
+
+- Download the [latest release](https://github.com/AlfredoRamos/phpbb-ext-markdown/releases)
+- Decompress the `*.zip` or `*.tar.gz` file
+- Copy the files and directories inside `{PHPBB_ROOT}/ext/alfredoramos/markdown/`
+- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
+- Click on `Enable` and confirm
 
 ### Configuration
 
