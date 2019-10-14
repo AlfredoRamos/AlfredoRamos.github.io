@@ -1,7 +1,7 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14 23:53:37 -0500
-last_modified_at: 2019-07-23 12:08:16 -0500
+last_modified_at: 2019-10-13 21:02:46 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 ---
@@ -12,20 +12,17 @@ Simple Spoiler BBCode extension for phpBB.
 [![Code Quality](https://img.shields.io/codacy/grade/336cd95436314ad38b183572a5ce098e.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-simple-spoiler)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-simple-spoiler.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-simple-spoiler/master/license.txt)
 
-Write `[spoiler]text[/spoiler]` or `[spoiler title=title]text[/spoiler]` and it will hide the content on anywhere that you can render BBCodes.
+Allows you to write `[spoiler]text[/spoiler]` or `[spoiler title=title]text[/spoiler]` and it will hide the content on anywhere that you can render BBCodes.
 
 You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 
 <!-- more -->
-### Support
+### Features
 
-- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues) GitHub issues
-- [Support area](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/support) at phpbb.com
-
-### Dependencies
-
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- BBCodes can be nested
+- Full Unicode support in title for the `[spoiler title=]` BBCode
+- It's easily extensible and customizable for new styles
+- HTML5 markup
 
 ### Preview
 
@@ -41,6 +38,18 @@ You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 ```
 [spoiler title=🇩🇪 🇲🇽 🇺🇸 Title with emojis 😁 🤗 🔱]Some text 🦏[/spoiler]
 ```
+
+### Requirements
+
+- PHP 5.6 or greater
+- phpBB 3.2 or greater
+
+### Support
+
+- [**Download page**](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/)
+- [FAQ](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/faq)
+- [Support area](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/support)
+- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues)
 
 ### Configuration
 
