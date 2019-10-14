@@ -1,9 +1,11 @@
 ---
 title: SEO Metadata extension for phpBB
 date: 2019-01-02 19:52:50 -0500
-last_modified_at: 2019-09-25 14:42:53 -0500
+last_modified_at: 2019-09-25 20:46:49 -0500
 category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
+stylesheets: [lightcase]
+scripts: [lightcase]
 ---
 SEO Metadata extension for phpBB
 
@@ -17,18 +19,21 @@ Add Open Graph, Twitter Cards and JSON-LD data in posts.
 If available, it will dynamically generate and include the following data inside the `<head>` tag:
 
 <!-- more -->
-### Support
+### Features
 
-- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues)
-- [Development topic](https://www.phpbb.com/community/viewtopic.php?t=2478391) at phpbb.com
+- Dynamically generated Open Graph, Twitter Cards meta tags and JSON-LD microdata from your board data and current page
+- Set default image for Open Graph and JSON-LD
+- Set how description will be generated
+- ACP settings to enable/disable Open Graph, Twitter Cards and JSON-LD
+- Support for attachments, for topic image
 
-Meta description:
+#### Meta description
 
 ```html
 <meta name="description" content="...">
 ```
 
-Open Graph:
+#### Open Graph
 
 ```html
 <meta property="fb:app_id" content="...">
@@ -47,7 +52,7 @@ Open Graph:
 <meta property="article:publisher" content="...">
 ```
 
-Twitter Cards:
+#### Twitter Cards
 
 ```html
 <meta name="twitter:card" content="summary">
@@ -57,7 +62,7 @@ Twitter Cards:
 <meta name="twitter:image" content="..">
 ```
 
-JSON-LD:
+#### JSON-LD
 
 ```html
 <script type="application/ld+json">
@@ -83,10 +88,24 @@ JSON-LD:
 </script>
 ```
 
-### Dependencies
+### Preview
+
+[![Global settings](https://i.imgur.com/8rg2fKIb.png)](https://i.imgur.com/8rg2fKI.png){:data-rel="lightcase:preview"}
+[![Open Graph, Twitter Cards and JSON-LD settings](https://i.imgur.com/042NB5Fb.png)](https://i.imgur.com/042NB5F.png){:data-rel="lightcase:preview"}
+[![Generated markup](https://i.imgur.com/xKswZUHb.png)](https://i.imgur.com/xKswZUH.png){:data-rel="lightcase:preview"}
+
+*(Click to view in full size)*
+
+### Requirements
 
 - PHP 5.6 or greater
 - phpBB 3.2 or greater
+
+### Support
+
+- [**Download page**](https://www.phpbb.com/customise/db/extension/seo_metadata/)
+- [Support area](https://www.phpbb.com/customise/db/extension/seo_metadata/support)
+- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues)
 
 ### Installation
 

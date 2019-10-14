@@ -1,7 +1,7 @@
 ---
 title: Auto-lock topics extension for phpBB
 date: 2017-05-11 18:52:54 -0500
-last_modified_at: 2019-07-23 12:00:42 -0500
+last_modified_at: 2019-10-13 20:32:51 -0500
 category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
 stylesheets: [lightcase]
