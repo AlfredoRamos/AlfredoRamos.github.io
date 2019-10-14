@@ -13,12 +13,12 @@
 	}
 
 	&::before {
-		content: '{';
 		margin-right: 3px;
+		content: '{';
 	}
 
 	&::after {
-		content: '}';
 		margin-left: 3px;
+		content: '}';
 	}
 }
