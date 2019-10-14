@@ -1,6 +1,7 @@
 ---
 title: Hide BBCode extension for phpBB
 date: 2019-09-02 16:26:38 -0500
+last_modified_at: 2019-10-13 21:15:35 -0500
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
 ---
@@ -11,26 +12,33 @@ Hide BBCode extension for phpBB.
 [![Code Quality](https://img.shields.io/codacy/grade/c2388e8b347f41ab87213a0d9b72f2a9.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-hide)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-hide/master/license.txt)
 
-Write `[hide]text[/hide]` or `[hide inline=1]text[/hide]` and it will hide the content to guests.
+Allows you to write `[hide]text[/hide]` or `[hide inline=1]text[/hide]` and it will hide the content to guests.
 
 You can nest `[hide]` and use other BBCodes inside it.
 
 <!-- more -->
-### Support
+### Features
 
-- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-hide/issues) GitHub issues
-- [Development topic](https://www.phpbb-es.com/foro/viewtopic.php?t=42374) at phpbb-es.com
-
-### Dependencies
-
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- BBCodes can be nested
+- It adds visual help to recognize content that will be hidden
+- It can hide inline content
+- It doesn't require extra configuration
 
 ### Preview
 
 ![Content as logged-in user](https://i.imgur.com/OajNWkc.png){:class="img-fluid d-block mx-auto"}
 
 ![Content as guest](https://i.imgur.com/xDbK3oU.png){:class="img-fluid d-block mx-auto"}
+
+### Requirements
+
+- PHP 5.6 or greater
+- phpBB 3.2 or greater
+
+### Support
+
+- [Development topic](https://www.phpbb-es.com/foro/viewtopic.php?t=42374)
+- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-hide/issues)
 
 ### Configuration
 
