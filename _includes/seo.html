@@ -35,7 +35,7 @@
 {%- if site.verifications.yandex %}
 <meta name="yandex-verification" content="{{ site.verifications.yandex }}">
 {%- endif %}
-<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }}">
+<link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }} :: {{ site.description | escape }}">
 <link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
 {%- if paginator.previous_page %}
 <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">

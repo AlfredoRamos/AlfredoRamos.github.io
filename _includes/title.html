@@ -1,0 +1,26 @@
+{%- if page.title.size > 0 -%}
+	{%- assign title = page.title -%}
+{%- else -%}
+	{%- assign title = site.title -%}
+{%- endif -%}
+{%- if paginator.total_pages > 1 and paginator.page > 1 -%}
+	{%- assign title = title
+		| append: ' - Page '
+		| append: paginator.page
+		| append: ' of '
+		| append: paginator.total_pages -%}
+{%- endif -%}
+{%- if page.title.size > 0 -%}
+	{% assign title = title
+		| append: ' :: '
+		| append: site.title - %}
+{%- endif -%}
+{%- assign title = title
+	| append: ' :: '
+	| append: site.description -%}
+{%- if include.xml.size > 0 -%}
+	{%- assign title = title | smartify | xml_escape -%}
+{%- else -%}
+	{%- assign title = title | escape -%}
+{%- endif -%}
+<title>{{ title }}</title>
