@@ -40,6 +40,12 @@ You can nest `[hide]` and use other BBCodes inside it.
 - [Development topic](https://www.phpbb-es.com/foro/viewtopic.php?t=42374)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-hide/issues)
 
+### Donate
+
+If you like or found this extensions useful and want to show some appreciation, you can consider donating.
+
+[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/IngAlfredoRamos)
+
 ### Configuration
 
 To customize the look and feel:

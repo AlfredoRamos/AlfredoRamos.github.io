@@ -55,6 +55,7 @@ plugins:
   - jekyll-paginate
   - jekyll-github-metadata
   - jekyll-sitemap
+  - jemoji
 excerpt_separator: <!-- more -->
 
 verifications:

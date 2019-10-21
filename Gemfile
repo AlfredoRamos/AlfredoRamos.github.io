@@ -7,6 +7,7 @@ gem 'github-pages', group: :jekyll_plugins
 
 group :development do
   gem 'dotenv'
+  gem 'jemoji'
   gem 'mini_racer'
   gem 'rake'
   gem 'to_slug'

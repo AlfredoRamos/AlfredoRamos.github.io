@@ -62,6 +62,12 @@ Other extensions, such as [Markdown]({% post_url 2019-07-01-markdown-extension-f
 - [Support area](https://www.phpbb.com/customise/db/extension/imgur/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-imgur/issues)
 
+### Donate
+
+If you like or found this extensions useful and want to show some appreciation, you can consider donating.
+
+[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/IngAlfredoRamos)
+
 ### Imgur API
 - Create an Imgur account, if you don't have one already
 - Register your application at https://api.imgur.com/oauth2/addclient

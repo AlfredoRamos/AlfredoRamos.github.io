@@ -65,6 +65,12 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 - [Support area](https://www.phpbb.com/customise/db/extension/markdown/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-markdown/issues)
 
+### Donate
+
+If you like or found this extensions useful and want to show some appreciation, you can consider donating.
+
+[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/IngAlfredoRamos)
+
 ### Installation
 
 - Download the [latest release](https://github.com/AlfredoRamos/phpbb-ext-markdown/releases)

@@ -51,6 +51,12 @@ You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 - [Support area](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues)
 
+### Donate
+
+If you like or found this extensions useful and want to show some appreciation, you can consider donating.
+
+[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/IngAlfredoRamos)
+
 ### Configuration
 
 To customize the look and feel:
