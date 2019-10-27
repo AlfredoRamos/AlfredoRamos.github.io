@@ -20,6 +20,12 @@ description: A collection of latest post of my projects, extensions and more.
 					</li>
 				</ul>
 		</header>
+		<div class="body content" itemprop="description">
+			{{ post.excerpt | strip_html | normalize_whitespace }}
+		</div>
+		<footer class="footer">
+			<a class="btn btn-outline-primary mt-2" href="{{ post.url | relative_url }}">Continue reading</a>
+		</footer>
 	</article>
 	{% endfor %}
 {% else %}
