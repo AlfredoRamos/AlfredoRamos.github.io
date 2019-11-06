@@ -66,7 +66,7 @@ Other extensions, such as [Markdown]({% post_url 2019-07-01-markdown-extension-f
 
 If you like or found this extensions useful and want to show some appreciation, you can consider donating.
 
-[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/IngAlfredoRamos)
+[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2MSPMT8HJ96A&source=url)
 
 ### Imgur API
 - Create an Imgur account, if you don't have one already
