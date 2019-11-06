@@ -5,9 +5,11 @@
 			{% include content.html %}
 			<!-- content -->
 
+			{% unless page.url == '/' or page.url contains '/page-' %}
 			<!-- sidebar -->
 			{% include sidebar.html %}
 			<!-- sidebar -->
+			{% endunless %}
 		</div>
 	</div>
 </main>
