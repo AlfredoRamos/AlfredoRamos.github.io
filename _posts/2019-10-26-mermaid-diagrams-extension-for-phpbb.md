@@ -5,6 +5,7 @@ category: phpbb
 tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
 stylesheets: [lightcase]
 scripts: [lightcase]
+image: https://i.imgur.com/iHEDfxQm.png
 ---
 Mermaid Diagrams extension for phpBB.
 

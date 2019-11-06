@@ -6,6 +6,7 @@ category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 stylesheets: [lightcase]
 scripts: [lightcase]
+image: https://i.imgur.com/xxCEse7m.png
 ---
 Imgur extension for phpBB.
 

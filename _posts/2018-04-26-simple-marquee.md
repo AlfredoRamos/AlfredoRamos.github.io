@@ -5,6 +5,7 @@ last_modified_at: 2018-04-29 19:10:23 -0600
 category: development
 tags: [sass, marquee]
 stylesheets: [marquee]
+image: https://i.imgur.com/qROSaDDm.png
 ---
 A Simple SASS Marquee.
 
