@@ -20,6 +20,11 @@
 		"uri": "/tags/"
 	},
 	{
+		"name": "donate",
+		"title": "Donate",
+		"uri": "/donate/"
+	},
+	{
 		"name": "feed",
 		"title": "Feed",
 		"uri": "feed.atom"
