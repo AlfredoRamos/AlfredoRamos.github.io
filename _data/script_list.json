@@ -1,4 +1,5 @@
 [
 	"jquery",
-	"twitter-bootstrap"
+	"twitter-bootstrap",
+	"lazysizes"
 ]

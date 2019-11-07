@@ -51,5 +51,16 @@
 				"cdn": null
 			}
 		]
+	},
+	{
+		"group": "lazysizes",
+		"files": [
+			{
+				"name": "lazysizes",
+				"version": "5.1.2",
+				"minified": true,
+				"cdn": "cdnjs"
+			}
+		]
 	}
 ]
