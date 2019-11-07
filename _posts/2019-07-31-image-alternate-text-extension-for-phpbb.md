@@ -4,6 +4,7 @@ date: 2019-07-31 19:18:13 -0500
 last_modified_at: 2019-10-13 11:29:40 -0500
 category: phpbb
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
+image: https://i.imgur.com/yLgDJpGm.png
 ---
 Image Alternate Text extension for phpBB.
 

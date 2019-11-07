@@ -6,6 +6,7 @@ category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 stylesheets: [lightcase]
 scripts: [lightcase]
+image: https://i.imgur.com/8rg2fKIm.png
 ---
 SEO Metadata extension for phpBB
 

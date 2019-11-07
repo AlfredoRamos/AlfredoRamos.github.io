@@ -1,4 +1,4 @@
-<aside class="sidebar col">
+<aside class="sidebar col-lg-3">
 	{%- if site.data.networks.size > 0 %}
 	<section id="about" class="widget mb-4">
 		<header class="header">
@@ -7,7 +7,7 @@
 		<div class="body">
 			{%- if site.github.owner.avatar_url.size > 0 %}
 			<figure class="avatar">
-				<img src="{{ site.github.owner.avatar_url | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-thumbnail rounded-circle mx-auto" width="150" height="150">
+				<img data-src="{{ site.github.owner.avatar_url | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-thumbnail rounded-circle mx-auto lazyload" width="150" height="150">
 			</figure>
 			{%- endif %}
 			{%- if site.github.owner.bio.size > 0 %}

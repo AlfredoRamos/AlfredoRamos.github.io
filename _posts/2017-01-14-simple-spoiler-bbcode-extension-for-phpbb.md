@@ -4,6 +4,7 @@ date: 2017-01-14 23:53:37 -0500
 last_modified_at: 2019-10-13 21:02:46 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
+image: https://i.imgur.com/5NrtAoSm.png
 ---
 Simple Spoiler BBCode extension for phpBB.
 

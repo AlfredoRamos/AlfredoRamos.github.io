@@ -6,6 +6,7 @@ category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
 scripts: [lightcase]
+image: https://i.imgur.com/svBmgYXm.png
 ---
 Markdown extension for phpBB.
 

@@ -4,30 +4,37 @@ description: A collection of latest post of my projects, extensions and more.
 ---
 <h2 class="title">Latest posts</h2>
 <hr>
+
 {% if paginator.posts.size > 0 %}
+<div class="row">
 	{% for post in paginator.posts %}
-	<article class="post mb-4" itemscope itemtype="http://schema.org/BlogPosting">
-		<header class="header">
-			<h3 class="title" itemprop="name headline">
-				<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-			</h3>
-				<ul class="meta list-inline list-with-separator text-muted">
-					<li class="list-inline-item">
-						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
-					</li>
-					<li class="list-inline-item">
-						{% include read_time.html content=post.content %}
-					</li>
-				</ul>
-		</header>
-		<div class="body content" itemprop="description">
-			{{ post.excerpt | strip_html | normalize_whitespace }}
+	<div class="col-lg-4 col-md-6 mb-4">
+		<div class="post card shadow-sm h-100">
+			{% if post.image.size > 0 %}
+			<picture class="h-100">
+				<img data-src="{{ post.image }}" class="card-img-top img-fluid h-100 lazyload" alt="{{ post.title | escape }}">
+			</picture>
+			{% else %}
+			<svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+				<title>Placeholder</title>
+				<rect width="100%" height="100%" fill="#55595c"></rect>
+				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Thumbnail</text>
+			</svg>
+			{% endif %}
+			<div class="card-body d-flex align-items-start flex-column">
+				<h5 class="card-title title">
+					<a class="card-link stretched-link" href="{{ post.url | relative_url }}">
+						{{ post.title | escape }}
+					</a>
+				</h5>
+				<h6 class="card-subtitle mb-2 text-muted">{{ post.category }}</h6>
+				<div class="mt-auto d-flex justify-content-between align-items-center w-100">
+					<time class="small" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+					<small class="text-muted">{% include read_time.html content=post.content %}</small>
+				</div>
+			</div>
 		</div>
-		<footer class="footer">
-			<a class="btn btn-outline-primary mt-2" href="{{ post.url | relative_url }}">Continue reading</a>
-		</footer>
-	</article>
+	</div>
 	{% endfor %}
-{% else %}
-<p>Nothing interesting to show.</p>
+</div>
 {% endif %}
