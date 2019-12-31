@@ -11,7 +11,7 @@ description: A collection of latest post of my projects, extensions and more.
 	<div class="col-lg-4 col-md-6 mb-4">
 		<div class="post card shadow-sm h-100">
 			{% if post.image.size > 0 %}
-			<picture class="h-100">
+			<picture>
 				<img data-src="{{ post.image }}" class="card-img-top img-fluid h-100 lazyload" alt="{{ post.title | escape }}">
 			</picture>
 			{% else %}
