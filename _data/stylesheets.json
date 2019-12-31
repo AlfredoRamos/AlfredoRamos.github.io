@@ -4,7 +4,7 @@
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.3.1",
+				"version": "4.4.1",
 				"path": "css",
 				"minified": true,
 				"cdn": "cdnjs"

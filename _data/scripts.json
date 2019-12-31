@@ -15,7 +15,7 @@
 		"files": [
 			{
 				"name": "popper",
-				"version": "1.15.0",
+				"version": "1.16.0",
 				"path": "umd",
 				"minified": true,
 				"cdn": "cdnjs"
@@ -27,7 +27,7 @@
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.3.1",
+				"version": "4.4.1",
 				"path": "js",
 				"minified": true,
 				"cdn": "cdnjs"
@@ -57,7 +57,7 @@
 		"files": [
 			{
 				"name": "lazysizes",
-				"version": "5.1.2",
+				"version": "5.2.0",
 				"minified": true,
 				"cdn": "cdnjs"
 			}
