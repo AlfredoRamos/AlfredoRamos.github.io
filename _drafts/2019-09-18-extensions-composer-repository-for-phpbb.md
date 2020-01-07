@@ -6,11 +6,11 @@ tags: [composer-repository]
 stylesheets: [lightcase]
 scripts: [lightcase]
 ---
-The release of the new phpBB 3.3.x version introduced, along with another new features and fixes, the option to add custom [Composer repositories](https://getcomposer.org/doc/05-repositories.md) from which we could install or update our extensions.
+The release of the new phpBB 4.0.x version introduced, along with another new features and fixes, the option to add custom [Composer repositories](https://getcomposer.org/doc/05-repositories.md) from which we could install or update our extensions.
 
 To use this new feature you will need to fulfill the following requirements:
 
-- A phpBB board version 3.3.x or greater
+- A phpBB board version 4.0.x or greater
 - The paths `ext/` and `vendor-ext/` must have write permissions (`chmod 777`)
 - The files `composer-ext.json` and `composer-ext.lock` must have write permissions (`chmod 777`)
 
