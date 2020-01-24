@@ -1,0 +1,15 @@
+.footnotes {
+	li > p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+[id^="fnref:"] {
+	&::before {
+		content: '[';
+	}
+
+	&::after {
+		content: ']';
+	}
+}
