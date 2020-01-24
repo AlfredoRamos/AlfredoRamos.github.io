@@ -24,19 +24,11 @@ It also helps identify external links for both users and search engines by addin
 - Open external links in a new tab
 - Add visual indicator to external links
 - Add link relationships
-	- `rel=external`: To indicate the linked page does not belong to the current website [[1]]
-	- `rel=nofollow`: To indicate that search engines must not crawl the linked page [[2]][[3]]
-	- `rel=noreferrer`: To prevent information leakage when following the link [[4]]
-	- `rel=noopener`: To prevent an attack surface when opening links in a new tab [[5]][[6]]
-	- `rel=ugc`: To indicate user-generated content links [[7]]
-
-[1]: https://html.spec.whatwg.org/multipage/links.html#link-type-external
-[2]: https://html.spec.whatwg.org/multipage/links.html#link-type-nofollow
-[3]: https://support.google.com/webmasters/answer/96569
-[4]: https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer
-[5]: https://mathiasbynens.github.io/rel-noopener/
-[6]: https://developers.google.com/web/tools/lighthouse/audits/noopener
-[7]: https://support.google.com/webmasters/answer/96569
+	- `rel=external`: To indicate the linked page does not belong to the current website [^1]
+	- `rel=nofollow`: To indicate that search engines must not crawl the linked page [^2][^3]
+	- `rel=noreferrer`: To prevent information leakage when following the link [^4]
+	- `rel=noopener`: To prevent an attack surface when opening links in a new tab [^5][^6]
+	- `rel=ugc`: To indicate user-generated content links [^3]
 
 ### Preview
 
@@ -95,3 +87,11 @@ To customize the look and feel:
 - Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/externallinks/`
 - Download the new version
 - Install the extension
+
+___
+[^1]: [Link type "external"](https://html.spec.whatwg.org/multipage/links.html#link-type-external)
+[^2]: [Link type "nofollow"](https://html.spec.whatwg.org/multipage/links.html#link-type-nofollow)
+[^3]: [Qualify your outbound links to Google](https://support.google.com/webmasters/answer/96569)
+[^4]: [Link type "noreferrer"](https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer)
+[^5]: [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
+[^6]: [Links to cross-origin destinations are unsafe](https://developers.google.com/web/tools/lighthouse/audits/noopener)
