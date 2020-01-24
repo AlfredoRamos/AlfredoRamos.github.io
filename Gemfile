@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
+gem 'faraday', '~> 0.17'
 gem 'github-pages', group: :jekyll_plugins
 
 group :development do
