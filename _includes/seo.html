@@ -8,17 +8,17 @@
 <meta property="og:type" content="{% if page.id%}article{% else %}website{% endif %}">
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-{%- if page.image.url %}
-<meta property="og:image" content="{{ page.image.url | escape_uri | relative_url }}">
+{%- if page.image %}
+<meta property="og:image" content="{{ page.image | escape_uri | relative_url }}">
 {%- endif %}
-{%- if page.image.type %}
-<meta property="og:image:type" content="{{ page.image.type | escape }}">
+{%- if page.image_type %}
+<meta property="og:image:type" content="{{ page.image_type | remove_first: 'image/' | prepend: 'image/' | escape }}">
 {%- endif %}
-{%- if page.image.width %}
-<meta property="og:image:width" content="{{ page.image.width | escape }}">
+{%- if page.image_width %}
+<meta property="og:image:width" content="{{ page.image_width | escape }}">
 {%- endif %}
-{%- if page.image.height %}
-<meta property="og:image:height" content="{{ page.image.height | escape }}">
+{%- if page.image_height %}
+<meta property="og:image:height" content="{{ page.image_height | escape }}">
 {%- endif %}
 {%- if page.date %}
 <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">

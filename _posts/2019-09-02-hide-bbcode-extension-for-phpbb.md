@@ -4,7 +4,11 @@ date: 2019-09-02 16:26:38 -0500
 last_modified_at: 2019-10-13 21:15:35 -0500
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
-image: https://i.imgur.com/OajNWkcm.png
+thumbnail: https://i.imgur.com/OajNWkcm.png
+image: https://i.imgur.com/OajNWkc.png
+image_type: png
+image_width: 480
+image_height: 80
 ---
 Hide BBCode extension for phpBB.
 

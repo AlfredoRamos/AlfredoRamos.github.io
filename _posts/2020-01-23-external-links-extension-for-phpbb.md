@@ -5,7 +5,11 @@ category: phpbb
 tags: [phpbb-extension, external-links, rel-link, new-tab, nofollow, noreferrer, noopener, ugc]
 stylesheets: [lightcase]
 scripts: [lightcase]
-image: https://i.imgur.com/nEsb1Idm.png
+thumbnail: https://i.imgur.com/nEsb1Idm.png
+image: https://i.imgur.com/nEsb1Id.png
+image_type: png
+image_width: 602
+image_height: 233
 ---
 External Links extension for phpBB.
 

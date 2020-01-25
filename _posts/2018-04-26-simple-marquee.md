@@ -5,7 +5,11 @@ last_modified_at: 2018-04-29 19:10:23 -0600
 category: development
 tags: [sass, marquee]
 stylesheets: [marquee]
-image: https://i.imgur.com/qROSaDDm.png
+thumbnail: https://i.imgur.com/qROSaDDm.png
+image: https://i.imgur.com/qROSaDD.png
+image_type: png
+image_width: 1141
+image_height: 587
 ---
 A Simple SASS Marquee.
 

@@ -6,7 +6,11 @@ category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
 stylesheets: [lightcase]
 scripts: [lightcase]
-image: https://i.imgur.com/mBCEbSfm.png
+thumbnail: https://i.imgur.com/mBCEbSfm.png
+image: https://i.imgur.com/mBCEbSf.png
+image_type: png
+image_width: 660
+image_height: 263
 ---
 Auto-lock Topics extension for phpBB
 

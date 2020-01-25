@@ -10,9 +10,9 @@ description: A collection of latest post of my projects, extensions and more.
 	{% for post in paginator.posts %}
 	<div class="col-lg-4 col-md-6 mb-4">
 		<div class="post card shadow-sm h-100">
-			{% if post.image.size > 0 %}
+			{% if post.thumbnail.size > 0 %}
 			<picture>
-				<img data-src="{{ post.image }}" class="card-img-top img-fluid h-100 lazyload" alt="{{ post.title | escape }}">
+				<img data-src="{{ post.thumbnail }}" class="card-img-top img-fluid h-100 lazyload" alt="{{ post.title | escape }}">
 			</picture>
 			{% else %}
 			<svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">

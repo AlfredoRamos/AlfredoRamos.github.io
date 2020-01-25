@@ -31,7 +31,7 @@ defaults:
       author: AlfredoRamos
 
 # Build settings
-theme: minima
+theme: null
 encoding: 'utf-8'
 paginate_path: /page-:num
 paginate: 12
