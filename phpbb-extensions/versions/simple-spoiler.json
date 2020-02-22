@@ -29,6 +29,12 @@
 			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases/tag/2.0.0",
 			"eol": null,
 			"security": false
+		},
+		"2.1": {
+			"current": "2.1.0",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases/tag/2.1.0",
+			"eol": null,
+			"security": false
 		}
 	}
 }
