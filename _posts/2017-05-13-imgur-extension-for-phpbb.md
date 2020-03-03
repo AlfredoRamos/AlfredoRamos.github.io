@@ -1,7 +1,7 @@
 ---
 title: Imgur extension for phpBB
 date: 2017-05-13 18:29:16 -0500
-last_modified_at: 2019-10-13 11:13:35 -0500
+last_modified_at: 2020-03-03 15:00:20 -0500
 category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 stylesheets: [lightcase]
@@ -22,8 +22,6 @@ Imgur extension for phpBB.
 With this extension you can click on the `Imgur` posting button and select the image(s) you want to upload.
 
 If the upload is successful it will add the image in the topic, private message or signature content. You can choose in the `Administration Control Panel` to show the uploaded image as plan text or with BBCode as URL, image (default) or thumbnail.
-
-Other extensions, such as [Markdown]({% post_url 2019-07-01-markdown-extension-for-phpbb %}), can add custom output types.
 
 <!-- more -->
 ### Features
@@ -55,8 +53,8 @@ Other extensions, such as [Markdown]({% post_url 2019-07-01-markdown-extension-f
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 - Composer (for development only)
 - Imgur API data (`client_id` and `client_secret`)
 

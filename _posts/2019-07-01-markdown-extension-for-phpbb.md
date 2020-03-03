@@ -1,7 +1,7 @@
 ---
 title: Markdown extension for phpBB
 date: 2019-05-24 14:29:05 -0500
-last_modified_at: 2019-10-13 11:39:02 -0500
+last_modified_at: 2020-03-03 15:00:40 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
@@ -37,7 +37,6 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 - Set per forum permissions to use Markdown
 - Posting option to disable Markdown only in the current message (see note below)
 - Add help page to explain users how write messages in Markdown
-- Support for [Imgur]({% post_url 2017-05-13-imgur-extension-for-phpbb %}) extension
 
 ### Preview
 
@@ -59,8 +58,8 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 
 **Note:** You need phpBB 3.2.6 or greater ([PHPBB3-15949](https://tracker.phpbb.com/browse/PHPBB3-15949), [#5519](https://github.com/phpbb/phpbb/pull/5519)) to use the custom posting editor option to disable Markdown in the signature.
 

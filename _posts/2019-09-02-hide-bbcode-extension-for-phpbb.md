@@ -1,7 +1,7 @@
 ---
 title: Hide BBCode extension for phpBB
 date: 2019-09-02 16:26:38 -0500
-last_modified_at: 2019-10-13 21:15:35 -0500
+last_modified_at: 2020-03-03 15:01:00 -0500
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
 thumbnail: https://i.imgur.com/OajNWkcm.png
@@ -37,8 +37,8 @@ You can nest `[hide]` and use other BBCodes inside it.
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 
 ### Support
 

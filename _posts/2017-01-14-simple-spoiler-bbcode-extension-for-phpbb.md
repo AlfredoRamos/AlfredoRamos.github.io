@@ -1,7 +1,7 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14 23:53:37 -0500
-last_modified_at: 2019-10-13 21:02:46 -0500
+last_modified_at: 2020-03-03 15:00:00 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 thumbnail: https://i.imgur.com/5NrtAoSm.png
@@ -46,8 +46,8 @@ You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 
 ### Support
 

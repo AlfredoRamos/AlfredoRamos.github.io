@@ -1,7 +1,7 @@
 ---
 title: Auto-lock topics extension for phpBB
 date: 2017-05-11 18:52:54 -0500
-last_modified_at: 2019-10-13 20:32:51 -0500
+last_modified_at: 2020-03-03 15:00:10 -0500
 category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
 stylesheets: [lightcase]
@@ -43,8 +43,8 @@ It will automatically lock old topics using phpBB's cron functionality.
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 
 ### Support
 

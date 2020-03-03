@@ -1,7 +1,7 @@
 ---
 title: Image Alternate Text extension for phpBB
 date: 2019-07-31 19:18:13 -0500
-last_modified_at: 2019-10-13 11:29:40 -0500
+last_modified_at: 2020-03-03 15:00:50 -0500
 category: phpbb
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
 thumbnail: https://i.imgur.com/yLgDJpGm.png
@@ -44,8 +44,8 @@ Allows you to set alternate text to image tags, for SEO purposes. Example:
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 
 ### Support
 

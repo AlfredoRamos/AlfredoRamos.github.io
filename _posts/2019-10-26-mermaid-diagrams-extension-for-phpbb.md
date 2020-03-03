@@ -1,6 +1,7 @@
 ---
 title: Mermaid Diagrams extension for phpBB
 date: 2019-10-26 19:56:28 -0500
+last_modified_at: 2020-03-03 15:01:20 -0500
 category: phpbb
 tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
 stylesheets: [lightcase]
@@ -53,8 +54,8 @@ It uses the [mermaid](https://github.com/knsv/mermaid) library to generate the S
 
 ### Requirements
 
-- PHP 5.6 or greater
-- phpBB 3.2 or greater
+- PHP 7.1.3 or greater
+- phpBB 3.3 or greater
 
 ### Support
 
