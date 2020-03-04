@@ -15,7 +15,7 @@
 		"files": [
 			{
 				"name": "popper",
-				"version": "1.16.0",
+				"version": "1.16.1",
 				"path": "umd",
 				"minified": true,
 				"cdn": "cdnjs"
