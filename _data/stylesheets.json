@@ -7,7 +7,8 @@
 				"version": "4.4.1",
 				"path": "css",
 				"minified": true,
-				"cdn": "cdnjs"
+				"cdn": "cdnjs",
+				"integrity": "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			}
 		]
 	},
@@ -26,10 +27,10 @@
 		"group": "github",
 		"files": [
 			{
-				"name": "PhilipTrauner/pygments-github-css/daec645dc5b56864b5940d6fc95615477487b793/github",
+				"name": "github",
 				"version": null,
 				"minified": false,
-				"cdn": "githack"
+				"cdn": null
 			}
 		]
 	},
@@ -37,11 +38,10 @@
 		"group": "marquee",
 		"files": [
 			{
-				"name": "AlfredoRamos/241ebc49763fd6d8d805878e29b9c804/raw/e3f38fda7e516e9772fd16c9d431d8255808f343/marquee",
+				"name": "marquee",
 				"version": null,
-				"minified": true,
-				"cdn": "githack",
-				"type": "gist"
+				"minified": false,
+				"cdn": null
 			}
 		]
 	},
@@ -53,7 +53,8 @@
 				"version": "2.5.0",
 				"path": "css",
 				"minified": true,
-				"cdn": "cdnjs"
+				"cdn": "cdnjs",
+				"integrity": "sha384-jG6I54lQOGf7uZjliUGfGFWUMwuq8NQiuBrWu9qEUEh7ARsUVTMD1XcRSev3dKDC"
 			}
 		]
 	}

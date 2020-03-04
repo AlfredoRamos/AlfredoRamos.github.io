@@ -56,7 +56,7 @@
 					{%- assign style_url = style_url | append: '.css' | relative_url -%}
 			{%- endcase -%}
 			{%- if style_url.size > 0 %}
-			<link rel="stylesheet" href="{{ style_url | uri_escape }}">
+			<link rel="stylesheet" href="{{ style_url | uri_escape }}"{% if file.cdn.size > 0 and file.integrity.size > 0 %} integrity="{{ file.integrity }}" crossorigin="anonymous"{% endif %}>
 			{%- endif %}
 		{%- endfor -%}
 	{%- endif -%}
