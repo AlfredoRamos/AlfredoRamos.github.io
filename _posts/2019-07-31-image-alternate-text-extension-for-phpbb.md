@@ -14,7 +14,6 @@ Image Alternate Text extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-image-alt)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-image-alt.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-image-alt/releases)
-[![Code Quality](https://img.shields.io/codacy/grade/0ef34fce1e3f4c32990fcb495efe98d8.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-image-alt)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-image-alt/master/license.txt)
 
 Allows you to set alternate text to image tags, for SEO purposes. Example:

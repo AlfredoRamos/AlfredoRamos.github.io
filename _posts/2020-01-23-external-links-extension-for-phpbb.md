@@ -15,7 +15,6 @@ External Links extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-external-links.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-external-links)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-external-links.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-external-links/releases)
-[![Code Quality](https://img.shields.io/codacy/grade/03ef9db9fa1d4f87a7d369f926e3b094.svg?style=flat-square)](https://app.codacy.com/app/AlfredoRamos/phpbb-ext-external-links)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-external-links.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-external-links/master/license.txt)
 
 It adds cosmetic, functionality and security configuration options for external links.

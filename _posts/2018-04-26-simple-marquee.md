@@ -13,7 +13,9 @@ image_height: 587
 ---
 A Simple SASS Marquee.
 
-[![Build Status](https://img.shields.io/travis/AlfredoRamos/simple-marquee.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/simple-marquee) [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/simple-marquee.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/simple-marquee/releases) [![Code Quality](https://img.shields.io/codacy/grade/4880dfbf94f040f5900b2b840ddd5bd6.svg?style=flat-square&maxAge=3600)](https://www.codacy.com/app/AlfredoRamos/simple-marquee) [![License](https://img.shields.io/github/license/AlfredoRamos/simple-marquee.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/simple-marquee/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/AlfredoRamos/simple-marquee.svg?style=flat-square&maxAge=3600)](https://travis-ci.org/AlfredoRamos/simple-marquee)
+[![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/simple-marquee.svg?style=flat-square&label=stable&maxAge=3600)](https://github.com/AlfredoRamos/simple-marquee/releases)
+[![License](https://img.shields.io/github/license/AlfredoRamos/simple-marquee.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/simple-marquee/master/LICENSE)
 
 ### Links
 
