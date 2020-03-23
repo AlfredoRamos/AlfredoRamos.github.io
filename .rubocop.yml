@@ -5,9 +5,6 @@ inherit_gem:
 Metrics/BlockLength:
   Max: 120
 
-Metrics/LineLength:
-  Max: 120
-
 Style/StringLiterals:
   EnforcedStyle: single_quotes
 
@@ -26,5 +23,8 @@ Style/PercentLiteralDelimiters:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: no_comma
 
-Layout/IndentFirstArgument:
+Layout/LineLength:
+  Max: 120
+
+Layout/FirstArgumentIndentation:
   EnforcedStyle: consistent

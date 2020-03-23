@@ -15,6 +15,6 @@ end
 
 group :test do
   gem 'rubocop', require: false
-  gem 'rubocop-jekyll', '~> 0.10.0'
+  gem 'rubocop-jekyll', '~> 0.11.0'
   gem 'scss_lint', '~> 0.58', require: false
 end
