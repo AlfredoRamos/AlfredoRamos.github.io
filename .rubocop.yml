@@ -23,7 +23,7 @@ Style/PercentLiteralDelimiters:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: no_comma
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
 
 Layout/FirstArgumentIndentation:
