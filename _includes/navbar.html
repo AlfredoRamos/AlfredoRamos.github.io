@@ -10,7 +10,15 @@
 			<ul class="navbar-nav">
 				{%- for p in site.data.pages %}
 				<li class="nav-item{% if p.uri == page.url %} active{% endif %}">
-					<a class="nav-link" href="{{ p.uri | uri_escape | relative_url }}">{{ p.title | escape }}{% if p.uri == page.url %}<span class="sr-only"> (current)</span>{% endif %}</a>
+					<a class="nav-link" href="{{ p.uri | uri_escape | relative_url }}">
+						{%- if p.uri == '/donate/' -%}
+						<svg class="donate-icon bi bi-heart-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" clip-rule="evenodd"/>
+						</svg>
+						{%- endif -%}
+						{{ p.title | escape }}
+						{% if p.uri == page.url %}<span class="sr-only"> (current)</span>{% endif %}
+					</a>
 				</li>
 				{%- endfor %}
 			</ul>

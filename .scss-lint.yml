@@ -16,6 +16,9 @@ linters:
     enabled: true
     character: tab
     width: 1
+  LeadingZero:
+    enabled: true
+    style: include_zero
   PlaceholderInExtend:
     enabled: true
   PropertySortOrder:
@@ -24,5 +27,7 @@ linters:
   PropertyUnits:
     enabled: true
     global: ['px', 'rem', '%']
+    properties:
+      animation: ['s']
   TrailingZero:
     enabled: true

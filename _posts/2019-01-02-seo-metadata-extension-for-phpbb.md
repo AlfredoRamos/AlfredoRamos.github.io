@@ -113,9 +113,7 @@ If available, it will dynamically generate and include the following data inside
 
 ### Donate
 
-If you like or found this extensions useful and want to show some appreciation, you can consider donating.
-
-[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)]({{ '/donate/' | relative_url }})
+{% include donation.html %}
 
 ### Installation
 

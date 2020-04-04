@@ -53,9 +53,7 @@ It will automatically lock old topics using phpBB's cron functionality.
 
 ### Donate
 
-If you like or found this extensions useful and want to show some appreciation, you can consider donating.
-
-[![PayPal Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)]({{ '/donate/' | relative_url }})
+{% include donation.html %}
 
 ### Configuration
 

@@ -5,3 +5,9 @@
 	vertical-align: text-bottom;
 	fill: currentColor;
 }
+
+.donate-icon {
+	animation: pulse 2s infinite;
+	margin-right: 5px;
+	color: $fg-donate;
+}
