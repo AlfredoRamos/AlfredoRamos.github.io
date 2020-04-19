@@ -40,6 +40,16 @@
 			"url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git"
 		}
 	],
-	"require-all": true,
+	"require": {
+		"alfredoramos/simplespoiler": ">=1.0.0",
+		"alfredoramos/autolocktopics": ">=1.0.0",
+		"alfredoramos/imgur": ">=1.0.0",
+		"alfredoramos/seometadata": ">=1.0.0",
+		"alfredoramos/markdown": ">=1.0.0",
+		"alfredoramos/lazyload": ">=1.0.0",
+		"alfredoramos/hide": ">=1.0.0",
+		"alfredoramos/imagealt": ">=1.0.0",
+		"alfredoramos/mermaid": ">=1.0.0"
+	},
 	"output-dir": "phpbb-extensions"
 }
