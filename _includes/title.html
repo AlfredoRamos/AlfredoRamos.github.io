@@ -15,9 +15,11 @@
 		| append: ' :: '
 		| append: site.title - %}
 {%- endif -%}
-{%- assign title = title
-	| append: ' :: '
-	| append: site.description -%}
+{%- if page.url == '/' -%}
+	{%- assign title = title
+		| append: ' :: '
+		| append: site.description -%}
+{%- endif -%}
 {%- if include.xml.size > 0 -%}
 	{%- assign title = title | smartify | xml_escape -%}
 {%- else -%}
