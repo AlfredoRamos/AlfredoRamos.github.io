@@ -21,10 +21,6 @@
 						| append: file.path | append: '/' -%}
 					{%- endif -%}
 					{%- assign script_url = script_url | append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign script_url = script_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign script_url = script_url | append: '.js' -%}
 				{%- when 'githack' -%}
 					{%- if file.type != 'gist' -%}
 						{%- assign script_url = script_url
@@ -34,20 +30,24 @@
 						| append: 'https://gistcdn.githack.com/' -%}
 					{%- endif -%}
 					{%- assign script_url = script_url | append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign script_url = script_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign script_url = script_url | append: '.js' -%}
+				{%- when 'iconify' -%}
+					{%- assign script_url = script_url
+					| append: 'https://code.iconify.design/1/'
+					| append: file.version | append: '/'
+					| append: file.name -%}
 				{%- else -%}
 					{%- assign script_url = script_url | append: '/assets/js/'
 					| append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign script_url = script_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign script_url = script_url | append: '.js' | relative_url -%}
 			{%- endcase -%}
+			{%- if file.minified -%}
+				{%- assign script_url = script_url | append: '.min' -%}
+			{%- endif -%}
+			{%- assign script_url = script_url | append: '.js' -%}
+			{%- unless file.cdn -%}
+				{%- assign script_url = script_url | relative_url -%}
+			{%- endunless -%}
 			{%- if script_url.size > 0 %}
-			<script src="{{ script_url | uri_escape }}"></script>
+			<script src="{{ script_url | uri_escape }}"{% if file.cdn.size > 0 and file.integrity.size > 0 %} integrity="{{ file.integrity }}" crossorigin="anonymous"{% endif %}></script>
 			{%- endif %}
 		{%- endfor -%}
 	{%- endif -%}

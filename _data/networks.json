@@ -1,7 +1,19 @@
 [
 	{
-		"name": "github",
+		"name": "GitHub",
 		"user": "AlfredoRamos",
-		"url": "https://github.com/"
+		"url": "https://github.com/",
+		"icon": "brandico:github"
+	},
+	{
+		"name": "Telegram",
+		"user": "AlfredoRamos",
+		"url": "https://telegram.me/",
+		"icon": "fa-brands:telegram-plane"
+	},
+	{
+		"name": "Discord",
+		"user": "AlfredoRamos#3527",
+		"icon": "cib:discord"
 	}
 ]

@@ -1,5 +1,6 @@
 [
 	"jquery",
 	"twitter-bootstrap",
-	"lazysizes"
+	"lazysizes",
+	"iconify"
 ]
