@@ -1,13 +1,23 @@
-.icon {
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	vertical-align: text-bottom;
-	fill: currentColor;
+.inline-icon {
+	margin-right: 5px;
 }
 
 .donate-icon {
 	animation: pulse 2s infinite;
-	margin-right: 5px;
 	color: $fg-donate;
+}
+
+.social-username {
+	> .social-icon {
+		width: 1.25rem;
+		height: 1.25rem;
+		vertical-align: middle !important; // scss-lint:disable ImportantRule
+		color: $fg-icon;
+	}
+
+	&:hover {
+		> .social-icon {
+			color: $fg-icon-hover;
+		}
+	}
 }

@@ -5,4 +5,10 @@ code {
 		padding: 3px 6px;
 		color: $fg-highlight;
 	}
+
+	&.social-username {
+		background: none;
+		padding: 0;
+		color: currentColor;
+	}
 }

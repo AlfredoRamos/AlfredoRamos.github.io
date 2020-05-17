@@ -67,5 +67,17 @@
 				"integrity": "sha384-lXlOikwyrW7dmgxBebidKy+ffqirROw7KfpwSU07ze9QxhA26X7SuQsujgf3xo1A"
 			}
 		]
+	},
+	{
+		"group": "iconify",
+		"files": [
+			{
+				"name": "iconify",
+				"version": "1.0.6",
+				"minified": true,
+				"cdn": "iconify",
+				"integrity": "sha384-bAajreKT0Wnit/3jZuKM1e+O7S7+L97dPjjh/4zCbeaY6tpyUOm58oHCYMugl5N7"
+			}
+		]
 	}
 ]

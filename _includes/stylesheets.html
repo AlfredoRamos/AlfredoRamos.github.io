@@ -21,10 +21,6 @@
 						| append: file.path | append: '/' -%}
 					{%- endif -%}
 					{%- assign style_url = style_url | append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign style_url = style_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign style_url = style_url | append: '.css' -%}
 				{%- when 'githack' -%}
 					{%- if file.type != 'gist' -%}
 						{%- assign style_url = style_url
@@ -34,27 +30,17 @@
 						| append: 'https://gistcdn.githack.com/' -%}
 					{%- endif -%}
 					{%- assign style_url = style_url | append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign style_url = style_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign style_url = style_url | append: '.css' -%}
-				{%- when 'googlefonts' -%}
-					{%- assign style_url = style_url
-					| append: 'https://fonts.googleapis.com/css?family='
-					| append: file.name -%}
-					{%- if file.subset.size > 0 -%}
-						{%- assign subset = file.subset | compact | join: ',' -%}
-						{%- assign style_url = style_url
-						| append: '&amp;subset=' | append: subset -%}
-					{%- endif -%}
 				{%- else -%}
 					{%- assign style_url = style_url | append: '/assets/css/'
 					| append: file.name -%}
-					{%- if file.minified -%}
-						{%- assign style_url = style_url | append: '.min' -%}
-					{%- endif -%}
-					{%- assign style_url = style_url | append: '.css' | relative_url -%}
 			{%- endcase -%}
+			{%- if file.minified -%}
+				{%- assign style_url = style_url | append: '.min' -%}
+			{%- endif -%}
+			{%- assign style_url = style_url | append: '.css' -%}
+			{%- unless file.cdn -%}
+				{%- assign style_url = style_url | relative_url -%}
+			{%- endunless -%}
 			{%- if style_url.size > 0 %}
 			<link rel="stylesheet" href="{{ style_url | uri_escape }}"{% if file.cdn.size > 0 and file.integrity.size > 0 %} integrity="{{ file.integrity }}" crossorigin="anonymous"{% endif %}>
 			{%- endif %}

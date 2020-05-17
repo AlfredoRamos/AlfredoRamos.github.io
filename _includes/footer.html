@@ -4,7 +4,7 @@
 		<ul class="credits list-inline list-with-separator text-center text-muted">
 			<li class="list-inline-item">
 				&copy; 2015-{{ site.time | date: '%Y' }}
-				<a href="{% if site.github.owner.blog.size > 0 %}{{ site.github.owner.blog }}{% else %}{{ '/' | relative_url }}{% endif %}" target="_blank">
+				<a href="{% if site.github.owner.blog.size > 0 %}{{ site.github.owner.blog }}{% else %}{{ '/' | relative_url }}{% endif %}" rel="external noreferrer noopener" target="_blank">
 					{{ site.github.owner.name }}
 				</a>
 			</li>
@@ -13,10 +13,6 @@
 		</ul>
 	</div>
 </footer>
-
-<!-- svg -->
-{%- include social.svg %}
-<!-- svg -->
 
 {%- include scripts.html content=site.data.script_list %}
 
