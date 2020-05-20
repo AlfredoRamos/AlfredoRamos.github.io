@@ -36,6 +36,7 @@
 			</ul>
 		</div>
 	</section>
+	{%- unless page.url == '/donate/' %}
 	<section id="donate" class="widget mb-4">
 		<header class="header">
 			<h3>Donate</h3>
@@ -44,6 +45,7 @@
 			{% include donation.html %}
 		</div>
 	</section>
+	{%- endunless %}
 	{%- endif %}
 	{%- if site.related_posts.size > 0 %}
 	<section id="related-posts" class="widget mb-4">
