@@ -1,0 +1,177 @@
+{
+    "packages": {
+        "alfredoramos/hide": [
+            {
+                "name": "alfredoramos/hide",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35",
+                    "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2019-09-02T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Hide",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "hide.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Hide BBCode extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-hide",
+                "keywords": [
+                    "bbcode",
+                    "extension",
+                    "hide",
+                    "phpbb"
+                ]
+            },
+            {
+                "name": "alfredoramos/hide",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "reference": "93e31f1f8fe8686ceeca5e3d99128dd3fc2ef690"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/93e31f1f8fe8686ceeca5e3d99128dd3fc2ef690",
+                    "reference": "93e31f1f8fe8686ceeca5e3d99128dd3fc2ef690",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-02-15T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Hide",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "hide.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Hide BBCode extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-hide",
+                "keywords": [
+                    "bbcode",
+                    "extension",
+                    "hide",
+                    "phpbb"
+                ]
+            },
+            {
+                "name": "alfredoramos/hide",
+                "version": "2.1.0",
+                "version_normalized": "2.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "reference": "b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de",
+                    "reference": "b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-05-05T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Hide",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "hide.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Hide BBCode extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-hide",
+                "keywords": [
+                    "bbcode",
+                    "extension",
+                    "hide",
+                    "phpbb"
+                ]
+            }
+        ]
+    }
+}

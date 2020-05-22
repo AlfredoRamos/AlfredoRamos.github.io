@@ -1,0 +1,70 @@
+{
+    "packages": {
+        "alfredoramos/seometadata": [
+            {
+                "name": "alfredoramos/seometadata",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "reference": "6044704d0c5e09eb9148e9863f86286a2d355763"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/6044704d0c5e09eb9148e9863f86286a2d355763",
+                    "reference": "6044704d0c5e09eb9148e9863f86286a2d355763",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-05-14T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "SEO Metadata",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "seo-metadata.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "SEO Metadata extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
+                "keywords": [
+                    "extension",
+                    "json-ld",
+                    "metadata",
+                    "microdata",
+                    "microformat",
+                    "open-graph",
+                    "phpbb",
+                    "rdf",
+                    "schema-org",
+                    "seo",
+                    "twitter-cards"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,470 @@
+{
+    "packages": {
+        "alfredoramos/autolocktopics": [
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "36ebc1c10397295c4bc50fed23a7a40e541c5820"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/36ebc1c10397295c4bc50fed23a7a40e541c5820",
+                    "reference": "36ebc1c10397295c4bc50fed23a7a40e541c5820",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.2.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-05-11T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "737552e42c53a96ff0e4c2f1abc7ad4d08c6796b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/737552e42c53a96ff0e4c2f1abc7ad4d08c6796b",
+                    "reference": "737552e42c53a96ff0e4c2f1abc7ad4d08c6796b",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.2.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-06-27T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "590bebafd26f43acd7f173255b82f9977c9d2af0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/590bebafd26f43acd7f173255b82f9977c9d2af0",
+                    "reference": "590bebafd26f43acd7f173255b82f9977c9d2af0",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.4.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-10-31T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "84d1502a8b3ed4a6ace82f7b588b82e0f0339d79"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/84d1502a8b3ed4a6ace82f7b588b82e0f0339d79",
+                    "reference": "84d1502a8b3ed4a6ace82f7b588b82e0f0339d79",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.4.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2008-02-04T20:17:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "a1cce3ff0051cb63802e8cc550d9dfbaa63cf662"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/a1cce3ff0051cb63802e8cc550d9dfbaa63cf662",
+                    "reference": "a1cce3ff0051cb63802e8cc550d9dfbaa63cf662",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.4.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2018-05-06T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.1.1",
+                "version_normalized": "1.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "2cc89b4c7ad1d45f58b5588763dad07a5134a49b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/2cc89b4c7ad1d45f58b5588763dad07a5134a49b",
+                    "reference": "2cc89b4c7ad1d45f58b5588763dad07a5134a49b",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.4.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2018-05-29T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.1.2",
+                "version_normalized": "1.1.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "a63fb3a03d618e858c3036963d89868e29a77cf2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/a63fb3a03d618e858c3036963d89868e29a77cf2",
+                    "reference": "a63fb3a03d618e858c3036963d89868e29a77cf2",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.4.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2018-06-15T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            },
+            {
+                "name": "alfredoramos/autolocktopics",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "reference": "6bf7727cd436dbf4847353343f14d6ca474f10c3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/6bf7727cd436dbf4847353343f14d6ca474f10c3",
+                    "reference": "6bf7727cd436dbf4847353343f14d6ca474f10c3",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-01-06T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Auto-lock Topics",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "auto-lock-topics.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Auto-lock Topics extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics",
+                "keywords": [
+                    "auto-lock",
+                    "cron",
+                    "extension",
+                    "phpbb",
+                    "topics"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "packages": {
+        "alfredoramos/imagealt": [
+            {
+                "name": "alfredoramos/imagealt",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "reference": "ac69fe626c56cf93ff5e84f2745b8435a36b75cc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/ac69fe626c56cf93ff5e84f2745b8435a36b75cc",
+                    "reference": "ac69fe626c56cf93ff5e84f2745b8435a36b75cc",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-01-06T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Image Alternate Text",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "image-alt.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Image Alternate Text extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-image-alt",
+                "keywords": [
+                    "alternate-text",
+                    "extension",
+                    "image",
+                    "phpbb"
+                ]
+            }
+        ]
+    }
+}
