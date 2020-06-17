@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a"
                 },
                 "dist": {
@@ -56,7 +56,11 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/l10n",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
+                }
             }
         ]
     }

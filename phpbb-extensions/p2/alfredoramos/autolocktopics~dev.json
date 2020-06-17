@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "fd82ca524a6fdb0b0d6cf22dd2b60eb1fa68605c"
                 },
                 "dist": {
@@ -57,7 +57,11 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
+                }
             }
         ]
     }

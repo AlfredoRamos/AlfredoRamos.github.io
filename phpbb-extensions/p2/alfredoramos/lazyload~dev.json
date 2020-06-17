@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-lazy-load.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
                     "reference": "dd033da590380efbb0bde32a6eb5b21bea4bba0c"
                 },
                 "dist": {
@@ -55,7 +55,11 @@
                     "extension",
                     "lazy-load",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/issues"
+                }
             }
         ]
     }
