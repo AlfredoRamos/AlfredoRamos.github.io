@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "71e72fa338986dd6cf4688a568018f37e10e4b69"
+                    "reference": "530e10aa8405bd019a64771e448f2574a295f453"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/71e72fa338986dd6cf4688a568018f37e10e4b69",
-                    "reference": "71e72fa338986dd6cf4688a568018f37e10e4b69",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/530e10aa8405bd019a64771e448f2574a295f453",
+                    "reference": "530e10aa8405bd019a64771e448f2574a295f453",
                     "shasum": ""
                 },
                 "require": {

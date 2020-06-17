@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "d6fbb5ab716308b57bd62d11a37c70cc952e1036"
+                    "reference": "9ba1e60a8f0e637101491acbebdbb86f415a98db"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/d6fbb5ab716308b57bd62d11a37c70cc952e1036",
-                    "reference": "d6fbb5ab716308b57bd62d11a37c70cc952e1036",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/9ba1e60a8f0e637101491acbebdbb86f415a98db",
+                    "reference": "9ba1e60a8f0e637101491acbebdbb86f415a98db",
                     "shasum": ""
                 },
                 "require": {

@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "6044704d0c5e09eb9148e9863f86286a2d355763"
+                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/6044704d0c5e09eb9148e9863f86286a2d355763",
-                    "reference": "6044704d0c5e09eb9148e9863f86286a2d355763",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/abb0387628e22dfed319908d5e507b508ede37e5",
+                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5",
                     "shasum": ""
                 },
                 "require": {
@@ -24,7 +24,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-05-14T00:00:00+00:00",
+                "time": "2020-06-17T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "SEO Metadata",

@@ -703,12 +703,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
-                    "reference": "b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de"
+                    "reference": "2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de",
-                    "reference": "b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a",
+                    "reference": "2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a",
                     "shasum": ""
                 },
                 "require": {
@@ -1979,12 +1979,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "b4c43b30151c0cf10d061dedd81e565c2ec618e4"
+                    "reference": "a9f9fbbad5a571ca311cbaf91801dd64b18c278c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/b4c43b30151c0cf10d061dedd81e565c2ec618e4",
-                    "reference": "b4c43b30151c0cf10d061dedd81e565c2ec618e4",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/a9f9fbbad5a571ca311cbaf91801dd64b18c278c",
+                    "reference": "a9f9fbbad5a571ca311cbaf91801dd64b18c278c",
                     "shasum": ""
                 },
                 "require": {
@@ -1996,7 +1996,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-04-18T00:00:00+00:00",
+                "time": "2020-06-12T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Imgur",
@@ -2343,12 +2343,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "71e72fa338986dd6cf4688a568018f37e10e4b69"
+                    "reference": "530e10aa8405bd019a64771e448f2574a295f453"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/71e72fa338986dd6cf4688a568018f37e10e4b69",
-                    "reference": "71e72fa338986dd6cf4688a568018f37e10e4b69",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/530e10aa8405bd019a64771e448f2574a295f453",
+                    "reference": "530e10aa8405bd019a64771e448f2574a295f453",
                     "shasum": ""
                 },
                 "require": {
@@ -2789,19 +2789,19 @@
                     "twitter-cards"
                 ]
             },
-            "dev-master": {
+            "1.4.0": {
                 "name": "alfredoramos/seometadata",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
+                "version": "1.4.0",
+                "version_normalized": "1.4.0.0",
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "6044704d0c5e09eb9148e9863f86286a2d355763"
+                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/6044704d0c5e09eb9148e9863f86286a2d355763",
-                    "reference": "6044704d0c5e09eb9148e9863f86286a2d355763",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/abb0387628e22dfed319908d5e507b508ede37e5",
+                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5",
                     "shasum": ""
                 },
                 "require": {
@@ -2812,7 +2812,71 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-05-14T00:00:00+00:00",
+                "time": "2020-06-17T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "SEO Metadata",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "seo-metadata.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "SEO Metadata extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
+                "keywords": [
+                    "extension",
+                    "json-ld",
+                    "metadata",
+                    "microdata",
+                    "microformat",
+                    "open-graph",
+                    "phpbb",
+                    "rdf",
+                    "schema-org",
+                    "seo",
+                    "twitter-cards"
+                ]
+            },
+            "dev-master": {
+                "name": "alfredoramos/seometadata",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/abb0387628e22dfed319908d5e507b508ede37e5",
+                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-06-17T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "SEO Metadata",
@@ -3884,12 +3948,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "d6fbb5ab716308b57bd62d11a37c70cc952e1036"
+                    "reference": "9ba1e60a8f0e637101491acbebdbb86f415a98db"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/d6fbb5ab716308b57bd62d11a37c70cc952e1036",
-                    "reference": "d6fbb5ab716308b57bd62d11a37c70cc952e1036",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/9ba1e60a8f0e637101491acbebdbb86f415a98db",
+                    "reference": "9ba1e60a8f0e637101491acbebdbb86f415a98db",
                     "shasum": ""
                 },
                 "require": {
