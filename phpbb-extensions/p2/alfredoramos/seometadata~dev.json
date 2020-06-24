@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
                 },
                 "dist": {
@@ -63,16 +63,6 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.4.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             }
         ]
