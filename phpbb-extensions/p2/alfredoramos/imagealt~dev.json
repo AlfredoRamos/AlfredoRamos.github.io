@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "ac69fe626c56cf93ff5e84f2745b8435a36b75cc"
                 },
                 "dist": {
@@ -56,11 +56,7 @@
                     "extension",
                     "image",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
-                }
+                ]
             }
         ]
     }
