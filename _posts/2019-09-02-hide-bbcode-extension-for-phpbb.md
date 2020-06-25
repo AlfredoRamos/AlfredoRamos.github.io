@@ -1,7 +1,7 @@
 ---
 title: Hide BBCode extension for phpBB
 date: 2019-09-02 16:26:38 -0500
-last_modified_at: 2020-03-03 15:01:00 -0500
+last_modified_at: 2020-06-25 11:36:00 -0500
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
 thumbnail: https://i.imgur.com/OajNWkcm.png
@@ -12,8 +12,10 @@ image_height: 80
 ---
 Hide BBCode extension for phpBB.
 
-[![Build Status](https://img.shields.io/travis/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/phpbb-ext-hide)
+[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-hide)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-hide.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-hide/releases)
+[![Code Quality](https://img.shields.io/codacy/grade/5de75f922b4f4eae90615728e908c1c7.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-hide/dashboard)
+[![Translation Progress](https://badges.crowdin.net/phpbb-ext-hide/localized.svg)](https://crowdin.com/project/phpbb-ext-hide)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-hide/master/license.txt)
 
 Allows you to write `[hide]text[/hide]` or `[hide inline=1]text[/hide]` and it will hide the content to guests.
@@ -43,6 +45,7 @@ You can nest `[hide]` and use other BBCodes inside it.
 
 - [Development topic](https://www.phpbb-es.com/foro/viewtopic.php?t=42374)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-hide/issues)
+- [Crowdin translations](https://crowdin.com/project/phpbb-ext-hide)
 
 ### Donate
 

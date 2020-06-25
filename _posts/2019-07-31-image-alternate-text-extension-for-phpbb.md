@@ -1,7 +1,7 @@
 ---
 title: Image Alternate Text extension for phpBB
 date: 2019-07-31 19:18:13 -0500
-last_modified_at: 2020-03-03 15:00:50 -0500
+last_modified_at: 2020-06-25 11:30:00 -0500
 category: phpbb
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
 thumbnail: https://i.imgur.com/yLgDJpGm.png
@@ -14,9 +14,10 @@ Image Alternate Text extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-image-alt)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-image-alt.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-image-alt/releases)
+[![Code Quality](https://img.shields.io/codacy/grade/f06ec0db39c049fc8883b6c65e10405a.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-image-alt/dashboard)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-image-alt/master/license.txt)
 
-Allows you to set alternate text to image tags, for SEO purposes. Example:
+Allows you to set alternate text to image tags to abide SEO recommendations.
 
 **BBCode input**
 ```

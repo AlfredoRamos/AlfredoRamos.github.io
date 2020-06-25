@@ -1,7 +1,7 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14 23:53:37 -0500
-last_modified_at: 2020-03-03 15:00:00 -0500
+last_modified_at: 2020-06-25 10:51:00 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 thumbnail: https://i.imgur.com/5NrtAoSm.png
@@ -12,8 +12,10 @@ image_height: 117
 ---
 Simple Spoiler BBCode extension for phpBB.
 
-[![Build Status](https://img.shields.io/travis/AlfredoRamos/phpbb-ext-simple-spoiler.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/phpbb-ext-simple-spoiler)
+[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-simple-spoiler.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-simple-spoiler)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-simple-spoiler.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases)
+[![Code Quality](https://img.shields.io/codacy/grade/d999d79cca134f189502ad84cee17a33.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-simple-spoiler/dashboard)
+[![Translation Progress](https://badges.crowdin.net/phpbb-ext-simple-spoiler/localized.svg)](https://crowdin.com/project/phpbb-ext-simple-spoiler)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-simple-spoiler.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-simple-spoiler/master/license.txt)
 
 Allows you to write `[spoiler]text[/spoiler]` or `[spoiler title=title]text[/spoiler]` and it will hide the content on anywhere that you can render BBCodes.
@@ -54,6 +56,7 @@ You can nest `[spoiler]` and write unicode titles in `[spoiler title=title]`.
 - [FAQ](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/faq)
 - [Support area](https://www.phpbb.com/customise/db/extension/simple_spoiler_bbcode/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues)
+- [Crowdin translations](https://crowdin.com/project/phpbb-ext-simple-spoiler)
 
 ### Donate
 

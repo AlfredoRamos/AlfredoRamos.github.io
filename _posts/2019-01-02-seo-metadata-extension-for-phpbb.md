@@ -1,7 +1,7 @@
 ---
 title: SEO Metadata extension for phpBB
 date: 2019-01-02 19:52:50 -0500
-last_modified_at: 2020-03-03 15:00:30 -0500
+last_modified_at: 2020-06-25 11:04:00 -0500
 category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 stylesheets: [lightcase]
@@ -16,28 +16,22 @@ SEO Metadata extension for phpBB
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-seo-metadata.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-seo-metadata)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-seo-metadata.svg?style=flat-square&label=stable)](https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/releases)
+[![Code Quality](https://img.shields.io/codacy/grade/5da9411a064c41c6931af2a398dfad37.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-seo-metadata/dashboard)
+[![Translation Progress](https://badges.crowdin.net/phpbb-ext-seo-metadata/localized.svg)](https://crowdin.com/project/phpbb-ext-seo-metadata)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-seo-metadata.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-seo-metadata/master/license.txt)
 
-Add Open Graph, Twitter Cards and JSON-LD data in posts.
+Add dynamically generated meta tags and microdata (Open Graph, Twitter Cards and JSON-LD) of your forums and topics to improve SEO of your board and show correct information when you share it though social networks, including (but not limited to) Facebook, Twitter and Vkontakte.
 
 If available, it will dynamically generate and include the following data inside the `<head>` tag:
 
 <!-- more -->
-### Features
-
-- Dynamically generated Open Graph, Twitter Cards meta tags and JSON-LD microdata from your board data and current page
-- Set default image for Open Graph and JSON-LD
-- Set how description will be generated
-- ACP settings to enable/disable Open Graph, Twitter Cards and JSON-LD
-- Support for attachments, for topic image
-
-#### Meta description
+**Meta description**
 
 ```html
 <meta name="description" content="...">
 ```
 
-#### Open Graph
+**Open Graph**
 
 ```html
 <meta property="fb:app_id" content="...">
@@ -56,17 +50,17 @@ If available, it will dynamically generate and include the following data inside
 <meta property="article:publisher" content="...">
 ```
 
-#### Twitter Cards
+**Twitter Cards**
 
 ```html
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary|summary_large_image">
 <meta name="twitter:site" content="...">
 <meta name="twitter:title" content="...">
 <meta name="twitter:description" content="...">
 <meta name="twitter:image" content="..">
 ```
 
-#### JSON-LD
+**JSON-LD**
 
 ```html
 <script type="application/ld+json">
@@ -86,11 +80,26 @@ If available, it will dynamically generate and include the following data inside
 		"@type": "Organization",
 		"name": "...",
 		"url": "...",
-		"logo": "..."
+		"logo": {
+			"@type": "ImageObject",
+			"url": "...",
+			"width": "...",
+			"height": "..."
+		}
 	}
 }
 </script>
 ```
+
+### Features
+
+- Dynamically generated Open Graph, Twitter Cards meta tags and JSON-LD microdata from your board data and current page
+- Dynamic description
+- Set default image for Open Graph and JSON-LD
+- Set how description will be generated
+- ACP settings to enable/disable Open Graph, Twitter Cards and JSON-LD
+- Support for attachments, for topic image
+- Generate meta data for specific posts
 
 ### Preview
 
@@ -110,6 +119,7 @@ If available, it will dynamically generate and include the following data inside
 - [**Download page**](https://www.phpbb.com/customise/db/extension/seo_metadata/)
 - [Support area](https://www.phpbb.com/customise/db/extension/seo_metadata/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues)
+- [Crowdin translations](https://crowdin.com/project/phpbb-ext-seo-metadata)
 
 ### Donate
 

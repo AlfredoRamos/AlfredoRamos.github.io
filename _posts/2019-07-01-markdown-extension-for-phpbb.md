@@ -1,7 +1,7 @@
 ---
 title: Markdown extension for phpBB
 date: 2019-05-24 14:29:05 -0500
-last_modified_at: 2020-03-03 15:00:40 -0500
+last_modified_at: 2020-06-25 11:14:00 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
@@ -16,6 +16,7 @@ Markdown extension for phpBB.
 
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-markdown.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-markdown)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-markdown.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-markdown/releases)
+[![Code Quality](https://img.shields.io/codacy/grade/7c8dbf2b5e6c4a68b7e0ceb04e9790f3.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-markdown/dashboard)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-markdown.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-markdown/master/license.txt)
 
 Write Markdown text in posts, signature or private messages and it will be converted as HTML. It can be used instead of or alongside BBCodes.
@@ -34,8 +35,9 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 - Configuration to enable/disable the use of Markdown per user in the UCP
 - Set per user group permissions to use Markdown
 - Set per forum permissions to use Markdown
-- Posting option to disable Markdown only in the current message (see note below)
+- Posting option to disable Markdown only in the current message
 - Add help page to explain users how write messages in Markdown
+- Add indentation when pressing the tab key inside Markdown code blocks
 
 ### Preview
 

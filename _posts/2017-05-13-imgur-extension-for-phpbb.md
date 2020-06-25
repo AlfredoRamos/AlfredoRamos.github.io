@@ -1,7 +1,7 @@
 ---
 title: Imgur extension for phpBB
 date: 2017-05-13 18:29:16 -0500
-last_modified_at: 2020-03-03 15:00:20 -0500
+last_modified_at: 2020-06-25 10:58:00 -0500
 category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 stylesheets: [lightcase]
@@ -14,8 +14,10 @@ image_height: 306
 ---
 Imgur extension for phpBB.
 
-[![Build Status](https://img.shields.io/travis/AlfredoRamos/phpbb-ext-imgur.svg?style=flat-square)](https://travis-ci.org/AlfredoRamos/phpbb-ext-imgur)
+[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-imgur.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-imgur)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-imgur.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-imgur/releases)
+[![Code Quality](https://img.shields.io/codacy/grade/e45e4f83b6724dfe97c43b596ec61d3b.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-imgur/dashboard)
+[![Translation Progress](https://badges.crowdin.net/phpbb-ext-imgur/localized.svg)](https://crowdin.com/project/phpbb-ext-imgur)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-imgur.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-imgur/master/license.txt)
 
 With this extension you can click on the `Imgur` posting button and select the image(s) you want to upload.
@@ -63,6 +65,7 @@ If the upload is successful it will add the image in the topic, private message 
 - [FAQ](https://www.phpbb.com/customise/db/extension/imgur/faq)
 - [Support area](https://www.phpbb.com/customise/db/extension/imgur/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-imgur/issues)
+- [Crowdin translations](https://crowdin.com/project/phpbb-ext-imgur)
 
 ### Donate
 
