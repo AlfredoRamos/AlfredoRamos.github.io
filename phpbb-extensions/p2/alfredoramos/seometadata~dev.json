@@ -7,13 +7,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "reference": "5093dcb528b0ad0bb2c1fdfc195788cc677d75d9"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/abb0387628e22dfed319908d5e507b508ede37e5",
-                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/5093dcb528b0ad0bb2c1fdfc195788cc677d75d9",
+                    "reference": "5093dcb528b0ad0bb2c1fdfc195788cc677d75d9",
                     "shasum": ""
                 },
                 "require": {
@@ -63,6 +63,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]

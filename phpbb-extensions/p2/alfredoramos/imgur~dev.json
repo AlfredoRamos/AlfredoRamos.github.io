@@ -1,5 +1,74 @@
 {
     "packages": {
-        "alfredoramos/imgur": []
+        "alfredoramos/imgur": [
+            {
+                "name": "alfredoramos/imgur",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
+                    "reference": "ac0a4b934db3655c0232ad55869d99e9d6b61b94"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/ac0a4b934db3655c0232ad55869d99e9d6b61b94",
+                    "reference": "ac0a4b934db3655c0232ad55869d99e9d6b61b94",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "j0k3r/php-imgur-api-client": "3.x-dev",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-06-30T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Imgur",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "imgur.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Imgur extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-imgur",
+                "keywords": [
+                    "extension",
+                    "imgur",
+                    "phpbb",
+                    "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            }
+        ]
     }
 }
