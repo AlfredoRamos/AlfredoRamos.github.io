@@ -7,7 +7,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "64c3d8535fe1a4ae062b8de21887ac478e13bd87"
                 },
                 "dist": {
@@ -63,6 +63,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             {
@@ -71,7 +81,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "7443a13d9554b48cdc8be05fc7787067396cee1e"
                 },
                 "dist": {
@@ -127,6 +137,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             {
@@ -135,7 +155,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "dd7fce8c40891285f06999beb09261ed09da934f"
                 },
                 "dist": {
@@ -191,6 +211,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.2.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             {
@@ -199,7 +229,7 @@
                 "version_normalized": "1.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "55b83a9967aeac7df70f283051dd0ced37f9d110"
                 },
                 "dist": {
@@ -255,6 +285,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             {
@@ -263,7 +303,7 @@
                 "version_normalized": "1.3.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "0c47b8215786af79a1494d6c27de9e2a163645fd"
                 },
                 "dist": {
@@ -319,6 +359,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.3.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             {
@@ -327,7 +377,7 @@
                 "version_normalized": "1.4.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
                 },
                 "dist": {
@@ -383,6 +433,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.4.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]

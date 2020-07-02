@@ -504,12 +504,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "fd82ca524a6fdb0b0d6cf22dd2b60eb1fa68605c"
+                    "reference": "6a26c6af148f3da7cb34ed3c99f24288e2c50050"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/fd82ca524a6fdb0b0d6cf22dd2b60eb1fa68605c",
-                    "reference": "fd82ca524a6fdb0b0d6cf22dd2b60eb1fa68605c",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/6a26c6af148f3da7cb34ed3c99f24288e2c50050",
+                    "reference": "6a26c6af148f3da7cb34ed3c99f24288e2c50050",
                     "shasum": ""
                 },
                 "require": {
@@ -557,7 +557,13 @@
                 "support": {
                     "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                }
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
             }
         },
         "alfredoramos/hide": {
@@ -567,7 +573,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "721111aa1cc5f5af032dc1fdd3dbb4e0eb5d6d35"
                 },
                 "dist": {
@@ -616,7 +622,11 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
+                }
             },
             "2.0.0": {
                 "name": "alfredoramos/hide",
@@ -624,7 +634,7 @@
                 "version_normalized": "2.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "93e31f1f8fe8686ceeca5e3d99128dd3fc2ef690"
                 },
                 "dist": {
@@ -673,7 +683,11 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/2.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
+                }
             },
             "2.1.0": {
                 "name": "alfredoramos/hide",
@@ -681,7 +695,7 @@
                 "version_normalized": "2.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
                     "reference": "b385dae6d4bb2ec1b4a386bc68c40bdf820fc4de"
                 },
                 "dist": {
@@ -730,7 +744,11 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/2.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
+                }
             },
             "dev-master": {
                 "name": "alfredoramos/hide",
@@ -738,13 +756,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-hide.git",
-                    "reference": "2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
+                    "reference": "06f56413f9fb3006880d0a4118ba880461cc1fd4"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a",
-                    "reference": "2e0d65c46ad0f9cb6520571b7a2972788a3b8c0a",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/06f56413f9fb3006880d0a4118ba880461cc1fd4",
+                    "reference": "06f56413f9fb3006880d0a4118ba880461cc1fd4",
                     "shasum": ""
                 },
                 "require": {
@@ -787,7 +805,11 @@
                     "extension",
                     "hide",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
+                }
             }
         },
         "alfredoramos/imagealt": {
@@ -797,7 +819,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "ea57516f8e30ff18e27cb10b0330bbb5c7f195f6"
                 },
                 "dist": {
@@ -846,6 +868,16 @@
                     "extension",
                     "image",
                     "phpbb"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.1.0": {
@@ -854,7 +886,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "49fc4cfab45d20efa1840ea08d132f4333552180"
                 },
                 "dist": {
@@ -903,6 +935,16 @@
                     "extension",
                     "image",
                     "phpbb"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "dev-master": {
@@ -911,13 +953,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "ac69fe626c56cf93ff5e84f2745b8435a36b75cc"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
+                    "reference": "091c78e8aebe7857f0b1ac239f5186af3bd65392"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/ac69fe626c56cf93ff5e84f2745b8435a36b75cc",
-                    "reference": "ac69fe626c56cf93ff5e84f2745b8435a36b75cc",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/091c78e8aebe7857f0b1ac239f5186af3bd65392",
+                    "reference": "091c78e8aebe7857f0b1ac239f5186af3bd65392",
                     "shasum": ""
                 },
                 "require": {
@@ -960,10 +1002,292 @@
                     "extension",
                     "image",
                     "phpbb"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         },
         "alfredoramos/imgur": {
+            "1.0.0": {
+                "name": "alfredoramos/imgur",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
+                    "reference": "665419be2313de6bc1ce882fe3b7ebcd5d699a27"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/665419be2313de6bc1ce882fe3b7ebcd5d699a27",
+                    "reference": "665419be2313de6bc1ce882fe3b7ebcd5d699a27",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.2.0",
+                    "j0k3r/php-imgur-api-client": "~3.0.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-05-13T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Imgur",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "imgur.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Imgur Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-imgur",
+                "keywords": [
+                    "extension",
+                    "imgur",
+                    "phpbb",
+                    "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            "1.0.1": {
+                "name": "alfredoramos/imgur",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
+                    "reference": "87422b96f4d9591cd5b83baa1c227bd7d9750abc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/87422b96f4d9591cd5b83baa1c227bd7d9750abc",
+                    "reference": "87422b96f4d9591cd5b83baa1c227bd7d9750abc",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.2.0",
+                    "j0k3r/php-imgur-api-client": "~3.0.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-05-14T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Imgur",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "imgur.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Imgur Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-imgur",
+                "keywords": [
+                    "extension",
+                    "imgur",
+                    "phpbb",
+                    "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            "1.0.2": {
+                "name": "alfredoramos/imgur",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
+                    "reference": "1e3483005a9aa89ac7376987de1230f74814e749"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/1e3483005a9aa89ac7376987de1230f74814e749",
+                    "reference": "1e3483005a9aa89ac7376987de1230f74814e749",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.2.0",
+                    "j0k3r/php-imgur-api-client": "~3.0.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-05-15T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Imgur",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "imgur.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Imgur Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-imgur",
+                "keywords": [
+                    "extension",
+                    "imgur",
+                    "phpbb",
+                    "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.2",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            "1.0.3": {
+                "name": "alfredoramos/imgur",
+                "version": "1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
+                    "reference": "ac5c1b6d406db62024c174a853a567d7ae4b0ca1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/ac5c1b6d406db62024c174a853a567d7ae4b0ca1",
+                    "reference": "ac5c1b6d406db62024c174a853a567d7ae4b0ca1",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "~1.2.0",
+                    "j0k3r/php-imgur-api-client": "~3.0.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "~1.4.0",
+                    "phing/phing": "~2.16.0"
+                },
+                "time": "2017-05-23T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Imgur",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "imgur.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Imgur Extension for phpBB 3.2.x",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-imgur",
+                "keywords": [
+                    "extension",
+                    "imgur",
+                    "phpbb",
+                    "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/1.0.3",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
             "1.0.4": {
                 "name": "alfredoramos/imgur",
                 "version": "1.0.4",
@@ -1915,6 +2239,74 @@
                         "url": "https://paypal.me/IngAlfredoRamos/USD"
                     }
                 ]
+            },
+            "dev-master": {
+                "name": "alfredoramos/imgur",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
+                    "reference": "ac0a4b934db3655c0232ad55869d99e9d6b61b94"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/ac0a4b934db3655c0232ad55869d99e9d6b61b94",
+                    "reference": "ac0a4b934db3655c0232ad55869d99e9d6b61b94",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "j0k3r/php-imgur-api-client": "3.x-dev",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-06-30T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Imgur",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "imgur.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Imgur extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-imgur",
+                "keywords": [
+                    "extension",
+                    "imgur",
+                    "phpbb",
+                    "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
             }
         },
         "alfredoramos/lazyload": {
@@ -1924,13 +2316,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-lazy-load.git",
-                    "reference": "dd033da590380efbb0bde32a6eb5b21bea4bba0c"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
+                    "reference": "745e69eff7eca67db3948c6f29043a00ad5544ac"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/dd033da590380efbb0bde32a6eb5b21bea4bba0c",
-                    "reference": "dd033da590380efbb0bde32a6eb5b21bea4bba0c",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/745e69eff7eca67db3948c6f29043a00ad5544ac",
+                    "reference": "745e69eff7eca67db3948c6f29043a00ad5544ac",
                     "shasum": ""
                 },
                 "require": {
@@ -1972,7 +2364,11 @@
                     "extension",
                     "lazy-load",
                     "phpbb"
-                ]
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/issues"
+                }
             }
         },
         "alfredoramos/markdown": {
@@ -1982,7 +2378,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "1dbce886c0ad96352d31c5245eea8e14ebb42f89"
                 },
                 "dist": {
@@ -2036,6 +2432,16 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.1.0": {
@@ -2044,7 +2450,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "066435bfc59546cce31dafff416d917b6ebff78b"
                 },
                 "dist": {
@@ -2098,6 +2504,16 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.1.1": {
@@ -2106,7 +2522,7 @@
                 "version_normalized": "1.1.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "a732cec6ef9dbe8ac9bacdfc776a630dbf0d7745"
                 },
                 "dist": {
@@ -2159,6 +2575,16 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.1.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.2.0": {
@@ -2167,7 +2593,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "3c0b908538b6e04207e05a15ba17f1a1c17a62c9"
                 },
                 "dist": {
@@ -2220,6 +2646,16 @@
                     "markdown",
                     "phpbb",
                     "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.2.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.3.0": {
@@ -2228,7 +2664,7 @@
                 "version_normalized": "1.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "509ef46365f9859f943e07fd5f97cf1a75276230"
                 },
                 "dist": {
@@ -2283,6 +2719,16 @@
                     "phpbb",
                     "pipetables",
                     "tasklists"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "dev-master": {
@@ -2291,19 +2737,19 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "509ef46365f9859f943e07fd5f97cf1a75276230"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "020a94ca5910b28384446cc69b96c7aed11bd358"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/509ef46365f9859f943e07fd5f97cf1a75276230",
-                    "reference": "509ef46365f9859f943e07fd5f97cf1a75276230",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/020a94ca5910b28384446cc69b96c7aed11bd358",
+                    "reference": "020a94ca5910b28384446cc69b96c7aed11bd358",
                     "shasum": ""
                 },
                 "require": {
                     "composer/installers": "^1.6.0",
                     "php": "^7.1.3",
-                    "s9e/text-formatter": "^2.5.0"
+                    "s9e/text-formatter": "^2.7.0"
                 },
                 "require-dev": {
                     "pear/archive_tar": "^1.4.0",
@@ -2346,75 +2792,16 @@
                     "phpbb",
                     "pipetables",
                     "tasklists"
-                ]
-            }
-        },
-        "alfredoramos/mermaid": {
-            "dev-master": {
-                "name": "alfredoramos/mermaid",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "58ec6ea160b2c02313b21de621af1b9f8d7e77da"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/58ec6ea160b2c02313b21de621af1b9f8d7e77da",
-                    "reference": "58ec6ea160b2c02313b21de621af1b9f8d7e77da",
-                    "shasum": ""
-                },
-                "require": {
-                    "composer/installers": "^1.6.0",
-                    "php": "^7.1.3"
-                },
-                "require-dev": {
-                    "pear/archive_tar": "^1.4.0",
-                    "phing/phing": "^2.16.0"
-                },
-                "suggest": {
-                    "alfredoramos/markdown": "For Markdown support"
-                },
-                "time": "2020-01-23T00:00:00+00:00",
-                "type": "phpbb-extension",
-                "extra": {
-                    "display-name": "Mermaid Diagrams",
-                    "soft-require": {
-                        "phpbb/phpbb": "~3.3.0"
-                    },
-                    "version-check": {
-                        "host": "alfredoramos.github.io",
-                        "directory": "/phpbb-extensions/versions",
-                        "filename": "mermaid.json",
-                        "ssl": true
-                    }
-                },
-                "license": [
-                    "GPL-2.0-only"
                 ],
-                "authors": [
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
                     {
-                        "name": "Alfredo Ramos",
-                        "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
-                        "role": "Lead Developer"
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
                     }
-                ],
-                "description": "Mermaid Diagrams extension for phpBB",
-                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-mermaid",
-                "keywords": [
-                    "class-diagram",
-                    "diagrams",
-                    "extension",
-                    "flowchart",
-                    "gantt-diagram",
-                    "git-graph",
-                    "mermaid",
-                    "phpbb",
-                    "pie-chart",
-                    "sequence-diagram",
-                    "state-diagram"
                 ]
             }
         },
@@ -2425,7 +2812,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "64c3d8535fe1a4ae062b8de21887ac478e13bd87"
                 },
                 "dist": {
@@ -2481,6 +2868,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.1.0": {
@@ -2489,7 +2886,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "7443a13d9554b48cdc8be05fc7787067396cee1e"
                 },
                 "dist": {
@@ -2545,6 +2942,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.2.0": {
@@ -2553,7 +2960,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "dd7fce8c40891285f06999beb09261ed09da934f"
                 },
                 "dist": {
@@ -2609,6 +3016,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.2.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.3.0": {
@@ -2617,7 +3034,7 @@
                 "version_normalized": "1.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "55b83a9967aeac7df70f283051dd0ced37f9d110"
                 },
                 "dist": {
@@ -2673,6 +3090,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.3.1": {
@@ -2681,7 +3108,7 @@
                 "version_normalized": "1.3.1.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "0c47b8215786af79a1494d6c27de9e2a163645fd"
                 },
                 "dist": {
@@ -2737,6 +3164,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.3.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "1.4.0": {
@@ -2745,7 +3182,7 @@
                 "version_normalized": "1.4.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
                     "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
                 },
                 "dist": {
@@ -2801,6 +3238,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.4.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             "dev-master": {
@@ -2809,13 +3256,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "reference": "5093dcb528b0ad0bb2c1fdfc195788cc677d75d9"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/abb0387628e22dfed319908d5e507b508ede37e5",
-                    "reference": "abb0387628e22dfed319908d5e507b508ede37e5",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/5093dcb528b0ad0bb2c1fdfc195788cc677d75d9",
+                    "reference": "5093dcb528b0ad0bb2c1fdfc195788cc677d75d9",
                     "shasum": ""
                 },
                 "require": {
@@ -2865,6 +3312,16 @@
                     "schema-org",
                     "seo",
                     "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         },
@@ -4078,12 +4535,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "9ba1e60a8f0e637101491acbebdbb86f415a98db"
+                    "reference": "de2bdc8cd86200e785d5f09a5c722133ce02c7a7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/9ba1e60a8f0e637101491acbebdbb86f415a98db",
-                    "reference": "9ba1e60a8f0e637101491acbebdbb86f415a98db",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/de2bdc8cd86200e785d5f09a5c722133ce02c7a7",
+                    "reference": "de2bdc8cd86200e785d5f09a5c722133ce02c7a7",
                     "shasum": ""
                 },
                 "require": {
@@ -4129,7 +4586,7 @@
                     "spoiler"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/l10n",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
                 },
                 "funding": [
