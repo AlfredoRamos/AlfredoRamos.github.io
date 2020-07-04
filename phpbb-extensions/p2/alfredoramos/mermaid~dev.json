@@ -7,13 +7,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "58ec6ea160b2c02313b21de621af1b9f8d7e77da"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
+                    "reference": "f00911786a75da83da8fcce1a378e113993e4032"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/58ec6ea160b2c02313b21de621af1b9f8d7e77da",
-                    "reference": "58ec6ea160b2c02313b21de621af1b9f8d7e77da",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/f00911786a75da83da8fcce1a378e113993e4032",
+                    "reference": "f00911786a75da83da8fcce1a378e113993e4032",
                     "shasum": ""
                 },
                 "require": {
@@ -66,6 +66,16 @@
                     "pie-chart",
                     "sequence-diagram",
                     "state-diagram"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-mermaid/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-mermaid/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]
