@@ -1,8 +1,8 @@
 {
     "packages": [],
     "includes": {
-        "include/all$d1a2552cd18a39442d1f548096bafa61d44b2f78.json": {
-            "sha1": "d1a2552cd18a39442d1f548096bafa61d44b2f78"
+        "include/all$fe467b2e577308cd5472d591c9a502629fd0ca66.json": {
+            "sha1": "fe467b2e577308cd5472d591c9a502629fd0ca66"
         }
     },
     "metadata-url": "/phpbb-extensions/p2/%package%.json"
