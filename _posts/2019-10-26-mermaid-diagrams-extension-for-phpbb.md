@@ -1,9 +1,9 @@
 ---
 title: Mermaid Diagrams extension for phpBB
 date: 2019-10-26 19:56:28 -0500
-last_modified_at: 2020-06-25 11:11:00 -0500
+last_modified_at: 2020-07-08 00:11:46 -0500
 category: phpbb
-tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
+tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
 stylesheets: [lightcase]
 scripts: [lightcase]
 thumbnail: https://i.imgur.com/iHEDfxQm.png
@@ -23,7 +23,7 @@ Allows you to generate diagrams and flowcharts from text in a similar manner as 
 
 It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate the SVG markup and supports all diagrams available. You can read more about the supported syntax in the official documentation:
 
-- [mermaid](https://mermaid-js.github.io)
+- [mermaid](https://mermaid-js.github.io/mermaid/)
 
 <!-- more -->
 ### Features
@@ -34,6 +34,7 @@ It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate
 	- Flowchart
 	- Sequence diagram
 	- Class diagram
+	- Entity relationship diagram
 	- State diagram
 	- Gantt diagram
 	- Git graph
@@ -47,6 +48,7 @@ It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate
 [![Sequence diagram](https://i.imgur.com/QPVhPuhb.png)](https://i.imgur.com/QPVhPuh.png){:data-rel="lightcase:preview"}
 [![Gantt diagram](https://i.imgur.com/C1qOugrb.png)](https://i.imgur.com/C1qOugr.png){:data-rel="lightcase:preview"}
 [![Class diagram](https://i.imgur.com/iHEDfxQb.png)](https://i.imgur.com/iHEDfxQ.png){:data-rel="lightcase:preview"}
+ [![Entity relationship diagram](https://i.imgur.com/jbZzc2Pb.png)](https://i.imgur.com/jbZzc2P.png){:data-rel="lightcase:preview"}
 [![State diagram](https://i.imgur.com/hDGmUm9b.png)](https://i.imgur.com/hDGmUm9.png){:data-rel="lightcase:preview"}
 [![Pie chart](https://i.imgur.com/WP7uiQwb.png)](https://i.imgur.com/WP7uiQw.png){:data-rel="lightcase:preview"}
 
