@@ -1,7 +1,7 @@
 ---
 title: Markdown extension for phpBB
 date: 2019-05-24 14:29:05 -0500
-last_modified_at: 2020-06-25 11:14:00 -0500
+last_modified_at: 2020-07-08 00:26:14 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
@@ -17,14 +17,12 @@ Markdown extension for phpBB.
 [![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-markdown.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-markdown)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-markdown.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-markdown/releases)
 [![Code Quality](https://img.shields.io/codacy/grade/7c8dbf2b5e6c4a68b7e0ceb04e9790f3.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-markdown/dashboard)
+ [![Translation Progress](https://badges.crowdin.net/phpbb-ext-markdown/localized.svg)](https://crowdin.com/project/phpbb-ext-markdown)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-markdown.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-markdown/master/license.txt)
 
-Write Markdown text in posts, signature or private messages and it will be converted as HTML. It can be used instead of or alongside BBCodes.
+Allows you to write Markdown text in posts, signature or private messages and it will be converted as HTML. It can be used instead of or alongside BBCodes.
 
-It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://github.com/s9e/TextFormatter). You can read more about the supported syntax in the official documentation:
-
-- [Litedown: Syntax](https://s9etextformatter.readthedocs.io/Plugins/Litedown/Syntax/)
-- [PipeTables: Syntax](https://s9etextformatter.readthedocs.io/Plugins/PipeTables/Syntax/)
+It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/Litedown/Syntax/), [PipeTables](https://s9etextformatter.readthedocs.io/Plugins/PipeTables/Syntax/) and [TaskLists](https://s9etextformatter.readthedocs.io/Plugins/TaskLists/Synopsis/) from the [s9e/TextFormatter](https://github.com/s9e/TextFormatter) library.
 
 <!-- more -->
 ### Features
@@ -54,6 +52,7 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 [![Markdown private message](https://i.imgur.com/HGvlwhIb.png)](https://i.imgur.com/HGvlwhI.png){:data-rel="lightcase:preview"}
 [![Markdown signature](https://i.imgur.com/svBmgYXb.png)](https://i.imgur.com/svBmgYX.png){:data-rel="lightcase:preview"}
 [![Posting editor option](https://i.imgur.com/1Z7CDDrb.png)](https://i.imgur.com/1Z7CDDr.png){:data-rel="lightcase:preview"}
+[![Task list](https://i.imgur.com/njWLpODb.png)](https://i.imgur.com/njWLpOD.png){:data-rel="lightcase:preview"}
 
 *(Click to view in full size)*
 
@@ -69,6 +68,7 @@ It uses the plugins Litedown and PipeTables from [s9e/TextFormatter](https://git
 - [**Download page**](https://www.phpbb.com/customise/db/extension/markdown/)
 - [Support area](https://www.phpbb.com/customise/db/extension/markdown/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-markdown/issues)
+- [Crowdin translations](https://crowdin.com/project/phpbb-ext-markdown)
 
 ### Donate
 
