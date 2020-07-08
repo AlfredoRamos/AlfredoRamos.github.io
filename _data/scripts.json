@@ -4,10 +4,10 @@
 		"files": [
 			{
 				"name": "jquery.slim",
-				"version": "3.4.1",
+				"version": "3.5.1",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+				"integrity": "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 			}
 		]
 	},
@@ -16,11 +16,11 @@
 		"files": [
 			{
 				"name": "popper",
-				"version": "1.16.1",
+				"version": "2.4.4",
 				"path": "umd",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+				"integrity": "sha384-uLHxgwX6ZvC6FoWIhzkulUpK8rYAiK30nm034ygkllTGvodI+uL6V5an1iTvrLIL"
 			}
 		]
 	},
@@ -29,11 +29,11 @@
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.4.1",
+				"version": "4.5.0",
 				"path": "js",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+				"integrity": "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			}
 		]
 	},
@@ -61,10 +61,10 @@
 		"files": [
 			{
 				"name": "lazysizes",
-				"version": "5.2.0",
+				"version": "5.2.2",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-lXlOikwyrW7dmgxBebidKy+ffqirROw7KfpwSU07ze9QxhA26X7SuQsujgf3xo1A"
+				"integrity": "sha384-1N8YjIsNRRCGVDKyAhuzcypn/egF8x3HYOojJWpxKhYt/YbyYLefKrQJBGSRopcw"
 			}
 		]
 	},
@@ -73,10 +73,10 @@
 		"files": [
 			{
 				"name": "iconify",
-				"version": "1.0.6",
+				"version": "1.0.7",
 				"minified": true,
 				"cdn": "iconify",
-				"integrity": "sha384-bAajreKT0Wnit/3jZuKM1e+O7S7+L97dPjjh/4zCbeaY6tpyUOm58oHCYMugl5N7"
+				"integrity": "sha384-jQq64HqdQD5xg0PPkpkCOW3x8Nsfx5UT1qWOpoJxLYy6Ef+5i+8xPoAj/I3B+ZMm"
 			}
 		]
 	}
