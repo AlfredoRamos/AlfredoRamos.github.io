@@ -1,7 +1,7 @@
 ---
 title: SEO Metadata extension for phpBB
 date: 2019-01-02 19:52:50 -0500
-last_modified_at: 2020-06-25 11:04:00 -0500
+last_modified_at: 2020-07-08 18:07:13 -0500
 category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 stylesheets: [lightcase]
@@ -25,13 +25,13 @@ Add dynamically generated meta tags and microdata (Open Graph, Twitter Cards and
 If available, it will dynamically generate and include the following data inside the `<head>` tag:
 
 <!-- more -->
-**Meta description**
+#### Meta description
 
 ```html
 <meta name="description" content="...">
 ```
 
-**Open Graph**
+#### Open Graph
 
 ```html
 <meta property="fb:app_id" content="...">
@@ -50,7 +50,7 @@ If available, it will dynamically generate and include the following data inside
 <meta property="article:publisher" content="...">
 ```
 
-**Twitter Cards**
+#### Twitter Cards
 
 ```html
 <meta name="twitter:card" content="summary|summary_large_image">
@@ -60,7 +60,7 @@ If available, it will dynamically generate and include the following data inside
 <meta name="twitter:image" content="..">
 ```
 
-**JSON-LD**
+#### JSON-LD
 
 ```html
 <script type="application/ld+json">
