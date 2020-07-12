@@ -1,7 +1,7 @@
 ---
 title: Markdown extension for phpBB
 date: 2019-05-24 14:29:05 -0500
-last_modified_at: 2020-07-08 00:26:14 -0500
+last_modified_at: 2020-07-12 00:49:38 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
@@ -52,7 +52,7 @@ It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/L
 [![Markdown private message](https://i.imgur.com/HGvlwhIb.png)](https://i.imgur.com/HGvlwhI.png){:data-rel="lightcase:preview"}
 [![Markdown signature](https://i.imgur.com/svBmgYXb.png)](https://i.imgur.com/svBmgYX.png){:data-rel="lightcase:preview"}
 [![Posting editor option](https://i.imgur.com/1Z7CDDrb.png)](https://i.imgur.com/1Z7CDDr.png){:data-rel="lightcase:preview"}
-[![Task list](https://i.imgur.com/njWLpODb.png)](https://i.imgur.com/njWLpOD.png){:data-rel="lightcase:preview"}
+[![Task list](https://i.imgur.com/slz1Z9Yb.png)](https://i.imgur.com/slz1Z9Y.png){:data-rel="lightcase:preview"}
 
 *(Click to view in full size)*
 
