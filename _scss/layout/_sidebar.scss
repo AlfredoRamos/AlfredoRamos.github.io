@@ -1,0 +1,19 @@
+#social-networks {
+	li {
+		> span {
+			// scss-lint:disable SelectorDepth, NestingDepth
+			> .social-icon {
+				color: $fg-icon;
+			}
+
+			&:hover > .social-icon {
+				color: $fg-icon-hover;
+			}
+
+			> code {
+				color: $fg-body;
+				font-size: 100%;
+			}
+		}
+	}
+}
