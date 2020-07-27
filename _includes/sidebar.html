@@ -24,12 +24,12 @@
 						{{ network.user | escape }}
 					</a>
 					{%- else %}
-					<code class="social-username" title="{{ network.user | escape }} @ {{ network.name | escape }}">
+					<span title="{{ network.user | escape }} @ {{ network.name | escape }}">
 						{%- if network.icon.size > 0 -%}
 						<span class="iconify inline-icon social-icon {{ network.name | slugify }}-icon" data-icon="{{ network.icon }}"></span>
 						{%- endif -%}
-						{{ network.user | escape }}
-					</code>
+						<code>{{ network.user | escape }}</code>
+					</span>
 					{%- endif %}
 				</li>
 				{%- endfor %}

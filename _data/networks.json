@@ -9,7 +9,13 @@
 		"name": "Telegram",
 		"user": "AlfredoRamos",
 		"url": "https://telegram.me/",
-		"icon": "fa-brands:telegram-plane"
+		"icon": "cib:telegram-plane"
+	},
+	{
+		"name": "Twitter",
+		"user": "varsmx",
+		"url": "https://twitter.com/",
+		"icon": "brandico:twitter-bird"
 	},
 	{
 		"name": "Discord",
