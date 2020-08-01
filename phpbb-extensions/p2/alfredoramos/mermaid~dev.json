@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "f00911786a75da83da8fcce1a378e113993e4032"
+                    "reference": "a5a4d7a5a6e89b815d7cb77e9e5a604b84bae057"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/f00911786a75da83da8fcce1a378e113993e4032",
-                    "reference": "f00911786a75da83da8fcce1a378e113993e4032",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/a5a4d7a5a6e89b815d7cb77e9e5a604b84bae057",
+                    "reference": "a5a4d7a5a6e89b815d7cb77e9e5a604b84bae057",
                     "shasum": ""
                 },
                 "require": {
@@ -57,6 +57,7 @@
                 "keywords": [
                     "class-diagram",
                     "diagrams",
+                    "entity-relationship-diagram",
                     "extension",
                     "flowchart",
                     "gantt-diagram",
