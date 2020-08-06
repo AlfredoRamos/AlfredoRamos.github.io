@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "ac0a4b934db3655c0232ad55869d99e9d6b61b94"
+                    "reference": "bb8cc9b641ef45caef82be27c35f8cbe2d609bda"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/ac0a4b934db3655c0232ad55869d99e9d6b61b94",
-                    "reference": "ac0a4b934db3655c0232ad55869d99e9d6b61b94",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/bb8cc9b641ef45caef82be27c35f8cbe2d609bda",
+                    "reference": "bb8cc9b641ef45caef82be27c35f8cbe2d609bda",
                     "shasum": ""
                 },
                 "require": {
@@ -25,7 +25,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-06-30T00:00:00+00:00",
+                "time": "2020-07-10T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Imgur",

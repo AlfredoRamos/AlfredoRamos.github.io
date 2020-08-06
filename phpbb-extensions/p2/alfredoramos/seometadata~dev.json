@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "5093dcb528b0ad0bb2c1fdfc195788cc677d75d9"
+                    "reference": "2568c7356c6300565976c1d933585f0ab5b44f82"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/5093dcb528b0ad0bb2c1fdfc195788cc677d75d9",
-                    "reference": "5093dcb528b0ad0bb2c1fdfc195788cc677d75d9",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/2568c7356c6300565976c1d933585f0ab5b44f82",
+                    "reference": "2568c7356c6300565976c1d933585f0ab5b44f82",
                     "shasum": ""
                 },
                 "require": {
