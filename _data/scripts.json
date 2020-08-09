@@ -79,5 +79,16 @@
 				"integrity": "sha384-jQq64HqdQD5xg0PPkpkCOW3x8Nsfx5UT1qWOpoJxLYy6Ef+5i+8xPoAj/I3B+ZMm"
 			}
 		]
+	},
+	{
+		"group": "dark",
+		"files": [
+			{
+				"name": "dark",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
 	}
 ]
