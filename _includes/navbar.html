@@ -7,7 +7,7 @@
 
 		<div class="collapse navbar-collapse" id="site-navigation">
 			{%- if site.data.pages.size > 0 %}
-			<ul class="navbar-nav">
+			<ul class="navbar-nav mr-auto">
 				{%- for p in site.data.pages %}
 				<li class="nav-item{% if p.uri == page.url %} active{% endif %}">
 					<a class="nav-link" href="{{ p.uri | uri_escape | relative_url }}">
@@ -21,7 +21,10 @@
 				{%- endfor %}
 			</ul>
 			{%- endif %}
-			<form action="https://duckduckgo.com/" target="ddg" class="form-inline ml-auto my-2 my-lg-0">
+			<span class="navbar-text mr-1 dark-mode-icon" aria-label="Toggle dark mode" title="Toggle dark mode">
+				<span class="iconify inline-icon" data-icon="whh:adjust"></span>
+			</span>
+			<form action="https://duckduckgo.com/" target="ddg" class="form-inline my-2 my-lg-0">
 				<div class="input-group input-group-sm">
 					<input name="q" class="form-control" type="search" placeholder="Keywords…" title="Search with DuckDuckGo" aria-label="Search">
 					<input type="hidden" name="sites" value="{{ site.url | absolute_url | remove_first: 'https://' | remove_first: 'http://' }}">

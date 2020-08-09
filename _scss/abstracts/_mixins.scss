@@ -7,3 +7,90 @@
 		@content;
 	}
 }
+
+@mixin link-color($hover: 0) {
+	$amount: 5%;
+	$color: lighten($fg-icon, $amount);
+
+	@if $hover == 1 {
+		$color: lighten($fg-icon-hover, $amount);
+	}
+
+	color: $color;
+}
+
+/// Generate dark theme colors for both .dark-theme
+/// and prefers-color-scheme media query
+@mixin dark-theme {
+	background-color: $bg-dark-body;
+	color: $fg-dark-body;
+
+	a {
+		@include link-color;
+
+		&:hover {
+			@include link-color(1);
+
+			&.badge-primary,
+			&.badge-light {
+				background-color: darken($bg-dark-badge, 15%);
+				color: darken($fg-dark-body, 20%);
+			}
+		}
+
+		&.badge-primary,
+		&.badge-light {
+			background-color: darken($bg-dark-badge, 10%);
+			color: darken($fg-dark-body, 15%);
+		}
+	}
+
+	img {
+		filter: brightness(0.8) contrast(1.2);
+	}
+
+	.dark-mode-icon {
+		> .iconify {
+			transform: rotate(180deg) !important; // scss-lint:disable ImportantRule
+		}
+	}
+
+	.navbar {
+		background-color: $bg-dark-navbar !important; // scss-lint:disable ImportantRule
+	}
+
+	.card {
+		background-color: $bg-dark-card;
+	}
+
+	code.highlighter-rouge { // scss-lint:disable QualifyingElement
+		background-color: $bg-dark-code;
+		color: $fg-dark-body;
+	}
+
+	.badge {
+		transition: none;
+	}
+
+	.badge-primary,
+	.badge-light {
+		background-color: $bg-dark-badge;
+	}
+
+	#social-networks li > span {
+		// scss-lint:disable SelectorDepth
+		> code {
+			color: $fg-dark-body;
+		}
+
+		> .social-icon {
+			@include link-color;
+		}
+
+		&:hover {
+			> .social-icon {
+				@include link-color(1);
+			}
+		}
+	}
+}
