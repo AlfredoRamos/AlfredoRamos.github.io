@@ -43,8 +43,8 @@
 			"security": false
 		},
 		"2.3": {
-			"current": "2.3.0",
-			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases/tag/2.3.0",
+			"current": "2.3.1",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases/tag/2.3.1",
 			"eol": null,
 			"security": false
 		}
