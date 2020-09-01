@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "bb8cc9b641ef45caef82be27c35f8cbe2d609bda"
+                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/bb8cc9b641ef45caef82be27c35f8cbe2d609bda",
-                    "reference": "bb8cc9b641ef45caef82be27c35f8cbe2d609bda",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
+                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
                     "shasum": ""
                 },
                 "require": {

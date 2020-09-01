@@ -2363,12 +2363,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "bb8cc9b641ef45caef82be27c35f8cbe2d609bda"
+                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/bb8cc9b641ef45caef82be27c35f8cbe2d609bda",
-                    "reference": "bb8cc9b641ef45caef82be27c35f8cbe2d609bda",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
+                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
                     "shasum": ""
                 },
                 "require": {
@@ -2854,12 +2854,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "c9db67a924b6223dec42351cc7d501abd70ec97c"
+                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/c9db67a924b6223dec42351cc7d501abd70ec97c",
-                    "reference": "c9db67a924b6223dec42351cc7d501abd70ec97c",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/abb24f82e885cfc03faf2da502ba77788979db1f",
+                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f",
                     "shasum": ""
                 },
                 "require": {
@@ -2874,7 +2874,7 @@
                 "suggest": {
                     "s9e/highlighter": "To add code syntax highlighting"
                 },
-                "time": "2020-07-07T00:00:00+00:00",
+                "time": "2020-08-18T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Markdown",
@@ -2929,12 +2929,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "a5a4d7a5a6e89b815d7cb77e9e5a604b84bae057"
+                    "reference": "b6219547f391e8cb1191544a6dc0ea4081e4f5de"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/a5a4d7a5a6e89b815d7cb77e9e5a604b84bae057",
-                    "reference": "a5a4d7a5a6e89b815d7cb77e9e5a604b84bae057",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/b6219547f391e8cb1191544a6dc0ea4081e4f5de",
+                    "reference": "b6219547f391e8cb1191544a6dc0ea4081e4f5de",
                     "shasum": ""
                 },
                 "require": {
@@ -3453,12 +3453,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "2568c7356c6300565976c1d933585f0ab5b44f82"
+                    "reference": "19b056efef6e87ffcb42a9fad40effd11e8ef71f"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/2568c7356c6300565976c1d933585f0ab5b44f82",
-                    "reference": "2568c7356c6300565976c1d933585f0ab5b44f82",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/19b056efef6e87ffcb42a9fad40effd11e8ef71f",
+                    "reference": "19b056efef6e87ffcb42a9fad40effd11e8ef71f",
                     "shasum": ""
                 },
                 "require": {
@@ -4792,19 +4792,19 @@
                     }
                 ]
             },
-            "dev-master": {
+            "2.3.1": {
                 "name": "alfredoramos/simplespoiler",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
+                "version": "2.3.1",
+                "version_normalized": "2.3.1.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "ff92d0e9dc1294d299eeb9cc0c0d4abbd5a763d8"
+                    "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/ff92d0e9dc1294d299eeb9cc0c0d4abbd5a763d8",
-                    "reference": "ff92d0e9dc1294d299eeb9cc0c0d4abbd5a763d8",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/c169b7bd0debac397a442cc0fef5f27a27aa20c5",
+                    "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5",
                     "shasum": ""
                 },
                 "require": {
@@ -4815,7 +4815,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-07-04T00:00:00+00:00",
+                "time": "2020-08-18T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Simple Spoiler BBCode",
@@ -4850,7 +4850,75 @@
                     "spoiler"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/l10n",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            "dev-master": {
+                "name": "alfredoramos/simplespoiler",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/c169b7bd0debac397a442cc0fef5f27a27aa20c5",
+                    "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2020-08-18T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Simple Spoiler BBCode",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "simple-spoiler.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Simple Spoiler BBCode extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler",
+                "keywords": [
+                    "bbcode",
+                    "extension",
+                    "html5",
+                    "phpbb",
+                    "spoiler"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.1",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
                 },
                 "funding": [

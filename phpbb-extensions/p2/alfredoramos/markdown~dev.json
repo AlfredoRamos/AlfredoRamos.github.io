@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "c9db67a924b6223dec42351cc7d501abd70ec97c"
+                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/c9db67a924b6223dec42351cc7d501abd70ec97c",
-                    "reference": "c9db67a924b6223dec42351cc7d501abd70ec97c",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/abb24f82e885cfc03faf2da502ba77788979db1f",
+                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f",
                     "shasum": ""
                 },
                 "require": {
@@ -28,7 +28,7 @@
                 "suggest": {
                     "s9e/highlighter": "To add code syntax highlighting"
                 },
-                "time": "2020-07-07T00:00:00+00:00",
+                "time": "2020-08-18T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Markdown",
