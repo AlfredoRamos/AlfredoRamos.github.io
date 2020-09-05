@@ -3,7 +3,7 @@
 /// @param number	$breakpoint		Breakpoint size
 /// @content SCSS/CSS code
 @mixin responsive($property, $breakpoint) {
-	@media only screen and (#{$property}: get-rems($breakpoint)) {
+	@media only screen and (#{$property}: $breakpoint) {
 		@content;
 	}
 }
@@ -92,5 +92,9 @@
 				@include link-color(1);
 			}
 		}
+	}
+
+	.border {
+		border-color: $br-default !important; // scss-lint:disable ImportantRule
 	}
 }

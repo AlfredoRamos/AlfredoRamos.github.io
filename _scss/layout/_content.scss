@@ -36,3 +36,10 @@
 		}
 	}
 }
+
+@include responsive (max-width, map-get($grid-breakpoints, md)) {
+	.post .img-container {
+		width: 100%;
+		height: 180px;
+	}
+}

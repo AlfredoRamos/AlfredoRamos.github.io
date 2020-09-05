@@ -6,23 +6,23 @@ description: A collection of latest post of my projects, extensions and more.
 <hr>
 
 {% if paginator.posts.size > 0 %}
-<div class="row index">
+<div class="row flex-column index">
 	{% for post in paginator.posts %}
-	<article class="post d-flex col-12 mb-3" itemscope itemtype="http://schema.org/BlogPosting">
-		<a href="{{ post.url | relative_url }}" class="d-block mr-3 img-container">
-			{% if post.thumbnail.size > 0 %}
+	<article class="post d-flex flex-wrap col-12 mb-4" itemscope itemtype="http://schema.org/BlogPosting">
+		<a href="{{ post.url | relative_url }}" class="d-block col-12 col-md-auto px-0 mr-md-3 mb-2 mb-md-0 img-container rounded border">
+			{% if post.image.size > 0 %}
 			<picture>
-				<img data-src="{{ post.thumbnail }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}">
+				<img data-src="{{ post.image }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}">
 			</picture>
 			{% else %}
-			<svg class="rounded img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
 				<title>Placeholder</title>
 				<rect width="100%" height="100%" fill="#55595c"></rect>
-				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Thumbnail</text>
+				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
 			</svg>
 			{% endif %}
 		</a>
-		<div class="d-flex flex-column col px-0">
+		<div class="d-flex flex-column col-12 col-md px-0">
 			<header class="header">
 				<h2 class="title mb-1" itemprop="name headline">
 					<a href="{{ post.url | relative_url }}" class="stretched-link" itemprop="url">
