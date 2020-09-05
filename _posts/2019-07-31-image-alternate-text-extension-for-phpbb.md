@@ -4,7 +4,6 @@ date: 2019-07-31 19:18:13 -0500
 last_modified_at: 2020-06-25 11:30:00 -0500
 category: phpbb
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
-thumbnail: https://i.imgur.com/yLgDJpGb.png
 image: https://i.imgur.com/yLgDJpG.png
 image_type: png
 image_width: 1049

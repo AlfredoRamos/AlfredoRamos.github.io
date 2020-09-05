@@ -6,7 +6,6 @@ category: phpbb
 tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
 stylesheets: [lightcase]
 scripts: [lightcase]
-thumbnail: https://i.imgur.com/iHEDfxQb.png
 image: https://i.imgur.com/iHEDfxQ.png
 image_type: png
 image_width: 882

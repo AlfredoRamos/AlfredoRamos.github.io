@@ -4,7 +4,6 @@ date: 2017-01-14 23:53:37 -0500
 last_modified_at: 2020-06-25 10:51:00 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
-thumbnail: https://i.imgur.com/5NrtAoSb.png
 image: https://i.imgur.com/5NrtAoS.png
 image_type: png
 image_width: 423

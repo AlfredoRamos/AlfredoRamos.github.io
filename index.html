@@ -12,7 +12,7 @@ description: A collection of latest post of my projects, extensions and more.
 		<a href="{{ post.url | relative_url }}" class="d-block col-12 col-md-auto px-0 mr-md-3 mb-2 mb-md-0 img-container rounded border">
 			{% if post.image.size > 0 %}
 			<picture>
-				<img data-src="{{ post.image }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}">
+				<img data-src="{{ post.image }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}" itemprop="image">
 			</picture>
 			{% else %}
 			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">

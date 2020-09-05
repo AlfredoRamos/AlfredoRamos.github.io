@@ -6,7 +6,6 @@ category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 stylesheets: [lightcase]
 scripts: [lightcase]
-thumbnail: https://i.imgur.com/svBmgYXb.png
 image: https://i.imgur.com/svBmgYX.png
 image_type: png
 image_width: 519

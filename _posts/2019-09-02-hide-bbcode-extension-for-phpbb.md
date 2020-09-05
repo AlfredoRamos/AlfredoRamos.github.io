@@ -4,7 +4,6 @@ date: 2019-09-02 16:26:38 -0500
 last_modified_at: 2020-06-25 11:36:00 -0500
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
-thumbnail: https://i.imgur.com/OajNWkcb.png
 image: https://i.imgur.com/OajNWkc.png
 image_type: png
 image_width: 480

@@ -5,7 +5,6 @@ last_modified_at: 2020-07-08 18:04:56 -0600
 category: development
 tags: [sass, marquee]
 stylesheets: [marquee]
-thumbnail: https://i.imgur.com/qROSaDDb.png
 image: https://i.imgur.com/qROSaDD.png
 image_type: png
 image_width: 1141
