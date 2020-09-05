@@ -6,7 +6,7 @@ category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
 stylesheets: [lightcase]
 scripts: [lightcase]
-thumbnail: https://i.imgur.com/xxCEse7m.png
+thumbnail: https://i.imgur.com/xxCEse7b.png
 image: https://i.imgur.com/xxCEse7.png
 image_type: png
 image_width: 545

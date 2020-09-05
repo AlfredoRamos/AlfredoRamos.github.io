@@ -3,7 +3,11 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<header class="header">
-		<h2 class="title" itemprop="name headline">{{ page.title | escape }}</h2>
+		<h1 class="title" itemprop="name headline">
+			<a href="{{ page.url | relative_url }}" itemprop="url">
+				{{ page.title | escape }}
+			</a>
+		</h1>
 		<ul class="meta list-inline list-with-separator text-muted">
 			<li class="list-inline-item">
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %-d, %Y' }}</time>
