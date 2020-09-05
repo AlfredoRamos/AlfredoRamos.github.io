@@ -1,7 +1,21 @@
+.index {
+	.post {
+		.title {
+			font-size: 1.5rem;
+		}
+	}
+}
+
 .post {
 	.highlight {
 		> pre {
 			padding: get-pixels($spacing);
+		}
+	}
+
+	.title {
+		a:hover {
+			text-decoration: none;
 		}
 	}
 
@@ -11,10 +25,13 @@
 		}
 	}
 
-	picture {
-		height: 225px;
+	.img-container {
+		width: 150px;
+		height: 120px;
+	}
 
-		.card-img-top {
+	picture {
+		> img {
 			object-fit: cover;
 		}
 	}

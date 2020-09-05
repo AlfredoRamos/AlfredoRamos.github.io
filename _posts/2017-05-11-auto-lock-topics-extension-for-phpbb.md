@@ -6,7 +6,7 @@ category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
 stylesheets: [lightcase]
 scripts: [lightcase]
-thumbnail: https://i.imgur.com/mBCEbSfm.png
+thumbnail: https://i.imgur.com/mBCEbSfb.png
 image: https://i.imgur.com/mBCEbSf.png
 image_type: png
 image_width: 660

@@ -6,7 +6,7 @@ category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 stylesheets: [lightcase]
 scripts: [lightcase]
-thumbnail: https://i.imgur.com/8rg2fKIm.png
+thumbnail: https://i.imgur.com/8rg2fKIb.png
 image: https://i.imgur.com/8rg2fKI.png
 image_type: png
 image_width: 773

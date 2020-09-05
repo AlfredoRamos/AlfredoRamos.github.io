@@ -6,35 +6,41 @@ description: A collection of latest post of my projects, extensions and more.
 <hr>
 
 {% if paginator.posts.size > 0 %}
-<div class="row">
+<div class="row index">
 	{% for post in paginator.posts %}
-	<div class="col-lg-4 col-md-6 mb-4">
-		<div class="post card shadow-sm h-100">
+	<article class="post d-flex col-12 mb-3" itemscope itemtype="http://schema.org/BlogPosting">
+		<a href="{{ post.url | relative_url }}" class="d-block mr-3 img-container">
 			{% if post.thumbnail.size > 0 %}
 			<picture>
-				<img data-src="{{ post.thumbnail }}" class="card-img-top img-fluid h-100 lazyload" alt="{{ post.title | escape }}">
+				<img data-src="{{ post.thumbnail }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}">
 			</picture>
 			{% else %}
-			<svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+			<svg class="rounded img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
 				<title>Placeholder</title>
 				<rect width="100%" height="100%" fill="#55595c"></rect>
 				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Thumbnail</text>
 			</svg>
 			{% endif %}
-			<div class="card-body d-flex align-items-start flex-column">
-				<h5 class="card-title title">
-					<a class="card-link stretched-link" href="{{ post.url | relative_url }}">
+		</a>
+		<div class="d-flex flex-column col px-0">
+			<header class="header">
+				<h2 class="title mb-1" itemprop="name headline">
+					<a href="{{ post.url | relative_url }}" class="stretched-link" itemprop="url">
 						{{ post.title | escape }}
 					</a>
-				</h5>
-				<h6 class="card-subtitle mb-2 text-muted">{{ post.category }}</h6>
-				<div class="mt-auto d-flex justify-content-between align-items-center w-100">
-					<time class="small" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>
-					<small class="text-muted">{% include read_time.html content=post.content %}</small>
-				</div>
-			</div>
+				</h2>
+				<ul class="meta list-inline list-with-separator text-muted mb-1">
+					<li class="list-inline-item">
+						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
+					</li>
+					<li class="list-inline-item">
+						{% include read_time.html content=post.content %}
+					</li>
+				</ul>
+			</header>
+			<div class="body excerpt" itemprop="abstract">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 25 }}</div>
 		</div>
-	</div>
+	</article>
 	{% endfor %}
 </div>
 {% endif %}
