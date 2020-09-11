@@ -37,12 +37,14 @@ paginate_path: /page-:num
 paginate: 12
 timezone: America/Mexico_City
 exclude:
+  - CNAME
   - LICENSE
   - Rakefile
   - README.md
   - composer.json
   - composer.lock
   - satis.json
+  - vendor
   - Gemfile
   - Gemfile.lock
 kramdown:
