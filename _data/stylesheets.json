@@ -35,6 +35,17 @@
 		]
 	},
 	{
+		"group": "tomorrow-night",
+		"files": [
+			{
+				"name": "tomorrow-night",
+				"version": null,
+				"minified": false,
+				"cdn": null
+			}
+		]
+	},
+	{
 		"group": "marquee",
 		"files": [
 			{
