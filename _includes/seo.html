@@ -1,4 +1,16 @@
 <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+{%- if page.image_width and page.image_height %}
+{%- assign card_type = 'summary' -%}
+{%- assign image_height_double = page.image_height | times: 2 -%}
+{%- if page.image_width > 300 and page.image_height > 157 and page.image_width >= image_height_double -%}
+{%- assign card_type = 'summary_large_image' -%}
+{%- endif %}
+<meta name="twitter:card" content="{{ card_type }}">
+{%- endif %}
+{%- assign twitter = site.data.networks | where: "name", "Twitter" | first -%}
+{%- if twitter.user %}
+<meta name="twitter:site" content="@{{ twitter.user }}">
+{%- endif %}
 {%- if site.facebook.app_id %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id | escape }}">
 {%- endif %}
