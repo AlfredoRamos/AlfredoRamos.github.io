@@ -6,6 +6,12 @@
 		"icon": "brandico:github"
 	},
 	{
+		"name": "GitLab",
+		"user": "AlfredoRamos",
+		"url": "https://gitlab.com",
+		"icon": "cib:gitlab"
+	},
+	{
 		"name": "Telegram",
 		"user": "AlfredoRamos",
 		"url": "https://telegram.me/",
