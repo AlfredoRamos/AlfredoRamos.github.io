@@ -24,6 +24,12 @@
 		"icon": "brandico:twitter-bird"
 	},
 	{
+		"name": "Crowdin",
+		"user": "AlfredoRamos",
+		"url": "https://crowdin.com/profile/",
+		"icon": "simple-icons:crowdin"
+	},
+	{
 		"name": "Discord",
 		"user": "AlfredoRamos#3527",
 		"icon": "cib:discord"
