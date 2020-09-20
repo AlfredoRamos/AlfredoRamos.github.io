@@ -7,6 +7,8 @@
 }
 
 .post {
+	overflow: hidden;
+
 	.highlight {
 		> pre {
 			padding: get-pixels($spacing);
@@ -17,6 +19,10 @@
 		a:hover {
 			text-decoration: none;
 		}
+	}
+
+	.content {
+		overflow: hidden;
 	}
 
 	.footer {
