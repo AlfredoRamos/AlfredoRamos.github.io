@@ -1,17 +1,11 @@
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="referrer" content="same-origin">
 	{% include title.html %}
-
 	{%- include seo.html %}
-
-	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
-
-	<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
-
+	{%- include favicon.html %}
 	{%- include stylesheets.html content=site.data.stylesheet_list %}
-
 	<!-- stylesheets -->
 	{%- include stylesheets.html %}
 	<!-- stylesheets -->
