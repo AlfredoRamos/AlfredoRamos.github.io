@@ -1,11 +1,3 @@
-.index {
-	.post {
-		.title {
-			font-size: 1.5rem;
-		}
-	}
-}
-
 .post {
 	overflow: hidden;
 
@@ -32,7 +24,6 @@
 	}
 
 	.img-container {
-		width: 200px;
 		height: 120px;
 	}
 
@@ -45,7 +36,6 @@
 
 @include responsive (max-width, map-get($grid-breakpoints, md)) {
 	.post .img-container {
-		width: 100%;
 		height: 180px;
 	}
 }

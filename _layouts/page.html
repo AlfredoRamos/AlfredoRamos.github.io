@@ -3,7 +3,11 @@ layout: default
 ---
 <div class="page">
 	<header class="header">
-		<h2 class="title">{{ page.title | escape }}</h2>
+		<h1 class="title h3">
+			<a href="{{ page.url | relative_url }}">
+				{{ page.title | escape }}
+			</a>
+		</h1>
 	</header>
 	<div class="body">
 		{{ content }}
