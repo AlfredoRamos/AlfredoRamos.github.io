@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "6a26c6af148f3da7cb34ed3c99f24288e2c50050"
+                    "reference": "2ba0b3e2b4606dd80c7ac87c04475e611d7a2653"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/6a26c6af148f3da7cb34ed3c99f24288e2c50050",
-                    "reference": "6a26c6af148f3da7cb34ed3c99f24288e2c50050",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/2ba0b3e2b4606dd80c7ac87c04475e611d7a2653",
+                    "reference": "2ba0b3e2b4606dd80c7ac87c04475e611d7a2653",
                     "shasum": ""
                 },
                 "require": {
@@ -45,7 +45,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],

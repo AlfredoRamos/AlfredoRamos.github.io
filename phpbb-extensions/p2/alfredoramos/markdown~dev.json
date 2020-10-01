@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f"
+                    "reference": "5b268170dac0e26d60877266a3edce29ebb3250d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/abb24f82e885cfc03faf2da502ba77788979db1f",
-                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/5b268170dac0e26d60877266a3edce29ebb3250d",
+                    "reference": "5b268170dac0e26d60877266a3edce29ebb3250d",
                     "shasum": ""
                 },
                 "require": {
@@ -49,7 +49,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -64,7 +64,7 @@
                     "tasklists"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/l10n",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
                 },
                 "funding": [

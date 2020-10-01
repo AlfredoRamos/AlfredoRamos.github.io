@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "b6219547f391e8cb1191544a6dc0ea4081e4f5de"
+                    "reference": "3c1fbc6b3da3b678b937dd2a3f9d628145947b32"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/b6219547f391e8cb1191544a6dc0ea4081e4f5de",
-                    "reference": "b6219547f391e8cb1191544a6dc0ea4081e4f5de",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/3c1fbc6b3da3b678b937dd2a3f9d628145947b32",
+                    "reference": "3c1fbc6b3da3b678b937dd2a3f9d628145947b32",
                     "shasum": ""
                 },
                 "require": {
@@ -48,7 +48,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
