@@ -1,7 +1,7 @@
 {
 	"name": "alfredoramos/phpbb-extensions",
 	"description": "Personal Composer repository",
-	"homepage": "https://alfredoramos.github.io/phpbb-extensions/",
+	"homepage": "https://alfredoramos.mx/phpbb-extensions/",
 	"repositories": [
 		{
 			"type": "vcs",

@@ -32,7 +32,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -100,7 +100,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -168,7 +168,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -236,7 +236,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -304,7 +304,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -372,7 +372,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -440,7 +440,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -508,7 +508,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -576,7 +576,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "auto-lock-topics.json",
                         "ssl": true
@@ -646,7 +646,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "hide.json",
                         "ssl": true
@@ -707,7 +707,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "hide.json",
                         "ssl": true
@@ -768,7 +768,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "hide.json",
                         "ssl": true
@@ -829,7 +829,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "hide.json",
                         "ssl": true
@@ -892,7 +892,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "image-alt.json",
                         "ssl": true
@@ -959,7 +959,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "image-alt.json",
                         "ssl": true
@@ -1026,7 +1026,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "image-alt.json",
                         "ssl": true
@@ -1096,7 +1096,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1164,7 +1164,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1232,7 +1232,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1300,7 +1300,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1368,7 +1368,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1436,7 +1436,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1504,7 +1504,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1572,7 +1572,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1640,7 +1640,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1708,7 +1708,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1776,7 +1776,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1844,7 +1844,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1912,7 +1912,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -1980,7 +1980,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2048,7 +2048,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2116,7 +2116,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2184,7 +2184,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2252,7 +2252,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2320,7 +2320,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2388,7 +2388,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "imgur.json",
                         "ssl": true
@@ -2457,7 +2457,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "lazy-load.json",
                         "ssl": true
@@ -2523,7 +2523,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "markdown.json",
                         "ssl": true
@@ -2595,7 +2595,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "markdown.json",
                         "ssl": true
@@ -2666,7 +2666,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "markdown.json",
                         "ssl": true
@@ -2737,7 +2737,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "markdown.json",
                         "ssl": true
@@ -2809,7 +2809,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "markdown.json",
                         "ssl": true
@@ -2882,7 +2882,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "markdown.json",
                         "ssl": true
@@ -2956,7 +2956,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "mermaid.json",
                         "ssl": true
@@ -3033,7 +3033,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3107,7 +3107,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3181,7 +3181,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3255,7 +3255,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3329,7 +3329,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3403,7 +3403,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3477,7 +3477,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "seo-metadata.json",
                         "ssl": true
@@ -3552,7 +3552,7 @@
                         "phpbb/phpbb": "~3.2"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -3618,7 +3618,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -3684,7 +3684,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -3750,7 +3750,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -3816,7 +3816,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -3882,7 +3882,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -3948,7 +3948,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4015,7 +4015,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4082,7 +4082,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4149,7 +4149,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4216,7 +4216,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4283,7 +4283,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4350,7 +4350,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4417,7 +4417,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4484,7 +4484,7 @@
                         "phpbb/phpbb": "~3.2.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4551,7 +4551,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4619,7 +4619,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4687,7 +4687,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4755,7 +4755,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4823,7 +4823,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true
@@ -4891,7 +4891,7 @@
                         "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
-                        "host": "alfredoramos.github.io",
+                        "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
                         "filename": "simple-spoiler.json",
                         "ssl": true

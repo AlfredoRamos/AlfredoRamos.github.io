@@ -2,13 +2,13 @@
 	"stable": {
 		"0.1": {
 			"current": "0.1.0",
-			"announcement": "https://alfredoramos.github.io",
+			"announcement": "https://alfredoramos.mx",
 			"eol": null,
 			"security": false
 		},
 		"0.2": {
 			"current": "0.2.0",
-			"announcement": "https://alfredoramos.github.io",
+			"announcement": "https://alfredoramos.mx",
 			"eol": null,
 			"security": false
 		}

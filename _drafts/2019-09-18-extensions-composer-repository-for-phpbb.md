@@ -37,7 +37,7 @@ Here's a brief guide on how you can use this new feature on your phpBB boards:
 	<samp>Minimum stability</samp> | It will set the minimum stability of the package. It's usefull if you want to test a beta or development version of an extension. See [minimum-stability](https://getcomposer.org/doc/04-schema.md#minimum-stability) for more information.
 	{: class="table table-striped table-sm"}
 
-2. Then add `https://alfredoramos.github.io/phpbb-extensions-repository/` in a new line, in the <samp>Repositories</samp> field and save the changes.
+2. Then add `https://alfredoramos.mx/phpbb-extensions-repository/` in a new line, in the <samp>Repositories</samp> field and save the changes.
 
 	[![Extensions catalog settings](https://i.imgur.com/1uYkwvdm.png){: class="mx-auto d-block"}](https://i.imgur.com/1uYkwvd.png){: data-rel="lightcase:setup"}
 
