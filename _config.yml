@@ -37,6 +37,7 @@ paginate_path: /page-:num
 paginate: 12
 timezone: America/Mexico_City
 exclude:
+  - dist/
   - CNAME
   - LICENSE
   - Rakefile

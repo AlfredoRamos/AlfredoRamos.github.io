@@ -6,3 +6,4 @@ _site/
 .env
 composer.lock
 Gemfile.lock
+*.*~
