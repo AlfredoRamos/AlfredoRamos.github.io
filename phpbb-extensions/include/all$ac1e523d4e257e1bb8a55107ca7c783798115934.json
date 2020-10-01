@@ -552,12 +552,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "6a26c6af148f3da7cb34ed3c99f24288e2c50050"
+                    "reference": "2ba0b3e2b4606dd80c7ac87c04475e611d7a2653"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/6a26c6af148f3da7cb34ed3c99f24288e2c50050",
-                    "reference": "6a26c6af148f3da7cb34ed3c99f24288e2c50050",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/2ba0b3e2b4606dd80c7ac87c04475e611d7a2653",
+                    "reference": "2ba0b3e2b4606dd80c7ac87c04475e611d7a2653",
                     "shasum": ""
                 },
                 "require": {
@@ -589,7 +589,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -805,12 +805,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
-                    "reference": "06f56413f9fb3006880d0a4118ba880461cc1fd4"
+                    "reference": "10c933b1c33284f0fe08365681f0edda94c10dc8"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/06f56413f9fb3006880d0a4118ba880461cc1fd4",
-                    "reference": "06f56413f9fb3006880d0a4118ba880461cc1fd4",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/10c933b1c33284f0fe08365681f0edda94c10dc8",
+                    "reference": "10c933b1c33284f0fe08365681f0edda94c10dc8",
                     "shasum": ""
                 },
                 "require": {
@@ -842,7 +842,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -1002,12 +1002,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "091c78e8aebe7857f0b1ac239f5186af3bd65392"
+                    "reference": "66685112eff6e8db8b2f58164d57204e085df7a1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/091c78e8aebe7857f0b1ac239f5186af3bd65392",
-                    "reference": "091c78e8aebe7857f0b1ac239f5186af3bd65392",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/66685112eff6e8db8b2f58164d57204e085df7a1",
+                    "reference": "66685112eff6e8db8b2f58164d57204e085df7a1",
                     "shasum": ""
                 },
                 "require": {
@@ -1039,7 +1039,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -2363,12 +2363,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23"
+                    "reference": "db165dc1474c77a61d2d2de909b886ba2a6f8eb5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
-                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/db165dc1474c77a61d2d2de909b886ba2a6f8eb5",
+                    "reference": "db165dc1474c77a61d2d2de909b886ba2a6f8eb5",
                     "shasum": ""
                 },
                 "require": {
@@ -2401,7 +2401,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -2854,12 +2854,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f"
+                    "reference": "5b268170dac0e26d60877266a3edce29ebb3250d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/abb24f82e885cfc03faf2da502ba77788979db1f",
-                    "reference": "abb24f82e885cfc03faf2da502ba77788979db1f",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/5b268170dac0e26d60877266a3edce29ebb3250d",
+                    "reference": "5b268170dac0e26d60877266a3edce29ebb3250d",
                     "shasum": ""
                 },
                 "require": {
@@ -2895,7 +2895,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -2910,7 +2910,7 @@
                     "tasklists"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/l10n",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
                 },
                 "funding": [
@@ -2929,12 +2929,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "b6219547f391e8cb1191544a6dc0ea4081e4f5de"
+                    "reference": "3c1fbc6b3da3b678b937dd2a3f9d628145947b32"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/b6219547f391e8cb1191544a6dc0ea4081e4f5de",
-                    "reference": "b6219547f391e8cb1191544a6dc0ea4081e4f5de",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/3c1fbc6b3da3b678b937dd2a3f9d628145947b32",
+                    "reference": "3c1fbc6b3da3b678b937dd2a3f9d628145947b32",
                     "shasum": ""
                 },
                 "require": {
@@ -2969,7 +2969,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -3453,12 +3453,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "19b056efef6e87ffcb42a9fad40effd11e8ef71f"
+                    "reference": "ba4b9715dd8d00691116c28716a6a119f5826054"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/19b056efef6e87ffcb42a9fad40effd11e8ef71f",
-                    "reference": "19b056efef6e87ffcb42a9fad40effd11e8ef71f",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/ba4b9715dd8d00691116c28716a6a119f5826054",
+                    "reference": "ba4b9715dd8d00691116c28716a6a119f5826054",
                     "shasum": ""
                 },
                 "require": {
@@ -3490,7 +3490,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -4867,12 +4867,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5"
+                    "reference": "b58bbb8d9a479447733076765ef64a3868672b0e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/c169b7bd0debac397a442cc0fef5f27a27aa20c5",
-                    "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/b58bbb8d9a479447733076765ef64a3868672b0e",
+                    "reference": "b58bbb8d9a479447733076765ef64a3868672b0e",
                     "shasum": ""
                 },
                 "require": {
@@ -4904,7 +4904,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
@@ -4918,7 +4918,7 @@
                     "spoiler"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.1",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
                 },
                 "funding": [

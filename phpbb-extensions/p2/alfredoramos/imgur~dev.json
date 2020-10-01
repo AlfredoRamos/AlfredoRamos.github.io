@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23"
+                    "reference": "db165dc1474c77a61d2d2de909b886ba2a6f8eb5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
-                    "reference": "d8685140301c077bc66b9e6cb5c5a11e34c0ee23",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/db165dc1474c77a61d2d2de909b886ba2a6f8eb5",
+                    "reference": "db165dc1474c77a61d2d2de909b886ba2a6f8eb5",
                     "shasum": ""
                 },
                 "require": {
@@ -46,7 +46,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://github.com/AlfredoRamos",
+                        "homepage": "https://alfredoramos.mx/",
                         "role": "Lead Developer"
                     }
                 ],
