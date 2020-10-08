@@ -8,7 +8,7 @@ description: A collection of posts listed by tag.
 <ul class="list-inline">
 	{%- for tag in site.tags %}
 	<li class="list-inline-item">
-		<a href="#{{ tag.first | uri_escape }}" class="badge badge-primary">
+		<a href="{{ page.permalink | append: tag.first | append: '/' | uri_escape | relative_url }}" class="badge badge-primary">
 			{{ tag.first | escape}}
 		</a>
 	</li>
@@ -22,7 +22,9 @@ description: A collection of posts listed by tag.
 	{%- assign posts = site.posts
 	| where_exp: 'post', 'post.tags contains tag.first' -%}
 	<li id="{{ tag.first | uri_escape }}">
-		<h4>{{ tag.first | escape }}</h4>
+		<h4 class="h5">
+			<a href="{{ page.permalink | append: tag.first | append: '/' | uri_escape | relative_url }}">{{ tag.first | escape }}</a>
+		</h4>
 		<ul class="list-posts">
 			{%- for post in posts -%}
 			<li>

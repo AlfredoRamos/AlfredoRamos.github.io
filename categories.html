@@ -8,7 +8,7 @@ description: A collection of posts listed by category.
 <ul class="list-inline">
 	{%- for category in site.categories %}
 	<li class="list-inline-item">
-		<a href="#{{ category.first | uri_escape }}" class="badge badge-primary">
+		<a href="{{ page.permalink | append: category.first | append: '/' | uri_escape | relative_url }}" class="badge badge-primary">
 			{{ category.first | escape}}
 		</a>
 	</li>
@@ -22,7 +22,9 @@ description: A collection of posts listed by category.
 	{%- assign posts = site.posts
 	| where_exp: 'post', 'post.categories contains category.first' -%}
 	<li id="{{ category.first | uri_escape }}">
-		<h4>{{ category.first | escape }}</h4>
+		<h4 class="h5">
+			<a href="{{ page.permalink | append: category.first | append: '/' | uri_escape | relative_url }}">{{ category.first | escape }}</a>
+		</h4>
 		<ul class="list-posts">
 			{%- for post in posts -%}
 			<li>

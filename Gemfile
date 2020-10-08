@@ -3,7 +3,14 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll', '~> 4.0'
+gem 'minima'
+
+group :jekyll_plugins do
+  gem 'jekyll-github-metadata'
+  gem 'jekyll-paginate-v2'
+  gem 'jekyll-sitemap'
+end
 
 group :development do
   gem 'dotenv'
