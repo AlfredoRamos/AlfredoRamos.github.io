@@ -10,7 +10,7 @@ description: A collection of archived posts listed by year of publication.
 <ul class="list-inline">
 	{%- for archive in archives %}
 	<li class="list-inline-item">
-		<a href="#{{ archive.name | uri_escape }}" class="badge badge-primary">
+		<a href="{{ page.permalink | append: archive.name | append: '/' | uri_escape | relative_url }}" class="badge badge-primary">
 			{{ archive.name | escape}}
 		</a>
 	</li>
@@ -22,7 +22,9 @@ description: A collection of archived posts listed by year of publication.
 <ul class="list-links">
 	{%- for archive in archives %}
 	<li id="{{ archive.name | uri_escape }}">
-		<h4>{{ archive.name | escape }}</h4>
+		<h4 class="h5">
+			<a href="{{ page.permalink | append: archive.name | append: '/' | uri_escape | relative_url }}">{{ archive.name | escape }}</a>
+		</h4>
 		<ul class="list-posts">
 			{%- for post in archive.items -%}
 			<li>

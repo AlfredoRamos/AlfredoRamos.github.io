@@ -72,7 +72,7 @@
 		<div class="body">
 			<div class="list-archives">
 				{%- for archive in archives %}
-				<a href="{{ site.data.pages | where: 'name', 'archives' | map: 'uri' | first | relative_url }}#{{ archive.name | uri_escape }}" class="badge badge-light">
+				<a href="{{ site.data.pages | where: 'name', 'archives' | map: 'uri' | first | append: archive.name | append: '/' | uri_escape | relative_url }}" class="badge badge-light">
 					{{ archive.name | escape}}
 				</a>
 				{%- endfor %}
@@ -88,7 +88,7 @@
 		<div class="body">
 			<div class="list-categories">
 				{%- for category in site.categories %}
-				<a href="{{ site.data.pages | where: 'name', 'categories' | map: 'uri' | first | relative_url }}#{{ category.first | uri_escape }}" class="badge badge-light">
+				<a href="{{ site.data.pages | where: 'name', 'categories' | map: 'uri' | first | append: category.first | append: '/' | uri_escape | relative_url }}" class="badge badge-light">
 					{{ category.first | escape}}
 				</a>
 				{%- endfor %}
@@ -104,7 +104,7 @@
 		<div class="body">
 			<div class="list-tags">
 				{%- for tag in site.tags %}
-				<a href="{{ site.data.pages | where: 'name', 'tags' | map: 'uri' | first | relative_url }}#{{ tag.first | uri_escape }}" class="badge badge-light">
+				<a href="{{ site.data.pages | where: 'name', 'tags' | map: 'uri' | first | append: tag.first | append: '/' | uri_escape | relative_url }}" class="badge badge-light">
 					{{ tag.first | escape}}
 				</a>
 				{%- endfor %}
