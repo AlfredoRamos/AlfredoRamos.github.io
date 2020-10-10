@@ -1,8 +1,8 @@
 # Site settings
 title: 'Alfredo Ramos'
 description: null
-baseurl: null # the subpath of your site, e.g. /blog/
-url: null # the base hostname & protocol for your site
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: 'https://alfredoramos.mx' # the base hostname & protocol for your site
 
 # Default settings
 defaults:

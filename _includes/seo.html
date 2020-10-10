@@ -16,9 +16,11 @@
 {%- endif %}
 <meta property="og:locale" content="{{ page.locale | default: site.locale | default: 'en_US' }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:type" content="{% if page.id%}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}">
+{%- if page.title %}
 <meta property="og:title" content="{{ page.title }}">
+{%- endif %}
 <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 {%- if page.image %}
 <meta property="og:image" content="{{ page.image | escape_uri | relative_url }}">
@@ -48,7 +50,7 @@
 <meta name="yandex-verification" content="{{ site.verifications.yandex }}">
 {%- endif %}
 <link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }} :: {{ site.description | escape }}">
-<link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+<link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url }}{% else %}{{ page.url | replace: 'index.html', '' | absolute_url }}{% endif %}">
 {%- if paginator.previous_page %}
 <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
 {%- endif %}
