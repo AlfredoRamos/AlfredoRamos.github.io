@@ -28,6 +28,8 @@ jobs:
           bundle install --jobs 4 --retry 3
           gem cleanup
       - name: Build site
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
         run: bundle exec jekyll build --strict_front_matter --trace
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
