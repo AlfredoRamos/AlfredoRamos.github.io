@@ -3,7 +3,7 @@ _site/
 .bundle/
 .sass-cache/
 .jekyll-metadata/
+.jekyll-cache/
 .env
 composer.lock
-Gemfile.lock
 *.*~

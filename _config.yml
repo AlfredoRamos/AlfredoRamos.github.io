@@ -33,8 +33,12 @@ defaults:
 # Build settings
 theme: null
 encoding: 'utf-8'
-paginate_path: /page-:num
-paginate: 12
+pagination:
+  enabled: true
+  title: ':title'
+  per_page: 12
+  permalink: '/page/:num/'
+  sort_reverse: true
 timezone: America/Mexico_City
 exclude:
   - dist/
@@ -55,10 +59,9 @@ sass:
     sass_dir: _scss
     style: compressed
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-github-metadata
   - jekyll-sitemap
-  - jemoji
 excerpt_separator: <!-- more -->
 
 verifications:

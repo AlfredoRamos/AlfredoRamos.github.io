@@ -1,0 +1,39 @@
+name: 'GitHub Actions CD'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1.1.2
+        with:
+          ruby-version: 2.7
+      - name: Setup cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.gem
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Setup Gems
+        run: |
+          echo "gem: --no-document" > ~/.gemrc
+          bundle config path ~/.gem
+          bundle install --jobs 4 --retry 3
+          gem cleanup
+      - name: Build site
+        run: bundle exec jekyll build --strict_front_matter --trace
+      - name: Deploy site
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: 'gh-pages'
+          cname: alfredoramos.mx
+          force_orphan: true

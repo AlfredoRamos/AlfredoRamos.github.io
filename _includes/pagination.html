@@ -17,11 +17,11 @@
 		</li>
 		{%- elsif page == 1 %}
 		<li class="page-item">
-			<a href="{{ site.paginate_path | replace: 'page-:num', '' | relative_url }}" class="page-link">{{ page }}</a>
+			<a href="{{ site.paginate_path | replace: 'page:num', '' | prepend: url | relative_url }}" class="page-link">{{ page }}</a>
 		</li>
 		{%- else %}
 		<li class="page-item">
-			<a href="{{ site.paginate_path | replace: ':num', page | relative_url }}" class="page-link">{{ page }}</a>
+			<a href="{{ site.paginate_path | replace: 'page:num', 'page/:num/' | replace: ':num', page | relative_url }}" class="page-link">{{ page }}</a>
 		</li>
 		{%- endif %}
 		{%- endfor -%}
