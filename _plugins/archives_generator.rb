@@ -10,46 +10,47 @@ module Jekyll
 
     # Generate archive pages
     def generate(site)
-      @site = site
-      @posts = site.posts
       layout = 'archive'
 
-      if @site.layouts.key?(layout)
-        # Archives
-        years.each do |year, posts|
-          @site.pages << ArchivePage.new(
-            site,
-            site.source,
-            File.join('archives', year),
-            year,
-            'archive',
-            posts
-          )
-        end
+      return unless site.layouts.key?(layout)
 
-        # Categories
-        categories.each do |category, posts|
-          @site.pages << ArchivePage.new(
-            site,
-            site.source,
-            File.join('categories', category),
-            category,
-            'category',
-            posts
-          )
-        end
+      @site = site
+      @posts = @site.posts
 
-        # Tags
-        tags.each do |tag, posts|
-          @site.pages << ArchivePage.new(
-            site,
-            site.source,
-            File.join('tags', tag),
-            tag,
-            'tag',
-            posts
-          )
-        end
+      # Archives
+      years.each do |year, posts|
+        @site.pages << ArchivePage.new(
+          site,
+          site.source,
+          File.join('archives', year),
+          year,
+          'archive',
+          posts
+        )
+      end
+
+      # Categories
+      categories.each do |category, posts|
+        @site.pages << ArchivePage.new(
+          site,
+          site.source,
+          File.join('categories', category),
+          category,
+          'category',
+          posts
+        )
+      end
+
+      # Tags
+      tags.each do |tag, posts|
+        @site.pages << ArchivePage.new(
+          site,
+          site.source,
+          File.join('tags', tag),
+          tag,
+          'tag',
+          posts
+        )
       end
     end
 
@@ -77,6 +78,11 @@ module Jekyll
     attr_accessor :posts, :type
 
     def initialize(site, base, dir, title, type, posts)
+      layout = 'archive'
+      types = %w[archive category tag]
+
+      return unless site.layouts.key?(layout) && types.any?(type)
+
       @site = site
       @base = base
       @dir  = dir
@@ -84,7 +90,6 @@ module Jekyll
       @type = type
       @posts = posts
 
-      layout = 'archive'
       description = format('Posts published under the <strong>%<name>s</strong> %<type>s.', name: title, type: type)
       description = format('Posts published in <strong>%<year>d</strong>.', year: title) if type.eql?('archive')
 
