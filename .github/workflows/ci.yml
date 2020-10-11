@@ -11,7 +11,7 @@ on:
       - reopened
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -33,6 +33,10 @@ jobs:
         bundle config path ~/.gem
         bundle install --jobs 4 --retry 3
         gem cleanup
+    - name: Test Jekyll
+      env:
+        JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+      run: bundle exec jekyll doctor
     - name: Test Ruby
       run: bundle exec rake rubocop
     - name: Test SCSS

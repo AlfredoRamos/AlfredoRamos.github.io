@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  pages:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -24,6 +24,7 @@ jobs:
       - name: Setup Gems
         run: |
           echo "gem: --no-document" > ~/.gemrc
+          gem install -N bundler
           bundle config path ~/.gem
           bundle install --jobs 4 --retry 3
           gem cleanup
