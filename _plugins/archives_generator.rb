@@ -85,7 +85,7 @@ module Jekyll
       @posts = posts
 
       layout = 'archive'
-      description = format('Posts publised under the <strong>%<name>s</strong> %<type>s.', name: title, type: type)
+      description = format('Posts published under the <strong>%<name>s</strong> %<type>s.', name: title, type: type)
       description = format('Posts published in <strong>%<year>d</strong>.', year: title) if type.eql?('archive')
 
       process(@name)
