@@ -12,28 +12,15 @@
 		]
 	},
 	{
-		"group": "popper.js",
-		"files": [
-			{
-				"name": "popper",
-				"version": "2.4.4",
-				"path": "umd",
-				"minified": true,
-				"cdn": "cdnjs",
-				"integrity": "sha384-uLHxgwX6ZvC6FoWIhzkulUpK8rYAiK30nm034ygkllTGvodI+uL6V5an1iTvrLIL"
-			}
-		]
-	},
-	{
 		"group": "twitter-bootstrap",
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.5.0",
+				"version": "4.5.3",
 				"path": "js",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+				"integrity": "sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
 			}
 		]
 	},

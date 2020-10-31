@@ -4,11 +4,11 @@
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.5.0",
+				"version": "4.5.3",
 				"path": "css",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+				"integrity": "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 			}
 		]
 	},
