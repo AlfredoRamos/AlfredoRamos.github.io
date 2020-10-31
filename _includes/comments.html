@@ -1,0 +1,7 @@
+{%- if site.related_posts and site.discourse_url and page.url %}
+<script>
+	var discourseUrl = "{{ site.discourse_url }}";
+	var discourseEmbedUrl = "{{ page.url | absolute_url }}";
+</script>
+<script src="{{ site.discourse_url | append: 'javascripts/embed.js' }}" async="true"></script>
+{%- endif %}

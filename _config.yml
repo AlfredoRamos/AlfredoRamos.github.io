@@ -3,6 +3,7 @@ title: 'Alfredo Ramos'
 description: null
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.mx' # the base hostname & protocol for your site
+discourse_url: 'https://dev.alfredoramos.mx/'
 
 # Default settings
 defaults:
@@ -70,7 +71,3 @@ verifications:
 
 word_per_minute: 180 # WPM
 image_view_time: 3   # Seconds
-
-# Needed to build locally
-# https://help.github.com/articles/repository-metadata-on-github-pages/
-repository: AlfredoRamos/AlfredoRamos.github.io
