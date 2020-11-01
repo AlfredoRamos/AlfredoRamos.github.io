@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "b58bbb8d9a479447733076765ef64a3868672b0e"
+                    "reference": "2143d108a82cc2e791868e33ca594f76a0d688ea"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/b58bbb8d9a479447733076765ef64a3868672b0e",
-                    "reference": "b58bbb8d9a479447733076765ef64a3868672b0e",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/2143d108a82cc2e791868e33ca594f76a0d688ea",
+                    "reference": "2143d108a82cc2e791868e33ca594f76a0d688ea",
                     "shasum": ""
                 },
                 "require": {
@@ -24,7 +24,7 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-08-18T00:00:00+00:00",
+                "time": "2020-10-12T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "Simple Spoiler BBCode",
@@ -59,7 +59,7 @@
                     "spoiler"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/master",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.2",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
                 },
                 "funding": [

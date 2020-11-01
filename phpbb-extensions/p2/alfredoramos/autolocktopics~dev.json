@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "2ba0b3e2b4606dd80c7ac87c04475e611d7a2653"
+                    "reference": "7dc6a94277d848898f5054e235b9c28a6c9df770"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/2ba0b3e2b4606dd80c7ac87c04475e611d7a2653",
-                    "reference": "2ba0b3e2b4606dd80c7ac87c04475e611d7a2653",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/7dc6a94277d848898f5054e235b9c28a6c9df770",
+                    "reference": "7dc6a94277d848898f5054e235b9c28a6c9df770",
                     "shasum": ""
                 },
                 "require": {

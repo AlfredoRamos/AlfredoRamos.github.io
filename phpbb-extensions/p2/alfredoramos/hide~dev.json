@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
-                    "reference": "10c933b1c33284f0fe08365681f0edda94c10dc8"
+                    "reference": "ca86610967d036ce08f9240c1ebf6f8ac185b574"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/10c933b1c33284f0fe08365681f0edda94c10dc8",
-                    "reference": "10c933b1c33284f0fe08365681f0edda94c10dc8",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/ca86610967d036ce08f9240c1ebf6f8ac185b574",
+                    "reference": "ca86610967d036ce08f9240c1ebf6f8ac185b574",
                     "shasum": ""
                 },
                 "require": {
