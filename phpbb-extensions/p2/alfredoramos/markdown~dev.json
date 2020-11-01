@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "5b268170dac0e26d60877266a3edce29ebb3250d"
+                    "reference": "a9d75006df7c03de83f2682ff1620b6b41be1729"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/5b268170dac0e26d60877266a3edce29ebb3250d",
-                    "reference": "5b268170dac0e26d60877266a3edce29ebb3250d",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/a9d75006df7c03de83f2682ff1620b6b41be1729",
+                    "reference": "a9d75006df7c03de83f2682ff1620b6b41be1729",
                     "shasum": ""
                 },
                 "require": {
@@ -64,7 +64,7 @@
                     "tasklists"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/l10n",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
                 },
                 "funding": [
