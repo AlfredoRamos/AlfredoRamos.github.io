@@ -1,0 +1,80 @@
+name: GitHub Actions CI/CD
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: Setup cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.gem
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install gems
+        run: |
+          echo "gem: --no-document" > ~/.gemrc
+          gem install -N bundler
+          bundle config path ~/.gem
+          bundle install --jobs 4 --retry 3
+          gem cleanup
+      - name: Test Jekyll
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+        run: bundle exec jekyll doctor
+      - name: Test Ruby
+        run: bundle exec rake rubocop
+      - name: Test SCSS
+        run: bundle exec rake scss_lint
+  deploy:
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && success() }}
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: Setup cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.gem
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install gems
+        run: |
+          echo "gem: --no-document" > ~/.gemrc
+          gem install -N bundler
+          bundle config path ~/.gem
+          bundle install --jobs 4 --retry 3
+          gem cleanup
+      - name: Build site
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+        run: bundle exec jekyll build --strict_front_matter --trace
+      - name: Deploy site
+        if: ${{ success() }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: 'gh-pages'
+          cname: alfredoramos.mx
+          force_orphan: true
