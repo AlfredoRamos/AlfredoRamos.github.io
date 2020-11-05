@@ -21,7 +21,7 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - name: Setup Gems
+      - name: Install Gems
         run: |
           echo "gem: --no-document" > ~/.gemrc
           gem install -N bundler
