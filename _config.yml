@@ -60,9 +60,10 @@ sass:
     sass_dir: _scss
     style: compressed
 plugins:
-  - jekyll-paginate-v2
   - jekyll-github-metadata
+  - jekyll-paginate-v2
   - jekyll-sitemap
+  - jekyll-target-blank
 excerpt_separator: <!-- more -->
 
 verifications:
@@ -71,3 +72,6 @@ verifications:
 
 word_per_minute: 180 # WPM
 image_view_time: 3   # Seconds
+
+target-blank:
+    rel: external
