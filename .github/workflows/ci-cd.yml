@@ -42,7 +42,7 @@ jobs:
       - name: Test SCSS
         run: bundle exec rake scss_lint
   deploy:
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && success() }}
+    if: ${{ github.event_name == 'push' && success() }}
     needs: test
     runs-on: ubuntu-latest
     steps:
