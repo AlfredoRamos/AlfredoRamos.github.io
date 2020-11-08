@@ -1,19 +1,19 @@
 {
     "packages": {
-        "alfredoramos/markdown": [
+        "alfredoramos/mailrelay": [
             {
-                "name": "alfredoramos/markdown",
+                "name": "alfredoramos/mailrelay",
                 "version": "dev-master",
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "30d449eebf5ee0256202c63464419fd3b06c1634"
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git",
+                    "reference": "9527f040e3453f4d666cf259e3ddcf3312083aaf"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/30d449eebf5ee0256202c63464419fd3b06c1634",
-                    "reference": "30d449eebf5ee0256202c63464419fd3b06c1634",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/9527f040e3453f4d666cf259e3ddcf3312083aaf",
+                    "reference": "9527f040e3453f4d666cf259e3ddcf3312083aaf",
                     "shasum": ""
                 },
                 "require": {
@@ -24,20 +24,17 @@
                     "pear/archive_tar": "^1.4.0",
                     "phing/phing": "^2.16.0"
                 },
-                "suggest": {
-                    "s9e/highlighter": "To add code syntax highlighting"
-                },
-                "time": "2020-11-06T00:00:00+00:00",
+                "time": "2020-09-13T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
-                    "display-name": "Markdown",
+                    "display-name": "Mailrelay",
                     "soft-require": {
-                        "phpbb/phpbb": "~3.3.2"
+                        "phpbb/phpbb": "~3.3.0"
                     },
                     "version-check": {
                         "host": "alfredoramos.mx",
                         "directory": "/phpbb-extensions/versions",
-                        "filename": "markdown.json",
+                        "filename": "mailrelay.json",
                         "ssl": true
                     }
                 },
@@ -52,26 +49,20 @@
                         "role": "Lead Developer"
                     }
                 ],
-                "description": "Markdown extension for phpBB",
-                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "description": "Mailrelay extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay",
                 "keywords": [
+                    "email-marketing",
+                    "email-sync",
                     "extension",
-                    "litedown",
-                    "markdown",
-                    "phpbb",
-                    "pipetables",
-                    "tasklists"
+                    "mailrelay",
+                    "mailrelay-api",
+                    "phpbb"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.4.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
-                ]
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/issues"
+                }
             }
         ]
     }

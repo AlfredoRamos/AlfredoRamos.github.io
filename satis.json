@@ -38,6 +38,10 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git"
 		}
 	],
 	"require": {
@@ -49,7 +53,8 @@
 		"alfredoramos/lazyload": ">=1.0.0",
 		"alfredoramos/hide": ">=1.0.0",
 		"alfredoramos/imagealt": ">=1.0.0",
-		"alfredoramos/mermaid": ">=1.0.0"
+		"alfredoramos/mermaid": ">=1.0.0",
+		"alfredoramos/mailrelay": ">=1.0.0"
 	},
 	"output-dir": "phpbb-extensions"
 }
