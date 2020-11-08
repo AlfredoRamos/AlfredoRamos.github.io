@@ -13,7 +13,7 @@ layout: default
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %-d, %Y' }}</time>
 			</li>
 			<li class="list-inline-item">
-				{% include read_time.html content=page.content %}
+				{{ page.content | read_time }}
 			</li>
 		</ul>
 	</header>
