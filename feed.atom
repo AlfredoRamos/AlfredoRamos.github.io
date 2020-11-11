@@ -3,31 +3,34 @@ layout: null
 title: Atom Feed
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"{% if site.lang %} xml:lang="{{ site.lang }}"{% endif %}>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ page.lang | default: site.lang | default: 'en' }}">
 	{% include title.html xml=true %}
 	<subtitle>{{ site.description | xml_escape }}</subtitle>
 	<link rel="self" type="application/atom+xml" href="{{ page.url | absolute_url }}" />
-	<link rel="alternate" type="text/html" href="{{ '/' | absolute_url }}"{% if site.lang %} href="{{ site.lang }}"{% endif %} />
+	<link rel="alternate" type="text/html" href="{{ '/' | absolute_url }}" hreflang="{{ page.lang | default: site.lang | default: 'en' }}" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>{{ '/' | absolute_url | xml_escape }}</id>
-	{%- if site.data.members[site.github.owner_name] %}
+	{%- if site.github.owner.name %}
 	<author>
-		<name>{{ site.data.members[site.github.owner_name].name | xml_escape }}</name>
-		<uri>{{ site.data.members[site.github.owner_name].url }}</uri>
+		<name>{{ site.github.owner.name | xml_escape }}</name>
+		<uri>{{ site.github.owner.blog | default: site.github.owner.html_url }}</uri>
 	</author>
 	{%- endif %}
 	{%- assign posts = site.posts | where_exp: "post", "post.draft != true" -%}
 	{%- for post in posts limit: 10 %}
-	<entry{% if post.lang %} xml:lang="{{ post.lang }}"{% endif %}>
+	<entry xml:lang="{{ post.lang | default: site.lang | default: 'en' }}">
 		<title>{{ post.title | xml_escape }}</title>
 		<link rel="alternate" type="text/html" href="{{ post.url | absolute_url }}" title="{{ post.title | xml_escape }}" />
 		<published>{{ post.date | date_to_xmlschema }}</published>
 		<updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
 		<id>{{ post.id | absolute_url | xml_escape }}</id>
 		<summary>{{ post.excerpt | strip_html | normalize_whitespace | xml_escape }}</summary>
+		{%- if site.github.owner.name %}
 		<author>
-			<name>{{ site.data.members[page.author] | default: site.data.members[site.github.owner_name].name | xml_escape }}</name>
+			<name>{{ site.github.owner.name | xml_escape }}</name>
+			<uri>{{ site.github.owner.blog | default: site.github.owner.html_url }}</uri>
 		</author>
+		{%- endif %}
 		{%- if post.category %}
 		<category term="{{ post.category | xml_escape }}" />
 		{%- endif %}
