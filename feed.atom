@@ -24,7 +24,7 @@ title: Atom Feed
 		<published>{{ post.date | date_to_xmlschema }}</published>
 		<updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
 		<id>{{ post.id | absolute_url | xml_escape }}</id>
-		<summary>{{ post.excerpt | strip_html | normalize_whitespace | xml_escape }}</summary>
+		<summary type="html">{{ post.excerpt | strip_html | normalize_whitespace | xml_escape }}</summary>
 		{%- if site.github.owner.name %}
 		<author>
 			<name>{{ site.github.owner.name | xml_escape }}</name>
