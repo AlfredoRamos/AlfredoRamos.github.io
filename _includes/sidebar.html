@@ -1,41 +1,36 @@
 <aside class="sidebar col-lg-3">
-	{%- if site.data.networks.size > 0 %}
+	{%- if site.data.team[site.github.owner.login].networks.size > 0 %}
 	<section id="about" class="widget mb-4">
 		<header class="header">
 			<h3 class="title h4">About</h3>
 		</header>
 		<div class="body">
-			{%- if site.github.owner.avatar_url.size > 0 %}
+			{%- if site.github.owner.avatar_url %}
 			<figure class="avatar">
-				<img data-src="{{ site.github.owner.avatar_url | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
+				<img data-src="{{ site.github.owner.avatar_url | append: '&size=250' | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
 			</figure>
 			{%- endif %}
 			{%- if site.github.owner.bio.size > 0 %}
 			<p>{{ site.github.owner.bio | escape }}</p>
 			{%- endif %}
 			<ul id="social-networks" class="list-unstyled">
-				{%- for network in site.data.networks %}
+				{%- for network in site.data.team[site.github.owner.login].networks %}
+				{%- assign network_url = network[1] | social_network_url: network[0] | uri_escape -%}
+				{%- assign network_user = network[1] | escape -%}
+				{%- assign network_title = network[0] | social_network_title | escape -%}
+				{%- assign network_icon = network[0] | social_network_icon -%}
 				<li>
-					{%- if network.url.size > 0 %}
-					<a href="{{ network.url | append: network.user | uri_escape }}" target="_blank" rel="external noreferrer noopener" title="{{ network.user | escape }} @ {{ network.name | escape }}">
-						{%- if network.icon.size > 0 -%}
-						<span class="iconify inline-icon social-icon {{ network.name | slugify }}-icon" data-icon="{{ network.icon }}"></span>
-						{%- endif -%}
-						{{ network.user | escape }}
-					</a>
-					{%- else %}
-					<span title="{{ network.user | escape }} @ {{ network.name | escape }}">
-						{%- if network.icon.size > 0 -%}
-						<span class="iconify inline-icon social-icon {{ network.name | slugify }}-icon" data-icon="{{ network.icon }}"></span>
-						{%- endif -%}
-						<code>{{ network.user | escape }}</code>
-					</span>
+					{%- if network_url contains 'https://' or network_url contains 'http://' %}
+					<a href="{{ network_url }}" title="{{ network_title }}" target="_blank" rel="external noopener noreferrer"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span>{{ network_user }}</a>
+					{% else %}
+					<span title="{{ network_title }}"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span><code>{{ network_user }}</code></span>
 					{%- endif %}
 				</li>
 				{%- endfor %}
 			</ul>
 		</div>
 	</section>
+	{%- endif %}
 	{%- unless page.url == '/donate/' %}
 	<section id="donate" class="widget mb-4">
 		<header class="header">
@@ -46,7 +41,6 @@
 		</div>
 	</section>
 	{%- endunless %}
-	{%- endif %}
 	{%- if site.related_posts.size > 0 %}
 	<section id="related-posts" class="widget mb-4">
 		<header class="header">
