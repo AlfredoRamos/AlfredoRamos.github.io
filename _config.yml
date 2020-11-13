@@ -3,7 +3,6 @@ title: 'Alfredo Ramos'
 description: null
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'https://alfredoramos.mx' # the base hostname & protocol for your site
-discourse_url: 'https://dev.alfredoramos.mx/'
 
 # Default settings
 defaults:
