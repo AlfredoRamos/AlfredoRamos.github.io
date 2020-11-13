@@ -50,6 +50,8 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-include-cache (0.2.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -148,6 +150,7 @@ DEPENDENCIES
   dotenv
   jekyll (~> 4.0)
   jekyll-github-metadata
+  jekyll-include-cache
   jekyll-paginate-v2
   jekyll-sitemap
   jekyll-target-blank

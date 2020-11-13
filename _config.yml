@@ -61,6 +61,7 @@ sass:
     style: compressed
 plugins:
   - jekyll-github-metadata
+  - jekyll-include-cache
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-target-blank
