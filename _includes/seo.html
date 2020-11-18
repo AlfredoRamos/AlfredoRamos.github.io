@@ -43,12 +43,6 @@
 {%- if page.category %}
 <meta property="article:section" content="{{ page.category | escape }}">
 {%- endif %}
-{%- if site.verifications.google %}
-<meta name="google-site-verification" content="{{ site.verifications.google }}">
-{%- endif %}
-{%- if site.verifications.yandex %}
-<meta name="yandex-verification" content="{{ site.verifications.yandex }}">
-{%- endif %}
 <link rel="alternate" href="{{ '/feed.atom' | relative_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }} :: {{ site.description | escape }}">
 <link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url }}{% else %}{{ page.url | replace: 'index.html', '' | absolute_url }}{% endif %}">
 {%- if paginator.previous_page %}

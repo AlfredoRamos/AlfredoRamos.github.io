@@ -33,12 +33,7 @@ defaults:
 # Build settings
 theme: null
 encoding: 'utf-8'
-pagination:
-  enabled: true
-  title: ':title'
-  per_page: 12
-  permalink: '/page/:num/'
-  sort_reverse: true
+excerpt_separator: <!-- more -->
 timezone: America/Mexico_City
 exclude:
   - dist/
@@ -52,28 +47,26 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
-kramdown:
-    input: GFM
-    hard_wrap: false
-sass:
-    sass_dir: _scss
-    style: compressed
 plugins:
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-target-blank
-excerpt_separator: <!-- more -->
-
-verifications:
-    google: 'sgG6KmCJADN3NqJaCyaVjnhYBciwR2LM2uz8rgdGTJU'
-    yandex: '9342b30f7f9146b5'
-
-word_per_minute: 180 # WPM
-image_view_time: 3   # Seconds
-
+kramdown:
+    input: GFM
+    hard_wrap: false
+sass:
+    sass_dir: _scss
+    style: compressed
+pagination:
+  enabled: true
+  title: ':title'
+  per_page: 12
+  permalink: '/page/:num/'
+  sort_reverse: true
 target-blank:
     rel: external
-
+word_per_minute: 180
+image_view_time: 3 # Seconds
 repository: AlfredoRamos/AlfredoRamos.github.io
