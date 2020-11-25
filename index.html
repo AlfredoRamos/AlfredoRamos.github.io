@@ -1,19 +1,20 @@
 ---
 layout: default
 description: A collection of latest post of my projects, extensions and more.
+is_homepage: true
 pagination:
   enabled: true
 ---
-<h3 class="title h4">Latest posts</h3>
+<h1 class="title h4">Latest posts</h1>
 
 {% if paginator.posts.size > 0 %}
 <div class="row flex-column index">
 	{% for post in paginator.posts %}
-	<article class="post d-flex flex-wrap col-12 mb-4" itemscope itemtype="http://schema.org/BlogPosting">
+	<article class="post d-flex flex-wrap col-12 mb-4">
 		<a href="{{ post.url | relative_url }}" class="d-block col-12 col-md-3 px-0 mr-md-3 mb-2 mb-md-0 img-container rounded border">
 			{% if post.image.size > 0 %}
 			<picture>
-				<img data-src="{{ post.image }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}" itemprop="image">
+				<img data-src="{{ post.image }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}">
 			</picture>
 			{% else %}
 			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
@@ -25,21 +26,21 @@ pagination:
 		</a>
 		<div class="d-flex flex-column col-12 col-md px-0">
 			<header class="header">
-				<h2 class="title h4 mb-1" itemprop="name headline">
-					<a href="{{ post.url | relative_url }}" class="stretched-link" itemprop="url">
+				<h2 class="title h4 mb-1">
+					<a href="{{ post.url | relative_url }}" class="stretched-link">
 						{{ post.title | escape }}
 					</a>
 				</h2>
 				<ul class="meta list-inline list-with-separator text-muted mb-1">
 					<li class="list-inline-item">
-						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %-d, %Y' }}</time>
+						<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>
 					</li>
 					<li class="list-inline-item">
 						{{ post.content | read_time }}
 					</li>
 				</ul>
 			</header>
-			<div class="body excerpt" itemprop="abstract">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 25 }}</div>
+			<div class="body excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 25 }}</div>
 		</div>
 	</article>
 	{% endfor %}
