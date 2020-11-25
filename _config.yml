@@ -14,6 +14,7 @@ defaults:
       layout: post
       author: AlfredoRamos
       permalink: /:title
+      is_draft: true
   -
     scope:
       path: ''
@@ -22,6 +23,7 @@ defaults:
       layout: post
       author: AlfredoRamos
       permalink: /:title
+      is_post: true
   -
     scope:
       path: ''
@@ -29,6 +31,7 @@ defaults:
     values:
       layout: page
       author: AlfredoRamos
+      is_page: true
 
 # Build settings
 theme: null
@@ -59,6 +62,7 @@ kramdown:
 sass:
     sass_dir: _scss
     style: compressed
+repository: AlfredoRamos/AlfredoRamos.github.io
 pagination:
   enabled: true
   title: ':title'
@@ -69,4 +73,3 @@ target-blank:
     rel: external
 word_per_minute: 180
 image_view_time: 3 # Seconds
-repository: AlfredoRamos/AlfredoRamos.github.io

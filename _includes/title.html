@@ -11,9 +11,15 @@
 		| append: paginator.total_pages -%}
 {%- endif -%}
 {%- if page.title.size > 0 -%}
-	{% assign title = title
-		| append: ' :: '
-		| append: site.title - %}
+	{%- if page.is_homepage -%}
+		{%- assign title = title
+			| append: ' :: '
+			| append: site.description -%}
+	{%- else -%}
+		{% assign title = title
+			| append: ' :: '
+			| append: site.title - %}
+	{%- endif -%}
 {%- endif -%}
 {%- if page.url == '/' -%}
 	{%- assign title = title
