@@ -8,9 +8,9 @@ pagination:
 <h1 class="title h4">Latest posts</h1>
 
 {% if paginator.posts.size > 0 %}
-<div class="row flex-column index">
+<div class="d-flex flex-column index">
 	{% for post in paginator.posts %}
-	<article class="post d-flex flex-wrap col-12 mb-4">
+	<article class="post d-flex flex-wrap mb-4">
 		<a href="{{ post.url | relative_url }}" class="d-block col-12 col-md-3 px-0 mr-md-3 mb-2 mb-md-0 img-container rounded border">
 			{% if post.image.size > 0 %}
 			<picture>
