@@ -101,4 +101,12 @@
 	.border {
 		border-color: $br-default !important; // scss-lint:disable ImportantRule
 	}
+
+	.footer {
+		background-color: $bg-dark-footer !important; // scss-lint:disable ImportantRule
+
+		.text-muted {
+			color: $fg-dark-code !important; // scss-lint:disable ImportantRule
+		}
+	}
 }
