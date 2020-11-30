@@ -102,7 +102,11 @@
 		border-color: $br-default !important; // scss-lint:disable ImportantRule
 	}
 
-	.footer {
+	hr {
+		border-color: $br-default;
+	}
+
+	> .footer {
 		background-color: $bg-dark-footer !important; // scss-lint:disable ImportantRule
 
 		.text-muted {
