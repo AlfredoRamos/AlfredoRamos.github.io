@@ -1,14 +1,22 @@
-<footer>
-	<div class="container">
-		<hr>
-		<ul class="credits list-inline list-with-separator text-center text-muted">
+<footer class="bg-light">
+	<div class="container py-3 text-muted d-flex flex-wrap justify-content-between align-items-center">
+		<div class="credits">
+			&copy; 2015-{{ site.time | date: '%Y' }} <a href="{{ '/' | absolute_url }}" class="text-muted">{{ site.title | escape }}</a>
+		</div>
+		{%- if site.data.team[site.github.owner.login].networks.size > 0 %}
+		<ul class="social-networks list-inline mb-0">
+			{%- for network in site.data.team[site.github.owner.login].networks %}
+			{%- assign network_title = network[0] | social_network_title | escape -%}
+			{%- assign network_url = network[1] | social_network_url: network[0] | uri_escape -%}
+			{%- assign network_icon = network[0] | social_network_icon -%}
+			{%- if network_url contains 'https://' or network_url contains 'http://' %}
 			<li class="list-inline-item">
-				&copy; 2015-{{ site.time | date: '%Y' }}
-				<a href="{{ site.data.pages | where: 'name', 'home' | map: 'uri' | first | relative_url }}">{{ site.title | escape }}</a>
+				<a href="{{ network_url }}" title="{{ network_title }}" target="_blank" rel="external noopener noreferrer" class="text-muted"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span></a>
 			</li>
-			<li class="list-inline-item">Powered by Jekyll</li>
-			<li class="list-inline-item">Hosted on GitHub Pages</li>
+			{%- endif %}
+			{%- endfor %}
 		</ul>
+		{%- endif %}
 	</div>
 </footer>
 
