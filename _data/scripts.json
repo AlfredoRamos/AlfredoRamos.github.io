@@ -16,11 +16,11 @@
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.5.3",
+				"version": "5.0.0-alpha3",
 				"path": "js",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+				"integrity": "sha512-Qpek3fOFi+uCW8qSf92lltHNMRMHmLISYDIRFI4qgNV2U28+4Zc3EZC8szMMeVI9KA3zEZFtIP8gt41Pekd29w=="
 			}
 		]
 	},

@@ -2,6 +2,13 @@ img {
 	max-width: 100%;
 }
 
+a {
+	&,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 .navbar-brand {
 	text-transform: uppercase;
 	letter-spacing: -1px;

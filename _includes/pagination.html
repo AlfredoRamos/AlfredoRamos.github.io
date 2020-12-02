@@ -13,7 +13,7 @@
 		{%- for page in (1..paginator.total_pages) -%}
 		{%- if page == paginator.page %}
 		<li class="page-item active" aria-current="page">
-			<span class="page-link">{{ page }}<span class="sr-only"> (current)</span></span>
+			<span class="page-link">{{ page }}<span class="visually-hidden"> (current)</span></span>
 		</li>
 		{%- elsif page == 1 %}
 		<li class="page-item">
