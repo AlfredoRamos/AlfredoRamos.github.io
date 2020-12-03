@@ -4,8 +4,7 @@ date: 2019-05-24 14:29:05 -0500
 last_modified_at: 2020-07-12 00:49:38 -0500
 category: phpbb
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
-stylesheets: [lightcase]
-scripts: [lightcase]
+scripts: [fslightbox]
 image: https://i.imgur.com/svBmgYX.png
 image_type: png
 image_width: 519
@@ -38,20 +37,20 @@ It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/L
 
 ### Preview
 
-[![Board features](https://i.imgur.com/PSGGuM3b.png)](https://i.imgur.com/PSGGuM3.png){:data-rel="lightcase:preview"}
-[![Post settings](https://i.imgur.com/qYZ7JBCb.png)](https://i.imgur.com/qYZ7JBC.png){:data-rel="lightcase:pewview"}
-[![Private message settings](https://i.imgur.com/np1PqN6b.png)](https://i.imgur.com/np1PqN6.png){:data-rel="lightcase:preview"}
-[![Signature settings](https://i.imgur.com/aEKJxWRb.png)](https://i.imgur.com/aEKJxWR.png){:data-rel="lightcase:preview"}
-[![Post group permissions](https://i.imgur.com/eiJJvbMb.png)](https://i.imgur.com/eiJJvbM.png){:data-rel="lightcase:preview"}
-[![Profile group permissions](https://i.imgur.com/spT9zXYb.png)](https://i.imgur.com/spT9zXY.png){:data-rel="lightcase:preview"}
-[![Private messages group permissions](https://i.imgur.com/YXcNxXKb.png)](https://i.imgur.com/YXcNxXK.png){:data-rel="lightcase:preview"}
-[![Forum permissions](https://i.imgur.com/5GIQpMVb.png)](https://i.imgur.com/5GIQpMV.png){:data-rel="lightcase:preview"}
-[![User posting defaults](https://i.imgur.com/zWhjOfVb.png)](https://i.imgur.com/zWhjOfV.png){:data-rel="lightcase:preview"}
-[![Markdown post](https://i.imgur.com/kba871fb.png)](https://i.imgur.com/kba871f.png){:data-rel="lightcase:preview"}
-[![Markdown private message](https://i.imgur.com/HGvlwhIb.png)](https://i.imgur.com/HGvlwhI.png){:data-rel="lightcase:preview"}
-[![Markdown signature](https://i.imgur.com/svBmgYXb.png)](https://i.imgur.com/svBmgYX.png){:data-rel="lightcase:preview"}
-[![Posting editor option](https://i.imgur.com/1Z7CDDrb.png)](https://i.imgur.com/1Z7CDDr.png){:data-rel="lightcase:preview"}
-[![Task list](https://i.imgur.com/slz1Z9Yb.png)](https://i.imgur.com/slz1Z9Y.png){:data-rel="lightcase:preview"}
+[![Board features](https://i.imgur.com/PSGGuM3b.png)](https://i.imgur.com/PSGGuM3.png){:data-fslightbox="preview"}
+[![Post settings](https://i.imgur.com/qYZ7JBCb.png)](https://i.imgur.com/qYZ7JBC.png){:data-fslightbox="preview"}
+[![Private message settings](https://i.imgur.com/np1PqN6b.png)](https://i.imgur.com/np1PqN6.png){:data-fslightbox="preview"}
+[![Signature settings](https://i.imgur.com/aEKJxWRb.png)](https://i.imgur.com/aEKJxWR.png){:data-fslightbox="preview"}
+[![Post group permissions](https://i.imgur.com/eiJJvbMb.png)](https://i.imgur.com/eiJJvbM.png){:data-fslightbox="preview"}
+[![Profile group permissions](https://i.imgur.com/spT9zXYb.png)](https://i.imgur.com/spT9zXY.png){:data-fslightbox="preview"}
+[![Private messages group permissions](https://i.imgur.com/YXcNxXKb.png)](https://i.imgur.com/YXcNxXK.png){:data-fslightbox="preview"}
+[![Forum permissions](https://i.imgur.com/5GIQpMVb.png)](https://i.imgur.com/5GIQpMV.png){:data-fslightbox="preview"}
+[![User posting defaults](https://i.imgur.com/zWhjOfVb.png)](https://i.imgur.com/zWhjOfV.png){:data-fslightbox="preview"}
+[![Markdown post](https://i.imgur.com/kba871fb.png)](https://i.imgur.com/kba871f.png){:data-fslightbox="preview"}
+[![Markdown private message](https://i.imgur.com/HGvlwhIb.png)](https://i.imgur.com/HGvlwhI.png){:data-fslightbox="preview"}
+[![Markdown signature](https://i.imgur.com/svBmgYXb.png)](https://i.imgur.com/svBmgYX.png){:data-fslightbox="preview"}
+[![Posting editor option](https://i.imgur.com/1Z7CDDrb.png)](https://i.imgur.com/1Z7CDDr.png){:data-fslightbox="preview"}
+[![Task list](https://i.imgur.com/slz1Z9Yb.png)](https://i.imgur.com/slz1Z9Y.png){:data-fslightbox="preview"}
 
 *(Click to view in full size)*
 

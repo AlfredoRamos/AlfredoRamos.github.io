@@ -55,18 +55,5 @@
 				"cdn": null
 			}
 		]
-	},
-	{
-		"group": "lightcase",
-		"files": [
-			{
-				"name": "lightcase",
-				"version": "2.5.0",
-				"path": "css",
-				"minified": true,
-				"cdn": "cdnjs",
-				"integrity": "sha384-jG6I54lQOGf7uZjliUGfGFWUMwuq8NQiuBrWu9qEUEh7ARsUVTMD1XcRSev3dKDC"
-			}
-		]
 	}
 ]

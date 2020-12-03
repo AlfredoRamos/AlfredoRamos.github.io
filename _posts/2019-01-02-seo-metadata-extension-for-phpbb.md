@@ -4,8 +4,7 @@ date: 2019-01-02 19:52:50 -0500
 last_modified_at: 2020-07-08 18:07:13 -0500
 category: phpbb
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
-stylesheets: [lightcase]
-scripts: [lightcase]
+scripts: [fslightbox]
 image: https://i.imgur.com/8rg2fKI.png
 image_type: png
 image_width: 773
@@ -102,9 +101,9 @@ If available, it will dynamically generate and include the following data inside
 
 ### Preview
 
-[![Global settings](https://i.imgur.com/8rg2fKIb.png)](https://i.imgur.com/8rg2fKI.png){:data-rel="lightcase:preview"}
-[![Open Graph, Twitter Cards and JSON-LD settings](https://i.imgur.com/042NB5Fb.png)](https://i.imgur.com/042NB5F.png){:data-rel="lightcase:preview"}
-[![Generated markup](https://i.imgur.com/xKswZUHb.png)](https://i.imgur.com/xKswZUH.png){:data-rel="lightcase:preview"}
+[![Global settings](https://i.imgur.com/8rg2fKIb.png)](https://i.imgur.com/8rg2fKI.png){:data-fslightbox="preview"}
+[![Open Graph, Twitter Cards and JSON-LD settings](https://i.imgur.com/042NB5Fb.png)](https://i.imgur.com/042NB5F.png){:data-fslightbox="preview"}
+[![Generated markup](https://i.imgur.com/xKswZUHb.png)](https://i.imgur.com/xKswZUH.png){:data-fslightbox="preview"}
 
 *(Click to view in full size)*
 

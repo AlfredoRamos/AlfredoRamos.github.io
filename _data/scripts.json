@@ -1,17 +1,5 @@
 [
 	{
-		"group": "jquery",
-		"files": [
-			{
-				"name": "jquery.slim",
-				"version": "3.5.1",
-				"minified": true,
-				"cdn": "cdnjs",
-				"integrity": "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			}
-		]
-	},
-	{
 		"group": "twitter-bootstrap",
 		"files": [
 			{
@@ -25,20 +13,12 @@
 		]
 	},
 	{
-		"group": "lightcase",
+		"group": "fslightbox",
 		"files": [
 			{
-				"name": "lightcase",
-				"version": "2.5.0",
-				"path": "js",
-				"minified": true,
-				"cdn": "cdnjs",
-				"integrity": "sha384-LJSSwrbrfIsOo3p6sCohLJKITSepfjQs/+7JV4osRQ8sDTGH9d2sSYcfjjMazxCv"
-			},
-			{
-				"name": "lightcase.init",
+				"name": "fslightbox",
 				"version": null,
-				"minified": false,
+				"minified": true,
 				"cdn": null
 			}
 		]

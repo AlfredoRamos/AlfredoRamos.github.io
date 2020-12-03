@@ -4,8 +4,7 @@ date: 2017-05-13 18:29:16 -0500
 last_modified_at: 2020-06-25 10:58:00 -0500
 category: phpbb
 tags: [phpbb-extension, imgur, bbcode]
-stylesheets: [lightcase]
-scripts: [lightcase]
+scripts: [fslightbox]
 image: https://i.imgur.com/xxCEse7.png
 image_type: png
 image_width: 545
@@ -42,12 +41,12 @@ If the upload is successful it will add the image in the topic, private message 
 
 ### Preview
 
-[![ACP settings](https://i.imgur.com/FDKbWoqb.png)](https://i.imgur.com/FDKbWoq.png){:data-rel="lightcase:preview"}
-[![ACP settings API](https://i.imgur.com/xxCEse7b.png)](https://i.imgur.com/xxCEse7.png){:data-rel="lightcase:preview"}
-[![ACP output settings](https://i.imgur.com/CKcYnY2b.png)](https://i.imgur.com/CKcYnY2.png){:data-rel="lightcase:preview"}
-[![Topic](https://i.imgur.com/8C7sMR2b.png)](https://i.imgur.com/8C7sMR2.png){:data-rel="lightcase:preview"}
-[![Output menu](https://i.imgur.com/YZNmOxeb.png)](https://i.imgur.com/YZNmOxe.png){:data-rel="lightcase:preview"}
-[![Output tab](https://i.imgur.com/a7UUoEYb.png)](https://i.imgur.com/a7UUoEY.png){:data-rel="lightcase:preview"}
+[![ACP settings](https://i.imgur.com/FDKbWoqb.png)](https://i.imgur.com/FDKbWoq.png){:data-fslightbox="preview"}
+[![ACP settings API](https://i.imgur.com/xxCEse7b.png)](https://i.imgur.com/xxCEse7.png){:data-fslightbox="preview"}
+[![ACP output settings](https://i.imgur.com/CKcYnY2b.png)](https://i.imgur.com/CKcYnY2.png){:data-fslightbox="preview"}
+[![Topic](https://i.imgur.com/8C7sMR2b.png)](https://i.imgur.com/8C7sMR2.png){:data-fslightbox="preview"}
+[![Output menu](https://i.imgur.com/YZNmOxeb.png)](https://i.imgur.com/YZNmOxe.png){:data-fslightbox="preview"}
+[![Output tab](https://i.imgur.com/a7UUoEYb.png)](https://i.imgur.com/a7UUoEY.png){:data-fslightbox="preview"}
 
 *(Click to view in full size)*
 

@@ -4,8 +4,7 @@ date: 2017-05-11 18:52:54 -0500
 last_modified_at: 2020-06-25 10:54:00 -0500
 category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
-stylesheets: [lightcase]
-scripts: [lightcase]
+scripts: [fslightbox]
 image: https://i.imgur.com/mBCEbSf.png
 image_type: png
 image_width: 660
@@ -34,10 +33,10 @@ It will automatically lock old topics using phpBB's cron functionality.
 
 ### Preview
 
-[![Forums](https://i.imgur.com/aBjwVBpb.png)](https://i.imgur.com/aBjwVBp.png){:data-rel="lightcase:preview"}
-[![Forum settings](https://i.imgur.com/mBCEbSfb.png)](https://i.imgur.com/mBCEbSf.png){:data-rel="lightcase:preview"}
-[![Topics loked](https://i.imgur.com/uM7dkoGb.png)](https://i.imgur.com/uM7dkoG.png){:data-rel="lightcase:preview"}
-[![Admin log](https://i.imgur.com/PIOhYf7b.png)](https://i.imgur.com/PIOhYf7.png){:data-rel="lightcase:preview"}
+[![Forums](https://i.imgur.com/aBjwVBpb.png)](https://i.imgur.com/aBjwVBp.png){:data-fslightbox="preview"}
+[![Forum settings](https://i.imgur.com/mBCEbSfb.png)](https://i.imgur.com/mBCEbSf.png){:data-fslightbox="preview"}
+[![Topics loked](https://i.imgur.com/uM7dkoGb.png)](https://i.imgur.com/uM7dkoG.png){:data-fslightbox="preview"}
+[![Admin log](https://i.imgur.com/PIOhYf7b.png)](https://i.imgur.com/PIOhYf7.png){:data-fslightbox="preview"}
 
 *(Click to view in full size)*
 
