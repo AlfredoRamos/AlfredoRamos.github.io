@@ -1,7 +1,7 @@
 .list {
 	&-with-separator {
 		> li::after {
-			margin-left: 0.5rem;
+			margin-left: 0.25rem;
 			content: '•';
 		}
 
@@ -9,9 +9,5 @@
 			margin-left: 0;
 			content: '';
 		}
-	}
-
-	&-group-item {
-		background-color: transparent;
 	}
 }

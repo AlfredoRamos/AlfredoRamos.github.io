@@ -1,44 +1,24 @@
 [
 	{
-		"group": "jquery",
-		"files": [
-			{
-				"name": "jquery.slim",
-				"version": "3.5.1",
-				"minified": true,
-				"cdn": "cdnjs",
-				"integrity": "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			}
-		]
-	},
-	{
 		"group": "twitter-bootstrap",
 		"files": [
 			{
 				"name": "bootstrap",
-				"version": "4.5.3",
+				"version": "5.0.0-alpha3",
 				"path": "js",
 				"minified": true,
 				"cdn": "cdnjs",
-				"integrity": "sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+				"integrity": "sha512-Qpek3fOFi+uCW8qSf92lltHNMRMHmLISYDIRFI4qgNV2U28+4Zc3EZC8szMMeVI9KA3zEZFtIP8gt41Pekd29w=="
 			}
 		]
 	},
 	{
-		"group": "lightcase",
+		"group": "fslightbox",
 		"files": [
 			{
-				"name": "lightcase",
-				"version": "2.5.0",
-				"path": "js",
-				"minified": true,
-				"cdn": "cdnjs",
-				"integrity": "sha384-LJSSwrbrfIsOo3p6sCohLJKITSepfjQs/+7JV4osRQ8sDTGH9d2sSYcfjjMazxCv"
-			},
-			{
-				"name": "lightcase.init",
+				"name": "fslightbox",
 				"version": null,
-				"minified": false,
+				"minified": true,
 				"cdn": null
 			}
 		]

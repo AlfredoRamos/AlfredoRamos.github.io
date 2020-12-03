@@ -11,7 +11,7 @@
 			{%- assign network_icon = network[0] | social_network_icon -%}
 			{%- if network_url contains 'https://' or network_url contains 'http://' %}
 			<li class="list-inline-item">
-				<a href="{{ network_url }}" title="{{ network_title }}" target="_blank" rel="external noopener noreferrer" class="text-muted"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span></a>
+				<a href="{{ network_url }}" title="{{ network_title }}" target="_blank" rel="external noopener noreferrer" class="text-muted"><span class="iconify social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span></a>
 			</li>
 			{%- endif %}
 			{%- endfor %}

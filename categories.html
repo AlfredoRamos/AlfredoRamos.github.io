@@ -8,7 +8,7 @@ description: A collection of posts listed by category.
 <ul class="list-inline">
 	{%- for category in site.categories %}
 	<li class="list-inline-item">
-		<a href="{{ page.permalink | append: category.first | append: '/' | uri_escape | relative_url }}" class="badge badge-primary">
+		<a href="{{ page.permalink | append: category.first | append: '/' | uri_escape | relative_url }}" class="badge bg-primary text-white">
 			{{ category.first | escape}}
 		</a>
 	</li>

@@ -8,7 +8,7 @@ description: A collection of posts listed by tag.
 <ul class="list-inline">
 	{%- for tag in site.tags %}
 	<li class="list-inline-item">
-		<a href="{{ page.permalink | append: tag.first | append: '/' | uri_escape | relative_url }}" class="badge badge-primary">
+		<a href="{{ page.permalink | append: tag.first | append: '/' | uri_escape | relative_url }}" class="badge bg-primary text-white">
 			{{ tag.first | escape}}
 		</a>
 	</li>

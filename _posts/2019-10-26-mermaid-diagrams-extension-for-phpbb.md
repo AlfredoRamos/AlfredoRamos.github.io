@@ -4,8 +4,7 @@ date: 2019-10-26 19:56:28 -0500
 last_modified_at: 2020-07-08 00:11:46 -0500
 category: phpbb
 tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
-stylesheets: [lightcase]
-scripts: [lightcase]
+scripts: [fslightbox]
 image: https://i.imgur.com/iHEDfxQ.png
 image_type: png
 image_width: 882
@@ -43,13 +42,13 @@ It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate
 
 ### Preview
 
-[![Flowchart](https://i.imgur.com/5jhoiqgb.png)](https://i.imgur.com/5jhoiqg.png){:data-rel="lightcase:preview"}
-[![Sequence diagram](https://i.imgur.com/QPVhPuhb.png)](https://i.imgur.com/QPVhPuh.png){:data-rel="lightcase:preview"}
-[![Gantt diagram](https://i.imgur.com/C1qOugrb.png)](https://i.imgur.com/C1qOugr.png){:data-rel="lightcase:preview"}
-[![Class diagram](https://i.imgur.com/iHEDfxQb.png)](https://i.imgur.com/iHEDfxQ.png){:data-rel="lightcase:preview"}
- [![Entity relationship diagram](https://i.imgur.com/jbZzc2Pb.png)](https://i.imgur.com/jbZzc2P.png){:data-rel="lightcase:preview"}
-[![State diagram](https://i.imgur.com/hDGmUm9b.png)](https://i.imgur.com/hDGmUm9.png){:data-rel="lightcase:preview"}
-[![Pie chart](https://i.imgur.com/WP7uiQwb.png)](https://i.imgur.com/WP7uiQw.png){:data-rel="lightcase:preview"}
+[![Flowchart](https://i.imgur.com/5jhoiqgb.png)](https://i.imgur.com/5jhoiqg.png){:data-fslightbox="preview"}
+[![Sequence diagram](https://i.imgur.com/QPVhPuhb.png)](https://i.imgur.com/QPVhPuh.png){:data-fslightbox="preview"}
+[![Gantt diagram](https://i.imgur.com/C1qOugrb.png)](https://i.imgur.com/C1qOugr.png){:data-fslightbox="preview"}
+[![Class diagram](https://i.imgur.com/iHEDfxQb.png)](https://i.imgur.com/iHEDfxQ.png){:data-fslightbox="preview"}
+ [![Entity relationship diagram](https://i.imgur.com/jbZzc2Pb.png)](https://i.imgur.com/jbZzc2P.png){:data-fslightbox="preview"}
+[![State diagram](https://i.imgur.com/hDGmUm9b.png)](https://i.imgur.com/hDGmUm9.png){:data-fslightbox="preview"}
+[![Pie chart](https://i.imgur.com/WP7uiQwb.png)](https://i.imgur.com/WP7uiQw.png){:data-fslightbox="preview"}
 
 *(Click to view in full size)*
 

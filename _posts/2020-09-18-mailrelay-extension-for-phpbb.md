@@ -4,8 +4,7 @@ date: 2020-09-18 00:48:17 -0500
 last_modified_at: 2020-09-23 15:34:32 -0500
 category: phpbb
 tags: [phpbb-extension, mailrelay, email, marketing]
-stylesheets: [lightcase]
-scripts: [lightcase]
+scripts: [fslightbox]
 image: https://i.imgur.com/mgFGzBe.jpg
 image_type: png
 image_width: 1280
