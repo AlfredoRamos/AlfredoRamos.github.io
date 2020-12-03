@@ -14,7 +14,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout source
+        uses: actions/checkout@master
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
@@ -33,20 +34,21 @@ jobs:
           bundle config path ~/.gem
           bundle install --jobs 4 --retry 3
           gem cleanup
+      - name: Test SCSS
+        run: bundle exec rake scss_lint
+      - name: Test Ruby
+        run: bundle exec rake rubocop
       - name: Test Jekyll
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
         run: bundle exec jekyll doctor
-      - name: Test Ruby
-        run: bundle exec rake rubocop
-      - name: Test SCSS
-        run: bundle exec rake scss_lint
   deploy:
     if: ${{ github.event_name == 'push' && success() }}
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout source
+        uses: actions/checkout@master
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
