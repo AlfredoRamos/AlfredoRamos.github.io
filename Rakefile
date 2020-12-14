@@ -7,10 +7,13 @@ require 'pathname'
 require 'to_slug'
 require 'scss_lint/rake_task'
 require 'rubocop/rake_task'
+require 'net/http'
+require 'oj'
 
 SCSSLint::RakeTask.new
-
 RuboCop::RakeTask.new
+
+Rake::TaskManager.record_task_metadata = true
 
 namespace :new do
   # Base content
@@ -128,5 +131,89 @@ namespace :new do
   task :page do
     Rake::Task['new:base'].reenable
     Rake::Task['new:base'].invoke(type: 'page')
+  end
+end
+
+namespace :cache do
+  # Clear
+  desc 'Clear CloudFlare cache'
+  task :clear do |t|
+    missing = []
+
+    %w[CLOUDFLARE_API_ZONE_ID CLOUDFLARE_API_TOKEN].each do |name|
+      missing.push(name) unless ENV.key?(name) && !ENV.fetch(name, '').empty?
+    end
+
+    unless missing.empty?
+      Jekyll.logger.abort_with format(
+        'Missing environment variables: %<vars>s',
+        vars: missing.join(', ')
+      )
+    end
+
+    zone_id = ENV.fetch('CLOUDFLARE_API_ZONE_ID', '')
+    token = ENV.fetch('CLOUDFLARE_API_TOKEN', '')
+
+    invalid = []
+    invalid.push('CLOUDFLARE_API_ZONE_ID') unless zone_id.match?(%r[^\w{32}$])
+    invalid.push('CLOUDFLARE_API_TOKEN') unless token.match?(%r[^[\w\-]{40}$])
+
+    unless invalid.empty?
+      Jekyll.logger.abort_with format(
+        'Invalid values for: %<vars>s',
+        vars: invalid.join(', ')
+      )
+    end
+
+    uri = URI(format(
+      'https://api.cloudflare.com/client/v4/zones/%<zone_id>s/purge_cache',
+      zone_id: zone_id
+    ))
+    request = Net::HTTP::Post.new(uri)
+    request['Content-Type'] = 'application/json'
+    request['Authorization'] = format('Bearer %<token>s', token: token)
+    request.body = '{"purge_everything": true}'
+
+    response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) { |http| http.request(request) }
+    json = Oj.safe_load(response.body)
+
+    Jekyll.logger.info(format('%<topic>s:', topic: t.comment), 'Success') unless json['success'] == false
+
+    errors = []
+
+    unless response.is_a?(Net::HTTPSuccess)
+      errors.push(format(
+        'HTTP/%<http_version>s %<status_code>s %<message>s',
+        http_version: response.http_version,
+        status_code: response.code,
+        message: response.message
+      ))
+
+      json['errors'].each do |err|
+        errors.push(format(
+          '[%<error_code>s] %<error_message>s',
+          error_code: err['code'],
+          error_message: err['message']
+        ))
+
+        next unless err.key?('error_chain')
+
+        err['error_chain'].each do |e|
+          errors.push(format(
+            '[%<error_code>s] %<error_message>s',
+            error_code: e['code'],
+            error_message: e['message']
+          ))
+        end
+      end
+
+      unless errors.empty?
+        Jekyll.logger.abort_with format(
+          'Errors:%<felem>s%<errors>s',
+          errors: errors.join("\n\t- "),
+          felem: "\n\t- "
+        )
+      end
+    end
   end
 end

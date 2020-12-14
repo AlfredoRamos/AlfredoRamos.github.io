@@ -1,12 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.3.4)
+    activesupport (6.1.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.2, >= 2.2.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
@@ -93,6 +93,7 @@ GEM
     octokit (4.19.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
+    oj (3.10.16)
     parallel (1.20.1)
     parser (2.7.2.0)
       ast (~> 2.4.1)
@@ -105,7 +106,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.4)
-    rouge (3.25.0)
+    rouge (3.26.0)
     rubocop (0.80.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -136,10 +137,9 @@ GEM
       sass (~> 3.5, >= 3.5.5)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
     to_slug (1.0.8)
-    tzinfo (1.2.8)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.3)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (1.6.1)
     zeitwerk (2.4.2)
 
@@ -157,6 +157,7 @@ DEPENDENCIES
   jemoji
   mini_racer
   minima
+  oj
   rake
   rubocop
   rubocop-jekyll (~> 0.11.0)
