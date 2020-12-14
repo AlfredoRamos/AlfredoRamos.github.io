@@ -18,6 +18,7 @@ group :development do
   gem 'dotenv'
   gem 'jemoji'
   gem 'mini_racer'
+  gem 'oj'
   gem 'rake'
   gem 'to_slug'
 end
