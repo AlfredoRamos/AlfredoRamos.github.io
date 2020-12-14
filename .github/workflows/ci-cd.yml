@@ -12,6 +12,8 @@ on:
 
 jobs:
   test:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    name: CI
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
@@ -43,7 +45,8 @@ jobs:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
         run: bundle exec jekyll doctor
   deploy:
-    if: ${{ github.event_name == 'push' && success() }}
+    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && github.event_name == 'push' && success() }}
+    name: CD
     needs: test
     runs-on: ubuntu-latest
     steps:
@@ -80,3 +83,6 @@ jobs:
           publish_branch: 'gh-pages'
           cname: alfredoramos.mx
           force_orphan: true
+      - name: Clear CloudFlare cache
+        if: ${{ !contains(github.event.head_commit.message, '[skip cache]') && success() }}
+        run: bundle exec cache:clear
