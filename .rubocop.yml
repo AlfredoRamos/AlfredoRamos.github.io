@@ -40,3 +40,8 @@ Layout/LineLength:
 
 Layout/FirstArgumentIndentation:
   EnforcedStyle: consistent
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - '.git/**/*'
