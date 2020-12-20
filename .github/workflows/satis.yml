@@ -1,9 +1,6 @@
 name: Satis
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     types:
       - opened
@@ -11,13 +8,17 @@ on:
       - reopened
   schedule:
     # Every month (first day at 00:00)
-    - cron: '0 * * * *'  #'0 0 1 * *'
+    - cron: '*/5 * * * *'  #'0 0 1 * *'
 
 env:
   BRANCH: satis
   HUB_PROTOCOL: https
   GITHUB_USER: ${{ github.actor }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+  GITHUB_NAME: 'Alfredo Ramos'
+  GITHUB_EMAIL: '4165935+AlfredoRamos@users.noreply.github.com'
+  GIT_COMMIT_TITLE: 'Update Satis repository'
+  GIT_COMMIT_BODY: ':robot: Automated updates for my public phpBB extensions Satis repository.'
 
 jobs:
   update:
@@ -69,13 +70,13 @@ jobs:
         if: ${{ steps.git-files.outputs.changed > 0 }}
         id: git-commit
         run: |
-          git config --local --replace-all user.name 'Alfredo Ramos'
-          git config --local --replace-all user.email '4165935+AlfredoRamos@users.noreply.github.com'
-          git commit -qam '[satis] Update repository'
+          git config --local --replace-all user.name "${{ env.GITHUB_NAME }}"
+          git config --local --replace-all user.email "${{ env.GITHUB_EMAIL }}"
+          git commit -qam "[${{ env.BRANCH }}] ${{ env.GIT_COMMIT_TITLE }}"
           git push origin -q "${{ env.BRANCH }}"
-          echo "::set-output name=pr_exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep 'Update Satis repository' | wc -l)"
+          echo "::set-output name=pr_exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
       - name: Send pull request
         if: ${{ steps.git-files.outputs.changed > 0 && steps.git-commit.outputs.pr_exists == 0 }}
         run: |
-          pull_msg="$(printf 'Update Satis repository\n\n:robot: Automated updates for my public phpBB extensions Satis repository.')"
-          hub pull-request -r "${{ env.GITHUB_USER }}" --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
+          pull_msg="$(printf '${{ env.GIT_COMMIT_TITLE }}\n\n${{ env.GIT_COMMIT_BODY }}')"
+          hub pull-request -p -b master -h "${{ env.BRANCH }}" --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
