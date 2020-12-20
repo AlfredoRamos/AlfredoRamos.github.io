@@ -1,11 +1,6 @@
 name: Satis
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
   schedule:
     # Every month (first day at 00:00)
     - cron: '*/5 * * * *'  #'0 0 1 * *'
