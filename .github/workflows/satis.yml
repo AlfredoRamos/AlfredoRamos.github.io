@@ -3,7 +3,7 @@ name: Satis
 on:
   schedule:
     # Every month (first day at 00:00)
-    - cron: '*/5 * * * *'  #'0 0 1 * *'
+    - cron: '0 0 1 * *'
 
 env:
   BRANCH: satis
@@ -49,8 +49,22 @@ jobs:
           ssh-private-key: ${{ secrets.SATIS_SSH_KEY }}
       - name: Sync ${{ env.BRANCH }} branch
         run: |
-          git checkout -B "${{ env.BRANCH }}"
-          hub sync
+          remote_exists=$(git ls-remote --exit-code -h origin ${{ env.BRANCH }} | wc -l)
+          local_exists=$(git branch --list satis | wc -l)
+          if (( $local_exists > 0 && $remote_exists > 0 ))
+          then
+            git checkout ${{ env.BRANCH }}
+            git merge --ff-only origin/${{ env.BRANCH }}
+          elif (( $local_exists == 0 && $remote_exists > 0 ))
+          then
+            git checkout -b ${{ env.BRANCH }} origin/${{ env.BRANCH }}
+          elif (( $local_exists > 0 && $remote_exists == 0 ))
+          then
+            git branch -qD ${{ env.BRANCH }}
+            git checkout -b ${{ env.BRANCH }}
+          else
+            git checkout -b ${{ env.BRANCH }}
+          fi
       - name: Install dependencies
         run: composer update -n --prefer-dist --no-progress
       - name: Update Satis repository
@@ -68,10 +82,10 @@ jobs:
           git config --local --replace-all user.name "${{ env.GITHUB_NAME }}"
           git config --local --replace-all user.email "${{ env.GITHUB_EMAIL }}"
           git commit -qam "[${{ env.BRANCH }}] ${{ env.GIT_COMMIT_TITLE }}"
-          git push origin -q "${{ env.BRANCH }}"
+          git push origin -q ${{ env.BRANCH }}
           echo "::set-output name=pr_exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
       - name: Send pull request
         if: ${{ steps.git-files.outputs.changed > 0 && steps.git-commit.outputs.pr_exists == 0 }}
         run: |
           pull_msg="$(printf '${{ env.GIT_COMMIT_TITLE }}\n\n${{ env.GIT_COMMIT_BODY }}')"
-          hub pull-request -p -b master -h "${{ env.BRANCH }}" --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
+          hub pull-request -p -b master -h ${{ env.BRANCH }} --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
