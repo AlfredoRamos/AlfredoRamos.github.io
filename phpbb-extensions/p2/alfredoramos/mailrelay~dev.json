@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-mailrelay.git",
                     "reference": "9527f040e3453f4d666cf259e3ddcf3312083aaf"
                 },
                 "dist": {
@@ -58,11 +58,7 @@
                     "mailrelay",
                     "mailrelay-api",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/issues"
-                }
+                ]
             }
         ]
     }

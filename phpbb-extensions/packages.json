@@ -1,9 +1,21 @@
 {
     "packages": [],
     "includes": {
-        "include/all$63bf22edc20f260c9e287545661b9045e9952309.json": {
-            "sha1": "63bf22edc20f260c9e287545661b9045e9952309"
+        "include/all$0cceb80d40a573b1ba84c6e1f2541193cbe2b252.json": {
+            "sha1": "0cceb80d40a573b1ba84c6e1f2541193cbe2b252"
         }
     },
-    "metadata-url": "/phpbb-extensions/p2/%package%.json"
+    "metadata-url": "/phpbb-extensions/p2/%package%.json",
+    "available-packages": [
+        "alfredoramos/autolocktopics",
+        "alfredoramos/hide",
+        "alfredoramos/imagealt",
+        "alfredoramos/imgur",
+        "alfredoramos/lazyload",
+        "alfredoramos/mailrelay",
+        "alfredoramos/markdown",
+        "alfredoramos/mermaid",
+        "alfredoramos/seometadata",
+        "alfredoramos/simplespoiler"
+    ]
 }

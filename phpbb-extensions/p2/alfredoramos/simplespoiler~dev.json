@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "2143d108a82cc2e791868e33ca594f76a0d688ea"
+                    "reference": "f4d683a1b1339d1f32d95f12e683a775518e86b0"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/2143d108a82cc2e791868e33ca594f76a0d688ea",
-                    "reference": "2143d108a82cc2e791868e33ca594f76a0d688ea",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/f4d683a1b1339d1f32d95f12e683a775518e86b0",
+                    "reference": "f4d683a1b1339d1f32d95f12e683a775518e86b0",
                     "shasum": ""
                 },
                 "require": {
@@ -59,7 +59,7 @@
                     "spoiler"
                 ],
                 "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.2",
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
                 },
                 "funding": [

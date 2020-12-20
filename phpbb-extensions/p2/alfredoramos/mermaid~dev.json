@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-mermaid.git",
                     "reference": "aaf547ce230fdb513ead8e1900c3dff9958673b0"
                 },
                 "dist": {
@@ -67,16 +67,6 @@
                     "pie-chart",
                     "sequence-diagram",
                     "state-diagram"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-mermaid/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-mermaid/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             }
         ]
