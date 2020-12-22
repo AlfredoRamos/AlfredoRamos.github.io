@@ -21,13 +21,14 @@
 						| append: file.path | append: '/' -%}
 					{%- endif -%}
 					{%- assign style_url = style_url | append: file.name -%}
-				{%- when 'githack' -%}
-					{%- if file.type != 'gist' -%}
+				{%- when 'unpkg' -%}
+					{%- assign style_url = style_url
+					| append: 'https://unpkg.com/'
+					| append: style.group | append: '@'
+					| append: file.version | append: '/' -%}
+					{%- if file.path -%}
 						{%- assign style_url = style_url
-						| append: 'https://rawcdn.githack.com/' -%}
-					{%- else -%}
-						{%- assign style_url = style_url
-						| append: 'https://gistcdn.githack.com/' -%}
+						| append: file.path | append: '/' -%}
 					{%- endif -%}
 					{%- assign style_url = style_url | append: file.name -%}
 				{%- else -%}
