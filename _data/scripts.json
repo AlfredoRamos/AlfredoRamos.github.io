@@ -16,10 +16,10 @@
 		"group": "fslightbox",
 		"files": [
 			{
-				"name": "fslightbox",
-				"version": null,
-				"minified": true,
-				"cdn": null
+				"name": "index",
+				"version": "3.2.2",
+				"minified": false,
+				"cdn": "unpkg"
 			}
 		]
 	},
