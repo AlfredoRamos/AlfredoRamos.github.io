@@ -12,7 +12,7 @@ pagination:
 <div class="d-flex flex-column index">
 	{% for post in paginator.posts %}
 	<article class="post position-relative d-flex flex-wrap mb-4">
-		<a href="{{ post.url | relative_url }}" class="d-block col-12 col-md-3 px-0 mr-md-3 mb-2 mb-md-0 img-container rounded border">
+		<a href="{{ post.url | relative_url }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
 			{% if post.image.size > 0 %}
 			<picture>
 				<img data-src="{{ post.image }}" class="rounded w-100 h-100 lazyload" alt="{{ post.title | escape }}">

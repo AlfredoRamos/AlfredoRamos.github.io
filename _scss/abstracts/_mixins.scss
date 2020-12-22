@@ -55,10 +55,6 @@
 		}
 	}
 
-	.navbar {
-		background-color: $bg-dark-navbar !important; // scss-lint:disable ImportantRule
-	}
-
 	.navbar-brand {
 		color: $fg-dark-body;
 	}

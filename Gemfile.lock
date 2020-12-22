@@ -20,7 +20,7 @@ GEM
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
-    ffi (1.13.1)
+    ffi (1.14.2)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     html-pipeline (2.14.0)
@@ -138,7 +138,7 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     to_slug (1.0.8)
-    tzinfo (2.0.3)
+    tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.6.1)
     zeitwerk (2.4.2)
