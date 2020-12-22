@@ -19,7 +19,8 @@
 				"name": "index",
 				"version": "3.2.2",
 				"minified": false,
-				"cdn": "unpkg"
+				"cdn": "unpkg",
+				"integrity": "sha384-sFh8m3TbjtwfWpwcoGASQm8JDR9VXW4N8VeVTpk83N4iOzB1pO9XljbzHBa2ALAv"
 			}
 		]
 	},
