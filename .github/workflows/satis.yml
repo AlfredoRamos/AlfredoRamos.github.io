@@ -77,15 +77,22 @@ jobs:
           echo "::set-output name=changed::$(git diff --name-only HEAD | wc -l)"
       - name: Commit changes
         if: ${{ steps.git-files.outputs.changed > 0 }}
-        id: git-commit
         run: |
           git config --local --replace-all user.name "${{ env.GITHUB_NAME }}"
           git config --local --replace-all user.email "${{ env.GITHUB_EMAIL }}"
           git commit -qam "[${{ env.BRANCH }}] ${{ env.GIT_COMMIT_TITLE }}"
-          git push origin -q ${{ env.BRANCH }}
-          echo "::set-output name=pr_exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
+      - name: Push changes
+        if: ${{ steps.git-files.outputs.changed > 0 }}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ env.GITHUB_TOKEN }}
+          branch: ${{ env.BRANCH }}
+      - name: Check pull requests
+        id: git-pr
+        if: ${{ steps.git-files.outputs.changed > 0 }}
+        run: echo "::set-output name=exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
       - name: Send pull request
-        if: ${{ steps.git-files.outputs.changed > 0 && steps.git-commit.outputs.pr_exists == 0 }}
+        if: ${{ steps.git-files.outputs.changed > 0 && steps.git-pr.outputs.exists == 0 }}
         run: |
           pull_msg="$(printf '${{ env.GIT_COMMIT_TITLE }}\n\n${{ env.GIT_COMMIT_BODY }}')"
           hub pull-request -p -b master -h ${{ env.BRANCH }} --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
