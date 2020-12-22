@@ -14,10 +14,6 @@ a {
 	letter-spacing: -1px;
 	font-weight: bold;
 
-	.navbar-light & {
-		color: $fg-brand;
-	}
-
 	&::before,
 	&::after {
 		color: $fg-logo;
