@@ -1,7 +1,7 @@
 ---
 title: Hide BBCode extension for phpBB
 date: 2019-09-02 16:26:38 -0500
-last_modified_at: 2020-06-25 11:36:00 -0500
+last_modified_at: 2020-12-25 13:51:00 -0500
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
 image: https://i.imgur.com/OajNWkc.png
@@ -11,7 +11,7 @@ image_height: 80
 ---
 Hide BBCode extension for phpBB.
 
-[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-hide)
+[![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-hide/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-hide/actions)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-hide.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-hide/releases)
 [![Code Quality](https://img.shields.io/codacy/grade/5de75f922b4f4eae90615728e908c1c7.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-hide/dashboard)
 [![Translation Progress](https://badges.crowdin.net/phpbb-ext-hide/localized.svg)](https://crowdin.com/project/phpbb-ext-hide)

@@ -1,7 +1,7 @@
 ---
 title: Mailrelay extension for phpBB
 date: 2020-09-18 00:48:17 -0500
-last_modified_at: 2020-09-23 15:34:32 -0500
+last_modified_at: 2020-12-25 13:53:00 -0500
 category: phpbb
 tags: [phpbb-extension, mailrelay, email, marketing]
 scripts: [fslightbox]
@@ -12,7 +12,7 @@ image_height: 640
 ---
 Mailrelay extension for phpBB.
 
-[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-mailrelay.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-mailrelay)
+[![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-mailrelay/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mailrelay/actions)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-mailrelay.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mailrelay/releases)
 [![Code Quality](https://img.shields.io/codacy/grade/4f32454baf88449b864091d05c1a14c5.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-mailrelay/dashboard)
 [![Translation Progress](https://badges.crowdin.net/phpbb-ext-mailrelay/localized.svg)](https://crowdin.com/project/phpbb-ext-mailrelay)

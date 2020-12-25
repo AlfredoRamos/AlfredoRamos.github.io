@@ -1,7 +1,7 @@
 ---
 title: Auto-lock topics extension for phpBB
 date: 2017-05-11 18:52:54 -0500
-last_modified_at: 2020-06-25 10:54:00 -0500
+last_modified_at: 2020-12-25 13:45:00 -0500
 category: phpbb
 tags: [phpbb-extension, auto-lock, cron]
 scripts: [fslightbox]
@@ -12,7 +12,7 @@ image_height: 263
 ---
 Auto-lock Topics extension for phpBB
 
-[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-auto-lock-topics.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-auto-lock-topics)
+[![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-auto-lock-topics/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/actions)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-auto-lock-topics.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/releases)
 [![Code Quality](https://img.shields.io/codacy/grade/1b2cb6aeb1214d80afbc800e31de36a0.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-auto-lock-topics/dashboard)
 [![Translation Progress](https://badges.crowdin.net/phpbb-ext-auto-lock-topics/localized.svg)](https://crowdin.com/project/phpbb-ext-auto-lock-topics)

@@ -1,7 +1,7 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14 23:53:37 -0500
-last_modified_at: 2020-06-25 10:51:00 -0500
+last_modified_at: 2020-12-25 13:44:00 -0500
 category: phpbb
 tags: [phpbb-extension, spoiler, bbcode]
 image: https://i.imgur.com/5NrtAoS.png
@@ -11,7 +11,7 @@ image_height: 117
 ---
 Simple Spoiler BBCode extension for phpBB.
 
-[![Build Status](https://img.shields.io/travis/com/AlfredoRamos/phpbb-ext-simple-spoiler.svg?style=flat-square)](https://travis-ci.com/AlfredoRamos/phpbb-ext-simple-spoiler)
+[![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-simple-spoiler/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/actions)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-simple-spoiler.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases)
 [![Code Quality](https://img.shields.io/codacy/grade/d999d79cca134f189502ad84cee17a33.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-simple-spoiler/dashboard)
 [![Translation Progress](https://badges.crowdin.net/phpbb-ext-simple-spoiler/localized.svg)](https://crowdin.com/project/phpbb-ext-simple-spoiler)
