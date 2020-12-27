@@ -1,20 +1,18 @@
 <aside class="sidebar col-lg-3">
-	{%- if site.data.team[site.github.owner.login].networks.size > 0 %}
+	{%- if site.data.team[site.github.owner_name].networks.size > 0 %}
 	<section id="about" class="widget mb-4">
 		<header class="header">
 			<h3 class="title h4">About</h3>
 		</header>
 		<div class="body">
-			{%- if site.github.owner.avatar_url %}
 			<figure class="avatar">
-				<img data-src="{{ site.github.owner.avatar_url | append: '&size=250' | uri_escape }}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
+				<img data-src="{% if site.github.owner.avatar_url %}{{ site.github.owner.avatar_url | append: '&size=250' }}{% else %}{{ site.github.owner_gravatar_url | append: '?size=250' }}{% endif %}" alt="{{ site.github.owner.name | default: site.title | escape }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
 			</figure>
-			{%- endif %}
 			{%- if site.github.owner.bio.size > 0 %}
 			<p>{{ site.github.owner.bio | escape }}</p>
 			{%- endif %}
 			<ul id="social-networks" class="list-unstyled">
-				{%- for network in site.data.team[site.github.owner.login].networks %}
+				{%- for network in site.data.team[site.github.owner_name].networks %}
 				{%- assign network_url = network[1] | social_network_url: network[0] | uri_escape -%}
 				{%- assign network_user = network[1] | escape -%}
 				{%- assign network_title = network[0] | social_network_title | escape -%}
