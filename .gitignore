@@ -6,4 +6,5 @@ _site/
 .jekyll-cache/
 .env
 composer.lock
+Gemfile.lock
 *.*~
