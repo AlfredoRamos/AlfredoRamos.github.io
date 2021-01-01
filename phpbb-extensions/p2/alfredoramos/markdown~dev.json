@@ -7,13 +7,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "30d449eebf5ee0256202c63464419fd3b06c1634"
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "8723db061aba8a9f1f5d95fd1fb278f16e3a8851"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/30d449eebf5ee0256202c63464419fd3b06c1634",
-                    "reference": "30d449eebf5ee0256202c63464419fd3b06c1634",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/8723db061aba8a9f1f5d95fd1fb278f16e3a8851",
+                    "reference": "8723db061aba8a9f1f5d95fd1fb278f16e3a8851",
                     "shasum": ""
                 },
                 "require": {
@@ -61,16 +61,6 @@
                     "phpbb",
                     "pipetables",
                     "tasklists"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.4.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             }
         ]

@@ -7,13 +7,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
-                    "reference": "87c4b96774ef36d52d05aab8dd490e12591c8ae5"
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-lazy-load.git",
+                    "reference": "1c12a5da5fbc847912e01f92cf4d13bc2c752c03"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/87c4b96774ef36d52d05aab8dd490e12591c8ae5",
-                    "reference": "87c4b96774ef36d52d05aab8dd490e12591c8ae5",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/1c12a5da5fbc847912e01f92cf4d13bc2c752c03",
+                    "reference": "1c12a5da5fbc847912e01f92cf4d13bc2c752c03",
                     "shasum": ""
                 },
                 "require": {
@@ -55,11 +55,7 @@
                     "extension",
                     "lazy-load",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load/issues"
-                }
+                ]
             }
         ]
     }

@@ -7,13 +7,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git",
-                    "reference": "9527f040e3453f4d666cf259e3ddcf3312083aaf"
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-mailrelay.git",
+                    "reference": "9ebe1334426e51747cebd5afbb9ae9e5e960c47c"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/9527f040e3453f4d666cf259e3ddcf3312083aaf",
-                    "reference": "9527f040e3453f4d666cf259e3ddcf3312083aaf",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/9ebe1334426e51747cebd5afbb9ae9e5e960c47c",
+                    "reference": "9ebe1334426e51747cebd5afbb9ae9e5e960c47c",
                     "shasum": ""
                 },
                 "require": {
@@ -58,11 +58,7 @@
                     "mailrelay",
                     "mailrelay-api",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/issues"
-                }
+                ]
             }
         ]
     }
