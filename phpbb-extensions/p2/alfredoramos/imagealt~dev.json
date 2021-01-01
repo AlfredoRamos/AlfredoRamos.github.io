@@ -7,13 +7,13 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "8fcd755366052ad489380ff3b583064ef41427b0"
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "reference": "2cd71d3a512e07631aa8b8d253516219c47d7ec3"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/8fcd755366052ad489380ff3b583064ef41427b0",
-                    "reference": "8fcd755366052ad489380ff3b583064ef41427b0",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/2cd71d3a512e07631aa8b8d253516219c47d7ec3",
+                    "reference": "2cd71d3a512e07631aa8b8d253516219c47d7ec3",
                     "shasum": ""
                 },
                 "require": {
@@ -56,16 +56,6 @@
                     "extension",
                     "image",
                     "phpbb"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/master",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             }
         ]
