@@ -3,7 +3,7 @@
 		<div class="credits">
 			&copy; 2015-{{ site.time | date: '%Y' }} <a href="{{ '/' | absolute_url }}" class="text-muted">{{ site.title | escape }}</a>
 		</div>
-		{%- if site.data.team[site.github.owner.login].networks.size > 0 %}
+		{%- if site.data.team[site.github.owner_name].networks.size > 0 %}
 		<ul class="social-networks list-inline mb-0">
 			{%- for network in site.data.team[site.github.owner.login].networks %}
 			{%- assign network_title = network[0] | social_network_title | escape -%}
