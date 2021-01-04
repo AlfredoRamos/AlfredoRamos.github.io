@@ -23,3 +23,15 @@
 		}
 	}
 }
+
+.list-related-posts {
+	.img-container {
+		height: 50px;
+	}
+
+	picture {
+		> img {
+			object-fit: cover;
+		}
+	}
+}

@@ -45,13 +45,26 @@
 			<h3 class="title h4">Related posts</h3>
 		</header>
 		<div class="body">
-			<ul class="list-related-posts list-group list-group-flush">
+			<div class="list-related-posts d-flex flex-wrap">
 				{%- for p in site.related_posts %}
-				<li class="list-group-item bg-transparent px-0 py-1">
-					<a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
-				</li>
+				<div class="d-flex flex-wrap mb-2 col-12 col-md-6 col-lg-12">
+					<a href="{{ p.url | relative_url }}" class="d-block col-2 col-md-3 me-2 img-container rounded border">
+						{% if p.image.size > 0 %}
+						<picture>
+							<img data-src="{{ p.image }}" class="rounded w-100 h-100 lazyload" alt="{{ p.title | escape }}">
+						</picture>
+						{% else %}
+						<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#55595c"></rect>
+							<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
+						</svg>
+						{% endif %}
+					</a>
+					<a href="{{ p.url | relative_url }}" class="d-block col">{{ p.title | escape }}</a>
+				</div>
 				{%- endfor %}
-			</ul>
+			</div>
 		</div>
 	</section>
 	{%- endif %}
