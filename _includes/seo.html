@@ -12,8 +12,8 @@
 {%- endif %}
 {%- if page.author %}
 {%- assign twitter = site.data.team[page.author].networks.twitter -%}
-{%- if twitter %}
-<meta name="twitter:site" content="@{{ twitter }}">
+{%- if twitter.id %}
+<meta name="twitter:site" content="@{{ twitter.id }}">
 {%- endif %}
 {%- endif %}
 {%- if site.facebook.app_id %}

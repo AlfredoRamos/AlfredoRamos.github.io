@@ -11,21 +11,7 @@
 			{%- if site.github.owner.bio.size > 0 %}
 			<p>{{ site.github.owner.bio | escape }}</p>
 			{%- endif %}
-			<ul id="social-networks" class="list-unstyled">
-				{%- for network in site.data.team[site.github.owner_name].networks %}
-				{%- assign network_url = network[1] | social_network_url: network[0] | uri_escape -%}
-				{%- assign network_user = network[1] | escape -%}
-				{%- assign network_title = network[0] | social_network_title | escape -%}
-				{%- assign network_icon = network[0] | social_network_icon -%}
-				<li>
-					{%- if network_url contains 'https://' or network_url contains 'http://' %}
-					<a href="{{ network_url }}" title="{{ network_title }}" target="_blank" rel="external noopener noreferrer"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span>{{ network_user }}</a>
-					{% else %}
-					<span title="{{ network_title }}"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span><code>{{ network_user }}</code></span>
-					{%- endif %}
-				</li>
-				{%- endfor %}
-			</ul>
+			{% include networks.html %}
 		</div>
 	</section>
 	{%- endif %}

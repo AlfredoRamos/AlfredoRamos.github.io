@@ -73,7 +73,7 @@
 		color: $fg-dark-code !important; // scss-lint:disable ImportantRule
 	}
 
-	#social-networks li > span {
+	.social-networks li > span {
 		// scss-lint:disable SelectorDepth
 		> code {
 			color: $fg-dark-body;
