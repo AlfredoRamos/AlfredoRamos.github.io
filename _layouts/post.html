@@ -10,7 +10,7 @@ layout: default
 			{% if page.author %}
 			<li class="list-inline-item">
 				<img data-src="{% if page.author == site.github.owner.login %}{{ site.github.owner.avatar_url | append: '&size=24' }}{% else %}{{ 'https://github.com/' | append: page.author | append: '.png?size=24' }}{% endif %}" alt="{{ site.data.team[page.author].name | escape }}" width="24" height="24" class="rounded me-1 lazyload">
-				<a rel="author" href="{{ page.author | social_network_url: 'github' }}" class="text-muted">{{ site.data.team[page.author].name | escape }}</a>
+				<a rel="author" href="{{ site.data.team[page.author].networks.github.href | append: site.data.team[page.author].networks.github.id | uri_escape }}" class="text-muted">{{ site.data.team[page.author].name | escape }}</a>
 			</li>
 			{% endif %}
 			<li class="list-inline-item">
