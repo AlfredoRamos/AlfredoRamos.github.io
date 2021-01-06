@@ -1,0 +1,36 @@
+{%- if site.data.team[site.github.owner_name].networks.size > 0 %}
+{%- if include.type == 'inline' -%}
+<ul class="social-networks list-inline mb-0">
+	{%- for network in site.data.team[site.github.owner_name].networks %}
+	{%- assign key = network[0] -%}
+	{%- assign value = network[1] -%}
+	{% unless value.href contains 'https://' or value.href contains 'http://' %}{% continue %}{% endunless %}
+	<li class="list-inline-item">
+		<a href="{{ value.href | append: value.id | uri_escape }}" title="{{ value.title | escape }}" class="text-muted">
+			<span class="iconify social-icon {{ key | slugify }}-icon" data-icon="{{ value.icon | escape }}"></span>
+		</a>
+	</li>
+	{%- endfor %}
+</ul>
+{%- else %}
+<ul class="social-networks list-unstyled">
+	{%- for network in site.data.team[site.github.owner_name].networks %}
+	{%- assign key = network[0] -%}
+	{%- assign value = network[1] -%}
+	<li>
+		{% if value.href contains 'https://' or value.href contains 'http://' %}
+		<a href="{{ value.href | append: value.id | uri_escape }}" title="{{ value.title | escape }}">
+			<span class="iconify inline-icon social-icon {{ key | slugify }}-icon" data-icon="{{ value.icon | escape }}"></span>
+			{{ value.id | escape }}
+		</a>
+		{% else %}
+		<span title="{{ value.title | escape }}">
+			<span class="iconify inline-icon social-icon {{ key | slugify }}-icon" data-icon="{{ value.icon | escape }}"></span>
+			<code>{{ value.id | escape }}</code>
+		</span>
+		{% endif %}
+	</li>
+	{%- endfor %}
+</ul>
+{%- endif -%}
+{%- endif %}

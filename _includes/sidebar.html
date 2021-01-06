@@ -11,21 +11,7 @@
 			{%- if site.github.owner.bio.size > 0 %}
 			<p>{{ site.github.owner.bio | escape }}</p>
 			{%- endif %}
-			<ul id="social-networks" class="list-unstyled">
-				{%- for network in site.data.team[site.github.owner_name].networks %}
-				{%- assign network_url = network[1] | social_network_url: network[0] | uri_escape -%}
-				{%- assign network_user = network[1] | escape -%}
-				{%- assign network_title = network[0] | social_network_title | escape -%}
-				{%- assign network_icon = network[0] | social_network_icon -%}
-				<li>
-					{%- if network_url contains 'https://' or network_url contains 'http://' %}
-					<a href="{{ network_url }}" title="{{ network_title }}" target="_blank" rel="external noopener noreferrer"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span>{{ network_user }}</a>
-					{% else %}
-					<span title="{{ network_title }}"><span class="iconify inline-icon social-icon {{ network[0] | slugify }}-icon" data-icon="{{ network_icon }}"></span><code>{{ network_user }}</code></span>
-					{%- endif %}
-				</li>
-				{%- endfor %}
-			</ul>
+			{% include networks.html %}
 		</div>
 	</section>
 	{%- endif %}
@@ -45,13 +31,26 @@
 			<h3 class="title h4">Related posts</h3>
 		</header>
 		<div class="body">
-			<ul class="list-related-posts list-group list-group-flush">
+			<div class="list-related-posts d-flex flex-wrap">
 				{%- for p in site.related_posts %}
-				<li class="list-group-item bg-transparent px-0 py-1">
-					<a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
-				</li>
+				<div class="d-flex flex-wrap mb-2 col-12 col-md-6 col-lg-12">
+					<a href="{{ p.url | relative_url }}" class="d-block col-2 col-md-3 me-2 img-container rounded border">
+						{% if p.image.size > 0 %}
+						<picture>
+							<img data-src="{{ p.image }}" class="rounded w-100 h-100 lazyload" alt="{{ p.title | escape }}">
+						</picture>
+						{% else %}
+						<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#55595c"></rect>
+							<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
+						</svg>
+						{% endif %}
+					</a>
+					<a href="{{ p.url | relative_url }}" class="d-block col">{{ p.title | escape }}</a>
+				</div>
 				{%- endfor %}
-			</ul>
+			</div>
 		</div>
 	</section>
 	{%- endif %}

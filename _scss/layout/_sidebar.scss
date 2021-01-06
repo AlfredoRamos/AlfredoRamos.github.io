@@ -4,7 +4,7 @@
 	}
 }
 
-#social-networks {
+.social-networks {
 	li {
 		> span {
 			// scss-lint:disable SelectorDepth, NestingDepth
@@ -20,6 +20,18 @@
 				color: $fg-body;
 				font-size: 100%;
 			}
+		}
+	}
+}
+
+.list-related-posts {
+	.img-container {
+		height: 50px;
+	}
+
+	picture {
+		> img {
+			object-fit: cover;
 		}
 	}
 }
