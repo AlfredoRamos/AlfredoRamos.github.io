@@ -20,6 +20,7 @@
 <meta name="twitter:creator" content="@{{ author_twitter.id | escape }}">
 {%- endif %}
 {%- endif %}
+<meta name="twitter:dnt" content="on">
 {%- if site.facebook.app_id %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id | escape }}">
 {%- endif %}
@@ -52,7 +53,7 @@
 {%- if page.category %}
 <meta property="article:section" content="{{ page.category | escape }}">
 {%- endif %}
-<link rel="alternate" href="{{ '/feed.atom' | absolute_url | uri_escape }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }} :: {{ site.description | escape }}">
+<link rel="alternate" href="{{ '/feed.atom' | absolute_url | uri_escape }}" type="application/atom+xml" title="Atom Feed · {{ site.title | escape }} · {{ site.description | escape }}">
 <link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url | uri_escape }}{% else %}{{ page.url | replace: 'index.html', '' | absolute_url | uri_escape }}{% endif %}">
 {%- if paginator.previous_page %}
 <link rel="prev" href="{{ paginator.previous_page_path | absolute_url | uri_escape }}">

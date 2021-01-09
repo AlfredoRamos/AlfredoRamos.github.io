@@ -3,11 +3,11 @@
 	<ul class="pagination justify-content-center">
 		{%- if paginator.previous_page %}
 		<li class="page-item">
-			<a href="{{ paginator.previous_page_path | relative_url }}" class="page-link">&laquo; Prev</a>
+			<a href="{{ paginator.previous_page_path | relative_url }}" class="page-link">« Prev</a>
 		</li>
 		{%- else %}
 		<li class="page-item disabled">
-			<span class="page-link" tabindex="-1" aria-disabled="true">&laquo; Prev</span>
+			<span class="page-link" tabindex="-1" aria-disabled="true">« Prev</span>
 		</li>
 		{%- endif %}
 		{%- for page in (1..paginator.total_pages) -%}
@@ -27,11 +27,11 @@
 		{%- endfor -%}
 		{%- if paginator.next_page %}
 		<li class="page-item">
-			<a href="{{ paginator.next_page_path | relative_url }}" class="page-link">Next &raquo;</a>
+			<a href="{{ paginator.next_page_path | relative_url }}" class="page-link">Next »</a>
 		</li>
 		{%- else %}
 		<li class="page-item disabled">
-			<span class="page-link" tabindex="-1" aria-disabled="true">Next &raquo;</span>
+			<span class="page-link" tabindex="-1" aria-disabled="true">Next »</span>
 		</li>
 		{%- endif %}
 	</ul>

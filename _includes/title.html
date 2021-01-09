@@ -13,17 +13,17 @@
 {%- if page.title.size > 0 -%}
 	{%- if page.is_homepage -%}
 		{%- assign title = title
-			| append: ' :: '
+			| append: ' • '
 			| append: site.description -%}
 	{%- else -%}
 		{% assign title = title
-			| append: ' :: '
+			| append: ' • '
 			| append: site.title - %}
 	{%- endif -%}
 {%- endif -%}
 {%- if page.url == '/' -%}
 	{%- assign title = title
-		| append: ' :: '
+		| append: ' • '
 		| append: site.description -%}
 {%- endif -%}
 {%- if include.xml.size > 0 -%}
@@ -31,4 +31,4 @@
 {%- else -%}
 	{%- assign title = title | escape -%}
 {%- endif -%}
-<title>{{ title }}</title>
+<title>{{ title | escape }}</title>
