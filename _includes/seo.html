@@ -8,27 +8,31 @@
 {%- if page.image_width > 300 and page.image_height > 157 and page.image_width >= image_height_double -%}
 {%- assign card_type = 'summary_large_image' -%}
 {%- endif %}
-<meta name="twitter:card" content="{{ card_type }}">
+<meta name="twitter:card" content="{{ card_type | escape }}">
+{%- endif %}
+{%- assign site_twitter = site.data.team[site.github.owner_name].networks.twitter -%}
+{%- if site_twitter.id %}
+<meta name="twitter:site" content="@{{ site_twitter.id | escape }}">
 {%- endif %}
 {%- if page.author %}
-{%- assign twitter = site.data.team[page.author].networks.twitter -%}
-{%- if twitter.id %}
-<meta name="twitter:site" content="@{{ twitter.id }}">
+{%- assign author_twitter = site.data.team[page.author].networks.twitter -%}
+{%- if author_twitter.id %}
+<meta name="twitter:creator" content="@{{ author_twitter.id | escape }}">
 {%- endif %}
 {%- endif %}
 {%- if site.facebook.app_id %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id | escape }}">
 {%- endif %}
-<meta property="og:locale" content="{{ page.locale | default: site.locale | default: 'en_US' }}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<meta property="og:locale" content="{{ page.locale | default: site.locale | default: 'en_US' | escape }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url | uri_escape }}">
 <meta property="og:type" content="{% if page.id %}article{% else %}website{% endif %}">
 {%- if page.title %}
-<meta property="og:title" content="{{ page.title }}">
+<meta property="og:title" content="{{ page.title | escape }}">
 {%- endif %}
 <meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 {%- if page.image %}
-<meta property="og:image" content="{{ page.image | escape_uri | absolute_url }}">
+<meta property="og:image" content="{{ page.image | absolute_url | uri_escape }}">
 {%- endif %}
 {%- if page.image_type %}
 <meta property="og:image:type" content="{{ page.image_type | remove_first: 'image/' | prepend: 'image/' | escape }}">
@@ -48,15 +52,15 @@
 {%- if page.category %}
 <meta property="article:section" content="{{ page.category | escape }}">
 {%- endif %}
-<link rel="alternate" href="{{ '/feed.atom' | absolute_url }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }} :: {{ site.description | escape }}">
-<link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url }}{% else %}{{ page.url | replace: 'index.html', '' | absolute_url }}{% endif %}">
+<link rel="alternate" href="{{ '/feed.atom' | absolute_url | uri_escape }}" type="application/atom+xml" title="Atom Feed :: {{ site.title | escape }} :: {{ site.description | escape }}">
+<link rel="canonical" href="{% if paginator.total_pages > 1 %}{{ site.paginate_path | replace: 'page-:num', '' | absolute_url | uri_escape }}{% else %}{{ page.url | replace: 'index.html', '' | absolute_url | uri_escape }}{% endif %}">
 {%- if paginator.previous_page %}
-<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
+<link rel="prev" href="{{ paginator.previous_page_path | absolute_url | uri_escape }}">
 {%- endif %}
 {%- if paginator.next_page %}
-<link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
+<link rel="next" href="{{ paginator.next_page_path | absolute_url | uri_escape }}">
 {%- endif %}
-<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<meta name="generator" content="Jekyll v{{ jekyll.version | escape }}">
 {%- if page.is_homepage and paginator.posts.size > 0 %}
 <script type="application/ld+json">
 	{
@@ -70,10 +74,10 @@
 			{
 				"@type": "BlogPosting",
 				"position": {{ forloop.index }},
-				"url": {{ post.url | absolute_url | jsonify }},
+				"url": {{ post.url | absolute_url | uri_escape | jsonify }},
 				"headline": {{ post.title | jsonify }},
 				"description": {{ post.description | default: post.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape | jsonify }}{% if post.image %},
-				"image": {{ post.image | escape_uri | absolute_url | jsonify }}{% endif %}{% if post.author %},
+				"image": {{ post.image | absolute_url | uri_escape | jsonify }}{% endif %}{% if post.author %},
 				"author": {
 					"@type": "Person",
 					"name": {{ site.data.team[post.author].name | escape | jsonify }}
@@ -93,10 +97,10 @@
 	{
 		"@context": "https://schema.org",
 		"@type": "BlogPosting",
-		"url": {{ page.url | absolute_url | jsonify }},
+		"url": {{ page.url | absolute_url | uri_escape | jsonify }},
 		"headline": {{ page.title | jsonify }},
 		"description": {{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape | jsonify }}{% if page.image %},
-		"image": {{ page.image | escape_uri | absolute_url | jsonify }}{% endif %}{% if page.author %},
+		"image": {{ page.image | absolute_url | uri_escape | jsonify }}{% endif %}{% if page.author %},
 		"author": {
 			"@type": "Person",
 			"name": {{ site.data.team[page.author].name | escape | jsonify }}
