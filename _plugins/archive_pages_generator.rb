@@ -90,8 +90,19 @@ module Jekyll
       @type = type
       @posts = posts
 
-      description = format('Posts published under the <strong>%<name>s</strong> %<type>s.', name: title, type: type)
-      description = format('Posts published in <strong>%<year>d</strong>.', year: title) if type.eql?('archive')
+      description = case type
+                    when 'archive'
+                      format(
+                        'A collection of posts published in <strong>%<year>d</strong>.',
+                        year: title
+                      )
+                    else # category, tag
+                      format(
+                        'A collection of posts published under the <strong>%<name>s</strong> %<type>s.',
+                        name: title,
+                        type: type
+                      )
+                    end
 
       process(@name)
       read_yaml(File.join(@base, '_layouts'), format('%<layout>s.html', layout: layout))
