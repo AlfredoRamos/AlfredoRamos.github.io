@@ -1,7 +1,7 @@
 ---
 title: Simple Marquee
 date: 2018-04-26 14:06:16 -0600
-last_modified_at: 2020-12-25 13:47:00 -0500
+last_modified_at: 2021-01-20 14:29:11 -0500
 category: development
 tags: [sass, marquee]
 stylesheets: [marquee]
@@ -120,7 +120,7 @@ Available slow speeds are from `sx2` to `sx5`.
 
 ##### Fast
 
-Available fast speeds are from `sx2` to `sx5`.
+Available fast speeds are from `fx2` to `fx5`.
 
 <div class="marquee marquee-speed-fx2">
 	<p class="marquee-content">Aenean feugiat mi nibh, nec congue sapien efficitur et.</p>
