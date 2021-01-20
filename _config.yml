@@ -34,6 +34,10 @@ defaults:
       is_page: true
 
 # Build settings
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: false
 theme: null
 encoding: 'utf-8'
 excerpt_separator: <!-- more -->
