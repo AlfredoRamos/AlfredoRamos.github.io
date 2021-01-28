@@ -43,8 +43,8 @@
 			"security": false
 		},
 		"1.7": {
-			"current": "1.7.0",
-			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-imgur/releases/tag/1.7.0",
+			"current": "1.7.1",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-imgur/releases/tag/1.7.1",
 			"eol": null,
 			"security": false
 		}
