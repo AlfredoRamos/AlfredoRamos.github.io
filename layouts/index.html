@@ -9,7 +9,7 @@
 <div class="d-flex flex-column index">
 	{{ range . }}
 	<article class="post overflow-hidden position-relative d-flex flex-wrap mb-4">
-		<a href="{{ .Permalink }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
+		<a href="{{ .RelPermalink }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
 			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
 				<title>Placeholder</title>
 				<rect width="100%" height="100%" fill="#55595c"></rect>
@@ -19,7 +19,7 @@
 		<div class="d-flex flex-column col-12 col-md px-0">
 			<header class="header">
 				<h2 class="title h4 mb-1">
-					<a href="{{ .Permalink }}" class="stretched-link">
+					<a href="{{ .RelPermalink }}" class="stretched-link">
 						{{ .Title }}
 					</a>
 				</h2>

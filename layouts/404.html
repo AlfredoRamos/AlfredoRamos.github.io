@@ -1,0 +1,11 @@
+{{ define "content" }}
+<div class="mb-4">
+	<header class="header">
+		<h1 class="title h3">{{ .Title }}</h1>
+	</header>
+	<div class="body">
+		<p>This page doesn't exist or has been deleted.</p>
+		<p>Return to <a href="{{ .Site.Home.RelPermalink }}">Home</a>.</p>
+	</div>
+</div>
+{{ end }}

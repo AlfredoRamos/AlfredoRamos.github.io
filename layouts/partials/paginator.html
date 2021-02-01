@@ -1,6 +1,6 @@
 {{ with $.Paginator }}
 {{ $pag := . }}
-{{ if gt $pag.TotalPages 1 -}}
+{{ if and (gt $pag.TotalPages 1) (ne $.Kind "404") -}}
 <nav>
 	<ul class="pagination justify-content-center">
 		{{ with $pag.First -}}

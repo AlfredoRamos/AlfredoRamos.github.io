@@ -1,0 +1,18 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="referrer" content="same-origin">
+	<title>
+		{{- if not .IsHome -}}
+			{{- if .Title -}}
+				{{- .Title }} • {{ .Site.Title -}}
+			{{- end -}}
+		{{- else -}}
+			{{- .Site.Title }} • {{ .Site.Params.tagline -}}
+		{{- end -}}
+	</title>
+
+	{{ partial "favicon.html" . }}
+	<!-- TODO: stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ==" crossorigin="anonymous">
+</head>

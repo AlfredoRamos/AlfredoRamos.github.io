@@ -1,6 +1,8 @@
 baseURL: 'https://alfredoramos.mx/'
-languageCode: 'en'
+languageCode: 'en-US'
 title: 'Alfredo Ramos'
+params:
+  tagline: 'A collection of personal projects'
 permalinks:
   posts: '/:title/'
   pages: '/:title/'
