@@ -1,0 +1,41 @@
+{{ define "content" }}
+{{ .Content }}
+
+<h1 class="title h4">Latest posts</h1>
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+
+{{ with $paginator.Pages }}
+<div class="d-flex flex-column index">
+	{{ range . }}
+	<article class="post overflow-hidden position-relative d-flex flex-wrap mb-4">
+		<a href="{{ .Permalink }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
+			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
+				<title>Placeholder</title>
+				<rect width="100%" height="100%" fill="#55595c"></rect>
+				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
+			</svg>
+		</a>
+		<div class="d-flex flex-column col-12 col-md px-0">
+			<header class="header">
+				<h2 class="title h4 mb-1">
+					<a href="{{ .Permalink }}" class="stretched-link">
+						{{ .Title }}
+					</a>
+				</h2>
+				<ul class="meta list-inline list-with-separator text-muted mb-1">
+					<li class="list-inline-item">
+						<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+					</li>
+					<li class="list-inline-item">
+						{{ .ReadingTime }} min read
+					</li>
+				</ul>
+			</header>
+			<div class="body excerpt">{{- .Summary | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 350 "…" -}}</div>
+		</div>
+	</article>
+	{{ end }}
+</div>
+{{ end }}
+{{ end }}

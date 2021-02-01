@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="referrer" content="same-origin">
+		<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+		<!-- TODO: stylesheets -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ==" crossorigin="anonymous">
+	</head>
+
+	<body>
+		{{ partial "navbar.html" . }}
+
+		<main class="main">
+			<div class="container">
+				<div class="row">
+					<!-- content -->
+					<section id="content" class="col-lg-9 overflow-hidden">
+						{{ block "content" . }}{{ end }}
+
+						<!-- pagination -->
+						{{ partial "paginator.html" . }}
+						<!-- pagination -->
+					</section>
+					<!-- content -->
+
+					<!-- sidebar -->
+					{{ partial "sidebar.html" . }}
+					<!-- sidebar -->
+				</div>
+			</div>
+		</main>
+
+		<!-- TODO: scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js" integrity="sha512-ZvbjbJnytX9Sa03/AcbP/nh9K95tar4R0IAxTS2gh2ChiInefr1r7EpnVClpTWUEN7VarvEsH3quvkY1h0dAFg==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha384-1N8YjIsNRRCGVDKyAhuzcypn/egF8x3HYOojJWpxKhYt/YbyYLefKrQJBGSRopcw" crossorigin="anonymous"></script>
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js" integrity="sha384-jQq64HqdQD5xg0PPkpkCOW3x8Nsfx5UT1qWOpoJxLYy6Ef+5i+8xPoAj/I3B+ZMm" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+baseURL: 'https://alfredoramos.mx/'
+languageCode: 'en'
+title: 'Alfredo Ramos'
+permalinks:
+  posts: '/:title/'
+  pages: '/:title/'
+paginate: 5
+markup:
+  highlight:
+    anchorLineNos: true
+    lineNos: true
+pygmentsUseClasses: true
+disableKinds:
+  - 'section'
+
+# theme
+#params:
+#  custom_css:
+#    - 'css/syntax.css'

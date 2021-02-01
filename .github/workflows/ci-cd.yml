@@ -20,52 +20,55 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@master
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          ruby-version: 2.7
-          bundler-cache: true
-      - name: Test SCSS
-        run: bundle exec rake scss_lint
-      - name: Test Ruby
-        run: bundle exec rake rubocop
-      - name: Test Jekyll
-        env:
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
-        run: bundle exec jekyll doctor --trace
+          hugo-version: '0.80.0'
+          extended: true
+
+      - name: Test Hugo
+        run: hugo check --verbose
+
+      - name: Build
+        run: hugo --cleanDestinationDir --i18n-warnings --minify --path-warnings --verbose
 
   deploy:
-    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && github.event_name == 'push' && success() }}
+    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && success() }}
     name: CD
     needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
         uses: actions/checkout@master
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          ruby-version: 2.7
-          bundler-cache: true
+          hugo-version: '0.80.0'
+          extended: true
+
+      - name: Setup CNAME
+        run: cp CNAME static/
+
       - name: Build site
-        env:
-          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
-        run: bundle exec jekyll build --strict_front_matter --verbose --trace
+        run: hugo --cleanDestinationDir --i18n-warnings --minify --path-warnings --verbose
+
       - name: Deploy site
         if: ${{ success() }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: 'gh-pages'
-          cname: alfredoramos.mx
+          publish_dir: ./public
+          publish_branch: 'gh-pages-test'
           force_orphan: true
-      - name: Clear CloudFlare cache
-        if: ${{ !contains(github.event.head_commit.message, '[skip cache]') && success() }}
-        env:
-          CLOUDFLARE_API_ZONE_ID: ${{ secrets.CLOUDFLARE_API_ZONE_ID }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: bundle exec rake cache:clear
+
+      #- name: Clear CloudFlare cache
+      #  if: ${{ !contains(github.event.head_commit.message, '[skip cache]') && success() }}
+      #  env:
+      #    CLOUDFLARE_API_ZONE_ID: ${{ secrets.CLOUDFLARE_API_ZONE_ID }}
+      #    CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #  run: bundle exec rake cache:clear
 
   satis:
     if: ${{ !contains(github.event.head_commit.message, '[skip satis]') && github.event_name == 'schedule' }}
@@ -87,15 +90,18 @@ jobs:
           ref: master
           token: ${{ env.GITHUB_TOKEN }}
           fetch-depth: 0
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.0
           tools: composer:v2
           coverage: none
+
       - name: Setup environment
         id: setup-env
         run: echo "::set-output name=composer-dir::$(composer config cache-files-dir)"
+
       - name: Setup Cache
         uses: actions/cache@v2
         with:
@@ -103,10 +109,12 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock', '**/composer.json') }}
           restore-keys: |
             ${{ runner.os }}-composer-
+
       - name: Load SSH key
         uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.SATIS_SSH_KEY }}
+
       - name: Sync ${{ env.BRANCH }} branch
         run: |
           remote_exists=$(git ls-remote --exit-code -h origin ${{ env.BRANCH }} | wc -l)
@@ -125,16 +133,20 @@ jobs:
           else
             git checkout -b ${{ env.BRANCH }}
           fi
+
       - name: Install dependencies
         run: composer update -n --prefer-dist --no-progress
+
       - name: Update Satis repository
         run: vendor/bin/satis build -n --skip-errors
+
       - name: Look for changes
         id: git-files
         run: |
           git add .
           git status
           echo "::set-output name=changed::$(git diff --name-only HEAD | wc -l)"
+
       - name: Commit changes
         id: git-commit
         if: ${{ steps.git-files.outputs.changed > 0 }}
@@ -144,6 +156,7 @@ jobs:
           git commit -qam "[${{ env.BRANCH }}] ${{ env.GIT_COMMIT_TITLE }}"
           git push origin -q ${{ env.BRANCH }}
           echo "::set-output name=pr-exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
+
       - name: Send pull request
         if: ${{ steps.git-files.outputs.changed > 0 && steps.git-commit.outputs.pr-exists == 0 }}
         run: |

@@ -1,4 +1,5 @@
 vendor/
+public/
 _site/
 .bundle/
 .sass-cache/
