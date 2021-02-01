@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "016fd8cc71abe1a7c596b4f91b328f12165aaa96"
+                    "reference": "6f7dbe59a167e58556571287f09db5b619f0c957"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/016fd8cc71abe1a7c596b4f91b328f12165aaa96",
-                    "reference": "016fd8cc71abe1a7c596b4f91b328f12165aaa96",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/6f7dbe59a167e58556571287f09db5b619f0c957",
+                    "reference": "6f7dbe59a167e58556571287f09db5b619f0c957",
                     "shasum": ""
                 },
                 "require": {
