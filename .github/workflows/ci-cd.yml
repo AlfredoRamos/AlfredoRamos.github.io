@@ -48,6 +48,14 @@ jobs:
       - name: Setup CNAME
         run: cp CNAME static/
 
+      - name: Setup cache
+        uses: actions/cache@v2
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
       - name: Build site
         run: hugo --cleanDestinationDir --i18n-warnings --minify --path-warnings --verbose
 
