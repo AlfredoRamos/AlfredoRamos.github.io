@@ -30,9 +30,6 @@ jobs:
       - name: Test Hugo
         run: hugo check --verbose
 
-      - name: Build
-        run: hugo --cleanDestinationDir --i18n-warnings --minify --path-warnings --verbose
-
   deploy:
     if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && success() }}
     name: CD
