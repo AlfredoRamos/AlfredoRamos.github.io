@@ -1,6 +1,10 @@
 ---
-title: "Markdown extension for phpBB"
+title: Markdown extension for phpBB
 date: 2021-01-31T17:32:04-06:00
+date: 2019-05-24T14:29:05-05:00
+lastmod: 2020-12-25T13:49:00-05:00
+categories: [phpbb]
+tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 ---
 Markdown extension for phpBB.
 

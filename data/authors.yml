@@ -1,0 +1,34 @@
+AlfredoRamos:
+  name: 'Alfredo Ramos'
+  avatar: 'https://avatars.githubusercontent.com/u/4165935?v=4'
+  networks:
+    github:
+      id: 'AlfredoRamos'
+      href: 'https://github.com/'
+      title: 'GitHub'
+      icon: 'brandico:github'
+    gitlab:
+      id: 'AlfredoRamos'
+      href: 'https://gitlab.com/'
+      title: 'GitLab'
+      icon: 'cib:gitlab'
+    telegram:
+      id: 'AlfredoRamos'
+      href: 'https://telegram.me/'
+      title: 'Telegram'
+      icon: 'cib:telegram-plane'
+    twitter:
+      id: 'varsmx'
+      href: 'https://twitter.com/'
+      title: 'Twitter'
+      icon: 'brandico:twitter-bird'
+    crowdin:
+      id: 'AlfredoRamos'
+      href: 'https://crowdin.com/profile/'
+      title: 'Crowdin'
+      icon: 'simple-icons:crowdin'
+    discord:
+      id: 'AlfredoRamos#3527'
+      href: ''
+      title: 'Discord'
+      icon: 'cib:discord'

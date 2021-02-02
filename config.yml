@@ -3,6 +3,8 @@ languageCode: 'en-US'
 title: 'Alfredo Ramos'
 params:
   tagline: 'A collection of personal projects'
+  biography: 'I am a computer systems engineer, open source software enthusiast, passionate about Arch Linux and GNU/Linux in general.'
+  author: 'AlfredoRamos'
 permalinks:
   posts: '/:title/'
   pages: '/:title/'
@@ -12,8 +14,25 @@ markup:
     anchorLineNos: true
     lineNos: true
 pygmentsUseClasses: true
+disableHugoGeneratorInject: true
 disableKinds:
   - 'section'
+enableRobotsTXT: true
+minify:
+  minifyOutput: true
+related:
+  includeNewer: true
+  indices:
+  - name: keywords
+    weight: 100
+  - name: tags
+    weight: 80
+  - name: categories
+    weight: 60
+  - name: date
+    weight: 10
+  threshold: 80
+  toLower: true
 
 # theme
 #params:

@@ -1,10 +1,19 @@
 {{ define "content" }}
+{{- $default_author := .Param "author" -}}
+{{- $author := .Params.author | default $default_author -}}
+{{- $author := index .Site.Data.authors $author -}}
 <article class="post overflow-hidden mb-4">
 	<header class="header">
 		<h1 class="title h3">
-			<a href="{{ .Permalink }}">{{ .Title }}</a>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 		</h1>
 		<ul class="meta list-inline list-with-separator text-muted">
+			{{ with $author }}
+			<li class="list-inline-item">
+				<img data-src="{{ print .avatar "&" (querify "size" 24) }}" alt="{{ .name }}" width="24" height="24" class="rounded me-1 lazyload">
+				<a rel="author" href="{{ printf "%s%s" .networks.github.href .networks.github.id }}" class="text-muted">{{ .name }}</a>
+			</li>
+			{{ end }}
 			<li class="list-inline-item">
 				<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
 			</li>
@@ -31,7 +40,7 @@
 				<ul class="categories d-inline-block list-inline">
 					{{ range . }}
 					<li class="list-inline-item">
-						<a href="{{ print "/categories/" . "/" | urlize | relURL }}" rel="category" class="badge bg-light text-dark">{{ . }}</a>
+						<a href="{{ printf "/categories/%s/" . | urlize | relURL }}" rel="category" class="badge bg-light text-dark">{{ . }}</a>
 					</li>
 					{{ end }}
 				</ul>
@@ -43,7 +52,7 @@
 				<ul class="tags d-inline-block list-inline">
 					{{ range . }}
 					<li class="list-inline-item">
-						<a href="{{ print "/tags/" . "/" | urlize | relURL }}" rel="tag" class="badge bg-light text-dark">{{ . }}</a>
+						<a href="{{ printf "/tags/%s/" . | urlize | relURL }}" rel="tag" class="badge bg-light text-dark">{{ . }}</a>
 					</li>
 					{{ end }}
 				</ul>

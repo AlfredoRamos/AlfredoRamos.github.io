@@ -1,10 +1,9 @@
 {{ define "content" }}
-{{ .Content }}
+{{ if isset . "Content" }}{{ .Content }}{{ end }}
 
 <h1 class="title h4">Latest posts</h1>
 
-{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-
+{{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") -}}
 {{ with $paginator.Pages }}
 <div class="d-flex flex-column index">
 	{{ range . }}

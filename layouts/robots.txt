@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: {{ .Site.Home.Permalink }}sitemap.xml

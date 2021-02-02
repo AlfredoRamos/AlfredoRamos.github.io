@@ -2,7 +2,7 @@
 <div class="mb-4">
 	<header class="header">
 		<h1 class="title h3">
-			<a href="{{ .Permalink }}">
+			<a href="{{ .RelPermalink }}">
 				{{ .Title }}
 			</a>
 		</h1>
@@ -13,7 +13,7 @@
 		<ul class="list-posts">
 			{{ range .Paginator.Pages }}
 			<li>
-				<a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+				<a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</li>
 			{{ end }}
 		</ul>

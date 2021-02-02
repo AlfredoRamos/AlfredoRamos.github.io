@@ -1,10 +1,88 @@
 <aside class="sidebar col-lg-3 overflow-hidden">
+	{{- $default_author := .Param "author" -}}
+	{{- $biography := .Param "biography" -}}
+	{{- $author := .Params.author | default $default_author -}}
+	{{- $author := index .Site.Data.authors $author -}}
+	{{- $author := merge $author (dict "biography" $biography) -}}
+	{{ with $author }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
-			<h3 class="title h4">Sample widget</h3>
+			<h3 class="title h4">About</h3>
 		</header>
 		<div class="body">
-			{{ "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor, neque vitae consequat euismod, erat felis consectetur diam, in mattis nulla elit eu purus." | markdownify }}
+			{{ if isset . "avatar" }}
+			<figure class="avatar">
+				<img data-src="{{ print .avatar "&" (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
+			</figure>
+			{{ end }}
+			{{ if isset . "biography" }}{{ .biography | markdownify }}{{ end }}
+			{{ with .networks }}
+			<ul class="social-networks list-unstyled">
+				{{ range $key, $value := . }}
+				<li>
+					{{ if or (hasPrefix $value.href "http://") (hasPrefix $value.href "https://") }}
+					<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">
+						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+						{{ $value.id }}
+					</a>
+					{{ else }}
+					<span title="{{ $value.title }}">
+						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+						<code>{{ $value.id }}</code>
+					</span>
+					{{ end }}
+				</li>
+				{{ end }}
+			</ul>
+			{{ end }}
 		</div>
 	</section>
+	{{ end }}
+
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">Donate</h3>
+		</header>
+		<div class="body">
+			<p>If you like or found my work useful and want to show some appretiation, you can consider donating.</p>
+
+			<img data-src="{{ (resources.Get "images/donate.svg").RelPermalink }}" alt="PayPal - The safer, easier way to pay online!" class="img-fluid img-thumbnail d-block mx-auto mb-3 lazyload" width="150" height="150">
+
+			<p class="text-center">
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2MSPMT8HJ96A&source=url" class="btn btn-warning d-inline-block" title="PayPal - The safer, easier way to pay online!">
+					<img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" alt="Donate with PayPal">
+				</a>
+			</p>
+		</div>
+	</section>
+
+	{{ with .Site.Taxonomies.categories }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">Categories</h3>
+		</header>
+		<div class="body">
+			<div class="list-categories">
+				{{ range $key, $value := . }}
+				<a href="{{ printf "/categories/%s/" $key | urlize | relURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+	{{ end }}
+
+	{{ with .Site.Taxonomies.tags }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">Tags</h3>
+		</header>
+		<div class="body">
+			<div class="list-tags">
+				{{ range $key, $value := . }}
+				<a href="{{ printf "/tags/%s/" $key | urlize | relURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+	{{ end }}
 </aside>

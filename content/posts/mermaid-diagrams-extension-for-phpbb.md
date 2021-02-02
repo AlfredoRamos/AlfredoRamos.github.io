@@ -1,6 +1,9 @@
 ---
-title: "Mermaid Diagrams extension for phpBB"
-date: 2021-01-31T17:32:45-06:00
+title: Mermaid Diagrams extension for phpBB
+date: 2019-10-26T19:56:28-05:00
+lastmod: 2020-12-25T13:52:00-05:00
+categories: [phpbb]
+tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
 ---
 Mermaid Diagrams extension for phpBB.
 
