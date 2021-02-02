@@ -8,7 +8,7 @@ params:
 permalinks:
   posts: '/:title/'
   pages: '/:title/'
-paginate: 5
+paginate: 12
 markup:
   highlight:
     anchorLineNos: true

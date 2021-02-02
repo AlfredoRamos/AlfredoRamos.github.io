@@ -31,7 +31,7 @@ jobs:
         run: hugo check --verbose
 
   deploy:
-    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && github.event_name == 'push' && success() }}
+    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && success() }}
     name: CD
     needs: test
     runs-on: ubuntu-latest
@@ -48,16 +48,8 @@ jobs:
       - name: Setup CNAME
         run: cp CNAME static/
 
-      - name: Setup cache
-        uses: actions/cache@v2
-        with:
-          path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-hugo-
-
       - name: Build site
-        run: hugo --cleanDestinationDir --i18n-warnings --minify --path-warnings --verbose
+        run: hugo --cleanDestinationDir --i18n-warnings --path-warnings --verbose
 
       - name: Deploy site
         if: ${{ success() }}
