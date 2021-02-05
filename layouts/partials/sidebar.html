@@ -15,19 +15,19 @@
 				<img data-src="{{ print .avatar "&" (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
 			</figure>
 			{{ end }}
-			{{ if isset . "biography" }}{{ .biography | markdownify }}{{ end }}
+			{{ if isset . "biography" }}<p>{{ .biography | markdownify }}</p>{{ end }}
 			{{ with .networks }}
-			<ul class="social-networks list-unstyled">
+			<ul class="social-networks list-unstyled mb-0">
 				{{ range $key, $value := . }}
 				<li>
-					{{ if or (hasPrefix $value.href "http://") (hasPrefix $value.href "https://") }}
+					{{ if hasPrefix $value.href "http" }}
 					<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">
-						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
 						{{ $value.id }}
 					</a>
 					{{ else }}
 					<span title="{{ $value.title }}">
-						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
 						<code>{{ $value.id }}</code>
 					</span>
 					{{ end }}

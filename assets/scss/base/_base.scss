@@ -1,0 +1,45 @@
+img {
+	max-width: 100%;
+}
+
+a {
+	&,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+
+	&::before,
+	&::after {
+		color: $fg-logo;
+	}
+
+	&::before {
+		margin-right: 3px;
+		content: '{';
+	}
+
+	&::after {
+		margin-left: 3px;
+		content: '}';
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}

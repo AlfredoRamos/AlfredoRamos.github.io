@@ -1,21 +1,8 @@
----
----
 // Abstracts
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import '../scss/abstracts/variables';
 
 // Base
-@import 'base/base';
-@import 'base/dark';
+@import '../scss/base/base';
 
 // Components
-@import 'components/lists';
-@import 'components/icons';
-@import 'components/highlight';
-@import 'components/footnotes';
-
-// Layout
-@import 'layout/header';
-@import 'layout/content';
-@import 'layout/sidebar';
+@import '../scss/components/icons';
