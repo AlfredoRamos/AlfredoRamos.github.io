@@ -1,4 +1,4 @@
-{{ with $.Paginator }}
+{{ with .Paginator }}
 {{- $pag := . -}}
 {{ if and (gt $pag.TotalPages 1) (ne $.Kind "404") -}}
 <nav>

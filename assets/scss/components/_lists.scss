@@ -1,0 +1,17 @@
+.list {
+	&-with-separator {
+		> li::after {
+			margin-left: 0.25rem;
+			content: '•';
+		}
+
+		> li:last-child::after {
+			margin-left: 0;
+			content: '';
+		}
+
+		.list-inline-item:not(:last-child) {
+			margin-right: 0.25rem;
+		}
+	}
+}

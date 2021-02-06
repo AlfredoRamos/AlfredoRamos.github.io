@@ -31,7 +31,7 @@
 					</li>
 				</ul>
 			</header>
-			<div class="body excerpt">{{- .Summary | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 350 "…" -}}</div>
+			<div class="body excerpt">{{ trim (.Summary | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 350 "…") " " }}</div>
 		</div>
 	</article>
 	{{ end }}

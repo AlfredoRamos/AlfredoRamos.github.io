@@ -1,4 +1,84 @@
+{{- $description := trim (.Description | default .Summary | default .Content | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 160 "…") " " -}}
+{{- $image := .Params.image -}}
+{{- $default_author := .Param "author" -}}
+{{- $author := .Params.author | default $default_author -}}
+{{- $author := index .Site.Data.authors $author -}}
+{{- $card_type := "summary" -}}
+{{- $pag := .Paginator -}}
+<meta name="description" content="{{ $description }}">
+{{ with $image }}
+<meta name="twitter:card" content="summary_large_image">
+{{ end }}
+{{ with (index $.Site.Data.authors $default_author).networks.twitter }}
+<meta name="twitter:site" content="@{{ .id }}">
+{{ end }}
+{{ with $author.networks.twitter }}
+<meta name="twitter:creator" content="@{{ .id }}">
+{{ end }}
+<meta name="twitter:dnt" content="on">
+<meta property="og:locale" content="{{ replace (.Site.LanguageCode | default "en_US") "-" "_" }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if eq .Type "posts" }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $description }}">
+{{ with $image }}
+{{ with .url }}
+<meta property="og:image" content="{{ . }}">
+{{ end }}
+{{ with .type }}
+<meta property="og:image:type" content="{{ printf "image/%s" . }}">
+{{ end }}
+{{ with .width }}
+<meta property="og:image:width" content="{{ . }}">
+{{ end }}
+{{ with .height }}
+<meta property="og:image:height" content="{{ . }}">
+{{ end }}
+{{ end }}
+{{ with .Date }}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
+{{ end }}
+{{ with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
+{{ end }}
+{{ with .Params.categories }}
+<meta property="article:section" content="{{ index . 0 }}">
+{{ end }}
+<link rel="alternate" href="{{ "/feed.atom" | absURL }}" type="application/atom+xml" title="Atom Feed · {{ .Site.Title }}">
 {{ if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">
-{{ end -}}
+{{ end }}
 <meta name="generator" content="Hugo {{ hugo.Version }}">
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"name": "Latest posts",
+	"itemListOrder": "Descending",
+	"numberOfItems": {{ $pag.TotalNumberOfElements }},
+	"itemListElement": [
+		{{ range $key, $value := $pag.Pages }}
+		{{- $position := (add $key 1) -}}
+		{
+			"@type": "BlogPosting",
+			"position": {{ $position }},
+			"url": {{ .Permalink }},
+			"headline": {{ .Title }},
+			"description": {{ trim (.Description | default .Summary | default .Content | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 160 "…") " " }}{{ with .Params.image.url }},
+			"image": {{ . }}{{ end }}{{ with .Params.author }},
+			"author": {
+				"@type": "Person",
+				"name": {{ . }}
+			}{{ end }}{{ with .Date }},
+			"datePublished": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Lastmod }},
+			"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Params.categories }},
+			"articleSection": {{ index . 0 }}{{ end }}{{ with .Params.tags }},
+			"keywords": {{ delimit . ", " }}{{ end }}
+		}{{ if and (gt $pag.TotalNumberOfElements 1) (lt $position $pag.TotalNumberOfElements) }},{{ end }}
+		{{ end }}
+	]
+}
+</script>
+{{ end }}

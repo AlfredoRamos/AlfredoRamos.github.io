@@ -1,0 +1,21 @@
+.post {
+	.img-container,
+	.img-placeholder {
+		height: 135px;
+	}
+
+	picture {
+		> img {
+			object-fill: cover;
+		}
+	}
+}
+
+@include responsive (max-width, map-get($grid-breakpoints, md)) {
+	.post {
+		.img-container,
+		.img-placeholder {
+			height: 180px;
+		}
+	}
+}

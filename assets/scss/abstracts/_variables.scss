@@ -1,3 +1,16 @@
+/// Grid system breakpoints in pixels
+/// @type list
+$grid-breakpoints: (
+	xs: 0,
+	sm:	576px,
+	md:	768px,
+	lg:	992px,
+	xl: 1200px
+);
+
 // Foreground colors
+$fg-body: #4a4a4a;
 $fg-logo: #08c;
 $fg-donate: #dc3545;
+$fg-icon: #007bff;
+$fg-icon-hover: #0056b3;

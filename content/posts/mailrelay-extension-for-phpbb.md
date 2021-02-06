@@ -5,6 +5,11 @@ date: 2020-09-18T00:48:17-05:00
 lastmod: 2020-12-25T13:53:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, mailrelay, email, marketing]
+image:
+  url: https://i.imgur.com/mgFGzBe.jpg
+  type: jpeg
+  width: 1280
+  height: 640
 ---
 Mailrelay extension for phpBB.
 
