@@ -4,6 +4,11 @@ date: 2019-09-02T16:26:38-05:00
 lastmod: 2020-12-25T13:51:00-05:00
 category: phpbb
 tags: [phpbb-extension, hide, bbcode]
+image:
+  url: https://i.imgur.com/OajNWkc.png
+  type: png
+  width: 480
+  height: 80
 ---
 Hide BBCode extension for phpBB.
 

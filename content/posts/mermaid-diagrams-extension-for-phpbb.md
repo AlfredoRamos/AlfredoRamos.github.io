@@ -4,6 +4,11 @@ date: 2019-10-26T19:56:28-05:00
 lastmod: 2020-12-25T13:52:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
+image:
+  url: https://i.imgur.com/iHEDfxQ.png
+  type: png
+  width: 882
+  height: 610
 ---
 Mermaid Diagrams extension for phpBB.
 

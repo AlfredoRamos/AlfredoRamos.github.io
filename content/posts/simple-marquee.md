@@ -4,6 +4,11 @@ date: 2018-04-26T14:06:16-06:00
 lastmod: 2021-01-20T14:29:11-05:00
 categories: [development]
 tags: [sass, marquee]
+image:
+  url: https://i.imgur.com/qROSaDD.png
+  type: png
+  width: 1141
+  height: 587
 ---
 Simple CSS Marquee.
 

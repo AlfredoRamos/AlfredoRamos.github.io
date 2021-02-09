@@ -4,6 +4,10 @@ date: 2019-07-31T19:18:13-05:00
 lastmod: 2020-12-25T13:50:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, image-alt, bbcode, textformatter, markdown, litedown]
+image:
+  url: https://i.imgur.com/yLgDJpG.png
+  width: 1049
+  height: 246
 ---
 Image Alternate Text extension for phpBB.
 

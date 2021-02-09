@@ -4,6 +4,11 @@ date: 2017-05-13T18:29:16-05:00
 lastmod: 2020-12-25T13:46:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, imgur, bbcode]
+image:
+  url: https://i.imgur.com/xxCEse7.png
+  type: png
+  width: 545
+  height: 306
 ---
 Imgur extension for phpBB.
 
