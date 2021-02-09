@@ -1,5 +1,6 @@
 // Abstracts
 @import '../scss/abstracts/variables';
+@import '../scss/abstracts/mixins';
 
 // Base
 @import '../scss/base/base';
@@ -9,4 +10,5 @@
 @import '../scss/components/icons';
 
 // Layout
+@import '../scss/layout/content';
 @import '../scss/layout/sidebar';

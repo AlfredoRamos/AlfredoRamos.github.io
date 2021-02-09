@@ -1,6 +1,5 @@
 .post {
-	.img-container,
-	.img-placeholder {
+	.img-container {
 		height: 135px;
 	}
 
@@ -13,8 +12,7 @@
 
 @include responsive (max-width, map-get($grid-breakpoints, md)) {
 	.post {
-		.img-container,
-		.img-placeholder {
+		.img-container {
 			height: 180px;
 		}
 	}

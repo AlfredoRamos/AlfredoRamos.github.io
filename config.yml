@@ -19,7 +19,7 @@ disableKinds:
   - 'section'
 enableRobotsTXT: true
 minify:
-  minifyOutput: true
+  minifyOutput: false
 related:
   includeNewer: true
   indices:

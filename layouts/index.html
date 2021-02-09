@@ -9,11 +9,17 @@
 	{{ range . }}
 	<article class="post overflow-hidden position-relative d-flex flex-wrap mb-4">
 		<a href="{{ .RelPermalink }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
+			{{ if .Params.image.url }}
+			<picture>
+				<img data-src="{{ .Params.image.url }}" class="rounded w-100 h-100 lazyload" alt="{{ .Title }}">
+			</picture>
+			{{ else }}
 			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
 				<title>Placeholder</title>
 				<rect width="100%" height="100%" fill="#55595c"></rect>
 				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
 			</svg>
+			{{ end }}
 		</a>
 		<div class="d-flex flex-column col-12 col-md px-0">
 			<header class="header">
@@ -31,7 +37,7 @@
 					</li>
 				</ul>
 			</header>
-			<div class="body excerpt">{{ trim (.Summary | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 350 "…") " " }}</div>
+			<div class="body excerpt">{{ trim (.Summary | plainify | replaceRE "\\s+" " " | truncate 280 "…") " " | htmlUnescape | safeHTML }}</div>
 		</div>
 	</article>
 	{{ end }}
