@@ -18,7 +18,7 @@
 			{{ if isset . "biography" }}<p>{{ .biography | markdownify }}</p>{{ end }}
 			{{ with .networks }}
 			<ul class="social-networks list-unstyled mb-0">
-				{{ range $key, $value := . }}
+				{{ range $key, $value := sort . "weight" }}
 				<li>
 					{{ if hasPrefix $value.href "http" }}
 					<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">

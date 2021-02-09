@@ -6,14 +6,27 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="site-navigation">
-			<!-- TODO: pages -->
+			{{ with .Site.Data.menu }}
+			<ul class="navbar-nav me-auto">
+				{{ range . }}
+				<li class="nav-item">
+					<a class="nav-link{{ if eq $.RelPermalink (.url | relURL) }} active{{ end }}" href="{{ .url | relURL }}">
+						{{- if isset . "icon" }}
+						<span class="iconify inline-icon {{ .name | urlize }}-icon me-1" {{ printf "data-icon=%q" .icon | safeHTMLAttr }}></span>
+						{{- end }}
+						{{ .title }}
+					</a>
+				</li>
+				{{ end }}
+			</ul>
+			{{ end }}
 			<div class="form-switch dark-mode-switch ms-auto">
 				<input class="form-check-input" type="checkbox" aria-label="Toggle dark mode" title="Toggle dark mode">
 			</div>
 			<form action="https://duckduckgo.com/" target="ddg" class="form-inline my-2 my-lg-0">
 				<div class="input-group input-group-sm">
 					<input name="q" class="form-control bg-transparent border-secondary text-white" type="search" placeholder="Keywords…" title="Search with DuckDuckGo" aria-label="Search">
-					<input type="hidden" name="sites" value="{{ replaceRE "^https?://" "" .Site.Home.Permalink }}">
+					<input type="hidden" name="sites" value="{{ trim (replaceRE "^https?://" "" .Site.Home.Permalink) "/" }}">
 					<input type="hidden" name="HTTPS" value="1">
 
 					<div class="input-group-append">

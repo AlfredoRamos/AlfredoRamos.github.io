@@ -8,7 +8,7 @@
 		{{- $author := index .Site.Data.authors $author -}}
 		{{ with $author.networks }}
 		<ul class="social-networks list-inline mb-0">
-			{{ range $key, $value := . }}
+			{{ range $key, $value := sort . "weight" }}
 			{{ if hasPrefix $value.href "http" }}
 			<li class="list-inline-item">
 				<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}" class="text-muted">
