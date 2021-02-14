@@ -1,4 +1,4 @@
-{{- $description := trim (.Description | default .Summary | default .Content | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 160 "…") " " -}}
+{{- $description := trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " -}}
 {{- $image := .Params.image -}}
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
@@ -44,7 +44,9 @@
 {{- with .Params.categories }}
 <meta property="article:section" content="{{ index . 0 }}">
 {{- end }}
-<link rel="alternate" href="{{ "/feed.atom" | absURL }}" type="application/atom+xml" title="Atom Feed · {{ .Site.Title }}">
+{{- with .OutputFormats.Get "ATOM" }}
+<link rel="{{ .Rel }}" type="application/atom+xml" href="{{ .Permalink }}" title="Atom Feed · {{ $.Site.Title }}">
+{{- end }}
 {{- if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">
 {{- end }}
@@ -65,7 +67,7 @@
 			"position": {{ $position }},
 			"url": {{ .Permalink }},
 			"headline": {{ .Title }},
-			"description": {{ trim (.Description | default .Summary | default .Content | plainify | htmlUnescape | replaceRE "\\s+" " " | truncate 160 "…") " " }}{{ with .Params.image.url }},
+			"description": {{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}{{ with .Params.image.url }},
 			"image": {{ . }}{{ end }}{{ with .Params.author }},
 			"author": {
 				"@type": "Person",

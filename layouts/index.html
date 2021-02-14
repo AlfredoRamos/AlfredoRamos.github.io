@@ -6,7 +6,7 @@
 {{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") -}}
 {{ with $paginator.Pages }}
 <div class="d-flex flex-column index">
-	{{ range . }}
+	{{ range (where . "Type" "posts") }}
 	<article class="post overflow-hidden position-relative d-flex flex-wrap mb-4">
 		<a href="{{ .RelPermalink }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
 			{{ if .Params.image.url }}

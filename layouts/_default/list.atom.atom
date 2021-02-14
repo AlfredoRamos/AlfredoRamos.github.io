@@ -1,0 +1,57 @@
+{{ print "<?xml version=\"1.0\" encoding=\"utf-8\"?>"| safeHTML }}
+{{- $default_author := .Param "author" }}
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
+	<title>
+		{{- if not .IsHome -}}
+			{{- if .Title -}}
+				{{- .Title }} • {{ .Site.Title -}}
+			{{- end -}}
+		{{- else -}}
+			{{- .Site.Title }} • {{ .Site.Params.tagline -}}
+		{{- end -}}
+	</title>
+	<subtitle>{{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}</subtitle>
+	{{- with .OutputFormats.Get "ATOM" }}
+	<link rel="self" type="application/atom+xml" href="{{ .Permalink }}" />
+	{{- end }}
+	<link rel="alternate" type="text/html" href="{{ .Site.Home.Permalink }}" hreflang="{{ .Site.LanguageCode }}" />
+	<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</updated>
+	<id>{{ .Permalink }}</id>
+	{{- with (index .Site.Data.authors $default_author) }}
+	<author>
+		<name>{{ .name }}</name>
+		<uri>{{ $.Site.Home.Permalink }}</uri>
+	</author>
+	{{- end }}
+	{{- $posts := (where .Site.RegularPages "Type" "posts") -}}
+	{{- with $posts }}
+	{{- range . }}
+	<entry xml:lang="{{ .Site.LanguageCode }}">
+		<title>{{ .Title }}</title>
+		<link rel="alternate" type="text/html" href="{{ .Permalink }}" title="{{ .Title }}" />
+		<published>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</published>
+		<updated>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</updated>
+		<id>{{ .Permalink }}</id>
+		<summary type="html">{{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " ") " " }}</summary>
+		{{- $author := .Params.author | default $default_author -}}
+		{{- $author := index $.Site.Data.authors $author -}}
+		{{- with $author }}
+		<author>
+			<name>{{ .name }}</name>
+			{{ with .networks.twitter }}<uri>{{ print .href .id }}</uri>{{ end }}
+		</author>
+		{{- end }}
+		{{- with .Params.categories }}
+		{{- range . }}
+		<category term="{{ . }}" />
+		{{- end }}
+		{{- end -}}
+		{{- with .Params.tags }}
+		{{- range . }}
+		<category term="{{ . }}" />
+		{{- end }}
+		{{- end }}
+	</entry>
+	{{- end }}
+	{{- end }}
+</feed>

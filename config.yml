@@ -12,6 +12,18 @@ taxonomies:
 permalinks:
   posts: '/:title/'
   pages: '/:title/'
+mediaTypes:
+  application/atom+xml:
+    suffixes: ['atom']
+outputFormats:
+  ATOM:
+    mediatype: application/atom+xml
+outputs:
+  home: ['HTML', 'ATOM']
+  page: ['HTML']
+  section: ['HTML', 'ATOM']
+  taxonomy: ['HTML', 'ATOM']
+  term: ['HTML', 'ATOM']
 paginate: 12
 markup:
   highlight:
@@ -19,8 +31,7 @@ markup:
     lineNos: true
 pygmentsUseClasses: true
 disableHugoGeneratorInject: true
-disableKinds:
-  - 'section'
+disableKinds: ['section']
 enableRobotsTXT: true
 minify:
   minifyOutput: false
