@@ -102,9 +102,10 @@ If available, it will dynamically generate and include the following data inside
 
 ### Preview
 
-{{<figure src="https://i.imgur.com/8rg2fKIb.png" link="https://i.imgur.com/8rg2fKI.png" alt="Global settings" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/042NB5Fb.png" link="https://i.imgur.com/042NB5F.png" alt="Open Graph, Twitter Cards and JSON-LD settings" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/xKswZUHb.png" link="https://i.imgur.com/xKswZUH.png" alt="Generated markup" class="fslightbox">}}
+
+{{<preview src="https://i.imgur.com/8rg2fKIb.png" link="https://i.imgur.com/8rg2fKI.png" alt="Global settings" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/042NB5Fb.png" link="https://i.imgur.com/042NB5F.png" alt="Open Graph, Twitter Cards and JSON-LD settings" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/xKswZUHb.png" link="https://i.imgur.com/xKswZUH.png" alt="Generated markup" imgclass="fslightbox">}}
 
 *(Click to view in full size)*
 

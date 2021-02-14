@@ -43,13 +43,13 @@ It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate
 
 ### Preview
 
-{{<figure src="https://i.imgur.com/5jhoiqgb.png" link="https://i.imgur.com/5jhoiqg.png" alt="Flowchart" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/QPVhPuhb.png" link="https://i.imgur.com/QPVhPuh.png" alt="Sequence diagram" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/C1qOugrb.png" link="https://i.imgur.com/C1qOugr.png" alt="Gantt diagram" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/iHEDfxQb.png" link="https://i.imgur.com/iHEDfxQ.png" alt="Class diagram" class="fslightbox">}}
- [![Entity relationship diagram](https://i.imgur.com/jbZzc2Pb.png)](https://i.imgur.com/jbZzc2P.png){:data-fslightbox="preview"}
-{{<figure src="https://i.imgur.com/hDGmUm9b.png" link="https://i.imgur.com/hDGmUm9.png" alt="State diagram" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/WP7uiQwb.png" link="https://i.imgur.com/WP7uiQw.png" alt="Pie chart" class="fslightbox">}}
+{{<preview src="https://i.imgur.com/5jhoiqgb.png" link="https://i.imgur.com/5jhoiqg.png" alt="Flowchart" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/QPVhPuhb.png" link="https://i.imgur.com/QPVhPuh.png" alt="Sequence diagram" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/C1qOugrb.png" link="https://i.imgur.com/C1qOugr.png" alt="Gantt diagram" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/iHEDfxQb.png" link="https://i.imgur.com/iHEDfxQ.png" alt="Class diagram" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/jbZzc2Pb.png" link="https://i.imgur.com/jbZzc2P.png" alt="Entity relationship diagram" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/hDGmUm9b.png" link="https://i.imgur.com/hDGmUm9.png" alt="State diagram" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/WP7uiQwb.png" link="https://i.imgur.com/WP7uiQw.png" alt="Pie chart" imgclass="fslightbox">}}
 
 *(Click to view in full size)*
 

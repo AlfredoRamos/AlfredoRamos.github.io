@@ -33,9 +33,9 @@ You can nest `[hide]` and use other BBCodes inside it.
 
 ### Preview
 
-{{<figure src="https://i.imgur.com/OajNWkc.png" alt="Content as logged-in user" caption="Content as logged-in user" class="img-fluid d-block mx-auto">}}
+{{<preview src="https://i.imgur.com/OajNWkc.png" alt="Content as logged-in user" caption="Content as logged-in user" imgclass="img-fluid d-block mx-auto mb-3">}}
 
-{{<figure src="https://i.imgur.com/xDbK3oU.png" alt="Content as guest" caption="Content as guest" class="img-fluid d-block mx-auto">}}
+{{<preview src="https://i.imgur.com/xDbK3oU.png" alt="Content as guest" caption="Content as guest" imgclass="img-fluid d-block mx-auto mb-3">}}
 
 ### Requirements
 

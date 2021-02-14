@@ -40,7 +40,7 @@ Allows you to set alternate text to image tags to abide SEO recommendations.
 
 ### Preview
 
-{{<figure src="https://i.imgur.com/yLgDJpG.png" alt="Generated HTML code" class="img-fluid d-block mx-auto">}}
+{{<preview src="https://i.imgur.com/yLgDJpG.png" alt="Generated HTML code" class="img-fluid d-block mx-auto mb-3">}}
 
 ### Requirements
 

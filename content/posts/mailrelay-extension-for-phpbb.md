@@ -34,7 +34,7 @@ Automatically synchronizes user emails to [Mailrelay](https://mailrelay.com/) to
 
 ### Preview
 
-{{<figure src="https://i.imgur.com/kkI1Z75.png" alt="Mailrelay ACP settings" class="img-fluid d-block mx-auto">}}
+{{<preview src="https://i.imgur.com/kkI1Z75.png" alt="Mailrelay ACP settings" imgclass="img-fluid d-block mx-auto mb-3">}}
 
 ### Requirements
 

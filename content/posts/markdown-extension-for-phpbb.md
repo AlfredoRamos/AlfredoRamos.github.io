@@ -38,20 +38,20 @@ It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/L
 
 ### Preview
 
-{{<figure src="https://i.imgur.com/PSGGuM3b.png" link="https://i.imgur.com/PSGGuM3.png" alt="Board features" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/qYZ7JBCb.png" link="https://i.imgur.com/qYZ7JBC.png" alt="Post settings" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/np1PqN6b.png" link="https://i.imgur.com/np1PqN6.png" alt="Private message settings" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/aEKJxWRb.png" link="https://i.imgur.com/aEKJxWR.png" alt="Signature settings" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/eiJJvbMb.png" link="https://i.imgur.com/eiJJvbM.png" alt="Post group permissions" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/spT9zXYb.png" link="https://i.imgur.com/spT9zXY.png" alt="Profile group permissions" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/YXcNxXKb.png" link="https://i.imgur.com/YXcNxXK.png" alt="Private messages group permissions" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/5GIQpMVb.png" link="https://i.imgur.com/5GIQpMV.png" alt="Forum permissions" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/zWhjOfVb.png" link="https://i.imgur.com/zWhjOfV.png" alt="User posting defaults" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/kba871fb.png" link="https://i.imgur.com/kba871f.png" alt="Markdown post" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/HGvlwhIb.png" link="https://i.imgur.com/HGvlwhI.png" alt="Markdown private message" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/svBmgYXb.png" link="https://i.imgur.com/svBmgYX.png" alt="Markdown signature" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/1Z7CDDrb.png" link="https://i.imgur.com/1Z7CDDr.png" alt="Posting editor option" class="fslightbox">}}
-{{<figure src="https://i.imgur.com/slz1Z9Yb.png" link="https://i.imgur.com/slz1Z9Y.png" alt="Task list" class="fslightbox">}}
+{{<preview src="https://i.imgur.com/PSGGuM3b.png" link="https://i.imgur.com/PSGGuM3.png" alt="Board features" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/qYZ7JBCb.png" link="https://i.imgur.com/qYZ7JBC.png" alt="Post settings" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/np1PqN6b.png" link="https://i.imgur.com/np1PqN6.png" alt="Private message settings" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/aEKJxWRb.png" link="https://i.imgur.com/aEKJxWR.png" alt="Signature settings" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/eiJJvbMb.png" link="https://i.imgur.com/eiJJvbM.png" alt="Post group permissions" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/spT9zXYb.png" link="https://i.imgur.com/spT9zXY.png" alt="Profile group permissions" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/YXcNxXKb.png" link="https://i.imgur.com/YXcNxXK.png" alt="Private messages group permissions" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/5GIQpMVb.png" link="https://i.imgur.com/5GIQpMV.png" alt="Forum permissions" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/zWhjOfVb.png" link="https://i.imgur.com/zWhjOfV.png" alt="User posting defaults" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/kba871fb.png" link="https://i.imgur.com/kba871f.png" alt="Markdown post" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/HGvlwhIb.png" link="https://i.imgur.com/HGvlwhI.png" alt="Markdown private message" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/svBmgYXb.png" link="https://i.imgur.com/svBmgYX.png" alt="Markdown signature" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/1Z7CDDrb.png" link="https://i.imgur.com/1Z7CDDr.png" alt="Posting editor option" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/slz1Z9Yb.png" link="https://i.imgur.com/slz1Z9Y.png" alt="Task list" imgclass="fslightbox">}}
 
 *(Click to view in full size)*
 
