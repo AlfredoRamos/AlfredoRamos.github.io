@@ -4,6 +4,7 @@ date: 2017-05-11T18:52:54-05:00
 lastmod: 2020-12-25T13:45:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, auto-lock, cron]
+archives: [2017]
 image:
   url: https://i.imgur.com/mBCEbSf.png
   type: png

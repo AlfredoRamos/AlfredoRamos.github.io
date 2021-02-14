@@ -4,6 +4,7 @@ date: 2019-10-26T19:56:28-05:00
 lastmod: 2020-12-25T13:52:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
+archives: [2019]
 image:
   url: https://i.imgur.com/iHEDfxQ.png
   type: png

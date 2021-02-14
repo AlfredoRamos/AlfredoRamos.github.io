@@ -1,10 +1,10 @@
 ---
 title: Mailrelay extension for phpBB
-date: 2021-01-31T17:32:52-06:00
 date: 2020-09-18T00:48:17-05:00
 lastmod: 2020-12-25T13:53:00-05:00
 categories: [phpbb]
 tags: [phpbb-extension, mailrelay, email, marketing]
+archives: [2020]
 image:
   url: https://i.imgur.com/mgFGzBe.jpg
   type: jpeg

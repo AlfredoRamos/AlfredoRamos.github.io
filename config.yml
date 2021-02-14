@@ -5,6 +5,10 @@ params:
   tagline: 'A collection of personal projects'
   biography: 'I am a computer systems engineer, open source software enthusiast, passionate about Arch Linux and GNU/Linux in general.'
   author: 'AlfredoRamos'
+taxonomies:
+  category: categories
+  tag: tags
+  archive: archives
 permalinks:
   posts: '/:title/'
   pages: '/:title/'
@@ -33,8 +37,3 @@ related:
     weight: 10
   threshold: 80
   toLower: true
-
-# theme
-#params:
-#  custom_css:
-#    - 'css/syntax.css'
