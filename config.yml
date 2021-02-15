@@ -8,6 +8,10 @@ languages:
     weight: 1
   es:
     languageName: Español
+    taxonomies:
+      categoria: categorias
+      etiqueta: etiquetas
+      archivo: archivos
     params:
       tagline: 'Una colección de proyectos personales'
       biography: 'Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.'
@@ -21,8 +25,8 @@ taxonomies:
   tag: tags
   archive: archives
 permalinks:
-  posts: '/:title/'
-  pages: '/:title/'
+  posts: '/:slug/'
+  pages: '/:slug/'
 mediaTypes:
   application/atom+xml:
     suffixes: ['atom']

@@ -3,7 +3,8 @@
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
 {{- $author := index .Site.Data.authors $author -}}
-{{- $pag := .Paginator -}}
+{{- $locale := (.Language.Lang | default .Site.LanguageCode) -}}
+{{- $paginator := .Paginator -}}
 <meta name="description" content="{{ $description }}">
 {{- with $image }}
 <meta name="twitter:card" content="summary_large_image">
@@ -15,7 +16,9 @@
 <meta name="twitter:creator" content="@{{ .id }}">
 {{- end }}
 <meta name="twitter:dnt" content="on">
-<meta property="og:locale" content="{{ .Language.Lang | default .Site.LanguageCode }}">
+{{- with $locale }}
+<meta property="og:locale" content="{{ printf "%s_%s" . (cond (eq . "es") "MX" "US") }}">
+{{- end }}
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if eq .Type "posts" }}article{{ else }}website{{ end }}">
@@ -58,9 +61,9 @@
 	"@type": "ItemList",
 	"name": "Latest posts",
 	"itemListOrder": "Descending",
-	"numberOfItems": {{ $pag.TotalNumberOfElements }},
+	"numberOfItems": {{ $paginator.TotalNumberOfElements }},
 	"itemListElement": [
-		{{ range $key, $value := $pag.Pages }}
+		{{ range $key, $value := $paginator.Pages }}
 		{{- $position := (add $key 1) -}}
 		{
 			"@type": "BlogPosting",
@@ -77,7 +80,7 @@
 			"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Params.categories }},
 			"articleSection": {{ index . 0 }}{{ end }}{{ with .Params.tags }},
 			"keywords": {{ delimit . ", " }}{{ end }}
-		}{{ if and (gt $pag.TotalNumberOfElements 1) (lt $position $pag.TotalNumberOfElements) }},{{ end }}
+		}{{ if and (gt $paginator.TotalNumberOfElements 1) (lt $position $paginator.TotalNumberOfElements) }},{{ end }}
 		{{- end }}
 	]
 }

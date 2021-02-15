@@ -3,15 +3,19 @@
   weight: 1
 - name: archives
   url: /archives/
+  url_es: /archivos/
   weight: 2
 - name: categories
   url: /categories/
+  url_es: /categorias/
   weight: 3
 - name: tags
   url: /tags/
+  url_es: /etiquetas/
   weight: 4
 - name: donate
   url: /donate/
+  url_es: /donar/
   icon: 'bi:heart-fill'
   weight: 5
 - name: feed

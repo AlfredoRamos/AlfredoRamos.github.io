@@ -7,10 +7,14 @@
 
 		<div class="collapse navbar-collapse" id="site-navigation">
 			{{- with .Site.Data.menu }}
+			{{- $locale := ($.Language.Lang | default $.Site.LanguageCode) -}}
 			<ul class="navbar-nav me-auto">
 				{{ range . }}
+				{{- $url := cond (ne $locale "en") (printf "url_%s" $locale) "url" -}}
+				{{- $url := cond (isset . $url) $url "url" -}}
+				{{- $url := index . $url | relLangURL -}}
 				<li class="nav-item">
-					<a class="nav-link{{ if eq $.RelPermalink (.url | relLangURL) }} active{{ end }}" href="{{ .url | relLangURL }}">
+					<a class="nav-link{{ if eq $.RelPermalink $url }} active{{ end }}" href="{{ $url }}">
 						{{- if isset . "icon" }}
 						<span class="iconify inline-icon {{ .name | urlize }}-icon me-1" {{ printf "data-icon=%q" .icon | safeHTMLAttr }}></span>
 						{{- end }}

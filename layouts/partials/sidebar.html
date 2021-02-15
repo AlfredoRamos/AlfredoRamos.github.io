@@ -1,4 +1,5 @@
 <aside class="sidebar col-lg-3 overflow-hidden">
+	{{- $locale := .Language.Lang | default .Site.LanguageCode -}}
 	{{- $default_author := .Param "author" -}}
 	{{- $biography := .Param "biography" -}}
 	{{- $author := .Params.author | default $default_author -}}
@@ -39,67 +40,62 @@
 	</section>
 	{{ end }}
 
-	{{ if ne .RelPermalink "/donate/" }}
+	{{ if ne .RelPermalink (.GetPage "donate").RelPermalink }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
 			<h3 class="title h4">{{ i18n "donate" }}</h3>
 		</header>
 		<div class="body">
-			<p>{{ i18n "donate_message" }}</p>
-
-			<img data-src="{{ (resources.Get "images/donate.svg").RelPermalink }}" alt="PayPal - The safer, easier way to pay online!" class="img-fluid img-thumbnail d-block mx-auto mb-3 lazyload" width="150" height="150">
-
-			<p class="text-center">
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2MSPMT8HJ96A&source=url" class="btn btn-warning d-inline-block" title="PayPal - The safer, easier way to pay online!">
-					<img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" alt="Donate with PayPal">
-				</a>
-			</p>
+			{{ partial "donate.html" . }}
 		</div>
 	</section>
 	{{ end }}
 
-	{{ with .Site.Taxonomies.archives }}
+	{{- $archives := index .Site.Taxonomies (cond (eq $locale "es") "archivos" "archives") -}}
+	{{- with $archives }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
 			<h3 class="title h4">{{ i18n "archives" }}</h3>
 		</header>
 		<div class="body">
 			<div class="list-archives">
-				{{ range $key, $value := . }}
-				<a href="{{ printf "/archives/%s/" $key | urlize | relLangURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				{{ range . }}
+				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
 				{{ end }}
 			</div>
 		</div>
 	</section>
-	{{ end }}
+	{{- end }}
 
-	{{ with .Site.Taxonomies.categories }}
+	{{- $categories := index .Site.Taxonomies (cond (eq $locale "es") "categorias" "categories") -}}
+	{{- with $categories }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
 			<h3 class="title h4">{{ i18n "categories" }}</h3>
 		</header>
 		<div class="body">
 			<div class="list-categories">
-				{{ range $key, $value := . }}
-				<a href="{{ printf "/categories/%s/" $key | urlize | relLangURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				{{ range . }}
+				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
 				{{ end }}
 			</div>
 		</div>
 	</section>
-	{{ end }}
+	{{- end }}
 
-	{{ with .Site.Taxonomies.tags }}
+	{{- $tags := index .Site.Taxonomies (cond (eq $locale "es") "etiquetas" "tags") -}}
+	{{- with $tags }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
 			<h3 class="title h4">{{ i18n "tags" }}</h3>
 		</header>
 		<div class="body">
 			<div class="list-tags">
-				{{ range $key, $value := . }}
-				<a href="{{ printf "/tags/%s/" $key | urlize | relLangURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				{{ range . }}
+				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
 				{{ end }}
 			</div>
 		</div>
 	</section>
-	{{ end }}
+	{{- end }}
 </aside>
