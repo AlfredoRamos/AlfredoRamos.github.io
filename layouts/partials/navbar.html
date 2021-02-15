@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
 	<div class="container">
 		<a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-navigation" aria-controls="site-navigation" aria-expanded="false" aria-label="{{ i18n "menu_toggle" }}">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -10,11 +10,11 @@
 			<ul class="navbar-nav me-auto">
 				{{ range . }}
 				<li class="nav-item">
-					<a class="nav-link{{ if eq $.RelPermalink (.url | relURL) }} active{{ end }}" href="{{ .url | relURL }}">
+					<a class="nav-link{{ if eq $.RelPermalink (.url | relLangURL) }} active{{ end }}" href="{{ .url | relLangURL }}">
 						{{- if isset . "icon" }}
 						<span class="iconify inline-icon {{ .name | urlize }}-icon me-1" {{ printf "data-icon=%q" .icon | safeHTMLAttr }}></span>
 						{{- end }}
-						{{ .title }}
+						{{ i18n .name }}
 					</a>
 				</li>
 				{{ end }}
@@ -25,7 +25,7 @@
 			</div>
 			<form action="https://duckduckgo.com/" target="ddg" class="form-inline my-2 my-lg-0">
 				<div class="input-group input-group-sm">
-					<input name="q" class="form-control bg-transparent border-secondary text-white" type="search" placeholder="Keywords…" title="Search with DuckDuckGo" aria-label="Search">
+					<input name="q" class="form-control bg-transparent border-secondary text-white" type="search" placeholder="{{ i18n "keywords" }}" title="{{ i18n "search" }}" aria-label="{{ i18n "search" }}">
 					<input type="hidden" name="sites" value="{{ trim (replaceRE "^https?://" "" .Site.Home.Permalink) "/" }}">
 					<input type="hidden" name="HTTPS" value="1">
 

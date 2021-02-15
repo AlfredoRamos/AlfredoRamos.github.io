@@ -1,6 +1,17 @@
 baseURL: 'https://alfredoramos.mx/'
-languageCode: 'en-US'
+defaultContentLanguage: 'en'
+languageCode: 'en'
 title: 'Alfredo Ramos'
+languages:
+  en:
+    languageName: English
+    weight: 1
+  es:
+    languageName: Español
+    params:
+      tagline: 'Una colección de proyectos personales'
+      biography: 'Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.'
+    weight: 2
 params:
   tagline: 'A collection of personal projects'
   biography: 'I am a computer systems engineer, open source software enthusiast, passionate about Arch Linux and GNU/Linux in general.'

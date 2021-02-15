@@ -15,7 +15,7 @@
 <meta name="twitter:creator" content="@{{ .id }}">
 {{- end }}
 <meta name="twitter:dnt" content="on">
-<meta property="og:locale" content="{{ replace (.Site.LanguageCode | default "en_US") "-" "_" }}">
+<meta property="og:locale" content="{{ .Language.Lang | default .Site.LanguageCode }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if eq .Type "posts" }}article{{ else }}website{{ end }}">
@@ -45,7 +45,7 @@
 <meta property="article:section" content="{{ index . 0 }}">
 {{- end }}
 {{- with .OutputFormats.Get "ATOM" }}
-<link rel="{{ .Rel }}" type="application/atom+xml" href="{{ .Permalink }}" title="Atom Feed · {{ $.Site.Title }}">
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="Atom Feed · {{ $.Site.Title }}">
 {{- end }}
 {{- if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">

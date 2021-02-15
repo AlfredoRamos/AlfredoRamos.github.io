@@ -4,8 +4,8 @@
 		<h1 class="title h3">{{ .Title }}</h1>
 	</header>
 	<div class="body">
-		<p>This page doesn't exist or has been deleted.</p>
-		<p>Return to <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Home.Title }}</a>.</p>
+		<p>{{ i18n "404_message" }}</p>
+		<p>{{ i18n "404_return_to" }} <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Home.Title }}</a>.</p>
 	</div>
 </div>
 {{ end }}

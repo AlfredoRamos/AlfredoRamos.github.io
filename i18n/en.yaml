@@ -1,0 +1,37 @@
+# navbar
+home:
+  other: Home
+archives:
+  other: Archives
+categories:
+  other: Categories
+tags:
+  other: Tags
+donate:
+  other: Donate
+feed:
+  other: Feed
+menu_toggle:
+  other: Toggle navigation
+keywords:
+  other: Keywords…
+search:
+  other: Search with DuckDuckGo
+# content
+latest_posts:
+  other: Latest posts
+reading_time:
+  one: '{{ .Count }} min read'
+  other: '{{ .Count }} min read'
+modified:
+  other: Modified
+# sidebar
+about: About
+# pages
+donate_message:
+  other: If you like or found my work useful and want to show some appretiation, you can consider donating.
+# 404
+404_message:
+  other: This page doesn't exist or has been deleted.
+404_return_to:
+  other: Return to

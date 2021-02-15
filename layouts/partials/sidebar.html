@@ -7,7 +7,7 @@
 	{{ with $author }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
-			<h3 class="title h4">About</h3>
+			<h3 class="title h4">{{ i18n "about" }}</h3>
 		</header>
 		<div class="body">
 			{{ if isset . "avatar" }}
@@ -42,10 +42,10 @@
 	{{ if ne .RelPermalink "/donate/" }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
-			<h3 class="title h4">Donate</h3>
+			<h3 class="title h4">{{ i18n "donate" }}</h3>
 		</header>
 		<div class="body">
-			<p>If you like or found my work useful and want to show some appretiation, you can consider donating.</p>
+			<p>{{ i18n "donate_message" }}</p>
 
 			<img data-src="{{ (resources.Get "images/donate.svg").RelPermalink }}" alt="PayPal - The safer, easier way to pay online!" class="img-fluid img-thumbnail d-block mx-auto mb-3 lazyload" width="150" height="150">
 
@@ -61,12 +61,12 @@
 	{{ with .Site.Taxonomies.archives }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
-			<h3 class="title h4">Archives</h3>
+			<h3 class="title h4">{{ i18n "archives" }}</h3>
 		</header>
 		<div class="body">
 			<div class="list-archives">
 				{{ range $key, $value := . }}
-				<a href="{{ printf "/archives/%s/" $key | urlize | relURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				<a href="{{ printf "/archives/%s/" $key | urlize | relLangURL }}" class="badge bg-light text-dark">{{ $key }}</a>
 				{{ end }}
 			</div>
 		</div>
@@ -76,12 +76,12 @@
 	{{ with .Site.Taxonomies.categories }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
-			<h3 class="title h4">Categories</h3>
+			<h3 class="title h4">{{ i18n "categories" }}</h3>
 		</header>
 		<div class="body">
 			<div class="list-categories">
 				{{ range $key, $value := . }}
-				<a href="{{ printf "/categories/%s/" $key | urlize | relURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				<a href="{{ printf "/categories/%s/" $key | urlize | relLangURL }}" class="badge bg-light text-dark">{{ $key }}</a>
 				{{ end }}
 			</div>
 		</div>
@@ -91,12 +91,12 @@
 	{{ with .Site.Taxonomies.tags }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
-			<h3 class="title h4">Tags</h3>
+			<h3 class="title h4">{{ i18n "tags" }}</h3>
 		</header>
 		<div class="body">
 			<div class="list-tags">
 				{{ range $key, $value := . }}
-				<a href="{{ printf "/tags/%s/" $key | urlize | relURL }}" class="badge bg-light text-dark">{{ $key }}</a>
+				<a href="{{ printf "/tags/%s/" $key | urlize | relLangURL }}" class="badge bg-light text-dark">{{ $key }}</a>
 				{{ end }}
 			</div>
 		</div>

@@ -17,9 +17,7 @@
 			<li class="list-inline-item">
 				<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
 			</li>
-			<li class="list-inline-item">
-				{{ .ReadingTime }} min read
-			</li>
+			<li class="list-inline-item">{{ i18n "reading_time" .ReadingTime }}</li>
 		</ul>
 	</header>
 	<div class="body content">
@@ -30,17 +28,17 @@
 		<ul class="meta list-unstyled mb-0">
 			{{ if gt .Lastmod.Unix .Date.Unix }}
 			<li>
-				<strong>Modified:</strong>
+				<strong>{{ i18n "modified" }}:</strong>
 				<time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">{{ .Lastmod.Format "January 2, 2006" }}</time>
 			</li>
 			{{ end }}
 			{{ with .Params.categories }}
 			<li>
-				<strong>Categories:</strong>
+				<strong>{{ i18n "categories" }}:</strong>
 				<ul class="categories d-inline-block list-inline">
 					{{ range . }}
 					<li class="list-inline-item">
-						<a href="{{ printf "/categories/%s/" . | urlize | relURL }}" rel="category" class="badge bg-light text-dark">{{ . }}</a>
+						<a href="{{ printf "/categories/%s/" . | urlize | relLangURL }}" rel="category" class="badge bg-light text-dark">{{ . }}</a>
 					</li>
 					{{ end }}
 				</ul>
@@ -48,11 +46,11 @@
 			{{ end }}
 			{{ with .Params.tags }}
 			<li class="list-inline-item">
-				<strong>Tags:</strong>
+				<strong>{{ i18n "tags" }}:</strong>
 				<ul class="tags d-inline-block list-inline">
 					{{ range . }}
 					<li class="list-inline-item">
-						<a href="{{ printf "/tags/%s/" . | urlize | relURL }}" rel="tag" class="badge bg-light text-dark">{{ . }}</a>
+						<a href="{{ printf "/tags/%s/" . | urlize | relLangURL }}" rel="tag" class="badge bg-light text-dark">{{ . }}</a>
 					</li>
 					{{ end }}
 				</ul>

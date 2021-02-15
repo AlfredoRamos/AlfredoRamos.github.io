@@ -87,7 +87,7 @@ To customize the look and feel:
 
 - Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
 - Click on `Disable` and confirm
-- Go back to `Manage extensions` > `Simple Spoiler` > `Delete data` and confirm
+- Go back to `Manage extensions` > `Simple Spoiler BBCode` > `Delete data` and confirm
 
 ### Upgrade
 
