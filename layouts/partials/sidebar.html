@@ -59,9 +59,9 @@
 		</header>
 		<div class="body">
 			<div class="list-archives">
-				{{ range . }}
+				{{- range . }}
 				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
-				{{ end }}
+				{{- end }}
 			</div>
 		</div>
 	</section>
@@ -75,9 +75,9 @@
 		</header>
 		<div class="body">
 			<div class="list-categories">
-				{{ range . }}
+				{{- range . }}
 				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
-				{{ end }}
+				{{- end }}
 			</div>
 		</div>
 	</section>
@@ -91,9 +91,9 @@
 		</header>
 		<div class="body">
 			<div class="list-tags">
-				{{ range . }}
+				{{- range . }}
 				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
-				{{ end }}
+				{{- end }}
 			</div>
 		</div>
 	</section>

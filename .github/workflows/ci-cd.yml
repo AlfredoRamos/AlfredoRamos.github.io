@@ -49,7 +49,7 @@ jobs:
         run: cp CNAME static/
 
       - name: Build site
-        run: hugo --cleanDestinationDir --i18n-warnings --path-warnings --verbose
+        run: hugo --gc --cleanDestinationDir --i18n-warnings --path-warnings --verbose
 
       - name: Deploy site
         if: ${{ success() }}

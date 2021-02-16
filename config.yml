@@ -15,15 +15,18 @@ languages:
     params:
       tagline: 'Una colección de proyectos personales'
       biography: 'Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.'
+      flag: 'twemoji:flag-for-flag-mexico'
     weight: 2
 params:
   tagline: 'A collection of personal projects'
   biography: 'I am a computer systems engineer, open source software enthusiast, passionate about Arch Linux and GNU/Linux in general.'
   author: 'AlfredoRamos'
+  flag: 'twemoji:flag-for-flag-united-states'
 taxonomies:
   category: categories
   tag: tags
   archive: archives
+removePathAccents: true
 permalinks:
   posts: '/:slug/'
   pages: '/:slug/'

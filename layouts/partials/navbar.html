@@ -14,7 +14,7 @@
 				{{- $url := cond (isset . $url) $url "url" -}}
 				{{- $url := index . $url | relLangURL -}}
 				<li class="nav-item">
-					<a class="nav-link{{ if eq $.RelPermalink $url }} active{{ end }}" href="{{ $url }}">
+					<a class="nav-link{{ if eq $.RelPermalink $url }} active{{ end }}"{{ if eq $.RelPermalink $url }} aria-current="page"{{ end }} href="{{ $url }}">
 						{{- if isset . "icon" }}
 						<span class="iconify inline-icon {{ .name | urlize }}-icon me-1" {{ printf "data-icon=%q" .icon | safeHTMLAttr }}></span>
 						{{- end }}
@@ -27,6 +27,28 @@
 			<div class="form-switch dark-mode-switch ms-auto">
 				<input class="form-check-input" type="checkbox" aria-label="Toggle dark mode" title="Toggle dark mode">
 			</div>
+			{{- if .IsTranslated }}
+			<div class="dropdown me-2">
+				<button id="translation-menu" class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					{{- with (.Param "flag") -}}
+					<span class="iconify inline-icon flag-icon me-1" {{ printf "data-icon=%q" . | safeHTMLAttr }}></span>
+					{{- end }}
+					{{- .Language.LanguageName -}}
+				</button>
+				<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="translation-menu">
+					{{- range .AllTranslations }}
+					<li>
+						<a class="dropdown-item{{ if eq $.RelPermalink .RelPermalink }} active{{ end }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }} href="{{ .RelPermalink }}">
+							{{- with (.Param "flag") -}}
+							<span class="iconify inline-icon flag-icon me-1" {{ printf "data-icon=%q" . | safeHTMLAttr }}></span>
+							{{- end }}
+							{{- .Language.LanguageName -}}
+						</a>
+					</li>
+					{{- end }}
+				</ul>
+			</div>
+			{{- end }}
 			<form action="https://duckduckgo.com/" target="ddg" class="form-inline my-2 my-lg-0">
 				<div class="input-group input-group-sm">
 					<input name="q" class="form-control bg-transparent border-secondary text-white" type="search" placeholder="{{ i18n "keywords" }}" title="{{ i18n "search" }}" aria-label="{{ i18n "search" }}">

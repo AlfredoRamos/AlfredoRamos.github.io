@@ -6,19 +6,19 @@
 		{{- $default_author := .Param "author" -}}
 		{{- $author := .Params.author | default $default_author -}}
 		{{- $author := index .Site.Data.authors $author -}}
-		{{ with $author.networks }}
+		{{- with $author.networks }}
 		<ul class="social-networks list-inline mb-0">
-			{{ range $key, $value := sort . "weight" }}
-			{{ if hasPrefix $value.href "http" }}
+			{{- range $key, $value := sort . "weight" }}
+			{{- if hasPrefix $value.href "http" }}
 			<li class="list-inline-item">
 				<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}" class="text-muted">
 					<span class="iconify social-icon {{ $key | urlize }}-icon" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
 				</a>
 			</li>
-			{{ end }}
-			{{ end }}
+			{{- end }}
+			{{- end }}
 		</ul>
-		{{ end }}
+		{{- end }}
 	</div>
 </footer>
 
