@@ -1,10 +1,12 @@
+{{- $locale := (.Language.Lang | default .Site.LanguageCode) -}}
 {{- $description := trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " -}}
+{{- $categories := .GetTerms (cond (eq $locale "es") "categorias" "categories") -}}
+{{- $tags := .GetTerms (cond (eq $locale "es") "etiquetas" "tags") -}}
 {{- $image := .Params.image -}}
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
 {{- $author := index .Site.Data.authors $author -}}
-{{- $locale := (.Language.Lang | default .Site.LanguageCode) -}}
-{{- $paginator := .Paginator -}}
+{{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") -}}
 <meta name="description" content="{{ $description }}">
 {{- with $image }}
 <meta name="twitter:card" content="summary_large_image">
@@ -44,11 +46,11 @@
 {{- with .Lastmod }}
 <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
 {{- end }}
-{{- with .Params.categories }}
-<meta property="article:section" content="{{ index . 0 }}">
+{{- with $categories }}
+<meta property="article:section" content="{{ (index . 0).Title }}">
 {{- end }}
 {{- with .OutputFormats.Get "ATOM" }}
-<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="Atom Feed · {{ $.Site.Title }}">
+<link rel="{{ .Rel }}" {{ printf "type=%q" .MediaType.Type | safeHTMLAttr }} href="{{ .Permalink }}" title="{{ i18n "atom_feed" }} · {{ $.Site.Title }}">
 {{- end }}
 {{- if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">
@@ -77,12 +79,32 @@
 				"name": {{ . }}
 			}{{ end }}{{ with .Date }},
 			"datePublished": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Lastmod }},
-			"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Params.categories }},
-			"articleSection": {{ index . 0 }}{{ end }}{{ with .Params.tags }},
-			"keywords": {{ delimit . ", " }}{{ end }}
+			"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with (.GetTerms (cond (eq $locale "es") "categorias" "categories")) }},
+			"articleSection": {{ (index . 0).Title }}{{ end }}{{ with (.GetTerms (cond (eq $locale "es") "etiquetas" "tags")) }},
+			"keywords": "{{ range $key, $value := . }}{{ if gt $key 0 }}, {{ end }}{{ .Title }}{{ end }}"{{ end }}
 		}{{ if and (gt $paginator.TotalNumberOfElements 1) (lt $position $paginator.TotalNumberOfElements) }},{{ end }}
 		{{- end }}
 	]
+}
+</script>
+{{- end }}
+{{- if eq .Type "posts" }}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"url": {{ .Permalink }},
+	"headline": {{ .Title }},
+	"description": {{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}{{ with .Params.image.url }},
+	"image": {{ . }}{{ end }}{{ with .Params.author }},
+	"author": {
+		"@type": "Person",
+		"name": {{ . }}
+	}{{ end }}{{ with .Date }},
+	"datePublished": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Lastmod }},
+	"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with $categories }},
+	"articleSection": {{ (index . 0).Title }}{{ end }}{{ with $tags }},
+	"keywords": "{{ range $key, $value := . }}{{ if gt $key 0 }}, {{ end }}{{ .Title }}{{ end }}"{{ end }}
 }
 </script>
 {{- end }}

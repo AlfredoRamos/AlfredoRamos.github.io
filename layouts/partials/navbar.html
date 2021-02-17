@@ -29,16 +29,16 @@
 			</div>
 			{{- if .IsTranslated }}
 			<div class="dropdown me-2">
-				<button id="translation-menu" class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<button id="translation-menu" class="btn btn-sm btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					{{- with (.Param "flag") -}}
 					<span class="iconify inline-icon flag-icon me-1" {{ printf "data-icon=%q" . | safeHTMLAttr }}></span>
 					{{- end }}
 					{{- .Language.LanguageName -}}
 				</button>
 				<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="translation-menu">
-					{{- range .AllTranslations }}
+					{{- range .Translations }}
 					<li>
-						<a class="dropdown-item{{ if eq $.RelPermalink .RelPermalink }} active{{ end }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }} href="{{ .RelPermalink }}">
+						<a class="dropdown-item" href="{{ .RelPermalink }}">
 							{{- with (.Param "flag") -}}
 							<span class="iconify inline-icon flag-icon me-1" {{ printf "data-icon=%q" . | safeHTMLAttr }}></span>
 							{{- end }}
