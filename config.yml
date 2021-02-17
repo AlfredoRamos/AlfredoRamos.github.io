@@ -16,6 +16,7 @@ languages:
       tagline: 'Una colección de proyectos personales'
       biography: 'Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.'
       flag: 'twemoji:flag-for-flag-mexico'
+    paginatePath: 'pagina'
     weight: 2
 params:
   tagline: 'A collection of personal projects'
@@ -43,6 +44,7 @@ outputs:
   taxonomy: ['HTML', 'ATOM']
   term: ['HTML', 'ATOM']
 paginate: 12
+paginatePath: 'page'
 markup:
   highlight:
     anchorLineNos: true
@@ -56,13 +58,13 @@ minify:
 related:
   includeNewer: true
   indices:
-  - name: keywords
+  - name: 'keywords'
     weight: 100
-  - name: tags
+  - name: 'tags'
     weight: 80
-  - name: categories
+  - name: 'categories'
     weight: 60
-  - name: date
+  - name: 'date'
     weight: 10
   threshold: 80
   toLower: true

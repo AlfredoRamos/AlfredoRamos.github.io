@@ -1,0 +1,30 @@
+{{- define "content" }}
+<div class="mb-4">
+	<header class="header">
+		<h1 class="title h3">
+			<a href="{{ .RelPermalink }}">
+				{{ .Title }}
+			</a>
+		</h1>
+	</header>
+	<div class="body">
+		{{ .Content }}
+
+		<ul class="list-links">
+			{{- range .Pages }}
+			<li>
+				{{ if .Data.Pages }}<h4 class="h5">{{ end }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Data.Pages }}</h4>{{ end }}
+
+				{{- with .Data.Pages }}
+				<ul class="list-posts">
+					{{- range . }}
+					<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+					{{- end }}
+				</ul>
+				{{- end }}
+			</li>
+			{{- end }}
+		</ul>
+	</div>
+</div>
+{{- end }}
