@@ -1,4 +1,4 @@
-{{ define "content" }}
+{{- define "content" }}
 <div class="mb-4">
 	<header class="header">
 		<h1 class="title h3">{{ .Title }}</h1>
@@ -8,4 +8,4 @@
 		<p>{{ i18n "404_return_to" }} <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Home.Title }}</a>.</p>
 	</div>
 </div>
-{{ end }}
+{{- end }}

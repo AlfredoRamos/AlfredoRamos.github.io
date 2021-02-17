@@ -1,25 +1,25 @@
-{{ define "content" }}
+{{- define "content" }}
 {{ .Content }}
 
 <h1 class="title h4">{{ i18n "latest_posts" }}</h1>
 
 {{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") -}}
-{{ with $paginator.Pages }}
+{{- with $paginator.Pages }}
 <div class="d-flex flex-column index">
-	{{ range (where . "Type" "posts") }}
+	{{- range (where . "Type" "posts") }}
 	<article class="post overflow-hidden position-relative d-flex flex-wrap mb-4">
 		<a href="{{ .RelPermalink }}" class="d-block col-12 col-md-3 px-0 me-md-3 mb-2 mb-md-0 img-container rounded border">
-			{{ if .Params.image.url }}
+			{{- if .Params.image.url }}
 			<picture>
 				<img data-src="{{ .Params.image.url }}" class="rounded w-100 h-100 lazyload" alt="{{ .Title }}">
 			</picture>
-			{{ else }}
+			{{- else }}
 			<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
 				<title>Placeholder</title>
 				<rect width="100%" height="100%" fill="#55595c"></rect>
 				<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
 			</svg>
-			{{ end }}
+			{{- end }}
 		</a>
 		<div class="d-flex flex-column col-12 col-md px-0">
 			<header class="header">
@@ -38,7 +38,7 @@
 			<div class="body excerpt">{{ trim (.Summary | plainify | replaceRE "\\s+" " " | truncate 280 "…") " " | htmlUnescape | safeHTML }}</div>
 		</div>
 	</article>
-	{{ end }}
+	{{- end }}
 </div>
-{{ end }}
-{{ end }}
+{{- end }}
+{{- end }}

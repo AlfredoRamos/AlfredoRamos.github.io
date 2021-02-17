@@ -1,4 +1,4 @@
-{{ define "content" }}
+{{- define "content" }}
 <div class="mb-4">
 	<header class="header">
 		<h1 class="title h3">
@@ -11,12 +11,12 @@
 		{{ .Content }}
 		
 		<ul class="list-links">
-			{{ range .Paginator.Pages }}
+			{{- range .Paginator.Pages }}
 			<li>
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</li>
-			{{ end }}
+			{{- end }}
 		</ul>
 	</div>
 </div>
-{{ end }}
+{{- end }}

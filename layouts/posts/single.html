@@ -1,4 +1,4 @@
-{{ define "content" }}
+{{- define "content" }}
 {{- $locale := .Language.Lang | default .Site.LanguageCode -}}
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
@@ -62,4 +62,4 @@
 		</ul>
 	</footer>
 </article>
-{{ end }}
+{{- end }}

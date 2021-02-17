@@ -11,13 +11,15 @@
 			<h3 class="title h4">{{ i18n "about" }}</h3>
 		</header>
 		<div class="body">
-			{{ if isset . "avatar" }}
+			{{- if isset . "avatar" }}
 			<figure class="avatar">
 				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
 			</figure>
-			{{ end }}
-			{{ if isset . "biography" }}<p>{{ .biography | markdownify }}</p>{{ end }}
-			{{ with .networks }}
+			{{- end }}
+			{{- if isset . "biography" }}
+			<p>{{ .biography | markdownify }}</p>
+			{{- end }}
+			{{- with .networks }}
 			<ul class="social-networks list-unstyled mb-0">
 				{{- range $key, $value := sort . "weight" }}
 				<li>
@@ -35,12 +37,12 @@
 				</li>
 				{{- end }}
 			</ul>
-			{{ end }}
+			{{- end }}
 		</div>
 	</section>
 	{{ end }}
 
-	{{ if ne .RelPermalink (.GetPage "donate").RelPermalink }}
+	{{- if ne .RelPermalink (.GetPage "donate").RelPermalink }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
 			<h3 class="title h4">{{ i18n "donate" }}</h3>
@@ -49,7 +51,7 @@
 			{{ partial "donate.html" . }}
 		</div>
 	</section>
-	{{ end }}
+	{{- end }}
 
 	{{- $archives := index .Site.Taxonomies (cond (eq $locale "es") "archivos" "archives") -}}
 	{{- with $archives }}
