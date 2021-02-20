@@ -1,27 +1,17 @@
 # head
 atom_feed: Feed Atom
 # navbar
-home:
-  other: Inicio
-archives:
-  other: Archivos
-categories:
-  other: Categorías
-tags:
-  other: Etiquetas
-donate:
-  other: Donar
-feed:
-  other: Feed
-menu_toggle:
-  other: Alternar menú
-keywords:
-  other: Palabras clave…
-search:
-  other: Buscar con DuckDuckGo
+home: Inicio
+archives: Archivos
+categories: Categorías
+tags: Etiquetas
+donate: Donar
+feed: Feed
+menu_toggle: Alternar menú
+keywords: Palabras clave…
+search: Buscar con DuckDuckGo
 # content
-latest_posts:
-  other: Últimos artículos
+latest_posts: Últimos artículos
 reading_time:
   one: '{{ .Count }} min lectura'
   other: '{{ .Count }} min lectura'
@@ -29,10 +19,7 @@ modified: Modificado
 # sidebar
 about: Acerca de
 # pages
-donate_message:
-  other: Si le gustó o encontró útil mi trabajo y quiere mostrar un gesto de agradecimiento, puede considerar realizar una donación.
+donate_message: Si le gustó o encontró útil mi trabajo y quiere mostrar un gesto de agradecimiento, puede considerar realizar una donación.
 # 404
-404_message:
-  other: Ésta página no existe o ha sido eliminada.
-404_return_to:
-  other: Regresar a
+404_message: Ésta página no existe o ha sido eliminada.
+404_return_to: Regresar a

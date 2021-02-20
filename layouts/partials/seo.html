@@ -55,6 +55,12 @@
 {{- if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">
 {{- end }}
+{{- if .IsTranslated }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">
+{{- range .Translations }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">
+{{- end }}
+{{- end }}
 <meta name="generator" content="Hugo {{ hugo.Version }}">
 {{- if .IsHome }}
 <script type="application/ld+json">

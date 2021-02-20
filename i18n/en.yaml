@@ -1,39 +1,25 @@
 # head
 atom_feed: Atom feed
 # navbar
-home:
-  other: Home
-archives:
-  other: Archives
-categories:
-  other: Categories
-tags:
-  other: Tags
-donate:
-  other: Donate
-feed:
-  other: Feed
-menu_toggle:
-  other: Toggle navigation
-keywords:
-  other: Keywords…
-search:
-  other: Search with DuckDuckGo
+home: Home
+archives: Archives
+categories: Categories
+tags: Tags
+donate: Donate
+feed: Feed
+menu_toggle: Toggle navigation
+keywords: Keywords…
+search: Search with DuckDuckGo
 # content
-latest_posts:
-  other: Latest posts
+latest_posts: Latest posts
 reading_time:
   one: '{{ .Count }} min read'
   other: '{{ .Count }} min read'
-modified:
-  other: Modified
+modified: Modified
 # sidebar
 about: About
 # pages
-donate_message:
-  other: If you like or found my work useful and want to show some appretiation, you can consider donating.
+donate_message: If you like or found my work useful and want to show some appretiation, you can consider donating.
 # 404
-404_message:
-  other: This page doesn't exist or has been deleted.
-404_return_to:
-  other: Return to
+404_message: This page doesn't exist or has been deleted.
+404_return_to: Return to

@@ -10,6 +10,17 @@
 	<div class="body">
 		{{ .Content }}
 
+		{{- if eq .Kind "taxonomy" }}
+		{{- with .Data.Pages }}
+		<ul class="list-inline">
+			{{- range . }}
+			<li class="list-inline-item"><a class="badge bg-primary text-white" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			{{- end }}
+		</ul>
+		<hr>
+		{{- end }}
+		{{- end }}
+
 		<ul class="list-links">
 			{{- range .Pages }}
 			<li>
