@@ -20,5 +20,7 @@
 		</main>
 
 		{{ partial "footer.html" . }}
+
+		{{ partial "assets.html" (dict "context" . "asset_type" "script") }}
 	</body>
 </html>
