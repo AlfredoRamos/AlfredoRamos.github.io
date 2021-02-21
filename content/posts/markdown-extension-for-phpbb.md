@@ -10,6 +10,7 @@ image:
   type: png
   width: 519
   height: 381
+assets: [fslightbox]
 ---
 Markdown extension for phpBB.
 

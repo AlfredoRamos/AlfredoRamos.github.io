@@ -46,6 +46,9 @@ outputs:
 paginate: 12
 paginatePath: 'page'
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     anchorLineNos: true
     lineNos: true

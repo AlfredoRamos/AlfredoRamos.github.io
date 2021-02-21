@@ -10,6 +10,7 @@ image:
   type: png
   width: 773
   height: 733
+assets: [fslightbox]
 ---
 SEO Metadata extension for phpBB.
 

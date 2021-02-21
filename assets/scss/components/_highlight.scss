@@ -1,0 +1,29 @@
+code,
+.highlight {
+	background-color: $bg-highlight;
+	border-radius: 3px;
+}
+
+code {
+	color: $fg-highlight;
+	padding: 0.2rem 0.4rem;
+}
+
+.highlight {
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+.chroma {
+	background-color: transparent;
+
+	> code {
+		background-color: transparent;
+		border-radius: 0;
+		color: inherit;
+		padding: 0;
+	}
+}
+
+pre.chroma {
+	margin-bottom: 0;
+}

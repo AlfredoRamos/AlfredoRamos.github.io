@@ -10,6 +10,7 @@ image:
   type: png
   width: 882
   height: 610
+assets: [fslightbox]
 ---
 Mermaid Diagrams extension for phpBB.
 

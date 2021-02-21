@@ -10,6 +10,7 @@ image:
   type: png
   width: 545
   height: 306
+assets: [fslightbox]
 ---
 Imgur extension for phpBB.
 

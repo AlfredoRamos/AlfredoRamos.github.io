@@ -27,3 +27,27 @@ iconify:
     - name: 'iconify'
       minified: true
       integrity: 'sha384-jQq64HqdQD5xg0PPkpkCOW3x8Nsfx5UT1qWOpoJxLYy6Ef+5i+8xPoAj/I3B+ZMm'
+
+fslightbox:
+  version: '3.2.3'
+  cdn: 'unpkg'
+  js:
+    - name: 'index'
+      minified: false
+      integrity: 'sha384-e3YchYyEbq+ySwKM9IWWWh+yz+ysSWpoo84ME7jaicUZi+g1bAgEYBskDhR2TE6Y'
+
+highlight:
+  version: ~
+  cdn: ~
+  css:
+    - name: 'github'
+      path: 'css'
+      minified: false
+
+marquee:
+  version: ~
+  cdn: ~
+  css:
+    - name: 'marquee'
+      path: 'css'
+      minified: false

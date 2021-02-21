@@ -1,6 +1,0 @@
-- name: 'twitter-bootstrap'
-  weight: 1
-- name: 'lazysizes'
-  weight: 2
-- name: 'iconify'
-  weight: 3

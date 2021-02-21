@@ -10,6 +10,7 @@ image:
   type: png
   width: 660
   height: 263
+assets: [fslightbox]
 ---
 Auto-lock Topics extension for phpBB
 

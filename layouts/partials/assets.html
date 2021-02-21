@@ -1,12 +1,21 @@
 {{- $asset_type := .asset_type -}}
 {{- if in (slice "stylesheet" "script") .asset_type }}
-	{{- with site.Data.assets_list }}
+	{{- $asset_list := index site.Data.asset_list -}}
+	{{- with .context.Params.assets }}
+		{{- range . -}}
+			{{- $asset_list = $asset_list | append (dict "name" .) -}}
+		{{- end -}}
+	{{- end -}}
+
+	{{- with $asset_list }}
 		{{- range . }}
 			{{- $group := index site.Data.assets .name -}}
 			{{- $cdn_url := "" -}}
 
 			{{- if eq $group.cdn "cdnjs" -}}
 				{{- $cdn_url = printf "%s%s/%s/" "https://cdnjs.cloudflare.com/ajax/libs/" .name $group.version -}}
+			{{- else if eq $group.cdn "unpkg" -}}
+				{{- $cdn_url = printf "%s%s@%s/" "https://unpkg.com/" .name $group.version -}}
 			{{- else if eq $group.cdn "iconify" -}}
 				{{- $cdn_url = printf "https://code.iconify.design/1/%s/" $group.version -}}
 			{{- end -}}
@@ -19,6 +28,9 @@
 					{{- $url = print $url .name -}}
 					{{- if .minified -}}{{- $url = printf "%s.min" $url -}}{{ end -}}
 					{{- $url = printf "%s.css" $url -}}
+					{{- if not $cdn_url -}}
+						{{ $url = (resources.Get $url | minify).RelPermalink }}
+					{{- end -}}
 					<link rel="stylesheet" href="{{ $url }}"{{ with .integrity }}{{ printf " integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}>
 				{{- end -}}
 			{{- end }}
@@ -32,6 +44,9 @@
 					{{- $url = print $url .name -}}
 					{{- if .minified -}}{{- $url = printf "%s.min" $url -}}{{ end -}}
 					{{- $url = printf "%s.js" $url -}}
+					{{- if not $cdn_url -}}
+						{{ $url = (resources.Get $url | minify).RelPermalink }}
+					{{- end -}}
 					<script src="{{ $url }}"{{ with .integrity }}{{ printf " integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
 				{{- end -}}
 			{{- end }}

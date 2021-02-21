@@ -10,6 +10,7 @@ image:
   type: png
   width: 1141
   height: 587
+assets: [marquee]
 ---
 Simple CSS Marquee.
 
