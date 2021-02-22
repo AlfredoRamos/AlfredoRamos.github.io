@@ -7,7 +7,7 @@
 
 		<div class="collapse navbar-collapse" id="site-navigation">
 			{{- with .Site.Data.menu }}
-			{{- $locale := ($.Language.Lang | default $.Site.LanguageCode) -}}
+			{{- $locale := $.Language.Lang -}}
 			<ul class="navbar-nav me-auto">
 				{{ range . }}
 				{{- $url := cond (ne $locale "en") (printf "url_%s" $locale) "url" -}}

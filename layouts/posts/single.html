@@ -1,5 +1,5 @@
 {{- define "content" }}
-{{- $locale := .Language.Lang | default .Site.LanguageCode -}}
+{{- $locale := .Language.Lang -}}
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
 {{- $author := index .Site.Data.authors $author -}}

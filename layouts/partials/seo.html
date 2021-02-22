@@ -1,4 +1,4 @@
-{{- $locale := (.Language.Lang | default .Site.LanguageCode) -}}
+{{- $locale := .Language.Lang -}}
 {{- $description := trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " -}}
 {{- $categories := .GetTerms (cond (eq $locale "es") "categorias" "categories") -}}
 {{- $tags := .GetTerms (cond (eq $locale "es") "etiquetas" "tags") -}}
