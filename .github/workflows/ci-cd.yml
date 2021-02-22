@@ -104,7 +104,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-composer-
       - name: Load SSH key
-        uses: webfactory/ssh-agent@v0.4.1
+        uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.SATIS_SSH_KEY }}
       - name: Sync ${{ env.BRANCH }} branch
