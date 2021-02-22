@@ -12,7 +12,7 @@ image:
   height: 263
 assets: [fslightbox]
 ---
-Auto-lock Topics extension for phpBB
+Auto-lock Topics extension for phpBB.
 
 [![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-auto-lock-topics/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/actions)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-auto-lock-topics.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/releases)
@@ -35,10 +35,10 @@ It will automatically lock old topics using phpBB's cron functionality.
 
 ### Preview
 
-{{<preview src="https://i.imgur.com/aBjwVBpb.png" link="https://i.imgur.com/aBjwVBp.png" alt="Forums" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/mBCEbSfb.png" link="https://i.imgur.com/mBCEbSf.png" alt="Forum settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/uM7dkoGb.png" link="https://i.imgur.com/uM7dkoG.png" alt="Topics locked" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/PIOhYf7b.png" link="https://i.imgur.com/PIOhYf7.png" alt="Admin log" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/aBjwVBpb.png" link="https://i.imgur.com/aBjwVBp.png" alt="Forums">}}
+{{<preview src="https://i.imgur.com/mBCEbSfb.png" link="https://i.imgur.com/mBCEbSf.png" alt="Forum settings">}}
+{{<preview src="https://i.imgur.com/uM7dkoGb.png" link="https://i.imgur.com/uM7dkoG.png" alt="Topics locked">}}
+{{<preview src="https://i.imgur.com/PIOhYf7b.png" link="https://i.imgur.com/PIOhYf7.png" alt="Admin log">}}
 
 *(Click to view in full size)*
 
@@ -50,6 +50,7 @@ It will automatically lock old topics using phpBB's cron functionality.
 ### Support
 
 - [**Download page**](https://www.phpbb.com/customise/db/extension/auto_lock_topics/)
+- [FAQ](https://www.phpbb.com/customise/db/extension/auto_lock_topics/faq)
 - [Support area](https://www.phpbb.com/customise/db/extension/auto_lock_topics/support)
 - [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues)
 - [Crowdin translations](https://crowdin.com/project/phpbb-ext-auto-lock-topics)

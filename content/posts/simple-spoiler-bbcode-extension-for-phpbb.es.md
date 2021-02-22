@@ -80,12 +80,12 @@ Para personalizar la apariencia:
 - Descargue la [última versión](https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/releases)
 - Descomprima el archivo `*.zip` o `*.tar.gz`
 - Copie los archivos y directorios dentro de `{PHPBB_ROOT}/ext/alfredoramos/simplespoiler/`
-- Dirígase a su `Panel de Control de Administrador` > `Personalizar` > `Administrar extensiones`
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
 - Haga clic en `Habilitar` y confirme
 
 ### Desinstalación
 
-- Dirígase a su `Panel de Control de Administrador` > `Personalizar` > `Administrar extensiones`
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
 - Haga clic en `Deshabilitar` y confirme
 - Regrese a `Administrar extensiones` > `Simple Spoiler BBCode` > `Borrar datos` y confirme
 

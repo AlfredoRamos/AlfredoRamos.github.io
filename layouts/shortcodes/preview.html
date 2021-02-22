@@ -4,11 +4,11 @@
 	{{- if .Get "link" -}}
 	<a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }} data-fslightbox="preview">
 	{{- end }}
-		<img src="{{ .Get "src" }}"
+		<img data-src="{{ .Get "src" }}"
 			{{- if or (.Get "alt") (.Get "caption") }} alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"{{- end -}}
 			{{- with .Get "width" }} width="{{ . }}"{{ end -}}
 			{{- with .Get "height" }} height="{{ . }}"{{ end -}}
-			{{- with .Get "imgclass" }} class="{{ . }}"{{ end -}}>
+			class="lazyload{{- with .Get "imgclass" }} {{ . }}{{ end -}}">
 	{{- if .Get "link" }}</a>{{ end -}}
 	{{- if and (.Get "figure") (or (or (.Get "title") (.Get "caption")) (.Get "attr")) -}}
 		<figcaption>
