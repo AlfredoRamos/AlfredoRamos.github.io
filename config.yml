@@ -13,14 +13,10 @@ languages:
       etiqueta: etiquetas
       archivo: archivos
     params:
-      tagline: 'Una colección de proyectos personales'
-      biography: 'Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.'
       flag: 'twemoji:flag-for-flag-mexico'
     paginatePath: 'pagina'
     weight: 2
 params:
-  tagline: 'A collection of personal projects'
-  biography: 'I am a computer systems engineer, open source software enthusiast, passionate about Arch Linux and GNU/Linux in general.'
   author: 'AlfredoRamos'
   flag: 'twemoji:flag-for-flag-united-states'
 taxonomies:
@@ -65,7 +61,11 @@ related:
     weight: 100
   - name: 'tags'
     weight: 80
+  - name: 'etiquetas'
+    weight: 80
   - name: 'categories'
+    weight: 60
+  - name: 'categorias'
     weight: 60
   - name: 'date'
     weight: 10

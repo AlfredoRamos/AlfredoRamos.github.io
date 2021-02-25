@@ -7,7 +7,7 @@
 				{{- .Title }} • {{ site.Title -}}
 			{{- end -}}
 		{{- else -}}
-			{{- site.Title }} • {{ site.Params.tagline -}}
+			{{- site.Title }} • {{ i18n "tagline" -}}
 		{{- end -}}
 	</title>
 	<subtitle>{{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}</subtitle>

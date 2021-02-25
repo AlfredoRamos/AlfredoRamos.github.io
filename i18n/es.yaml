@@ -1,4 +1,5 @@
 # head
+tagline: Una colección de proyectos personales
 atom_feed: Feed Atom
 # navbar
 home: Inicio
@@ -18,6 +19,8 @@ reading_time:
 modified: Modificado
 # sidebar
 about: Acerca de
+biography: Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.
+related_posts: Artículos relacionados
 # pages
 donate_message: Si le gustó o encontró útil mi trabajo y quiere mostrar un gesto de agradecimiento, puede considerar realizar una donación.
 # 404

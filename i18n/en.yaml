@@ -1,4 +1,5 @@
 # head
+tagline: A collection of personal projects
 atom_feed: Atom feed
 # navbar
 home: Home
@@ -18,6 +19,8 @@ reading_time:
 modified: Modified
 # sidebar
 about: About
+biography: I am a computer systems engineer, open source software enthusiast, passionate about Arch Linux and GNU/Linux in general.
+related_posts: Related posts
 # pages
 donate_message: If you like or found my work useful and want to show some appretiation, you can consider donating.
 # 404

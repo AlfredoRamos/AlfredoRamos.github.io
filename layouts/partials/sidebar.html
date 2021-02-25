@@ -1,7 +1,7 @@
 <aside class="sidebar col-lg-3 overflow-hidden">
 	{{- $locale := .Language.Lang -}}
 	{{- $default_author := .Param "author" -}}
-	{{- $biography := .Param "biography" -}}
+	{{- $biography := i18n "biography" -}}
 	{{- $author := .Params.author | default $default_author -}}
 	{{- $author := index site.Data.authors $author -}}
 	{{- $author := merge $author (dict "biography" $biography) -}}
@@ -49,6 +49,37 @@
 		</header>
 		<div class="body">
 			{{ partial "donate.html" . }}
+		</div>
+	</section>
+	{{- end }}
+
+	{{- $related := site.RegularPages.Related . | first 10 -}}
+	{{- with $related }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "related_posts" }}</h3>
+		</header>
+		<div class="body">
+			<div class="list-related-posts d-flex flex-wrap">
+				{{- range . }}
+				<div class="d-flex flex-wrap mb-2 col-12 col-md-6 col-lg-12">
+					<a href="{{ .RelPermalink }}" class="d-block col-2 col-md-3 me-2 img-container rounded border">
+						{{- if .Params.image.url }}
+						<picture>
+							<img data-src="{{ .Params.image.url }}" class="rounded w-100 h-100 lazyload" alt="{{ .Title }}">
+						</picture>
+						{{- else }}
+						<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#55595c"></rect>
+							<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
+						</svg>
+						{{- end }}
+					</a>
+					<a href="{{ .RelPermalink }}" class="d-block col">{{ .Title }}</a>
+				</div>
+				{{- end }}
+			</div>
 		</div>
 	</section>
 	{{- end }}
