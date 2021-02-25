@@ -5,13 +5,13 @@
 {{- $image := .Params.image -}}
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
-{{- $author := index .Site.Data.authors $author -}}
-{{- $paginator := .Paginate (where .Site.RegularPages "Type" "posts") -}}
+{{- $author := index site.Data.authors $author -}}
+{{- $paginator := .Paginate (where site.RegularPages "Type" "posts") -}}
 <meta name="description" content="{{ $description }}">
 {{- with $image }}
 <meta name="twitter:card" content="summary_large_image">
 {{- end }}
-{{- with (index $.Site.Data.authors $default_author).networks.twitter }}
+{{- with (index site.Data.authors $default_author).networks.twitter }}
 <meta name="twitter:site" content="@{{ .id }}">
 {{- end }}
 {{- with $author.networks.twitter }}
@@ -21,7 +21,7 @@
 {{- with $locale }}
 <meta property="og:locale" content="{{ printf "%s_%s" . (cond (eq . "es") "MX" "US") }}">
 {{- end }}
-<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ cond (eq .Type "posts") "article" "website" }}">
 <meta property="og:title" content="{{ .Title }}">
@@ -50,7 +50,7 @@
 <meta property="article:section" content="{{ (index . 0).Title }}">
 {{- end }}
 {{- with .OutputFormats.Get "ATOM" }}
-<link rel="{{ .Rel }}" {{ printf "type=%q" .MediaType.Type | safeHTMLAttr }} href="{{ .Permalink }}" title="{{ i18n "atom_feed" }} · {{ $.Site.Title }}">
+<link rel="{{ .Rel }}" {{ printf "type=%q" .MediaType.Type | safeHTMLAttr }} href="{{ .Permalink }}" title="{{ i18n "atom_feed" }} · {{ site.Title }}">
 {{- end }}
 {{- if ne .Kind "404" }}
 <link rel="canonical" href="{{ .Permalink }}">

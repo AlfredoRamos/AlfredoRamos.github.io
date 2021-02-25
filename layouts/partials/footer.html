@@ -1,11 +1,11 @@
 <footer class="footer bg-light">
 	<div class="container py-3 text-muted d-flex flex-wrap justify-content-between align-items-center">
 		<div class="credits">
-			© 2015-{{ now.Format "2006" }} <a href="{{ .Site.Home.Permalink }}" class="text-muted">{{ .Site.Title }}</a>
+			© 2015-{{ now.Format "2006" }} <a href="{{ site.Home.Permalink }}" class="text-muted">{{ site.Title }}</a>
 		</div>
 		{{- $default_author := .Param "author" -}}
 		{{- $author := .Params.author | default $default_author -}}
-		{{- $author := index .Site.Data.authors $author -}}
+		{{- $author := index site.Data.authors $author -}}
 		{{- with $author.networks }}
 		<ul class="social-networks list-inline mb-0">
 			{{- range $key, $value := sort . "weight" }}

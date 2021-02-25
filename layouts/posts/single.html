@@ -2,7 +2,7 @@
 {{- $locale := .Language.Lang -}}
 {{- $default_author := .Param "author" -}}
 {{- $author := .Params.author | default $default_author -}}
-{{- $author := index .Site.Data.authors $author -}}
+{{- $author := index site.Data.authors $author -}}
 <article class="post overflow-hidden mb-4">
 	<header class="header">
 		<h1 class="title h3">

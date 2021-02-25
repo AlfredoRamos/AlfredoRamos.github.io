@@ -4,10 +4,10 @@
 	<title>
 		{{- if not .IsHome -}}
 			{{- if .Title -}}
-				{{- .Title }} • {{ .Site.Title -}}
+				{{- .Title }} • {{ site.Title -}}
 			{{- end -}}
 		{{- else -}}
-			{{- .Site.Title }} • {{ .Site.Params.tagline -}}
+			{{- site.Title }} • {{ site.Params.tagline -}}
 		{{- end -}}
 	</title>
 	<subtitle>{{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}</subtitle>
@@ -24,14 +24,14 @@
 	{{- end }}
 	<updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</updated>
 	<id>{{ .Permalink }}</id>
-	{{- with (index .Site.Data.authors $default_author) }}
+	{{- with (index site.Data.authors $default_author) }}
 	<author>
 		<name>{{ .name }}</name>
-		<uri>{{ $.Site.Home.Permalink }}</uri>
+		<uri>{{ site.Home.Permalink }}</uri>
 	</author>
 	<rights>© 2015-{{ now.Format "2006" }} {{ .name }}</rights>
 	{{- end }}
-	{{- $posts := (where .Site.RegularPages "Type" "posts") -}}
+	{{- $posts := (where site.RegularPages "Type" "posts") -}}
 	{{- with $posts }}
 	{{- range . }}
 	<entry xml:lang="{{ .Language.Lang }}">
@@ -47,7 +47,7 @@
 		<id>{{ .Permalink }}</id>
 		<summary type="html">{{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " ") " " }}</summary>
 		{{- $author := .Params.author | default $default_author -}}
-		{{- $author := index $.Site.Data.authors $author -}}
+		{{- $author := index site.Data.authors $author -}}
 		{{- with $author }}
 		<author>
 			<name>{{ .name }}</name>

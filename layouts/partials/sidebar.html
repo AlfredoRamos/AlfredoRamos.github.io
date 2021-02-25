@@ -3,7 +3,7 @@
 	{{- $default_author := .Param "author" -}}
 	{{- $biography := .Param "biography" -}}
 	{{- $author := .Params.author | default $default_author -}}
-	{{- $author := index .Site.Data.authors $author -}}
+	{{- $author := index site.Data.authors $author -}}
 	{{- $author := merge $author (dict "biography" $biography) -}}
 	{{ with $author }}
 	<section class="widget overflow-hidden mb-4">
@@ -53,7 +53,7 @@
 	</section>
 	{{- end }}
 
-	{{- $archives := index .Site.Taxonomies (cond (eq $locale "es") "archivos" "archives") -}}
+	{{- $archives := index site.Taxonomies (cond (eq $locale "es") "archivos" "archives") -}}
 	{{- with $archives }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
@@ -69,7 +69,7 @@
 	</section>
 	{{- end }}
 
-	{{- $categories := index .Site.Taxonomies (cond (eq $locale "es") "categorias" "categories") -}}
+	{{- $categories := index site.Taxonomies (cond (eq $locale "es") "categorias" "categories") -}}
 	{{- with $categories }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">
@@ -85,7 +85,7 @@
 	</section>
 	{{- end }}
 
-	{{- $tags := index .Site.Taxonomies (cond (eq $locale "es") "etiquetas" "tags") -}}
+	{{- $tags := index site.Taxonomies (cond (eq $locale "es") "etiquetas" "tags") -}}
 	{{- with $tags }}
 	<section class="widget overflow-hidden mb-4">
 		<header class="header">

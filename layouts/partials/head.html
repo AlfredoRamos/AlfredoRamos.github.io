@@ -5,10 +5,10 @@
 	<title>
 		{{- if not .IsHome -}}
 			{{- if .Title -}}
-				{{- .Title }} • {{ .Site.Title -}}
+				{{- .Title }} • {{ site.Title -}}
 			{{- end -}}
 		{{- else -}}
-			{{- .Site.Title }} • {{ .Site.Params.tagline -}}
+			{{- site.Title }} • {{ site.Params.tagline -}}
 		{{- end -}}
 	</title>
 
