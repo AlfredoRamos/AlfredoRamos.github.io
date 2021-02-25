@@ -44,10 +44,22 @@ highlight:
       path: 'css'
       minified: false
 
+    - name: 'native'
+      path: 'css'
+      minified: false
+
 marquee:
   version: ~
   cdn: ~
   css:
     - name: 'marquee'
       path: 'css'
+      minified: false
+
+dark-mode:
+  version: ~
+  cdn: ~
+  js:
+    - name: 'dark-mode'
+      path: 'js'
       minified: false

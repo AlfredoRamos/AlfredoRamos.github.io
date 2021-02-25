@@ -10,6 +10,11 @@ $grid-breakpoints: (
 
 // Background colors
 $bg-highlight: #f8f8f8;
+// Dark mode
+$bg-dark-body: #232b32;
+$bg-dark-code: #1d1f21;
+$bg-dark-badge: #212529;
+$bg-dark-footer: #343a40;
 
 // Foreground colors
 $fg-body: #4a4a4a;
@@ -18,3 +23,9 @@ $fg-highlight: #24292e;
 $fg-donate: #dc3545;
 $fg-icon: #007bff;
 $fg-icon-hover: #0056b3;
+// Dark mode
+$fg-dark-body: #efefef;
+$fg-dark-code: #c5c8c6;
+
+// Border colors
+$br-default: #343a40;

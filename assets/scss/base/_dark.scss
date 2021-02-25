@@ -1,0 +1,9 @@
+[dark-mode] {
+	@include dark-mode;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		@include dark-mode;
+	}
+}

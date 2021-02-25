@@ -39,7 +39,7 @@ It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate
 	- Gantt diagram
 	- Git graph
 	- Pie chart
-- Compatible with [Markdown]({{<ref "markdown-extension-for-phpbb">}}) extension
+- Compatible with [Markdown]({{<relref "markdown-extension-for-phpbb">}}) extension
 - It doesn't require extra configuration
 
 ### Preview

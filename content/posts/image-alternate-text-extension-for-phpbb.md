@@ -34,7 +34,7 @@ Allows you to set alternate text to image tags to abide SEO recommendations.
 ### Features
 
 - It doesn't require additional configuration
-- Compatibility with [Markdown]({{<ref "markdown-extension-for-phpbb">}}) extension
+- Compatibility with [Markdown]({{<relref "markdown-extension-for-phpbb">}}) extension
 - Full support for Unicode text, including emojis
 - The engine sanitizes the text, so no unsafe text is used
 

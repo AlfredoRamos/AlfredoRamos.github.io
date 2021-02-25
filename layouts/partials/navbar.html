@@ -11,13 +11,13 @@
 			<ul class="navbar-nav me-auto">
 				{{ range . }}
 				{{- $url := cond (ne $locale "en") (printf "url_%s" $locale) "url" -}}
-				{{- $url := cond (isset . $url) $url "url" -}}
-				{{- $url := index . $url | relLangURL -}}
+				{{- $url = cond (isset . $url) $url "url" -}}
+				{{- $url = index . $url | relLangURL -}}
 				<li class="nav-item">
 					<a class="nav-link{{ if eq $.RelPermalink $url }} active{{ end }}"{{ if eq $.RelPermalink $url }} aria-current="page"{{ end }} href="{{ $url }}">
 						{{- if isset . "icon" }}
 						<span class="iconify inline-icon {{ .name | urlize }}-icon me-1" {{ printf "data-icon=%q" .icon | safeHTMLAttr }}></span>
-						{{- end }}
+						{{- end -}}
 						{{ i18n .name }}
 					</a>
 				</li>
@@ -41,7 +41,7 @@
 						<a class="dropdown-item" href="{{ .RelPermalink }}">
 							{{- with (.Param "flag") -}}
 							<span class="iconify inline-icon flag-icon me-1" {{ printf "data-icon=%q" . | safeHTMLAttr }}></span>
-							{{- end }}
+							{{- end -}}
 							{{- .Language.LanguageName -}}
 						</a>
 					</li>

@@ -6,3 +6,5 @@
   weight: 3
 - name: 'iconify'
   weight: 4
+- name: 'dark-mode'
+  weight: 5
