@@ -60,9 +60,7 @@ jobs:
           publish_branch: 'gh-pages-test'
           force_orphan: true
   cache:
-    # TODO: Remove invalid condition before merging this PR
-    # Added to skip this job while testing
-    if: ${{ !contains(github.event.head_commit.message, '[skip cache]') && success() && failure() }}
+    if: ${{ !contains(github.event.head_commit.message, '[skip cache]') && success() }}
     name: Cache
     needs: deploy
     runs-on: ubuntu-latest
@@ -73,8 +71,10 @@ jobs:
       - name: Setup Go cache
         uses: actions/cache@v2
         with:
-          path: ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          path: |
+            ~/go/pkg/mod
+            ~/go/bin
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum', '**/cloudflare.go') }}
           restore-keys: |
             ${{ runner.os }}-go-
 
@@ -89,8 +89,14 @@ jobs:
           CLOUDFLARE_API_ZONE_ID: ${{ secrets.CLOUDFLARE_API_ZONE_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
-          go mod download -x
-          go run cloudflare.go -cache clear
+          go_filename="cloudflare.go"
+          bin_filename="$(basename -s '.go' "${go_filename}")"
+          if [[ ! -f "${bin_filename}" ]]
+          then
+            go mod tidy
+            go install "${go_filename}"
+          fi
+          echo "${bin_filename} -cache clear"
 
   satis:
     if: ${{ !contains(github.event.head_commit.message, '[skip satis]') && github.event_name == 'schedule' }}
