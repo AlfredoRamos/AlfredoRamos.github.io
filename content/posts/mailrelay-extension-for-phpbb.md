@@ -15,7 +15,7 @@ Mailrelay extension for phpBB.
 
 [![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-mailrelay/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mailrelay/actions)
 [![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-mailrelay.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mailrelay/releases)
-[![Code Quality](https://img.shields.io/codacy/grade/4f32454baf88449b864091d05c1a14c5.svg?style=flat-square)](https://app.codacy.com/manual/AlfredoRamos/phpbb-ext-mailrelay/dashboard)
+[![Code Quality](https://img.shields.io/codacy/grade/4f32454baf88449b864091d05c1a14c5.svg?style=flat-square)](https://app.codacy.com/gh/AlfredoRamos/phpbb-ext-mailrelay/dashboard)
 [![Translation Progress](https://badges.crowdin.net/phpbb-ext-mailrelay/localized.svg)](https://crowdin.com/project/phpbb-ext-mailrelay)
 [![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-mailrelay.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-mailrelay/master/license.txt)
 
