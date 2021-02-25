@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "2cd71d3a512e07631aa8b8d253516219c47d7ec3"
+                    "reference": "45f8cceaad4468baf5697642f3fc27fede8bf151"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/2cd71d3a512e07631aa8b8d253516219c47d7ec3",
-                    "reference": "2cd71d3a512e07631aa8b8d253516219c47d7ec3",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/45f8cceaad4468baf5697642f3fc27fede8bf151",
+                    "reference": "45f8cceaad4468baf5697642f3fc27fede8bf151",
                     "shasum": ""
                 },
                 "require": {

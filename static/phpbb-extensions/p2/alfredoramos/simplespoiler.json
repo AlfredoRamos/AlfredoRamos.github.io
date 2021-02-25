@@ -7,7 +7,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "2840a52a651a5dd3db3a63a51c11257a36c58057"
                 },
                 "dist": {
@@ -55,16 +55,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -73,7 +63,7 @@
                 "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "751823acc2f37c77d6046d02dfe72dd619bdc76a"
                 },
                 "dist": {
@@ -121,16 +111,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.1",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -139,7 +119,7 @@
                 "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "c90514b42d0e1bf1ff0cb62a24e97017751771ca"
                 },
                 "dist": {
@@ -187,16 +167,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.2",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -205,7 +175,7 @@
                 "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "446c5a2cd9def6abb345d24c4be1f7a2c46a6755"
                 },
                 "dist": {
@@ -253,16 +223,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.3",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -271,7 +231,7 @@
                 "version_normalized": "1.0.4.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "cc1412a9079156c310bf8da1c141c5262b5f9a0d"
                 },
                 "dist": {
@@ -319,16 +279,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.4",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -337,7 +287,7 @@
                 "version_normalized": "1.0.5.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "cd334338d3fb7f535d70c6917b43749f9288bb0a"
                 },
                 "dist": {
@@ -385,16 +335,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.5",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -403,7 +343,7 @@
                 "version_normalized": "1.0.6.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "00ad79dd6d06c10492626058fcdad6d46cea7dc7"
                 },
                 "dist": {
@@ -451,16 +391,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.6",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -469,7 +399,7 @@
                 "version_normalized": "1.0.7.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "ca4680bd78afce3e98ce9518132f79a90a539dff"
                 },
                 "dist": {
@@ -518,16 +448,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.7",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -536,7 +456,7 @@
                 "version_normalized": "1.0.8.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "da6d3049bc7e7dd87375bf69f4ed299cd952f61f"
                 },
                 "dist": {
@@ -585,16 +505,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.8",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -603,7 +513,7 @@
                 "version_normalized": "1.0.9.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "606361d51f31eae12fae8e3354e53c834bc7280c"
                 },
                 "dist": {
@@ -652,16 +562,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.0.9",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -670,7 +570,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "a970ae2dd5ff2a860833d5b906e8e7df6d6d7692"
                 },
                 "dist": {
@@ -719,16 +619,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.1.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -737,7 +627,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "eabc80b63d76b00afd14be4658335b735d5acd63"
                 },
                 "dist": {
@@ -786,16 +676,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.2.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -804,7 +684,7 @@
                 "version_normalized": "1.2.1.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "4cc64387afdc4035a4c48d8356be2ee09b98bbb6"
                 },
                 "dist": {
@@ -853,16 +733,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.2.1",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -871,7 +741,7 @@
                 "version_normalized": "1.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "80eeaa3e2b9b639a1ae3a6e7abcaa32865e71a18"
                 },
                 "dist": {
@@ -920,16 +790,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.3.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -938,7 +798,7 @@
                 "version_normalized": "1.3.1.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "65c21f16c4b591a88378ee8971d4004098cba8d1"
                 },
                 "dist": {
@@ -987,16 +847,6 @@
                     "extension",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/1.3.1",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -1005,7 +855,7 @@
                 "version_normalized": "2.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "f8843d0d9eaf391091c289163e75e5861fcf8954"
                 },
                 "dist": {
@@ -1055,16 +905,6 @@
                     "html5",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -1073,7 +913,7 @@
                 "version_normalized": "2.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "607037cb1f8ec4f97b6da694c46f26d991889dcf"
                 },
                 "dist": {
@@ -1123,16 +963,6 @@
                     "html5",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.1.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -1141,7 +971,7 @@
                 "version_normalized": "2.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "ed8c8f195039fa83a1376912f4e546a8d32b6657"
                 },
                 "dist": {
@@ -1191,16 +1021,6 @@
                     "html5",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.2.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -1209,7 +1029,7 @@
                 "version_normalized": "2.3.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "1402381df20e225c5e288432743dcda28d43039b"
                 },
                 "dist": {
@@ -1259,16 +1079,6 @@
                     "html5",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -1277,7 +1087,7 @@
                 "version_normalized": "2.3.1.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "c169b7bd0debac397a442cc0fef5f27a27aa20c5"
                 },
                 "dist": {
@@ -1327,16 +1137,6 @@
                     "html5",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.1",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -1345,7 +1145,7 @@
                 "version_normalized": "2.3.2.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "2143d108a82cc2e791868e33ca594f76a0d688ea"
                 },
                 "dist": {
@@ -1395,16 +1195,6 @@
                     "html5",
                     "phpbb",
                     "spoiler"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/2.3.2",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             }
         ]

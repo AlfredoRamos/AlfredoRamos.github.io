@@ -7,7 +7,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "36ebc1c10397295c4bc50fed23a7a40e541c5820"
                 },
                 "dist": {
@@ -57,16 +57,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -75,7 +65,7 @@
                 "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "737552e42c53a96ff0e4c2f1abc7ad4d08c6796b"
                 },
                 "dist": {
@@ -125,16 +115,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.1",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -143,7 +123,7 @@
                 "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "590bebafd26f43acd7f173255b82f9977c9d2af0"
                 },
                 "dist": {
@@ -193,16 +173,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.2",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -211,7 +181,7 @@
                 "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "84d1502a8b3ed4a6ace82f7b588b82e0f0339d79"
                 },
                 "dist": {
@@ -261,16 +231,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.0.3",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -279,7 +239,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "a1cce3ff0051cb63802e8cc550d9dfbaa63cf662"
                 },
                 "dist": {
@@ -329,16 +289,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.1.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -347,7 +297,7 @@
                 "version_normalized": "1.1.1.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "2cc89b4c7ad1d45f58b5588763dad07a5134a49b"
                 },
                 "dist": {
@@ -397,16 +347,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.1.1",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -415,7 +355,7 @@
                 "version_normalized": "1.1.2.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "a63fb3a03d618e858c3036963d89868e29a77cf2"
                 },
                 "dist": {
@@ -465,16 +405,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.1.2",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             },
             {
@@ -483,7 +413,7 @@
                 "version_normalized": "1.2.0.0",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
+                    "url": "git@github.com:AlfredoRamos/phpbb-ext-auto-lock-topics.git",
                     "reference": "6bf7727cd436dbf4847353343f14d6ca474f10c3"
                 },
                 "dist": {
@@ -533,16 +463,6 @@
                     "extension",
                     "phpbb",
                     "topics"
-                ],
-                "support": {
-                    "source": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/tree/1.2.0",
-                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics/issues"
-                },
-                "funding": [
-                    {
-                        "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
-                    }
                 ]
             }
         ]
