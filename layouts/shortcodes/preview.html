@@ -7,7 +7,7 @@
 		<img data-src="{{ .Get "src" }}"
 			{{- if or (.Get "alt") (.Get "caption") }} alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"{{- end -}}
 			{{- with .Get "width" }} width="{{ . }}"{{ end -}}
-			{{- with .Get "height" }} height="{{ . }}"{{ end -}}
+			{{- with .Get "height" }} height="{{ . }}"{{ end }}
 			class="lazyload{{- with .Get "imgclass" }} {{ . }}{{ end -}}">
 	{{- if .Get "link" }}</a>{{ end -}}
 	{{- if and (.Get "figure") (or (or (.Get "title") (.Get "caption")) (.Get "attr")) -}}

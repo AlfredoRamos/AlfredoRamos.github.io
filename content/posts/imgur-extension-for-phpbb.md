@@ -43,12 +43,12 @@ If the upload is successful it will add the image in the topic, private message 
 
 ### Preview
 
-{{<preview src="https://i.imgur.com/FDKbWoqb.png" link="https://i.imgur.com/FDKbWoq.png" alt="ACP settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/xxCEse7b.png" link="https://i.imgur.com/xxCEse7.png" alt="ACP settings API" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/CKcYnY2b.png" link="https://i.imgur.com/CKcYnY2.png" alt="ACP output settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/8C7sMR2b.png" link="https://i.imgur.com/8C7sMR2.png" alt="Topic" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/YZNmOxeb.png" link="https://i.imgur.com/YZNmOxe.png" alt="Output menu" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/a7UUoEYb.png" link="https://i.imgur.com/a7UUoEY.png" alt="Output tab" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/FDKbWoqb.png" link="https://i.imgur.com/FDKbWoq.png" alt="ACP settings">}}
+{{<preview src="https://i.imgur.com/xxCEse7b.png" link="https://i.imgur.com/xxCEse7.png" alt="ACP settings API">}}
+{{<preview src="https://i.imgur.com/CKcYnY2b.png" link="https://i.imgur.com/CKcYnY2.png" alt="ACP output settings">}}
+{{<preview src="https://i.imgur.com/8C7sMR2b.png" link="https://i.imgur.com/8C7sMR2.png" alt="Topic">}}
+{{<preview src="https://i.imgur.com/YZNmOxeb.png" link="https://i.imgur.com/YZNmOxe.png" alt="Output menu">}}
+{{<preview src="https://i.imgur.com/a7UUoEYb.png" link="https://i.imgur.com/a7UUoEY.png" alt="Output tab">}}
 
 *(Click to view in full size)*
 

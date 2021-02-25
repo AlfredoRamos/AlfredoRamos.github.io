@@ -30,7 +30,13 @@
 				</h2>
 				<ul class="meta list-inline list-with-separator text-muted mb-1">
 					<li class="list-inline-item">
-						<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+						<time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+							{{- if eq .Language.Lang "es" -}}
+								{{ index site.Data.meses (printf "%d" .Date.Month) }} {{ .Date.Day }}, {{ .Date.Year }}
+							{{- else -}}
+								{{ .Date.Format "January 2, 2006" }}
+							{{- end -}}
+						</time>
 					</li>
 					<li class="list-inline-item">{{ i18n "reading_time" .ReadingTime }}</li>
 				</ul>

@@ -56,7 +56,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: public
           publish_branch: 'gh-pages-test'
           force_orphan: true
   cache:
@@ -91,7 +91,7 @@ jobs:
         run: |
           go_filename="cloudflare.go"
           bin_filename="$(basename -s '.go' "${go_filename}")"
-          if [[ ! -f "${bin_filename}" ]]
+          if [[ ! -f "${HOME}/go/bin/${bin_filename}" ]]
           then
             go mod tidy
             go install "${go_filename}"
