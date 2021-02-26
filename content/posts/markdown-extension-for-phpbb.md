@@ -35,24 +35,24 @@ It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/L
 - Set per forum permissions to use Markdown
 - Posting option to disable Markdown only in the current message
 - Add help page to explain users how write messages in Markdown
-- Add indentation when pressing the tab key inside Markdown code blocks
+- Add indentation when pressing the <kbd>Tab</kbd> key inside Markdown code blocks
 
 ### Preview
 
-{{<preview src="https://i.imgur.com/PSGGuM3b.png" link="https://i.imgur.com/PSGGuM3.png" alt="Board features" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/qYZ7JBCb.png" link="https://i.imgur.com/qYZ7JBC.png" alt="Post settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/np1PqN6b.png" link="https://i.imgur.com/np1PqN6.png" alt="Private message settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/aEKJxWRb.png" link="https://i.imgur.com/aEKJxWR.png" alt="Signature settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/eiJJvbMb.png" link="https://i.imgur.com/eiJJvbM.png" alt="Post group permissions" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/spT9zXYb.png" link="https://i.imgur.com/spT9zXY.png" alt="Profile group permissions" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/YXcNxXKb.png" link="https://i.imgur.com/YXcNxXK.png" alt="Private messages group permissions" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/5GIQpMVb.png" link="https://i.imgur.com/5GIQpMV.png" alt="Forum permissions" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/zWhjOfVb.png" link="https://i.imgur.com/zWhjOfV.png" alt="User posting defaults" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/kba871fb.png" link="https://i.imgur.com/kba871f.png" alt="Markdown post" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/HGvlwhIb.png" link="https://i.imgur.com/HGvlwhI.png" alt="Markdown private message" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/svBmgYXb.png" link="https://i.imgur.com/svBmgYX.png" alt="Markdown signature" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/1Z7CDDrb.png" link="https://i.imgur.com/1Z7CDDr.png" alt="Posting editor option" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/slz1Z9Yb.png" link="https://i.imgur.com/slz1Z9Y.png" alt="Task list" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/PSGGuM3b.png" link="https://i.imgur.com/PSGGuM3.png" alt="Board features">}}
+{{<preview src="https://i.imgur.com/qYZ7JBCb.png" link="https://i.imgur.com/qYZ7JBC.png" alt="Post settings">}}
+{{<preview src="https://i.imgur.com/np1PqN6b.png" link="https://i.imgur.com/np1PqN6.png" alt="Private message settings">}}
+{{<preview src="https://i.imgur.com/aEKJxWRb.png" link="https://i.imgur.com/aEKJxWR.png" alt="Signature settings">}}
+{{<preview src="https://i.imgur.com/eiJJvbMb.png" link="https://i.imgur.com/eiJJvbM.png" alt="Post group permissions">}}
+{{<preview src="https://i.imgur.com/spT9zXYb.png" link="https://i.imgur.com/spT9zXY.png" alt="Profile group permissions">}}
+{{<preview src="https://i.imgur.com/YXcNxXKb.png" link="https://i.imgur.com/YXcNxXK.png" alt="Private messages group permissions">}}
+{{<preview src="https://i.imgur.com/5GIQpMVb.png" link="https://i.imgur.com/5GIQpMV.png" alt="Forum permissions">}}
+{{<preview src="https://i.imgur.com/zWhjOfVb.png" link="https://i.imgur.com/zWhjOfV.png" alt="User posting defaults">}}
+{{<preview src="https://i.imgur.com/kba871fb.png" link="https://i.imgur.com/kba871f.png" alt="Markdown post">}}
+{{<preview src="https://i.imgur.com/HGvlwhIb.png" link="https://i.imgur.com/HGvlwhI.png" alt="Markdown private message">}}
+{{<preview src="https://i.imgur.com/svBmgYXb.png" link="https://i.imgur.com/svBmgYX.png" alt="Markdown signature">}}
+{{<preview src="https://i.imgur.com/1Z7CDDrb.png" link="https://i.imgur.com/1Z7CDDr.png" alt="Posting editor option">}}
+{{<preview src="https://i.imgur.com/slz1Z9Yb.png" link="https://i.imgur.com/slz1Z9Y.png" alt="Task list">}}
 
 *(Click to view in full size)*
 
@@ -60,8 +60,6 @@ It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/L
 
 - PHP 7.1.3 or greater
 - phpBB 3.3 or greater
-
-**Note:** You need phpBB 3.2.6 or greater ([PHPBB3-15949](https://tracker.phpbb.com/browse/PHPBB3-15949), [#5519](https://github.com/phpbb/phpbb/pull/5519)) to use the custom posting editor option to disable Markdown in the signature.
 
 ### Support
 
@@ -89,7 +87,6 @@ It uses the plugins [Litedown](https://s9etextformatter.readthedocs.io/Plugins/L
 To enable or disable globally:
 
 - Go to your `Administration Control Panel` > `Board features` > `Allow Markdown`
-- Change settings as needed
 - Click on `Submit`
 
 To change forum permissions:
@@ -98,7 +95,7 @@ To change forum permissions:
 - Select the forums and click on `Submit`
 - Select the users or groups and click on `Edit permissions`
 - Select the users or groups and click on `Advanced Permissions`
-- Go to `Content` and change the settings as needed
+- Go to `Content` and enable the `Can use Markdown` permission
 - Click on `Apply all permissions`
 
 To change user group permissions:
@@ -106,7 +103,7 @@ To change user group permissions:
 - Go to your `Administration Control Panel` > `Permissions` > `Group permissions`
 - Select the group and click on `Submit`
 - Click on `Advanced permissions`
-- Go to `Post` or `Private messages` and change settings as needed
+- Go to `Post` and `Private messages` and enable the `Can use Markdown` permission
 - Click on `Apply all permissions`
 
 #### User
@@ -114,7 +111,7 @@ To change user group permissions:
 To change default posting settings:
 
 - Go to your `User Control Panel` > `Board preferences` > `Posting defaults`
-- Change the settings as needed
+- Enable the option `Enable Markdown by default`
 - Click on `Submit`
 
 To disable Markdown only in the current message (post, signature or private message):

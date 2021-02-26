@@ -103,10 +103,9 @@ If available, it will dynamically generate and include the following data inside
 
 ### Preview
 
-
-{{<preview src="https://i.imgur.com/8rg2fKIb.png" link="https://i.imgur.com/8rg2fKI.png" alt="Global settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/042NB5Fb.png" link="https://i.imgur.com/042NB5F.png" alt="Open Graph, Twitter Cards and JSON-LD settings" imgclass="fslightbox">}}
-{{<preview src="https://i.imgur.com/xKswZUHb.png" link="https://i.imgur.com/xKswZUH.png" alt="Generated markup" imgclass="fslightbox">}}
+{{<preview src="https://i.imgur.com/8rg2fKIb.png" link="https://i.imgur.com/8rg2fKI.png" alt="Global settings">}}
+{{<preview src="https://i.imgur.com/042NB5Fb.png" link="https://i.imgur.com/042NB5F.png" alt="Open Graph, Twitter Cards and JSON-LD settings">}}
+{{<preview src="https://i.imgur.com/xKswZUHb.png" link="https://i.imgur.com/xKswZUH.png" alt="Generated markup">}}
 
 *(Click to view in full size)*
 
@@ -136,7 +135,7 @@ If available, it will dynamically generate and include the following data inside
 
 ### Configuration
 
-- Go to your `Administration Control Panel` > `Extensions` > `SEO Metadata settings`
+- Go to your `Administration Control Panel` > `Extensions` > `SEO Metadata`
 - Change settings as needed
 - Click on `Submit`
 
