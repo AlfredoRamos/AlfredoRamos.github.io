@@ -144,34 +144,34 @@ jobs:
             ${{ runner.os }}-composer-
 
       - name: Load SSH key
-        uses: webfactory/ssh-agent@v0
+        uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.SATIS_SSH_KEY }}
 
       - name: Sync ${{ env.BRANCH }} branch
         run: |
-          remote_exists=$(git ls-remote --exit-code -h origin ${{ env.BRANCH }} | wc -l)
+          remote_exists=$(git ls-remote --exit-code -h origin "${BRANCH}" | wc -l)
           local_exists=$(git branch --list satis | wc -l)
           if (( $local_exists > 0 && $remote_exists > 0 ))
           then
-            git checkout ${{ env.BRANCH }}
-            git merge --ff-only origin/${{ env.BRANCH }}
+            git checkout "${BRANCH}"
+            git merge --ff-only origin/"${BRANCH}"
           elif (( $local_exists == 0 && $remote_exists > 0 ))
           then
-            git checkout -b ${{ env.BRANCH }} origin/${{ env.BRANCH }}
+            git checkout -b "${BRANCH}" origin/"${BRANCH}"
           elif (( $local_exists > 0 && $remote_exists == 0 ))
           then
-            git branch -qD ${{ env.BRANCH }}
-            git checkout -b ${{ env.BRANCH }}
+            git branch -qD "${BRANCH}"
+            git checkout -b "${BRANCH}"
           else
-            git checkout -b ${{ env.BRANCH }}
+            git checkout -b "${BRANCH}"
           fi
 
       - name: Install dependencies
         run: composer update -n --prefer-dist --no-progress
 
       - name: Update Satis repository
-        run: vendor/bin/satis build -n --skip-errors
+        run: vendor/bin/satis build -nv --skip-errors
 
       - name: Look for changes
         id: git-files
@@ -184,14 +184,14 @@ jobs:
         id: git-commit
         if: ${{ steps.git-files.outputs.changed > 0 }}
         run: |
-          git config --local --replace-all user.name "${{ env.GITHUB_NAME }}"
-          git config --local --replace-all user.email "${{ env.GITHUB_EMAIL }}"
-          git commit -qam "[${{ env.BRANCH }}] ${{ env.GIT_COMMIT_TITLE }}"
+          git config --local --replace-all user.name "${GITHUB_NAME}"
+          git config --local --replace-all user.email "${GITHUB_EMAIL}"
+          git commit -qam "[${BRANCH}] ${GIT_COMMIT_TITLE}"
           git push origin -q ${{ env.BRANCH }}
           echo "::set-output name=pr-exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
 
       - name: Send pull request
         if: ${{ steps.git-files.outputs.changed > 0 && steps.git-commit.outputs.pr-exists == 0 }}
         run: |
-          pull_msg="$(printf '${{ env.GIT_COMMIT_TITLE }}\n\n${{ env.GIT_COMMIT_BODY }}')"
+          pull_msg="$(printf '%s\n\n%s' "${GIT_COMMIT_TITLE}" "${GIT_COMMIT_BODY}")"
           hub pull-request -p -b master -h ${{ env.BRANCH }} --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
