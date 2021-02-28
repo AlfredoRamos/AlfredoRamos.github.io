@@ -33,10 +33,10 @@ jobs:
           extended: true
 
       - name: Test Hugo
-        run: hugo check --verbose
+        run: hugo check ulimit --verbose
 
   deploy:
-    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && success() }}
+    if: ${{ !contains(github.event.head_commit.message, '[skip cd]') && github.event_name == 'push' && success() }}
     name: CD
     needs: test
     runs-on: ubuntu-latest
@@ -62,7 +62,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
-          publish_branch: 'gh-pages-test'
+          publish_branch: 'gh-pages'
           force_orphan: true
   cache:
     if: ${{ !contains(github.event.head_commit.message, '[skip cache]') && success() }}
@@ -101,7 +101,7 @@ jobs:
             go mod tidy
             go install "${go_filename}"
           fi
-          echo "${bin_filename} -cache clear"
+          "${bin_filename}" -cache clear
 
   satis:
     if: ${{ !contains(github.event.head_commit.message, '[skip satis]') && github.event_name == 'schedule' }}

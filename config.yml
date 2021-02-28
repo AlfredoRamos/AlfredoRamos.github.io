@@ -51,9 +51,10 @@ markup:
 pygmentsUseClasses: true
 disableHugoGeneratorInject: true
 disableKinds: ['section']
+enableEmoji: true
 enableRobotsTXT: true
 minify:
-  minifyOutput: false
+  minifyOutput: true
 related:
   includeNewer: true
   indices:
