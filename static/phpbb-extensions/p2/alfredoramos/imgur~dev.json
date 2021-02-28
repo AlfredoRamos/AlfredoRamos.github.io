@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-imgur.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
                     "reference": "c4dd7a8ad2e76e094cfc93eeb8567d444d50e3be"
                 },
                 "dist": {
@@ -59,6 +59,16 @@
                     "imgur",
                     "phpbb",
                     "uploader"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-imgur/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-imgur/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]

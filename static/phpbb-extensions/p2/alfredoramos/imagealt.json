@@ -7,7 +7,7 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "ea57516f8e30ff18e27cb10b0330bbb5c7f195f6"
                 },
                 "dist": {
@@ -56,6 +56,16 @@
                     "extension",
                     "image",
                     "phpbb"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             },
             {
@@ -64,7 +74,7 @@
                 "version_normalized": "1.1.0.0",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-image-alt.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
                     "reference": "49fc4cfab45d20efa1840ea08d132f4333552180"
                 },
                 "dist": {
@@ -113,6 +123,16 @@
                     "extension",
                     "image",
                     "phpbb"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-image-alt/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]

@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-markdown.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
                     "reference": "fde7cb91cada6b9bb932e4df2ff8862acbdf16b4"
                 },
                 "dist": {
@@ -61,6 +61,16 @@
                     "phpbb",
                     "pipetables",
                     "tasklists"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]
