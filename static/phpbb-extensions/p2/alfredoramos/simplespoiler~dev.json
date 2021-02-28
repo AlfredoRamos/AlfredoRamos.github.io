@@ -7,7 +7,7 @@
                 "version_normalized": "9999999-dev",
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:AlfredoRamos/phpbb-ext-simple-spoiler.git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
                     "reference": "addad06362805fd56fff59b9d3467872b60d45ed"
                 },
                 "dist": {
@@ -57,6 +57,16 @@
                     "html5",
                     "phpbb",
                     "spoiler"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
                 ]
             }
         ]
