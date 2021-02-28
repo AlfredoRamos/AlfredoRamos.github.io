@@ -164,7 +164,7 @@ Velocidades disponibles para animación rápida van desde `fx2` hasta `fx5`.
 - Ruby 2.4.0 o superior
 - Bundler
 
-### Suporte
+### Soporte
 
 - [GitHub](https://github.com/AlfredoRamos/simple-marquee/issues)
 - [Archivos CSS](https://gist.github.com/AlfredoRamos/241ebc49763fd6d8d805878e29b9c804)

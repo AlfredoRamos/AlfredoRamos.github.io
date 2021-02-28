@@ -1,10 +1,10 @@
 ---
-title: Mermaid Diagrams extension for phpBB
+title: Extensión Diagramas Mermaid para phpBB
 date: 2019-10-26T19:56:28-05:00
 lastmod: 2020-12-25T13:52:00-05:00
-categories: [phpbb]
-tags: [phpbb-extension, mermaid, diagrams, flowchart, sequence-diagram, gantt-diagram, class-diagram, entity-relationship-diagram, state-diagram, git-graph, pie-chart, bbcode, svg]
-archives: [2019]
+categorias: [phpbb]
+etiquetas: [extension-phpbb, mermaid, diagramas, diagrama-de-flujo, diagrama-de-secuencia, diagrama-de-gantt, diagrama-de-clase, diagrama-de-entidad-relacion, diagrama-de-estado, grafica-git, grafico-circular, bbcode, svg]
+archivos: [2019]
 image:
   url: https://i.imgur.com/iHEDfxQ.png
   type: png
@@ -12,21 +12,21 @@ image:
   height: 610
 assets: [fslightbox]
 ---
-Mermaid Diagrams extension for phpBB.
+Extensión Diagramas Mermaid para phpBB.
 
-[![Build Status](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-mermaid/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mermaid/actions)
-[![Latest Stable Version](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-mermaid.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mermaid/releases)
-[![Code Quality](https://img.shields.io/codacy/grade/6ca752c34b9d4b66b7eb1c5de12af765.svg?style=flat-square)](https://app.codacy.com/gh/AlfredoRamos/phpbb-ext-mermaid/dashboard)
-[![License](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-mermaid.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-mermaid/master/license.txt)
+[![Estado de desarrollo](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-mermaid/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mermaid/actions)
+[![Última versión estable](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-mermaid.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mermaid/releases)
+[![Calidad de código](https://img.shields.io/codacy/grade/6ca752c34b9d4b66b7eb1c5de12af765.svg?style=flat-square)](https://app.codacy.com/gh/AlfredoRamos/phpbb-ext-mermaid/dashboard)
+[!Licencia(https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-mermaid.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-mermaid/master/license.txt)
 
-Allows you to generate diagrams and flowcharts from text in a similar manner as markdown.
+Genera diagramas y gráficos a partir de texto de forma similar a como lo hace Markdown. Utiliza la librería [Mermaid](https://github.com/mermaid-js/mermaid) para transformar el texto en un gráfico SVG, y puede generar todos los tipos de gráficos que soporta dicha librería.
 
-It uses the [mermaid](https://github.com/mermaid-js/mermaid) library to generate the SVG markup and supports all diagrams available. You can read more about the supported syntax in the official documentation:
+Consulte la documentación oficial para saber más acerca de la sintaxis para los distintos tipos de gráficos:
 
 - [mermaid](https://mermaid-js.github.io/mermaid/)
 
 <!--more-->
-### Features
+### Características
 
 - Posting button for the `[mermaid]` BBCode
 - Generate SVG diagrams from text
