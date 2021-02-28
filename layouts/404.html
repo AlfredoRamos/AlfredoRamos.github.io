@@ -1,0 +1,11 @@
+{{- define "content" }}
+<div class="mb-4">
+	<header class="header">
+		<h1 class="title h3">{{ .Title }}</h1>
+	</header>
+	<div class="body">
+		<p>{{ i18n "404_message" }}</p>
+		<p>{{ i18n "404_return_to" }} <a href="{{ site.Home.RelPermalink }}">{{ site.Home.Title }}</a>.</p>
+	</div>
+</div>
+{{- end }}

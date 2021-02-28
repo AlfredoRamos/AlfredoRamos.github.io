@@ -56,5 +56,5 @@
 		"alfredoramos/mermaid": ">=1.0.0",
 		"alfredoramos/mailrelay": ">=1.0.0"
 	},
-	"output-dir": "phpbb-extensions"
+	"output-dir": "static/phpbb-extensions"
 }

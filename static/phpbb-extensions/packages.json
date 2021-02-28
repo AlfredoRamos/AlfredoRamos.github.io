@@ -1,0 +1,21 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$d4e495868cfc9a94385ad885a51c92c7fb890c1f.json": {
+            "sha1": "d4e495868cfc9a94385ad885a51c92c7fb890c1f"
+        }
+    },
+    "metadata-url": "/phpbb-extensions/p2/%package%.json",
+    "available-packages": [
+        "alfredoramos/autolocktopics",
+        "alfredoramos/hide",
+        "alfredoramos/imagealt",
+        "alfredoramos/imgur",
+        "alfredoramos/lazyload",
+        "alfredoramos/mailrelay",
+        "alfredoramos/markdown",
+        "alfredoramos/mermaid",
+        "alfredoramos/seometadata",
+        "alfredoramos/simplespoiler"
+    ]
+}

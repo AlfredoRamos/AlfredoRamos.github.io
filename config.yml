@@ -1,0 +1,74 @@
+baseURL: 'https://alfredoramos.mx/'
+defaultContentLanguage: 'en'
+languageCode: 'en'
+title: 'Alfredo Ramos'
+languages:
+  en:
+    languageName: English
+    weight: 1
+  es:
+    languageName: Español
+    taxonomies:
+      categoria: categorias
+      etiqueta: etiquetas
+      archivo: archivos
+    params:
+      flag: 'twemoji:flag-for-flag-mexico'
+    paginatePath: 'pagina'
+    weight: 2
+params:
+  author: 'AlfredoRamos'
+  flag: 'twemoji:flag-for-flag-united-states'
+taxonomies:
+  category: categories
+  tag: tags
+  archive: archives
+removePathAccents: true
+permalinks:
+  posts: '/:slug/'
+  pages: '/:slug/'
+mediaTypes:
+  application/atom+xml:
+    suffixes: ['atom']
+outputFormats:
+  ATOM:
+    mediatype: application/atom+xml
+outputs:
+  home: ['HTML', 'ATOM']
+  page: ['HTML']
+  section: ['HTML', 'ATOM']
+  taxonomy: ['HTML', 'ATOM']
+  term: ['HTML', 'ATOM']
+paginate: 12
+paginatePath: 'page'
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: true
+    lineNos: true
+pygmentsUseClasses: true
+disableHugoGeneratorInject: true
+disableKinds: ['section']
+enableEmoji: true
+enableRobotsTXT: true
+minify:
+  minifyOutput: true
+related:
+  includeNewer: true
+  indices:
+  - name: 'keywords'
+    weight: 100
+  - name: 'tags'
+    weight: 80
+  - name: 'etiquetas'
+    weight: 80
+  - name: 'categories'
+    weight: 60
+  - name: 'categorias'
+    weight: 60
+  - name: 'date'
+    weight: 10
+  threshold: 80
+  toLower: true

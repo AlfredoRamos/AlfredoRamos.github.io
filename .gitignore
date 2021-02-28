@@ -1,10 +1,6 @@
 vendor/
-_site/
-.bundle/
-.sass-cache/
-.jekyll-metadata/
-.jekyll-cache/
+public/
+resources/_gen/
 .env
 composer.lock
-Gemfile.lock
 *.*~

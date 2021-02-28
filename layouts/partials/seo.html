@@ -1,0 +1,118 @@
+{{- $locale := .Language.Lang -}}
+{{- $description := trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " -}}
+{{- $categories := .GetTerms (cond (eq $locale "es") "categorias" "categories") -}}
+{{- $tags := .GetTerms (cond (eq $locale "es") "etiquetas" "tags") -}}
+{{- $image := .Params.image -}}
+{{- $default_author := .Param "author" -}}
+{{- $author := .Params.author | default $default_author -}}
+{{- $author := index site.Data.authors $author -}}
+{{- $paginator := .Paginate (where site.RegularPages "Type" "posts") -}}
+<meta name="description" content="{{ $description }}">
+{{- with $image }}
+<meta name="twitter:card" content="summary_large_image">
+{{- end }}
+{{- with (index site.Data.authors $default_author).networks.twitter }}
+<meta name="twitter:site" content="@{{ .id }}">
+{{- end }}
+{{- with $author.networks.twitter }}
+<meta name="twitter:creator" content="@{{ .id }}">
+{{- end }}
+<meta name="twitter:dnt" content="on">
+{{- with $locale }}
+<meta property="og:locale" content="{{ printf "%s_%s" . (cond (eq . "es") "MX" "US") }}">
+{{- end }}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ cond (eq .Type "posts") "article" "website" }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $description }}">
+{{- with $image -}}
+{{- with .url }}
+<meta property="og:image" content="{{ . }}">
+{{- end }}
+{{- with .type }}
+<meta property="og:image:type" content="{{ printf "image/%s" . }}">
+{{- end }}
+{{- with .width }}
+<meta property="og:image:width" content="{{ . }}">
+{{- end }}
+{{- with .height }}
+<meta property="og:image:height" content="{{ . }}">
+{{- end }}
+{{- end -}}
+{{- if eq .Type "posts" }}
+{{- with .Date }}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
+{{- end }}
+{{- with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05-07:00" }}">
+{{- end }}
+{{- with $categories }}
+<meta property="article:section" content="{{ (index . 0).Title }}">
+{{- end }}
+{{- end }}
+{{- with .OutputFormats.Get "ATOM" }}
+<link rel="{{ .Rel }}" {{ printf "type=%q" .MediaType.Type | safeHTMLAttr }} href="{{ .Permalink }}" title="{{ i18n "atom_feed" }} · {{ site.Title }}">
+{{- end }}
+{{- if ne .Kind "404" }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- end }}
+{{- if .IsTranslated }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">
+{{- range .Translations }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}">
+{{- end }}
+{{- end }}
+<meta name="generator" content="Hugo {{ hugo.Version }}">
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"name": "Latest posts",
+	"itemListOrder": "Descending",
+	"numberOfItems": {{ $paginator.TotalNumberOfElements }},
+	"itemListElement": [
+		{{ range $key, $value := $paginator.Pages }}
+		{{- $position := (add $key 1) -}}
+		{
+			"@type": "BlogPosting",
+			"position": {{ $position }},
+			"url": {{ .Permalink }},
+			"headline": {{ .Title }},
+			"description": {{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}{{ with .Params.image.url }},
+			"image": {{ . }}{{ end }}{{ with .Params.author }},
+			"author": {
+				"@type": "Person",
+				"name": {{ . }}
+			}{{ end }}{{ with .Date }},
+			"datePublished": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Lastmod }},
+			"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with (.GetTerms (cond (eq $locale "es") "categorias" "categories")) }},
+			"articleSection": {{ (index . 0).Title }}{{ end }}{{ with (.GetTerms (cond (eq $locale "es") "etiquetas" "tags")) }},
+			"keywords": "{{ range $key, $value := . }}{{ if gt $key 0 }}, {{ end }}{{ .Title }}{{ end }}"{{ end }}
+		}{{ if and (gt $paginator.TotalNumberOfElements 1) (lt $position $paginator.TotalNumberOfElements) }},{{ end }}
+		{{- end }}
+	]
+}
+</script>
+{{- end }}
+{{- if eq .Type "posts" }}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"url": {{ .Permalink }},
+	"headline": {{ .Title }},
+	"description": {{ trim (.Description | default .Summary | default .Content | plainify | replaceRE "\\s+" " " | truncate 160 "…") " " }}{{ with .Params.image.url }},
+	"image": {{ . }}{{ end }}{{ with .Params.author }},
+	"author": {
+		"@type": "Person",
+		"name": {{ . }}
+	}{{ end }}{{ with .Date }},
+	"datePublished": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with .Lastmod }},
+	"dateModified": {{ .Format "2006-01-02T15:04:05-07:00" }}{{ end }}{{ with $categories }},
+	"articleSection": {{ (index . 0).Title }}{{ end }}{{ with $tags }},
+	"keywords": "{{ range $key, $value := . }}{{ if gt $key 0 }}, {{ end }}{{ .Title }}{{ end }}"{{ end }}
+}
+</script>
+{{- end }}

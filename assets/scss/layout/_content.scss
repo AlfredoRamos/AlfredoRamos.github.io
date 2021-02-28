@@ -1,0 +1,19 @@
+.post {
+	.img-container {
+		height: 135px;
+	}
+
+	picture {
+		> img {
+			object-fit: cover;
+		}
+	}
+}
+
+@include responsive (max-width, map-get($grid-breakpoints, md)) {
+	.post {
+		.img-container {
+			height: 180px;
+		}
+	}
+}

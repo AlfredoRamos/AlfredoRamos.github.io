@@ -4,7 +4,7 @@
 	"type": "project",
 	"license": "GPL-2.0-only",
 	"require": {
-		"composer/satis": "dev-master"
+		"composer/satis": "dev-main"
 	},
 	"authors": [
 		{

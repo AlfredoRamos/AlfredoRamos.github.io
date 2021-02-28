@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+	{{ partial "head.html" . }}
+
+	<body>
+		{{ partial "navbar.html" . }}
+
+		<main class="main">
+			<div class="container">
+				<div class="row">
+					<section id="content" class="col-lg-9 overflow-hidden">
+						{{ block "content" . }}{{ end }}
+
+						{{ partial "paginator.html" . }}
+					</section>
+
+					{{ partial "sidebar.html" . }}
+				</div>
+			</div>
+		</main>
+
+		{{ partial "footer.html" . }}
+
+		{{ partial "assets.html" (dict "context" . "asset_type" "script") }}
+	</body>
+</html>

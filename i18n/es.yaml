@@ -1,0 +1,28 @@
+# head
+tagline: Una colección de proyectos personales
+atom_feed: Feed Atom
+# navbar
+home: Inicio
+archives: Archivos
+categories: Categorías
+tags: Etiquetas
+donate: Donar
+feed: Feed
+menu_toggle: Alternar menú
+keywords: Palabras clave…
+search: Buscar con DuckDuckGo
+# content
+latest_posts: Últimos artículos
+reading_time:
+  one: '{{ .Count }} min lectura'
+  other: '{{ .Count }} min lectura'
+modified: Modificado
+# sidebar
+about: Acerca de
+biography: Soy ingeniero en sistemas computacionales, entusiasta del software de código libre, apasionado de Arch Linux y GNU/Linux en general.
+related_posts: Artículos relacionados
+# pages
+donate_message: Si le gustó o encontró útil mi trabajo y quiere mostrar un gesto de agradecimiento, puede considerar realizar una donación.
+# 404
+404_message: Ésta página no existe o ha sido eliminada.
+404_return_to: Regresar a

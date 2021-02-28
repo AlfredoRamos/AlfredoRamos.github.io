@@ -1,0 +1,10 @@
+- name: 'twitter-bootstrap'
+  weight: 1
+- name: 'highlight'
+  weight: 2
+- name: 'lazysizes'
+  weight: 3
+- name: 'iconify'
+  weight: 4
+- name: 'dark-mode'
+  weight: 5

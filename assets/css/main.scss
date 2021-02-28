@@ -1,21 +1,16 @@
----
----
 // Abstracts
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import '../scss/abstracts/variables';
+@import '../scss/abstracts/mixins';
 
 // Base
-@import 'base/base';
-@import 'base/dark';
+@import '../scss/base/base';
+@import '../scss/base/dark';
 
 // Components
-@import 'components/lists';
-@import 'components/icons';
-@import 'components/highlight';
-@import 'components/footnotes';
+@import '../scss/components/highlight';
+@import '../scss/components/lists';
+@import '../scss/components/icons';
 
 // Layout
-@import 'layout/header';
-@import 'layout/content';
-@import 'layout/sidebar';
+@import '../scss/layout/content';
+@import '../scss/layout/sidebar';

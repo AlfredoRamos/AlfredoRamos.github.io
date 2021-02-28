@@ -1,0 +1,134 @@
+<aside class="sidebar col-lg-3 overflow-hidden">
+	{{- $locale := .Language.Lang -}}
+	{{- $default_author := .Param "author" -}}
+	{{- $biography := i18n "biography" -}}
+	{{- $author := .Params.author | default $default_author -}}
+	{{- $author := index site.Data.authors $author -}}
+	{{- $author := merge $author (dict "biography" $biography) -}}
+	{{ with $author }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "about" }}</h3>
+		</header>
+		<div class="body">
+			{{- if isset . "avatar" }}
+			<figure class="avatar">
+				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
+			</figure>
+			{{- end }}
+			{{- if isset . "biography" }}
+			<p>{{ .biography | markdownify }}</p>
+			{{- end }}
+			{{- with .networks }}
+			<ul class="social-networks list-unstyled mb-0">
+				{{- range $key, $value := sort . "weight" }}
+				<li>
+					{{- if hasPrefix $value.href "http" }}
+					<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">
+						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+						{{ $value.id }}
+					</a>
+					{{- else }}
+					<span title="{{ $value.title }}">
+						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+						<code>{{ $value.id }}</code>
+					</span>
+					{{- end }}
+				</li>
+				{{- end }}
+			</ul>
+			{{- end }}
+		</div>
+	</section>
+	{{ end }}
+
+	{{- if ne .RelPermalink (.GetPage "donate").RelPermalink }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "donate" }}</h3>
+		</header>
+		<div class="body">
+			{{ partial "donate.html" . }}
+		</div>
+	</section>
+	{{- end }}
+
+	{{- $related := site.RegularPages.Related . | first 10 -}}
+	{{- with $related }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "related_posts" }}</h3>
+		</header>
+		<div class="body">
+			<div class="list-related-posts d-flex flex-wrap">
+				{{- range . }}
+				<div class="d-flex flex-wrap mb-2 col-12 col-md-6 col-lg-12">
+					<a href="{{ .RelPermalink }}" class="d-block col-2 col-md-3 me-2 img-container rounded border">
+						{{- if .Params.image.url }}
+						<picture>
+							<img data-src="{{ .Params.image.url }}" class="rounded w-100 h-100 lazyload" alt="{{ .Title }}">
+						</picture>
+						{{- else }}
+						<svg class="rounded w-100 h-100 img-placeholder" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image">
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#55595c"></rect>
+							<text x="50%" y="50%" fill="#eceeef" dominant-baseline="middle" text-anchor="middle">Image</text>
+						</svg>
+						{{- end }}
+					</a>
+					<a href="{{ .RelPermalink }}" class="d-block col">{{ .Title }}</a>
+				</div>
+				{{- end }}
+			</div>
+		</div>
+	</section>
+	{{- end }}
+
+	{{- $archives := index site.Taxonomies (cond (eq $locale "es") "archivos" "archives") -}}
+	{{- with $archives }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "archives" }}</h3>
+		</header>
+		<div class="body">
+			<div class="list-archives">
+				{{- range . }}
+				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
+				{{- end }}
+			</div>
+		</div>
+	</section>
+	{{- end }}
+
+	{{- $categories := index site.Taxonomies (cond (eq $locale "es") "categorias" "categories") -}}
+	{{- with $categories }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "categories" }}</h3>
+		</header>
+		<div class="body">
+			<div class="list-categories">
+				{{- range . }}
+				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
+				{{- end }}
+			</div>
+		</div>
+	</section>
+	{{- end }}
+
+	{{- $tags := index site.Taxonomies (cond (eq $locale "es") "etiquetas" "tags") -}}
+	{{- with $tags }}
+	<section class="widget overflow-hidden mb-4">
+		<header class="header">
+			<h3 class="title h4">{{ i18n "tags" }}</h3>
+		</header>
+		<div class="body">
+			<div class="list-tags">
+				{{- range . }}
+				<a href="{{ .Page.RelPermalink }}" class="badge bg-light text-dark">{{ .Page.Title }}</a>
+				{{- end }}
+			</div>
+		</div>
+	</section>
+	{{- end }}
+</aside>
