@@ -4,11 +4,10 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
-  - package-ecosystem: 'bundler'
-    directory: '/'
+  - package-ecosystem: 'gomod'
+    directory: '/utils'
     schedule:
       interval: 'daily'
-    versioning-strategy: increase-if-necessary
   - package-ecosystem: 'composer'
     directory: '/'
     schedule:
