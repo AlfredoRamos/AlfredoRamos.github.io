@@ -32,8 +32,15 @@
 	</author>
 	<rights>© 2015-{{ now.Format "2006" }} {{ .name }}</rights>
 	{{- end }}
-	{{- $posts := (where site.RegularPages "Type" "posts") -}}
-	{{- with $posts }}
+	{{- $content := . -}}
+	{{- if .IsHome -}}{{- $content = site -}}{{- end -}}
+	{{- $pages := slice -}}
+	{{- if or .IsHome .IsSection -}}
+		{{- $pages = $content.RegularPages -}}
+	{{- else -}}
+		{{- $pages = $content.Pages -}}
+	{{- end -}}
+	{{- with $pages }}
 	{{- range . }}
 	<entry xml:lang="{{ .Language.Lang }}">
 		<title>{{ .Title }}</title>
