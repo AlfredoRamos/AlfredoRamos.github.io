@@ -17,7 +17,7 @@ Extensión Hide BBCode para phpBB.
 [![Última versión estable](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-hide.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-hide/releases)
 [![Calidad de código](https://img.shields.io/codacy/grade/5de75f922b4f4eae90615728e908c1c7.svg?style=flat-square)](https://app.codacy.com/gh/AlfredoRamos/phpbb-ext-hide/dashboard)
 [![Progreso de las traducciones](https://badges.crowdin.net/phpbb-ext-hide/localized.svg)](https://crowdin.com/project/phpbb-ext-hide)
-[!Licencia(https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-hide/master/license.txt)
+[![Licencia](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-hide.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-hide/master/license.txt)
 
 Permite ocultar contenido a los usuarios invitados usando el BBCode `[hide]texto[/hide]` o `[hide inline=1]texto[/hide]`.
 

@@ -15,12 +15,13 @@ Extensión Texto Alternativo de Imagen para phpBB.
 [![Estado de desarrollo](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-image-alt/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-hide/actions)
 [![Última versión estable](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-image-alt.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-image-alt/releases)
 [![Calidad de código](https://img.shields.io/codacy/grade/f06ec0db39c049fc8883b6c65e10405a.svg?style=flat-square)](https://app.codacy.com/gh/AlfredoRamos/phpbb-ext-image-alt/dashboard)
-[!Licencia(https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-image-alt/master/license.txt)
+[![Licencia](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-image-alt.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-image-alt/master/license.txt)
 
 Permite agregar un texto alternativo a las imágenes para cumplir con las recomendaciones para SEO.
 
 **BBCode (entrada)**
-```
+
+```text
 [img alt="texto"]url[/img]
 ```
 

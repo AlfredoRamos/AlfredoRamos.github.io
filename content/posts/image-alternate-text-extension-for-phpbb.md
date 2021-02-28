@@ -20,7 +20,8 @@ Image Alternate Text extension for phpBB.
 Allows you to set alternate text to image tags to abide SEO recommendations.
 
 **BBCode input**
-```
+
+```text
 [img alt="text"]url[/img]
 ```
 

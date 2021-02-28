@@ -17,7 +17,7 @@ Extensión Diagramas Mermaid para phpBB.
 [![Estado de desarrollo](https://img.shields.io/github/workflow/status/AlfredoRamos/phpbb-ext-mermaid/GitHub%20Actions%20CI?style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mermaid/actions)
 [![Última versión estable](https://img.shields.io/github/tag/AlfredoRamos/phpbb-ext-mermaid.svg?label=stable&style=flat-square)](https://github.com/AlfredoRamos/phpbb-ext-mermaid/releases)
 [![Calidad de código](https://img.shields.io/codacy/grade/6ca752c34b9d4b66b7eb1c5de12af765.svg?style=flat-square)](https://app.codacy.com/gh/AlfredoRamos/phpbb-ext-mermaid/dashboard)
-[!Licencia(https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-mermaid.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-mermaid/master/license.txt)
+[![Licencia](https://img.shields.io/github/license/AlfredoRamos/phpbb-ext-mermaid.svg?style=flat-square)](https://raw.githubusercontent.com/AlfredoRamos/phpbb-ext-mermaid/master/license.txt)
 
 Genera diagramas y gráficos a partir de texto de forma similar a como lo hace Markdown. Utiliza la librería [Mermaid](https://github.com/mermaid-js/mermaid) para transformar el texto en un gráfico SVG, y puede generar todos los tipos de gráficos que soporta dicha librería.
 
