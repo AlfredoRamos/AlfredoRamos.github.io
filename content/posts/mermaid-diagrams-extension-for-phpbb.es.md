@@ -3,7 +3,7 @@ title: Extensión Diagramas Mermaid para phpBB
 date: 2019-10-26T19:56:28-05:00
 lastmod: 2020-12-25T13:52:00-05:00
 categorias: [phpbb]
-etiquetas: [extension-phpbb, mermaid, diagramas, diagrama-de-flujo, diagrama-de-secuencia, diagrama-de-gantt, diagrama-de-clase, diagrama-de-entidad-relacion, diagrama-de-estado, grafica-git, grafico-circular, bbcode, svg]
+etiquetas: [extension-phpbb, mermaid, diagramas, diagrama-de-flujo, diagrama-de-secuencia, diagrama-de-gantt, diagrama-de-clase, diagrama-de-entidad-relacion, diagrama-de-estado, grafico-git, grafico-circular, bbcode, svg]
 archivos: [2019]
 image:
   url: https://i.imgur.com/iHEDfxQ.png

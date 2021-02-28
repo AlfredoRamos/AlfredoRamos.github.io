@@ -3,7 +3,7 @@ title: Marquesina simple en CSS
 date: 2018-04-26T14:06:16-06:00
 lastmod: 2021-01-20T14:29:11-05:00
 categorias: [desarrollo]
-etiquetas: [scss, css, marquee]
+etiquetas: [scss, css, marquesina]
 archivos: [2018]
 image:
   url: https://i.imgur.com/qROSaDD.png

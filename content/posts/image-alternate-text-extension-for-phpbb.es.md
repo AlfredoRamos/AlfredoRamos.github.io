@@ -3,7 +3,7 @@ title: Extensión Texto Alternativo de Imagen para phpBB
 date: 2019-07-31T19:18:13-05:00
 lastmod: 2020-12-25T13:50:00-05:00
 categorias: [phpbb]
-etiquetas: [extension-phpbb, image-alt, bbcode, textformatter, markdown, litedown]
+etiquetas: [extension-phpbb, alt-de-imagen, bbcode, textformatter, markdown, litedown]
 archivos: [2019]
 image:
   url: https://i.imgur.com/yLgDJpG.png

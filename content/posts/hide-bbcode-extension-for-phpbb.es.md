@@ -2,8 +2,8 @@
 title: Extensión Hide BBCode para phpBB
 date: 2019-09-02T16:26:38-05:00
 lastmod: 2020-12-25T13:51:00-05:00
-categories: [phpbb]
-etiquetas: [extension-phpbb, hide, bbcode]
+categorias: [phpbb]
+etiquetas: [extension-phpbb, ocultar, bbcode]
 archivos: [2019]
 image:
   url: https://i.imgur.com/OajNWkc.png
