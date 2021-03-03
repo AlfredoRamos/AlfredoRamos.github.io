@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
-                    "reference": "1c12a5da5fbc847912e01f92cf4d13bc2c752c03"
+                    "reference": "f56cf8e71a974efa1993641241f6c1ee7495ad64"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/1c12a5da5fbc847912e01f92cf4d13bc2c752c03",
-                    "reference": "1c12a5da5fbc847912e01f92cf4d13bc2c752c03",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/f56cf8e71a974efa1993641241f6c1ee7495ad64",
+                    "reference": "f56cf8e71a974efa1993641241f6c1ee7495ad64",
                     "shasum": ""
                 },
                 "require": {
