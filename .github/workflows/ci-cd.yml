@@ -187,11 +187,11 @@ jobs:
           git config --local --replace-all user.name "${GITHUB_NAME}"
           git config --local --replace-all user.email "${GITHUB_EMAIL}"
           git commit -qam "[${BRANCH}] ${GIT_COMMIT_TITLE}"
-          git push origin -q ${{ env.BRANCH }}
-          echo "::set-output name=pr-exists::$(hub pr list -s open -h ${{ env.BRANCH }} | grep '${{ env.GIT_COMMIT_TITLE }}' | wc -l)"
+          git push origin -q "${BRANCH}"
+          echo "::set-output name=pr-exists::$(hub pr list -s open -h ${BRANCH} | grep '${GIT_COMMIT_TITLE}' | wc -l)"
 
       - name: Send pull request
         if: ${{ steps.git-files.outputs.changed > 0 && steps.git-commit.outputs.pr-exists == 0 }}
         run: |
           pull_msg="$(printf '%s\n\n%s' "${GIT_COMMIT_TITLE}" "${GIT_COMMIT_BODY}")"
-          hub pull-request -p -b master -h ${{ env.BRANCH }} --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
+          hub pull-request -p -b master -h "${BRANCH}" --no-edit -m "${pull_msg}" -l enhancement,dependencies,satis
