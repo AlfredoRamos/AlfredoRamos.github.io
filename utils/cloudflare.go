@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"log"
 	"os"
@@ -72,7 +73,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	purgeCache, err := cloudFlare.PurgeEverything(api["CLOUDFLARE_API_ZONE_ID"])
+	purgeCache, err := cloudFlare.PurgeEverything(context.Background(), api["CLOUDFLARE_API_ZONE_ID"])
 
 	if err != nil {
 		log.Fatal(err)
