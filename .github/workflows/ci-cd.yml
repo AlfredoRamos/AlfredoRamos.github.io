@@ -1,9 +1,9 @@
 name: CI/CD
 
 env:
-  HUGO_VERSION: '0.80.0'
-  GO_VERSION: '1.16.0'
-  PHP_VERSION: '8.0.0'
+  HUGO_VERSION: 'latest'
+  GO_VERSION: '^1.16.2'
+  PHP_VERSION: '8.0'
 
 on:
   push:
