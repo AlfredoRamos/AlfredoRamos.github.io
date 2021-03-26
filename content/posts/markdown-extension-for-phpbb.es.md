@@ -4,7 +4,7 @@ date: 2019-05-24T14:29:05-05:00
 lastmod: 2020-12-25T13:49:00-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, markdown, textformatter, litedown, pipetables]
-archives: [2019]
+archivos: [2019]
 image:
   url: https://i.imgur.com/svBmgYX.png
   type: png
