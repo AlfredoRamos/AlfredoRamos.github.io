@@ -11,8 +11,8 @@
 			{{- range $key, $value := sort . "weight" }}
 			{{- if hasPrefix $value.href "http" }}
 			<li class="list-inline-item">
-				<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}" class="text-muted">
-					<span class="iconify social-icon {{ $key | urlize }}-icon" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
+				<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">
+					<span class="iconify social-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
 				</a>
 			</li>
 			{{- end }}

@@ -1,40 +1,37 @@
 <aside class="sidebar col-lg-3 overflow-hidden">
 	{{- $locale := .Language.Lang -}}
 	{{- $default_author := .Param "author" -}}
+	{{- $academic_degree := i18n "academic_degree" -}}
 	{{- $biography := i18n "biography" -}}
 	{{- $author := .Params.author | default $default_author -}}
 	{{- $author := index site.Data.authors $author -}}
+	{{- $author := merge $author (dict "academic_degree" $academic_degree) -}}
 	{{- $author := merge $author (dict "biography" $biography) -}}
 	{{ with $author }}
-	<section class="widget overflow-hidden mb-4">
-		<header class="header">
-			<h3 class="title h4">{{ i18n "about" }}</h3>
-		</header>
+	<section class="widget overflow-hidden mb-4 text-center">
 		<div class="body">
 			{{- if isset . "avatar" }}
 			<figure class="avatar">
 				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
 			</figure>
 			{{- end }}
+			<h3 class="title h4">{{ .name }}</h3>
+			{{- if isset . "academic_degree" }}
+			<h4 class="subtitle h5 text-muted">{{ .academic_degree }}</h4>
+			{{- end }}
 			{{- if isset . "biography" }}
 			<p>{{ .biography | markdownify }}</p>
 			{{- end }}
 			{{- with .networks }}
-			<ul class="social-networks list-unstyled mb-0">
+			<ul class="social-networks list-inline mb-0">
 				{{- range $key, $value := sort . "weight" }}
-				<li>
-					{{- if hasPrefix $value.href "http" }}
+				{{- if hasPrefix $value.href "http" }}
+				<li class="list-inline-item">
 					<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">
-						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
-						{{ $value.id }}
+						<span class="iconify social-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
 					</a>
-					{{- else }}
-					<span title="{{ $value.title }}">
-						<span class="iconify inline-icon social-icon {{ $key | urlize }}-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
-						<code>{{ $value.id }}</code>
-					</span>
-					{{- end }}
 				</li>
+				{{- end }}
 				{{- end }}
 			</ul>
 			{{- end }}
