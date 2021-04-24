@@ -1,7 +1,7 @@
 <footer class="footer bg-light">
 	<div class="container py-3 text-muted d-flex flex-wrap justify-content-between align-items-center">
 		<div class="credits">
-			© 2015-{{ now.Format "2006" }} <a href="{{ site.Home.Permalink }}" class="text-muted">{{ site.Title }}</a>
+			© 2015-{{ now.Format "2006" }} <a href="{{ site.Home.Permalink }}" class="link-secondary">{{ site.Title }}</a>
 		</div>
 		{{- $default_author := .Param "author" -}}
 		{{- $author := .Params.author | default $default_author -}}
@@ -11,7 +11,7 @@
 			{{- range $key, $value := sort . "weight" }}
 			{{- if hasPrefix $value.href "http" }}
 			<li class="list-inline-item">
-				<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}">
+				<a href="{{ print $value.href $value.id }}" title="{{ $value.title }}" class="link-secondary">
 					<span class="iconify social-icon me-1" {{ printf "data-icon=%q" $value.icon | safeHTMLAttr }}></span>
 				</a>
 			</li>

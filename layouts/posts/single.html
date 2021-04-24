@@ -12,7 +12,7 @@
 			{{- with $author }}
 			<li class="list-inline-item">
 				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 24) }}" alt="{{ .name }}" width="24" height="24" class="rounded me-1 lazyload">
-				<a rel="author" href="{{ printf "%s%s" .networks.github.href .networks.github.id }}" class="text-muted">{{ .name }}</a>
+				<a rel="author" href="{{ printf "%s%s" .networks.github.href .networks.github.id }}" class="link-secondary">{{ .name }}</a>
 			</li>
 			{{- end }}
 			<li class="list-inline-item">
@@ -52,7 +52,7 @@
 				<ul class="categories d-inline-block list-inline">
 					{{- range . }}
 					<li class="list-inline-item">
-						<a href="{{ .RelPermalink }}" rel="category" class="badge bg-light text-dark">{{ .Title }}</a>
+						<a href="{{ .RelPermalink }}" rel="category" class="badge bg-light link-dark">{{ .Title }}</a>
 					</li>
 					{{- end }}
 				</ul>
@@ -65,7 +65,7 @@
 				<ul class="tags d-inline-block list-inline">
 					{{- range . }}
 					<li class="list-inline-item">
-						<a href="{{ .RelPermalink }}" rel="tag" class="badge bg-light text-dark">{{ .Title }}</a>
+						<a href="{{ .RelPermalink }}" rel="tag" class="badge bg-light link-dark">{{ .Title }}</a>
 					</li>
 					{{- end }}
 				</ul>
