@@ -60,7 +60,17 @@
                 "support": {
                     "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/1.0.0",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
-                }
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
             },
             {
                 "name": "alfredoramos/hide",
@@ -121,7 +131,17 @@
                 "support": {
                     "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/2.0.0",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
-                }
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
             },
             {
                 "name": "alfredoramos/hide",
@@ -182,7 +202,17 @@
                 "support": {
                     "source": "https://github.com/AlfredoRamos/phpbb-ext-hide/tree/2.1.0",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-hide/issues"
-                }
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
             }
         ]
     }

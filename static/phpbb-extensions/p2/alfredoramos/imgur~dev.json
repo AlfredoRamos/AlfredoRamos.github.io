@@ -8,18 +8,18 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "11f79f85589411b34fc900ffad4791162358b961"
+                    "reference": "043cf9855e78fd6361eec320974c1b97048bc626"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/11f79f85589411b34fc900ffad4791162358b961",
-                    "reference": "11f79f85589411b34fc900ffad4791162358b961",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/043cf9855e78fd6361eec320974c1b97048bc626",
+                    "reference": "043cf9855e78fd6361eec320974c1b97048bc626",
                     "shasum": ""
                 },
                 "require": {
                     "composer/installers": "^1.6.0",
                     "j0k3r/php-imgur-api-client": "dev-master",
-                    "php": "^7.1.3"
+                    "php": "^7.1.3 || ^8.0.0"
                 },
                 "require-dev": {
                     "pear/archive_tar": "^1.4.0",
@@ -65,7 +65,11 @@
                 "funding": [
                     {
                         "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
                     }
                 ]
             }

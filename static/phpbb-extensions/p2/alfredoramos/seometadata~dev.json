@@ -8,23 +8,23 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "d21349841bd8691f4ac5657a495f53171118f8f1"
+                    "reference": "664081d9f8ef3b552817dd7bd32a5f2c6bd4382d"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/d21349841bd8691f4ac5657a495f53171118f8f1",
-                    "reference": "d21349841bd8691f4ac5657a495f53171118f8f1",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/664081d9f8ef3b552817dd7bd32a5f2c6bd4382d",
+                    "reference": "664081d9f8ef3b552817dd7bd32a5f2c6bd4382d",
                     "shasum": ""
                 },
                 "require": {
                     "composer/installers": "^1.6.0",
-                    "php": "^7.1.3"
+                    "php": "^7.1.3 || ^8.0.0"
                 },
                 "require-dev": {
                     "pear/archive_tar": "^1.4.11",
                     "phing/phing": "^2.16.0"
                 },
-                "time": "2020-06-17T00:00:00+00:00",
+                "time": "2021-04-07T00:00:00+00:00",
                 "type": "phpbb-extension",
                 "extra": {
                     "display-name": "SEO Metadata",
@@ -71,7 +71,11 @@
                 "funding": [
                     {
                         "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
                     }
                 ]
             }
