@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "6f7dbe59a167e58556571287f09db5b619f0c957"
+                    "reference": "f37691eaf858352adfb55aa67e92e75e59185f44"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/6f7dbe59a167e58556571287f09db5b619f0c957",
-                    "reference": "6f7dbe59a167e58556571287f09db5b619f0c957",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/f37691eaf858352adfb55aa67e92e75e59185f44",
+                    "reference": "f37691eaf858352adfb55aa67e92e75e59185f44",
                     "shasum": ""
                 },
                 "require": {
@@ -75,7 +75,11 @@
                 "funding": [
                     {
                         "type": "custom",
-                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
                     }
                 ]
             }

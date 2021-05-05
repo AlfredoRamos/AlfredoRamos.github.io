@@ -444,6 +444,84 @@
                         "url": "https://paypal.me/IngAlfredoRamos/USD"
                     }
                 ]
+            },
+            {
+                "name": "alfredoramos/seometadata",
+                "version": "1.4.1",
+                "version_normalized": "1.4.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
+                    "reference": "a37ddd6f6d7cec61d4c08f35945ca97b3c17cad1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/a37ddd6f6d7cec61d4c08f35945ca97b3c17cad1",
+                    "reference": "a37ddd6f6d7cec61d4c08f35945ca97b3c17cad1",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3 || ^8.0.0"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.11",
+                    "phing/phing": "^2.16.0"
+                },
+                "time": "2021-04-07T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "SEO Metadata",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.mx",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "seo-metadata.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://alfredoramos.mx/",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "SEO Metadata extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata",
+                "keywords": [
+                    "extension",
+                    "json-ld",
+                    "metadata",
+                    "microdata",
+                    "microformat",
+                    "open-graph",
+                    "phpbb",
+                    "rdf",
+                    "schema-org",
+                    "seo",
+                    "twitter-cards"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/tree/1.4.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
             }
         ]
     }

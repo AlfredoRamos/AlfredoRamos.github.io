@@ -8,17 +8,18 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git",
-                    "reference": "02b2739ced7188758c2120302214f6acf49a0664"
+                    "reference": "1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/02b2739ced7188758c2120302214f6acf49a0664",
-                    "reference": "02b2739ced7188758c2120302214f6acf49a0664",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40",
+                    "reference": "1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40",
                     "shasum": ""
                 },
                 "require": {
+                    "alfredo-ramos/mailrelay-api-client": "^0.1.0",
                     "composer/installers": "^1.6.0",
-                    "php": "^7.1.3"
+                    "php": "^7.1.3 || ^8.0.0"
                 },
                 "require-dev": {
                     "pear/archive_tar": "^1.4.0",
@@ -62,7 +63,17 @@
                 "support": {
                     "source": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/tree/master",
                     "issues": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay/issues"
-                }
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
             }
         ]
     }
