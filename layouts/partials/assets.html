@@ -17,7 +17,7 @@
 			{{- else if eq $group.cdn "unpkg" -}}
 				{{- $cdn_url = printf "https://unpkg.com/%s@%s/" .name $group.version -}}
 			{{- else if eq $group.cdn "iconify" -}}
-				{{- $cdn_url = printf "https://code.iconify.design/1/%s/" $group.version -}}
+				{{- $cdn_url = printf "https://code.iconify.design/%s/%s/" (index (split $group.version ".") 0) $group.version -}}
 			{{- end -}}
 
 			{{- if eq $asset_type "stylesheet" }}
