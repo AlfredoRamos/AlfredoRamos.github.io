@@ -1,4 +1,4 @@
-- name: 'twitter-bootstrap'
+- name: 'bootstrap'
   weight: 1
 - name: 'highlight'
   weight: 2

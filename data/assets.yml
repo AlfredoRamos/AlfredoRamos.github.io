@@ -1,24 +1,24 @@
-twitter-bootstrap:
-  version: '5.0.0-beta3'
-  cdn: 'cdnjs'
+bootstrap:
+  version: '5.0.1'
+  cdn: 'unpkg'
   css:
     - name: 'bootstrap'
-      path: 'css'
+      path: 'dist/css'
       minified: true
-      integrity: 'sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q=='
+      integrity: 'sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x'
   js:
     - name: 'bootstrap'
-      path: 'js'
+      path: 'dist/js'
       minified: true
-      integrity: 'sha512-mp3VeMpuFKbgxm/XMUU4QQUcJX4AZfV5esgX72JQr7H7zWusV6lLP1S78wZnX2z9dwvywil1VHkHZAqfGOW7Nw=='
+      integrity: 'sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT'
 
 lazysizes:
   version: '5.3.2'
-  cdn: 'cdnjs'
+  cdn: 'unpkg'
   js:
     - name: 'lazysizes'
       minified: true
-      integrity: 'sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=='
+      integrity: 'sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf+e'
 
 iconify:
   version: '1.0.7'
