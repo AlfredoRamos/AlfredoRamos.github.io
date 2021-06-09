@@ -111,7 +111,7 @@ jobs:
       BRANCH: satis
       HUB_PROTOCOL: https
       GITHUB_USER: ${{ github.actor }}
-      GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       GITHUB_NAME: 'Alfredo Ramos'
       GITHUB_EMAIL: '4165935+AlfredoRamos@users.noreply.github.com'
       GIT_COMMIT_TITLE: 'Update Satis repository'
