@@ -1,12 +1,25 @@
 <p>{{ i18n "donate_message" }}</p>
 
-<picture>
-	<source type="image/svg+xml" data-srcset="{{ (resources.Get "images/donate.svg").RelPermalink }}">
-	<img data-src="{{ (resources.Get "images/donate.png").RelPermalink }}" alt="PayPal - The safer, easier way to pay online!" class="img-fluid img-thumbnail d-block mx-auto mb-3 lazyload" width="150" height="150">
-</picture>
+<div class="d-flex justify-content-center">
+	<div class="text-center mx-5 mb-3">
+		<picture class="d-block mb-3">
+			<source type="image/svg+xml" data-srcset="{{ (resources.Get "images/donate_paypal.svg").RelPermalink }}">
+			<img data-src="{{ (resources.Get "images/donate_paypal.png").RelPermalink }}" alt="PayPal - The safer, easier way to pay online!" class="img-fluid img-thumbnail lazyload" width="150" height="150">
+		</picture>
 
-<p class="text-center">
-	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2MSPMT8HJ96A&source=url" class="btn btn-warning d-inline-block" title="PayPal - The safer, easier way to pay online!">
-		<img data-src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" alt="Donate with PayPal" class="lazyload" width="124" height="33">
-	</a>
-</p>
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2MSPMT8HJ96A&source=url" class="btn btn-warning d-inline-block" title="PayPal - The safer, easier way to pay online!">
+			<img data-src="{{ (resources.Get "images/paypal.svg").RelPermalink }}" alt="Donate with PayPal" class="lazyload" width="124" height="33">
+		</a>
+	</div>
+
+	<div class="text-center mx-5 mb-3">
+		<picture class="d-block mb-3">
+			<source type="image/svg+xml" data-srcset="{{ (resources.Get "images/donate_stripe.svg").RelPermalink }}">
+			<img data-src="{{ (resources.Get "images/donate_stripe.png").RelPermalink }}" alt="PayPal - The safer, easier way to pay online!" class="img-fluid img-thumbnail lazyload" width="150" height="150">
+		</picture>
+
+		<a href="https://buy.stripe.com/00g2bOezFckMgqQ000" class="btn btn-light border border-primary d-inline-block" title="Stripe - Online payment processing for internet businesses!">
+			<img data-src="{{ (resources.Get "images/stripe.svg").RelPermalink }}" alt="Donate with Stripe" class="lazyload" width="124" height="33">
+		</a>
+	</div>
+</div>

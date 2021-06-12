@@ -12,7 +12,7 @@
 		<div class="body">
 			{{- if isset . "avatar" }}
 			<figure class="avatar">
-				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded d-block mx-auto lazyload" width="250" height="250">
+				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 250) }}" alt="{{ .name }}" class="img-fluid rounded-circle d-block mx-auto lazyload" width="250" height="250">
 			</figure>
 			{{- end }}
 			<h3 class="title h4">{{ .name }}</h3>
@@ -38,17 +38,6 @@
 		</div>
 	</section>
 	{{ end }}
-
-	{{- if ne .RelPermalink (.GetPage "donate").RelPermalink }}
-	<section class="widget overflow-hidden mb-4">
-		<header class="header">
-			<h3 class="title h4">{{ i18n "donate" }}</h3>
-		</header>
-		<div class="body">
-			{{ partial "donate.html" . }}
-		</div>
-	</section>
-	{{- end }}
 
 	{{- $related := site.RegularPages.Related . | first 10 -}}
 	{{- with $related }}

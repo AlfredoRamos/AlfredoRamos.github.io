@@ -11,7 +11,7 @@
 		<ul class="meta list-inline list-with-separator text-muted">
 			{{- with $author }}
 			<li class="list-inline-item">
-				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 24) }}" alt="{{ .name }}" width="24" height="24" class="rounded me-1 lazyload">
+				<img data-src="{{ printf "%s&%s" .avatar (querify "size" 24) }}" alt="{{ .name }}" width="24" height="24" class="rounded-circle me-1 lazyload">
 				<a rel="author" href="{{ printf "%s%s" .networks.github.href .networks.github.id }}" class="link-secondary">{{ .name }}</a>
 			</li>
 			{{- end }}
