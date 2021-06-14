@@ -62,7 +62,7 @@
 			{{- with $tags }}
 			<li class="list-inline-item">
 				<strong>{{ i18n "tags" }}:</strong>
-				<ul class="tags d-inline-block list-inline">
+				<ul class="tags d-inline list-inline">
 					{{- range . }}
 					<li class="list-inline-item">
 						<a href="{{ .RelPermalink }}" rel="tag" class="badge bg-light link-dark">{{ .Title }}</a>
