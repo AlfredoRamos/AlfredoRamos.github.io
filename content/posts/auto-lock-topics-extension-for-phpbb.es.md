@@ -1,7 +1,7 @@
 ---
 title: Extensión Auto-lock Topics para phpBB
 date: 2017-05-11T18:52:54-05:00
-lastmod: 2020-12-25T13:45:00-05:00
+lastmod: 2021-06-14T12:46:05-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, auto-lock, cron]
 archivos: [2017]
@@ -84,7 +84,9 @@ Permite cerrar temas antiguos de forma automática usando una tarea cron de phpB
 
 ### Actualización
 
-- Desinstale la extensión
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
 - Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/autolocktopics/`
 - Descargue la nueva versión
-- Instale la extensión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/autolocktopics/`
+- Habilite la extensión nuevamente

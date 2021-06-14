@@ -1,7 +1,7 @@
 ---
 title: Extensión Mailrelay para phpBB
 date: 2020-09-18T00:48:17-05:00
-lastmod: 2020-12-25T13:53:00-05:00
+lastmod: 2021-06-14T12:46:55-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, mailrelay, email, marketing, cron]
 archivos: [2020]
@@ -85,7 +85,9 @@ Permite sincornizar de manera automática las direcciones de correo electrónico
 
 ### Actualización
 
-- Desinstale la extensión
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
 - Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/mailrelay/`
 - Descargue la nueva versión
-- Instale la extensión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/mailrelay/`
+- Habilite la extensión nuevamente

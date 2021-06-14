@@ -1,7 +1,7 @@
 ---
 title: Mailrelay extension for phpBB
 date: 2020-09-18T00:48:17-05:00
-lastmod: 2020-12-25T13:53:00-05:00
+lastmod: 2021-06-14T12:46:50-05:00
 categories: [phpbb]
 tags: [phpbb-extension, mailrelay, email, marketing, cron]
 archives: [2020]
@@ -86,7 +86,9 @@ Automatically synchronizes user emails to [Mailrelay](https://mailrelay.com/) to
 
 ### Upgrade
 
-- Uninstall the extension
+- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
+- Click on `Disable` and confirm
 - Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/mailrelay/`
 - Download the new version
-- Install the extension
+- Upload the new files inside `{PHPBB_ROOT}/ext/alfredoramos/mailrelay/`
+- Enable the extension again

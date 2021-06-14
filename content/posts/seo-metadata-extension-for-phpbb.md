@@ -1,7 +1,7 @@
 ---
 title: SEO Metadata extension for phpBB
 date: 2019-01-02T19:52:50-05:00
-lastmod: 2020-12-25T13:48:00-05:00
+lastmod: 2021-06-14T12:46:35-05:00
 categories: [phpbb]
 tags: [phpbb-extension, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 archives: [2019]
@@ -147,7 +147,9 @@ If available, it will dynamically generate and include the following data inside
 
 ### Upgrade
 
-- Uninstall the extension
+- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
+- Click on `Disable` and confirm
 - Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/seometadata/`
 - Download the new version
-- Install the extension
+- Upload the new files inside `{PHPBB_ROOT}/ext/alfredoramos/seometadata/`
+- Enable the extension again

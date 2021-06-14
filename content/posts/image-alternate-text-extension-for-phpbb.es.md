@@ -1,7 +1,7 @@
 ---
 title: Extensión Texto Alternativo de Imagen para phpBB
 date: 2019-07-31T19:18:13-05:00
-lastmod: 2020-12-25T13:50:00-05:00
+lastmod: 2021-06-14T12:47:20-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, alt-de-imagen, bbcode, textformatter, markdown, litedown]
 archivos: [2019]
@@ -74,7 +74,9 @@ Permite agregar un texto alternativo a las imágenes para cumplir con las recome
 
 ### Actualización
 
-- Desinstale la extensión
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
 - Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/imagealt/`
 - Descargue la nueva versión
-- Instale la extensión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/imagealt/`
+- Habilite la extensión nuevamente

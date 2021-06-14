@@ -1,7 +1,7 @@
 ---
 title: Extensión Hide BBCode para phpBB
 date: 2019-09-02T16:26:38-05:00
-lastmod: 2020-12-25T13:51:00-05:00
+lastmod: 2021-06-14T12:47:30-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, ocultar, bbcode]
 archivos: [2019]
@@ -79,7 +79,9 @@ Para personalizar la apariencia:
 
 ### Actualización
 
-- Desinstale la extensión
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
 - Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/hide/`
 - Descargue la nueva versión
-- Instale la extensión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/hide/`
+- Habilite la extensión nuevamente

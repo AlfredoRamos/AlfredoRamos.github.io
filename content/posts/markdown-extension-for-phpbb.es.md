@@ -1,7 +1,7 @@
 ---
 title: Extensión Markdown para phpBB
 date: 2019-05-24T14:29:05-05:00
-lastmod: 2020-12-25T13:49:00-05:00
+lastmod: 2021-06-14T12:46:15-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, markdown, textformatter, litedown, pipetables]
 archivos: [2019]
@@ -128,7 +128,9 @@ Para deshabilitar Markdown únicamente en el mensaje actual (tema, mensaje priva
 
 ### Actualización
 
-- Desinstale la extensión
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
 - Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/markdown/`
 - Descargue la nueva versión
-- Instale la extensión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/markdown/`
+- Habilite la extensión nuevamente

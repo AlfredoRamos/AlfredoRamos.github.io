@@ -1,7 +1,7 @@
 ---
 title: Markdown extension for phpBB
 date: 2019-05-24T14:29:05-05:00
-lastmod: 2020-12-25T13:49:00-05:00
+lastmod: 2021-06-14T12:46:20-05:00
 categories: [phpbb]
 tags: [phpbb-extension, markdown, textformatter, litedown, pipetables]
 archives: [2019]
@@ -128,7 +128,9 @@ To disable Markdown only in the current message (post, signature or private mess
 
 ### Upgrade
 
-- Uninstall the extension
+- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
+- Click on `Disable` and confirm
 - Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/markdown/`
 - Download the new version
-- Install the extension
+- Upload the new files inside `{PHPBB_ROOT}/ext/alfredoramos/markdown/`
+- Enable the extension again

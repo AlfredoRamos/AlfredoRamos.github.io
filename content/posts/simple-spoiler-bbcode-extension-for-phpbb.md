@@ -1,7 +1,7 @@
 ---
 title: Simple Spoiler BBCode extension for phpBB
 date: 2017-01-14T23:53:37-05:00
-lastmod: 2020-12-25T13:44:00-05:00
+lastmod: 2021-06-14T12:46:25-05:00
 categories: [phpbb]
 tags: [phpbb-extension, spoiler, bbcode]
 archives: [2017]
@@ -91,7 +91,9 @@ To customize the look and feel:
 
 ### Upgrade
 
-- Uninstall the extension
+- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
+- Click on `Disable` and confirm
 - Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/simplespoiler/`
 - Download the new version
-- Install the extension
+- Upload the new files inside `{PHPBB_ROOT}/ext/alfredoramos/simplespoiler/`
+- Enable the extension again

@@ -1,7 +1,7 @@
 ---
 title: Extensión Imgur para phpBB
 date: 2017-05-13T18:29:16-05:00
-lastmod: 2020-12-25T13:46:00-05:00
+lastmod: 2021-06-14T12:47:10-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, imgur, bbcode]
 archivos: [2017]
@@ -118,7 +118,9 @@ Para personalizar la apariencia:
 
 ### Actualización
 
-- Desinstale la extensión
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
 - Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/imgur/`
 - Descargue la nueva versión
-- Instale la extensión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/imgur/`
+- Habilite la extensión nuevamente
