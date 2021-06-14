@@ -28,67 +28,69 @@ Consulte la documentación oficial para saber más acerca de la sintaxis para lo
 <!--more-->
 ### Características
 
-- Posting button for the `[mermaid]` BBCode
-- Generate SVG diagrams from text
-- Supports all diagrams and charts available in the library, currently:
-	- Flowchart
-	- Sequence diagram
-	- Class diagram
-	- Entity relationship diagram
-	- State diagram
-	- Gantt diagram
-	- Git graph
-	- Pie chart
-- Compatible with [Markdown]({{<relref "markdown-extension-for-phpbb">}}) extension
-- It doesn't require extra configuration
+- Botón en el editor de mensajes para el BBCode `[mermaid]`
+- Genera diagramas en formato SVG a partir de texto
+- Soporta todos los diagramas y gráficos disponibles en la librería, que son:
+	- Diagrama de flujo
+	- Diagrama de secuencia
+	- Diagrama de clase
+	- Diagrama de entidad-relación
+	- Diagrama de estado
+	- Diagrama de Gantt
+	- Gráfico Git
+	- Gráfico circular
+- Es compatible con la extensión [Markdown]({{<relref "markdown-extension-for-phpbb">}})
+- No requiere de configuración extra
 
-### Preview
+### Vista previa
 
-{{<preview src="https://i.imgur.com/5jhoiqgb.png" link="https://i.imgur.com/5jhoiqg.png" alt="Flowchart">}}
-{{<preview src="https://i.imgur.com/QPVhPuhb.png" link="https://i.imgur.com/QPVhPuh.png" alt="Sequence diagram">}}
-{{<preview src="https://i.imgur.com/C1qOugrb.png" link="https://i.imgur.com/C1qOugr.png" alt="Gantt diagram">}}
-{{<preview src="https://i.imgur.com/iHEDfxQb.png" link="https://i.imgur.com/iHEDfxQ.png" alt="Class diagram">}}
-{{<preview src="https://i.imgur.com/jbZzc2Pb.png" link="https://i.imgur.com/jbZzc2P.png" alt="Entity relationship diagram">}}
-{{<preview src="https://i.imgur.com/hDGmUm9b.png" link="https://i.imgur.com/hDGmUm9.png" alt="State diagram">}}
-{{<preview src="https://i.imgur.com/WP7uiQwb.png" link="https://i.imgur.com/WP7uiQw.png" alt="Pie chart">}}
+{{<preview src="https://i.imgur.com/5jhoiqgb.png" link="https://i.imgur.com/5jhoiqg.png" alt="Diagrama de flujo">}}
+{{<preview src="https://i.imgur.com/QPVhPuhb.png" link="https://i.imgur.com/QPVhPuh.png" alt="Diagrama de secuencia">}}
+{{<preview src="https://i.imgur.com/C1qOugrb.png" link="https://i.imgur.com/C1qOugr.png" alt="Diagrama de Gantt">}}
+{{<preview src="https://i.imgur.com/iHEDfxQb.png" link="https://i.imgur.com/iHEDfxQ.png" alt="Diagrama de clase">}}
+{{<preview src="https://i.imgur.com/jbZzc2Pb.png" link="https://i.imgur.com/jbZzc2P.png" alt="Diagrama de entidad-relación">}}
+{{<preview src="https://i.imgur.com/hDGmUm9b.png" link="https://i.imgur.com/hDGmUm9.png" alt="Diagrama de estado">}}
+{{<preview src="https://i.imgur.com/WP7uiQwb.png" link="https://i.imgur.com/WP7uiQw.png" alt="Gráfico circular">}}
 
-*(Click to view in full size)*
+*(Haga clic para ver en tamaño completo)*
 
-### Requirements
+### Requisitos
 
-- PHP 7.1.3 or greater
-- phpBB 3.3 or greater
+- PHP 7.1.3 o superior
+- phpBB 3.3 o superior
 
-### Support
+### Soporte
 
-- [**Download page**](https://www.phpbb.com/community/viewtopic.php?t=2527586)
-- [GitHub issues](https://github.com/AlfredoRamos/phpbb-ext-mermaid/issues)
+- [**Página de descarga**](https://www.phpbb-es.com/foro/viewtopic.php?t=43355)
+- [Área de soporte en GitHub](https://github.com/AlfredoRamos/phpbb-ext-mermaid/issues)
 
-### Donate
+### Donar
 
 {{<donate>}}
 
-### Installation
+### Instalación
 
-- Download the [latest release](https://github.com/AlfredoRamos/phpbb-ext-mermaid/releases)
-- Decompress the `*.zip` or `*.tar.gz` file
-- Copy the files and directories inside `{PHPBB_ROOT}/ext/alfredoramos/mermaid/`
-- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
-- Click on `Enable` and confirm
+- Descargue la [última versión](https://github.com/AlfredoRamos/phpbb-ext-mermaid/releases)
+- Descomprima el archivo `*.zip` o `*.tar.gz`
+- Copie los archivos y directorios dentro de `{PHPBB_ROOT}/ext/alfredoramos/mermaid/`
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Habilitar` y confirme
 
-### Configuration
+### Configuración
 
-It doesn’t require any configuration.
+No requiere de ninguna configuración.
 
-### Uninstallation
+### Desinstalación
 
-- Go to your `Administration Control Panel` > `Customize` > `Manage extensions`
-- Click on `Disable` and confirm
-- Go back to `Manage extensions` > `Mermaid Diagrams` > `Delete data` and confirm
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
+- Regrese a `Administrar extensiones` > `Mermaid` > `Borrar datos` y confirme
 
-### Upgrade
+### Actualización
 
-- Uninstall the extension
-- Delete all the files inside `{PHPBB_ROOT}/ext/alfredoramos/mermaid/`
-- Download the new version
-- Install the extension
+- Dirígase a su `Panel de Control de Administración` > `Personalizar` > `Administrar extensiones`
+- Haga clic en `Deshabilitar` y confirme
+- Elimine todos los archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/mermaid/`
+- Descargue la nueva versión
+- Suba los nuevos archivos dentro de `{PHPBB_ROOT}/ext/alfredoramos/mermaid/`
+- Habilite la extensión nuevamente
