@@ -1,7 +1,7 @@
 ---
 title: Extensión Simple Spoiler BBCode para phpBB
 date: 2017-01-14T23:53:37-05:00
-lastmod: 2020-12-25T13:44:00-05:00
+lastmod: 2021-06-14T12:46:30-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, spoiler, bbcode]
 archivos: [2017]

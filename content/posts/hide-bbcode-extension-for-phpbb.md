@@ -1,7 +1,7 @@
 ---
 title: Hide BBCode extension for phpBB
 date: 2019-09-02T16:26:38-05:00
-lastmod: 2020-12-25T13:51:00-05:00
+lastmod: 2021-06-14T12:47:25-05:00
 categories: [phpbb]
 tags: [phpbb-extension, hide, bbcode]
 archives: [2019]

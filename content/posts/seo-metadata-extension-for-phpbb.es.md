@@ -1,7 +1,7 @@
 ---
 title: Extensión Metadatos SEO para phpBB
 date: 2019-01-02T19:52:50-05:00
-lastmod: 2020-12-25T13:48:00-05:00
+lastmod: 2021-06-14T12:46:40-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, seo, open-graph, twitter-cards, json-ld, schema-org, rdf]
 archivos: [2019]

@@ -1,7 +1,7 @@
 ---
 title: Extensión Markdown para phpBB
 date: 2019-05-24T14:29:05-05:00
-lastmod: 2020-12-25T13:49:00-05:00
+lastmod: 2021-06-14T12:46:15-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, markdown, textformatter, litedown, pipetables]
 archivos: [2019]

@@ -1,7 +1,7 @@
 ---
 title: Imgur extension for phpBB
 date: 2017-05-13T18:29:16-05:00
-lastmod: 2020-12-25T13:46:00-05:00
+lastmod: 2021-06-14T12:47:05-05:00
 categories: [phpbb]
 tags: [phpbb-extension, imgur, bbcode]
 archives: [2017]

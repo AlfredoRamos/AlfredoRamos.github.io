@@ -1,7 +1,7 @@
 ---
 title: Mailrelay extension for phpBB
 date: 2020-09-18T00:48:17-05:00
-lastmod: 2020-12-25T13:53:00-05:00
+lastmod: 2021-06-14T12:46:50-05:00
 categories: [phpbb]
 tags: [phpbb-extension, mailrelay, email, marketing, cron]
 archives: [2020]

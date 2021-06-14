@@ -1,7 +1,7 @@
 ---
 title: Extensión Texto Alternativo de Imagen para phpBB
 date: 2019-07-31T19:18:13-05:00
-lastmod: 2020-12-25T13:50:00-05:00
+lastmod: 2021-06-14T12:47:20-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, alt-de-imagen, bbcode, textformatter, markdown, litedown]
 archivos: [2019]

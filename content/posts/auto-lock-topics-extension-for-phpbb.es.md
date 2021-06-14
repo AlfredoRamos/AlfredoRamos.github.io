@@ -1,7 +1,7 @@
 ---
 title: Extensión Auto-lock Topics para phpBB
 date: 2017-05-11T18:52:54-05:00
-lastmod: 2020-12-25T13:45:00-05:00
+lastmod: 2021-06-14T12:46:05-05:00
 categorias: [phpbb]
 etiquetas: [extension-phpbb, auto-lock, cron]
 archivos: [2017]
