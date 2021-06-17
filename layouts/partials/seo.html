@@ -18,8 +18,11 @@
 <meta name="twitter:creator" content="@{{ .id }}">
 {{- end }}
 <meta name="twitter:dnt" content="on">
-{{- with $locale }}
-<meta property="og:locale" content="{{ printf "%s_%s" . (cond (eq . "es") "MX" "US") }}">
+{{- if .IsTranslated }}
+<meta property="og:locale" content="{{ printf "%s_%s" .Language.Lang (cond (eq .Language.Lang "es") "LA" "US") }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ printf "%s_%s" .Language.Lang (cond (eq .Language.Lang "es") "LA" "US") }}">
+{{- end }}
 {{- end }}
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:url" content="{{ .Permalink }}">
