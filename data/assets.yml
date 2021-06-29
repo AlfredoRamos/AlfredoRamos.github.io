@@ -29,12 +29,12 @@ iconify:
       integrity: 'sha384-lGbyjC1LcXOms2ulzEaPF5lCp4KYjIixQVeJeRVqTxaVjteTt416v4aDqgsoRVfX'
 
 fslightbox:
-  version: '3.2.3'
+  version: '3.3.0-2'
   cdn: 'unpkg'
   js:
     - name: 'index'
       minified: false
-      integrity: 'sha384-e3YchYyEbq+ySwKM9IWWWh+yz+ysSWpoo84ME7jaicUZi+g1bAgEYBskDhR2TE6Y'
+      integrity: 'sha384-lhLfRkvJ2OZLdEiGFLqD1ak8ukgPuw0KELSDak732x1nQpydhesTUF3dsAIpuAso'
 
 highlight:
   version: ~
