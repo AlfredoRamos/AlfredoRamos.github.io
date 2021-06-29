@@ -21,12 +21,12 @@ lazysizes:
       integrity: 'sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf+e'
 
 iconify:
-  version: '2.0.1'
+  version: '2.0.2'
   cdn: 'iconify'
   js:
     - name: 'iconify'
       minified: true
-      integrity: 'sha384-y4r4f3ZTHjwnxEq03e7OFT/0jtyqEWidp7XMnGUfj4s+Oxa7iFtes1aiOVJXxhaq'
+      integrity: 'sha384-lGbyjC1LcXOms2ulzEaPF5lCp4KYjIixQVeJeRVqTxaVjteTt416v4aDqgsoRVfX'
 
 fslightbox:
   version: '3.2.3'
