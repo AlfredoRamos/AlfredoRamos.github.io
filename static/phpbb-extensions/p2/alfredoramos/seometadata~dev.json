@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "664081d9f8ef3b552817dd7bd32a5f2c6bd4382d"
+                    "reference": "0d29d67fbb938071d69009b9343a6fe3d03d350a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/664081d9f8ef3b552817dd7bd32a5f2c6bd4382d",
-                    "reference": "664081d9f8ef3b552817dd7bd32a5f2c6bd4382d",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/0d29d67fbb938071d69009b9343a6fe3d03d350a",
+                    "reference": "0d29d67fbb938071d69009b9343a6fe3d03d350a",
                     "shasum": ""
                 },
                 "require": {
@@ -45,7 +45,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://alfredoramos.mx/",
+                        "homepage": "https://alfredoramos.mx",
                         "role": "Lead Developer"
                     }
                 ],
@@ -72,6 +72,10 @@
                     {
                         "type": "custom",
                         "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://buy.stripe.com/00g2bOezFckMgqQ000"
                     },
                     {
                         "type": "custom",
