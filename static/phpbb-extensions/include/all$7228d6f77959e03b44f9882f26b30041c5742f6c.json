@@ -584,12 +584,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-auto-lock-topics.git",
-                    "reference": "7fe78b3e6fa6e18051176e2b922f3ec2edb90116"
+                    "reference": "6d47e034b92e4264a1b600e5cbe894bc61898be1"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/7fe78b3e6fa6e18051176e2b922f3ec2edb90116",
-                    "reference": "7fe78b3e6fa6e18051176e2b922f3ec2edb90116",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-auto-lock-topics/zipball/6d47e034b92e4264a1b600e5cbe894bc61898be1",
+                    "reference": "6d47e034b92e4264a1b600e5cbe894bc61898be1",
                     "shasum": ""
                 },
                 "require": {
@@ -871,12 +871,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-hide.git",
-                    "reference": "bb7cbc940faba67d464633cb1e15aae57d8712f2"
+                    "reference": "8753bd066f309766aab3e88c40f21cb8b5c04026"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/bb7cbc940faba67d464633cb1e15aae57d8712f2",
-                    "reference": "bb7cbc940faba67d464633cb1e15aae57d8712f2",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-hide/zipball/8753bd066f309766aab3e88c40f21cb8b5c04026",
+                    "reference": "8753bd066f309766aab3e88c40f21cb8b5c04026",
                     "shasum": ""
                 },
                 "require": {
@@ -1086,12 +1086,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-image-alt.git",
-                    "reference": "e8a0060083ceee32fab7024c34c2f25901411912"
+                    "reference": "a2cbca0e7134c8501caad0326458645179f706bf"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/e8a0060083ceee32fab7024c34c2f25901411912",
-                    "reference": "e8a0060083ceee32fab7024c34c2f25901411912",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-image-alt/zipball/a2cbca0e7134c8501caad0326458645179f706bf",
+                    "reference": "a2cbca0e7134c8501caad0326458645179f706bf",
                     "shasum": ""
                 },
                 "require": {
@@ -2601,12 +2601,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-imgur.git",
-                    "reference": "b84563193225e57053a065a4c1efbfae9759aeb2"
+                    "reference": "df3f18f4a947671cbec5e71a8b2f7361aac8ef25"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/b84563193225e57053a065a4c1efbfae9759aeb2",
-                    "reference": "b84563193225e57053a065a4c1efbfae9759aeb2",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-imgur/zipball/df3f18f4a947671cbec5e71a8b2f7361aac8ef25",
+                    "reference": "df3f18f4a947671cbec5e71a8b2f7361aac8ef25",
                     "shasum": ""
                 },
                 "require": {
@@ -2675,12 +2675,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-lazy-load.git",
-                    "reference": "13be0ea7fcb9551b90d9779bb819a62464ae2fb0"
+                    "reference": "4eb2bbefc8df99a34796700bcf57dbfc0af585b5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/13be0ea7fcb9551b90d9779bb819a62464ae2fb0",
-                    "reference": "13be0ea7fcb9551b90d9779bb819a62464ae2fb0",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-lazy-load/zipball/4eb2bbefc8df99a34796700bcf57dbfc0af585b5",
+                    "reference": "4eb2bbefc8df99a34796700bcf57dbfc0af585b5",
                     "shasum": ""
                 },
                 "require": {
@@ -2747,12 +2747,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git",
-                    "reference": "1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40"
+                    "reference": "28747cf10c2b83fedc78ad964636212ab4dc9d45"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40",
-                    "reference": "1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/28747cf10c2b83fedc78ad964636212ab4dc9d45",
+                    "reference": "28747cf10c2b83fedc78ad964636212ab4dc9d45",
                     "shasum": ""
                 },
                 "require": {
@@ -3258,12 +3258,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
-                    "reference": "daa2748def92ff8b56c86b9e0a16dd7dda14c38e"
+                    "reference": "7cc53ac31c89644bea7c7cb6fe064502aae46979"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/daa2748def92ff8b56c86b9e0a16dd7dda14c38e",
-                    "reference": "daa2748def92ff8b56c86b9e0a16dd7dda14c38e",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/7cc53ac31c89644bea7c7cb6fe064502aae46979",
+                    "reference": "7cc53ac31c89644bea7c7cb6fe064502aae46979",
                     "shasum": ""
                 },
                 "require": {
@@ -3336,12 +3336,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
-                    "reference": "f37691eaf858352adfb55aa67e92e75e59185f44"
+                    "reference": "b1abbf023bffdd2afd5f4791bcfb73ee9e461d71"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/f37691eaf858352adfb55aa67e92e75e59185f44",
-                    "reference": "f37691eaf858352adfb55aa67e92e75e59185f44",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/b1abbf023bffdd2afd5f4791bcfb73ee9e461d71",
+                    "reference": "b1abbf023bffdd2afd5f4791bcfb73ee9e461d71",
                     "shasum": ""
                 },
                 "require": {
@@ -3931,6 +3931,10 @@
                     },
                     {
                         "type": "custom",
+                        "url": "https://buy.stripe.com/00g2bOezFckMgqQ000"
+                    },
+                    {
+                        "type": "custom",
                         "url": "https://alfredoramos.mx/donate/"
                     }
                 ]
@@ -3942,12 +3946,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-seo-metadata.git",
-                    "reference": "664081d9f8ef3b552817dd7bd32a5f2c6bd4382d"
+                    "reference": "0d29d67fbb938071d69009b9343a6fe3d03d350a"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/664081d9f8ef3b552817dd7bd32a5f2c6bd4382d",
-                    "reference": "664081d9f8ef3b552817dd7bd32a5f2c6bd4382d",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-seo-metadata/zipball/0d29d67fbb938071d69009b9343a6fe3d03d350a",
+                    "reference": "0d29d67fbb938071d69009b9343a6fe3d03d350a",
                     "shasum": ""
                 },
                 "require": {
@@ -3979,7 +3983,7 @@
                     {
                         "name": "Alfredo Ramos",
                         "email": "alfredo.ramos@yandex.com",
-                        "homepage": "https://alfredoramos.mx/",
+                        "homepage": "https://alfredoramos.mx",
                         "role": "Lead Developer"
                     }
                 ],
@@ -4006,6 +4010,10 @@
                     {
                         "type": "custom",
                         "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://buy.stripe.com/00g2bOezFckMgqQ000"
                     },
                     {
                         "type": "custom",
@@ -5440,12 +5448,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-simple-spoiler.git",
-                    "reference": "3e32510e2df712b7da9f13735180ba0d3326ca97"
+                    "reference": "be12487294470bebf84022c05b75b8afcd528848"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/3e32510e2df712b7da9f13735180ba0d3326ca97",
-                    "reference": "3e32510e2df712b7da9f13735180ba0d3326ca97",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-simple-spoiler/zipball/be12487294470bebf84022c05b75b8afcd528848",
+                    "reference": "be12487294470bebf84022c05b75b8afcd528848",
                     "shasum": ""
                 },
                 "require": {

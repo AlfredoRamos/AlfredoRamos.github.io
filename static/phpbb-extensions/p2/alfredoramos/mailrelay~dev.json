@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/AlfredoRamos/phpbb-ext-mailrelay.git",
-                    "reference": "1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40"
+                    "reference": "28747cf10c2b83fedc78ad964636212ab4dc9d45"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40",
-                    "reference": "1203579ae0cde0c9b4bd5c93cc9f83dd9d4ceb40",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mailrelay/zipball/28747cf10c2b83fedc78ad964636212ab4dc9d45",
+                    "reference": "28747cf10c2b83fedc78ad964636212ab4dc9d45",
                     "shasum": ""
                 },
                 "require": {

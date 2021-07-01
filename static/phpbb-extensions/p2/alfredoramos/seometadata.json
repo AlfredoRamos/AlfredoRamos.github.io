@@ -519,6 +519,10 @@
                     },
                     {
                         "type": "custom",
+                        "url": "https://buy.stripe.com/00g2bOezFckMgqQ000"
+                    },
+                    {
+                        "type": "custom",
                         "url": "https://alfredoramos.mx/donate/"
                     }
                 ]
