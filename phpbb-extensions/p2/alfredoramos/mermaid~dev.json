@@ -1,0 +1,88 @@
+{
+    "packages": {
+        "alfredoramos/mermaid": [
+            {
+                "name": "alfredoramos/mermaid",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-mermaid.git",
+                    "reference": "b1abbf023bffdd2afd5f4791bcfb73ee9e461d71"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-mermaid/zipball/b1abbf023bffdd2afd5f4791bcfb73ee9e461d71",
+                    "reference": "b1abbf023bffdd2afd5f4791bcfb73ee9e461d71",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "alfredoramos/markdown": "For Markdown support"
+                },
+                "time": "2020-01-23T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Mermaid Diagrams",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.mx",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "mermaid.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://alfredoramos.mx/",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Mermaid Diagrams extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-mermaid",
+                "keywords": [
+                    "class-diagram",
+                    "diagrams",
+                    "entity-relationship-diagram",
+                    "extension",
+                    "flowchart",
+                    "gantt-diagram",
+                    "git-graph",
+                    "mermaid",
+                    "phpbb",
+                    "pie-chart",
+                    "sequence-diagram",
+                    "state-diagram"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-mermaid/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-mermaid/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
+            }
+        ]
+    }
+}

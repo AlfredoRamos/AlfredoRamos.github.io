@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+	<title>diagramas • Alfredo Ramos</title>
+	<subtitle>Una colección de artículos publicados con la etiqueta diagramas.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/es/etiquetas/diagramas/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagramas/" hreflang="es" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/diagrams/" hreflang="en" />
+	<updated>2019-10-26T19:56:28-05:00</updated>
+	<id>https://alfredoramos.mx/es/etiquetas/diagramas/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/es/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="es">
+		<title>Extensión Diagramas Mermaid para phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-diagramas-mermaid-para-phpbb/" hreflang="es" title="Extensión Diagramas Mermaid para phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/mermaid-diagrams-extension-for-phpbb/" hreflang="en" title="Mermaid Diagrams extension for phpBB" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:47:40-05:00</updated>
+		<id>https://alfredoramos.mx/es/extension-diagramas-mermaid-para-phpbb/</id>
+		<summary type="html">Extensión Diagramas Mermaid para phpBB. Genera diagramas y gráficos a partir de texto de forma similar a como lo hace Markdown. Utiliza la librería Mermaid para transformar el texto en un gráfico SVG, y puede generar todos los tipos de gráficos que soporta dicha librería. Consulte la documentación oficial para saber más acerca de la sintaxis para los distintos tipos de gráficos: mermaid</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="extension-phpbb" />
+		<category term="mermaid" />
+		<category term="diagramas" />
+		<category term="diagrama-de-flujo" />
+		<category term="diagrama-de-secuencia" />
+		<category term="diagrama-de-gantt" />
+		<category term="diagrama-de-clase" />
+		<category term="diagrama-de-entidad-relacion" />
+		<category term="diagrama-de-estado" />
+		<category term="grafico-git" />
+		<category term="grafico-circular" />
+		<category term="bbcode" />
+		<category term="svg" />
+	</entry>
+</feed>

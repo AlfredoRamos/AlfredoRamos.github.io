@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>marketing • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the marketing tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/marketing/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/marketing/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/marketing/" hreflang="es" />
+	<updated>2020-09-18T00:48:17-05:00</updated>
+	<id>https://alfredoramos.mx/tags/marketing/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Mailrelay extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/mailrelay-extension-for-phpbb/" hreflang="en" title="Mailrelay extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-mailrelay-para-phpbb/" hreflang="es" title="Extensión Mailrelay para phpBB" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:46:50-05:00</updated>
+		<id>https://alfredoramos.mx/mailrelay-extension-for-phpbb/</id>
+		<summary type="html">Mailrelay extension for phpBB. Automatically synchronizes user emails to Mailrelay to create, manage and send marketing campaigns.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="mailrelay" />
+		<category term="email" />
+		<category term="marketing" />
+		<category term="cron" />
+	</entry>
+</feed>

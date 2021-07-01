@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>2017 • Alfredo Ramos</title>
+	<subtitle>A collection of posts published in 2017.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/archives/2017/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/archives/2017/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/archivos/2017/" hreflang="es" />
+	<updated>2017-05-13T18:29:16-05:00</updated>
+	<id>https://alfredoramos.mx/archives/2017/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Imgur extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/imgur-extension-for-phpbb/" hreflang="en" title="Imgur extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-imgur-para-phpbb/" hreflang="es" title="Extensión Imgur para phpBB" />
+		<published>2017-05-13T18:29:16-05:00</published>
+		<updated>2021-06-14T12:47:05-05:00</updated>
+		<id>https://alfredoramos.mx/imgur-extension-for-phpbb/</id>
+		<summary type="html">Imgur extension for phpBB. With this extension you can click on the Imgur posting button and select the image(s) you want to upload. If the upload is successful it will add the image in the topic, private message or signature content. You can choose in the Administration Control Panel to show the uploaded image as plan text or with BBCode as URL, image (default) or thumbnail.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="imgur" />
+		<category term="bbcode" />
+	</entry>
+	<entry xml:lang="en">
+		<title>Auto-lock topics extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/auto-lock-topics-extension-for-phpbb/" hreflang="en" title="Auto-lock topics extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-auto-lock-topics-para-phpbb/" hreflang="es" title="Extensión Auto-lock Topics para phpBB" />
+		<published>2017-05-11T18:52:54-05:00</published>
+		<updated>2021-06-14T12:46:10-05:00</updated>
+		<id>https://alfredoramos.mx/auto-lock-topics-extension-for-phpbb/</id>
+		<summary type="html">Auto-lock Topics extension for phpBB. It will automatically lock old topics using phpBB&amp;rsquo;s cron functionality.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="auto-lock" />
+		<category term="cron" />
+	</entry>
+	<entry xml:lang="en">
+		<title>Simple Spoiler BBCode extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/simple-spoiler-bbcode-extension-for-phpbb/" hreflang="en" title="Simple Spoiler BBCode extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-simple-spoiler-bbcode-para-phpbb/" hreflang="es" title="Extensión Simple Spoiler BBCode para phpBB" />
+		<published>2017-01-14T23:53:37-05:00</published>
+		<updated>2021-06-14T12:46:25-05:00</updated>
+		<id>https://alfredoramos.mx/simple-spoiler-bbcode-extension-for-phpbb/</id>
+		<summary type="html">Simple Spoiler BBCode extension for phpBB. Allows you to write [spoiler]text[/spoiler] or [spoiler title=title]text[/spoiler] and it will hide the content on anywhere that you can render BBCodes. You can nest [spoiler] and write unicode titles in [spoiler title=title].</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="spoiler" />
+		<category term="bbcode" />
+	</entry>
+</feed>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>pie-chart • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the pie-chart tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/pie-chart/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/pie-chart/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/grafico-circular/" hreflang="es" />
+	<updated>2019-10-26T19:56:28-05:00</updated>
+	<id>https://alfredoramos.mx/tags/pie-chart/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Mermaid Diagrams extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/mermaid-diagrams-extension-for-phpbb/" hreflang="en" title="Mermaid Diagrams extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-diagramas-mermaid-para-phpbb/" hreflang="es" title="Extensión Diagramas Mermaid para phpBB" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/mermaid-diagrams-extension-for-phpbb/</id>
+		<summary type="html">Mermaid Diagrams extension for phpBB. Allows you to generate diagrams and flowcharts from text in a similar manner as markdown. It uses the mermaid library to generate the SVG markup and supports all diagrams available. You can read more about the supported syntax in the official documentation: mermaid</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="mermaid" />
+		<category term="diagrams" />
+		<category term="flowchart" />
+		<category term="sequence-diagram" />
+		<category term="gantt-diagram" />
+		<category term="class-diagram" />
+		<category term="entity-relationship-diagram" />
+		<category term="state-diagram" />
+		<category term="git-graph" />
+		<category term="pie-chart" />
+		<category term="bbcode" />
+		<category term="svg" />
+	</entry>
+</feed>

@@ -1,0 +1,441 @@
+{
+    "packages": {
+        "alfredoramos/markdown": [
+            {
+                "name": "alfredoramos/markdown",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "1dbce886c0ad96352d31c5245eea8e14ebb42f89"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/1dbce886c0ad96352d31c5245eea8e14ebb42f89",
+                    "reference": "1dbce886c0ad96352d31c5245eea8e14ebb42f89",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "alfredoramos/highlightjs": "To add code syntax highlighting and optionally line numbers",
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2019-05-24T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.0.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            {
+                "name": "alfredoramos/markdown",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "066435bfc59546cce31dafff416d917b6ebff78b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/066435bfc59546cce31dafff416d917b6ebff78b",
+                    "reference": "066435bfc59546cce31dafff416d917b6ebff78b",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "alfredoramos/highlightjs": "To add code syntax highlighting and optionally line numbers",
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2019-07-14T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.1.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            {
+                "name": "alfredoramos/markdown",
+                "version": "1.1.1",
+                "version_normalized": "1.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "a732cec6ef9dbe8ac9bacdfc776a630dbf0d7745"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/a732cec6ef9dbe8ac9bacdfc776a630dbf0d7745",
+                    "reference": "a732cec6ef9dbe8ac9bacdfc776a630dbf0d7745",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": ">=5.6"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2019-11-20T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.2.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.1.1",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            {
+                "name": "alfredoramos/markdown",
+                "version": "1.2.0",
+                "version_normalized": "1.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "3c0b908538b6e04207e05a15ba17f1a1c17a62c9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/3c0b908538b6e04207e05a15ba17f1a1c17a62c9",
+                    "reference": "3c0b908538b6e04207e05a15ba17f1a1c17a62c9",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2020-01-06T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.2.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            {
+                "name": "alfredoramos/markdown",
+                "version": "1.3.0",
+                "version_normalized": "1.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "509ef46365f9859f943e07fd5f97cf1a75276230"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/509ef46365f9859f943e07fd5f97cf1a75276230",
+                    "reference": "509ef46365f9859f943e07fd5f97cf1a75276230",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3",
+                    "s9e/text-formatter": "^2.5.0"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2020-06-17T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.0"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.github.io",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://github.com/AlfredoRamos",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables",
+                    "tasklists"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.3.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://paypal.me/IngAlfredoRamos/USD"
+                    }
+                ]
+            },
+            {
+                "name": "alfredoramos/markdown",
+                "version": "1.4.0",
+                "version_normalized": "1.4.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "30d449eebf5ee0256202c63464419fd3b06c1634"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/30d449eebf5ee0256202c63464419fd3b06c1634",
+                    "reference": "30d449eebf5ee0256202c63464419fd3b06c1634",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2020-11-06T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.2"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.mx",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://alfredoramos.mx/",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables",
+                    "tasklists"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/1.4.0",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
+            }
+        ]
+    }
+}

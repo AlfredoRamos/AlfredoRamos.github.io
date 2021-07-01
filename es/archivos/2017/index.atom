@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+	<title>2017 • Alfredo Ramos</title>
+	<subtitle>Una colección de artículos publicados en 2017.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/es/archivos/2017/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/archivos/2017/" hreflang="es" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/archives/2017/" hreflang="en" />
+	<updated>2017-05-13T18:29:16-05:00</updated>
+	<id>https://alfredoramos.mx/es/archivos/2017/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/es/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="es">
+		<title>Extensión Imgur para phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-imgur-para-phpbb/" hreflang="es" title="Extensión Imgur para phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/imgur-extension-for-phpbb/" hreflang="en" title="Imgur extension for phpBB" />
+		<published>2017-05-13T18:29:16-05:00</published>
+		<updated>2021-06-14T12:47:10-05:00</updated>
+		<id>https://alfredoramos.mx/es/extension-imgur-para-phpbb/</id>
+		<summary type="html">Extensión Imgur para phpBB. Agrega un nuevo botón para subir imágenes a Imgur y la añade automáticamente al tema, mensaje privado o la firma del usuario A través del Panel de Control del Administrador se puede controlar si se desea mostrar la imagen como texto plano o usando BBCode como URL, imagen (default) o miniatura.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="extension-phpbb" />
+		<category term="imgur" />
+		<category term="bbcode" />
+	</entry>
+	<entry xml:lang="es">
+		<title>Extensión Auto-lock Topics para phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-auto-lock-topics-para-phpbb/" hreflang="es" title="Extensión Auto-lock Topics para phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/auto-lock-topics-extension-for-phpbb/" hreflang="en" title="Auto-lock topics extension for phpBB" />
+		<published>2017-05-11T18:52:54-05:00</published>
+		<updated>2021-06-14T12:46:05-05:00</updated>
+		<id>https://alfredoramos.mx/es/extension-auto-lock-topics-para-phpbb/</id>
+		<summary type="html">Extensión Auto-lock Topics para phpBB. Permite cerrar temas antiguos de forma automática usando una tarea cron de phpBB.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="extension-phpbb" />
+		<category term="auto-lock" />
+		<category term="cron" />
+	</entry>
+	<entry xml:lang="es">
+		<title>Extensión Simple Spoiler BBCode para phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-simple-spoiler-bbcode-para-phpbb/" hreflang="es" title="Extensión Simple Spoiler BBCode para phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/simple-spoiler-bbcode-extension-for-phpbb/" hreflang="en" title="Simple Spoiler BBCode extension for phpBB" />
+		<published>2017-01-14T23:53:37-05:00</published>
+		<updated>2021-06-14T12:46:30-05:00</updated>
+		<id>https://alfredoramos.mx/es/extension-simple-spoiler-bbcode-para-phpbb/</id>
+		<summary type="html">Extensión Simple Spoiler BBCode para phpBB. Permite usar el BBCode [spoiler]texto[/spoiler] o [spoiler title=título]texto[/spoiler] para ocultar su contenido, pudiendolo usar en cualquier lugar en donde sea posible usar BBCodes. Es posible anidar las etiquetas [spoiler] y usar títulos en unicode dentro de [spoiler title=título].</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="extension-phpbb" />
+		<category term="spoiler" />
+		<category term="bbcode" />
+	</entry>
+</feed>

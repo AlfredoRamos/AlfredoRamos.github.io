@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>image-alt • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the image-alt tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/image-alt/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/image-alt/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/alt-de-imagen/" hreflang="es" />
+	<updated>2019-07-31T19:18:13-05:00</updated>
+	<id>https://alfredoramos.mx/tags/image-alt/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Image Alternate Text extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/image-alternate-text-extension-for-phpbb/" hreflang="en" title="Image Alternate Text extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-texto-alternativo-de-imagen-para-phpbb/" hreflang="es" title="Extensión Texto Alternativo de Imagen para phpBB" />
+		<published>2019-07-31T19:18:13-05:00</published>
+		<updated>2021-06-14T12:47:15-05:00</updated>
+		<id>https://alfredoramos.mx/image-alternate-text-extension-for-phpbb/</id>
+		<summary type="html">Image Alternate Text extension for phpBB. Allows you to set alternate text to image tags to abide SEO recommendations. BBCode input 1 [img alt=&amp;#34;text&amp;#34;]url[/img] HTML output 1 &amp;lt;img src=&amp;#34;url&amp;#34; class=&amp;#34;postimage&amp;#34; alt=&amp;#34;text&amp;#34;&amp;gt;</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="image-alt" />
+		<category term="bbcode" />
+		<category term="textformatter" />
+		<category term="markdown" />
+		<category term="litedown" />
+	</entry>
+</feed>

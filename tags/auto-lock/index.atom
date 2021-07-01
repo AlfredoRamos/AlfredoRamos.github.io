@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>auto-lock • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the auto-lock tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/auto-lock/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/auto-lock/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/auto-lock/" hreflang="es" />
+	<updated>2017-05-11T18:52:54-05:00</updated>
+	<id>https://alfredoramos.mx/tags/auto-lock/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Auto-lock topics extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/auto-lock-topics-extension-for-phpbb/" hreflang="en" title="Auto-lock topics extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-auto-lock-topics-para-phpbb/" hreflang="es" title="Extensión Auto-lock Topics para phpBB" />
+		<published>2017-05-11T18:52:54-05:00</published>
+		<updated>2021-06-14T12:46:10-05:00</updated>
+		<id>https://alfredoramos.mx/auto-lock-topics-extension-for-phpbb/</id>
+		<summary type="html">Auto-lock Topics extension for phpBB. It will automatically lock old topics using phpBB&amp;rsquo;s cron functionality.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="auto-lock" />
+		<category term="cron" />
+	</entry>
+</feed>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>seo • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the seo tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/seo/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/seo/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/seo/" hreflang="es" />
+	<updated>2019-01-02T19:52:50-05:00</updated>
+	<id>https://alfredoramos.mx/tags/seo/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>SEO Metadata extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/seo-metadata-extension-for-phpbb/" hreflang="en" title="SEO Metadata extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-metadatos-seo-para-phpbb/" hreflang="es" title="Extensión Metadatos SEO para phpBB" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/seo-metadata-extension-for-phpbb/</id>
+		<summary type="html">SEO Metadata extension for phpBB. Add dynamically generated meta tags and microdata (Open Graph, Twitter Cards and JSON-LD) of your forums and topics to improve SEO of your board and show correct information when you share it on social networks, including (but not limited to) Telegram, WhatsApp, Facebook, Twitter and Vkontakte. If available, it will dynamically generate and include the following data inside the &amp;lt;head&amp;gt; tag:</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="seo" />
+		<category term="open-graph" />
+		<category term="twitter-cards" />
+		<category term="json-ld" />
+		<category term="schema-org" />
+		<category term="rdf" />
+	</entry>
+</feed>

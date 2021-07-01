@@ -1,0 +1,82 @@
+{
+    "packages": {
+        "alfredoramos/markdown": [
+            {
+                "name": "alfredoramos/markdown",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/AlfredoRamos/phpbb-ext-markdown.git",
+                    "reference": "7cc53ac31c89644bea7c7cb6fe064502aae46979"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/AlfredoRamos/phpbb-ext-markdown/zipball/7cc53ac31c89644bea7c7cb6fe064502aae46979",
+                    "reference": "7cc53ac31c89644bea7c7cb6fe064502aae46979",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer/installers": "^1.6.0",
+                    "php": "^7.1.3"
+                },
+                "require-dev": {
+                    "pear/archive_tar": "^1.4.0",
+                    "phing/phing": "^2.16.0"
+                },
+                "suggest": {
+                    "s9e/highlighter": "To add code syntax highlighting"
+                },
+                "time": "2020-11-06T00:00:00+00:00",
+                "type": "phpbb-extension",
+                "extra": {
+                    "display-name": "Markdown",
+                    "soft-require": {
+                        "phpbb/phpbb": "~3.3.2"
+                    },
+                    "version-check": {
+                        "host": "alfredoramos.mx",
+                        "directory": "/phpbb-extensions/versions",
+                        "filename": "markdown.json",
+                        "ssl": true
+                    }
+                },
+                "license": [
+                    "GPL-2.0-only"
+                ],
+                "authors": [
+                    {
+                        "name": "Alfredo Ramos",
+                        "email": "alfredo.ramos@yandex.com",
+                        "homepage": "https://alfredoramos.mx/",
+                        "role": "Lead Developer"
+                    }
+                ],
+                "description": "Markdown extension for phpBB",
+                "homepage": "https://github.com/AlfredoRamos/phpbb-ext-markdown",
+                "keywords": [
+                    "extension",
+                    "litedown",
+                    "markdown",
+                    "phpbb",
+                    "pipetables",
+                    "tasklists"
+                ],
+                "support": {
+                    "source": "https://github.com/AlfredoRamos/phpbb-ext-markdown/tree/master",
+                    "issues": "https://github.com/AlfredoRamos/phpbb-ext-markdown/issues"
+                },
+                "funding": [
+                    {
+                        "type": "custom",
+                        "url": "https://www.paypal.me/IngAlfredoRamos/10.00USD"
+                    },
+                    {
+                        "type": "custom",
+                        "url": "https://alfredoramos.mx/donate/"
+                    }
+                ]
+            }
+        ]
+    }
+}

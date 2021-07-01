@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Tags • Alfredo Ramos</title>
+	<subtitle>A collection of posts listed by tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/" hreflang="es" />
+	<updated>2020-09-18T00:48:17-05:00</updated>
+	<id>https://alfredoramos.mx/tags/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>cron</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/cron/" hreflang="en" title="cron" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/cron/" hreflang="es" title="cron" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:46:50-05:00</updated>
+		<id>https://alfredoramos.mx/tags/cron/</id>
+		<summary type="html">A collection of posts published under the cron tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>email</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/email/" hreflang="en" title="email" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/email/" hreflang="es" title="email" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:46:50-05:00</updated>
+		<id>https://alfredoramos.mx/tags/email/</id>
+		<summary type="html">A collection of posts published under the email tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>mailrelay</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/mailrelay/" hreflang="en" title="mailrelay" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/mailrelay/" hreflang="es" title="mailrelay" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:46:50-05:00</updated>
+		<id>https://alfredoramos.mx/tags/mailrelay/</id>
+		<summary type="html">A collection of posts published under the mailrelay tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>marketing</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/marketing/" hreflang="en" title="marketing" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/marketing/" hreflang="es" title="marketing" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:46:50-05:00</updated>
+		<id>https://alfredoramos.mx/tags/marketing/</id>
+		<summary type="html">A collection of posts published under the marketing tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>phpbb-extension</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/phpbb-extension/" hreflang="en" title="phpbb-extension" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/extension-phpbb/" hreflang="es" title="extension-phpbb" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:47:25-05:00</updated>
+		<id>https://alfredoramos.mx/tags/phpbb-extension/</id>
+		<summary type="html">A collection of posts published under the phpbb-extension tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>bbcode</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/bbcode/" hreflang="en" title="bbcode" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/bbcode/" hreflang="es" title="bbcode" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:47:25-05:00</updated>
+		<id>https://alfredoramos.mx/tags/bbcode/</id>
+		<summary type="html">A collection of posts published under the bbcode tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>class-diagram</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/class-diagram/" hreflang="en" title="class-diagram" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagrama-de-clase/" hreflang="es" title="diagrama-de-clase" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/class-diagram/</id>
+		<summary type="html">A collection of posts published under the class-diagram tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>diagrams</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/diagrams/" hreflang="en" title="diagrams" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagramas/" hreflang="es" title="diagramas" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/diagrams/</id>
+		<summary type="html">A collection of posts published under the diagrams tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>entity-relationship-diagram</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/entity-relationship-diagram/" hreflang="en" title="entity-relationship-diagram" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagrama-de-entidad-relacion/" hreflang="es" title="diagrama-de-entidad-relacion" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/entity-relationship-diagram/</id>
+		<summary type="html">A collection of posts published under the entity-relationship-diagram tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>flowchart</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/flowchart/" hreflang="en" title="flowchart" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagrama-de-flujo/" hreflang="es" title="diagrama-de-flujo" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/flowchart/</id>
+		<summary type="html">A collection of posts published under the flowchart tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>gantt-diagram</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/gantt-diagram/" hreflang="en" title="gantt-diagram" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagrama-de-gantt/" hreflang="es" title="diagrama-de-gantt" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/gantt-diagram/</id>
+		<summary type="html">A collection of posts published under the gantt-diagram tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>git-graph</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/git-graph/" hreflang="en" title="git-graph" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/grafico-git/" hreflang="es" title="grafico-git" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/git-graph/</id>
+		<summary type="html">A collection of posts published under the git-graph tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>mermaid</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/mermaid/" hreflang="en" title="mermaid" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/mermaid/" hreflang="es" title="mermaid" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/mermaid/</id>
+		<summary type="html">A collection of posts published under the mermaid tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>pie-chart</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/pie-chart/" hreflang="en" title="pie-chart" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/grafico-circular/" hreflang="es" title="grafico-circular" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/pie-chart/</id>
+		<summary type="html">A collection of posts published under the pie-chart tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>sequence-diagram</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/sequence-diagram/" hreflang="en" title="sequence-diagram" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagrama-de-secuencia/" hreflang="es" title="diagrama-de-secuencia" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/sequence-diagram/</id>
+		<summary type="html">A collection of posts published under the sequence-diagram tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>state-diagram</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/state-diagram/" hreflang="en" title="state-diagram" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/diagrama-de-estado/" hreflang="es" title="diagrama-de-estado" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/state-diagram/</id>
+		<summary type="html">A collection of posts published under the state-diagram tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>svg</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/svg/" hreflang="en" title="svg" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/svg/" hreflang="es" title="svg" />
+		<published>2019-10-26T19:56:28-05:00</published>
+		<updated>2021-06-14T12:46:45-05:00</updated>
+		<id>https://alfredoramos.mx/tags/svg/</id>
+		<summary type="html">A collection of posts published under the svg tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>hide</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/hide/" hreflang="en" title="hide" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/ocultar/" hreflang="es" title="ocultar" />
+		<published>2019-09-02T16:26:38-05:00</published>
+		<updated>2021-06-14T12:47:25-05:00</updated>
+		<id>https://alfredoramos.mx/tags/hide/</id>
+		<summary type="html">A collection of posts published under the hide tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>image-alt</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/image-alt/" hreflang="en" title="image-alt" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/alt-de-imagen/" hreflang="es" title="alt-de-imagen" />
+		<published>2019-07-31T19:18:13-05:00</published>
+		<updated>2021-06-14T12:47:15-05:00</updated>
+		<id>https://alfredoramos.mx/tags/image-alt/</id>
+		<summary type="html">A collection of posts published under the image-alt tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>litedown</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/litedown/" hreflang="en" title="litedown" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/litedown/" hreflang="es" title="litedown" />
+		<published>2019-07-31T19:18:13-05:00</published>
+		<updated>2021-06-14T12:47:15-05:00</updated>
+		<id>https://alfredoramos.mx/tags/litedown/</id>
+		<summary type="html">A collection of posts published under the litedown tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>markdown</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/markdown/" hreflang="en" title="markdown" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/markdown/" hreflang="es" title="markdown" />
+		<published>2019-07-31T19:18:13-05:00</published>
+		<updated>2021-06-14T12:47:15-05:00</updated>
+		<id>https://alfredoramos.mx/tags/markdown/</id>
+		<summary type="html">A collection of posts published under the markdown tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>textformatter</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/textformatter/" hreflang="en" title="textformatter" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/textformatter/" hreflang="es" title="textformatter" />
+		<published>2019-07-31T19:18:13-05:00</published>
+		<updated>2021-06-14T12:47:15-05:00</updated>
+		<id>https://alfredoramos.mx/tags/textformatter/</id>
+		<summary type="html">A collection of posts published under the textformatter tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>pipetables</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/pipetables/" hreflang="en" title="pipetables" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/pipetables/" hreflang="es" title="pipetables" />
+		<published>2019-05-24T14:29:05-05:00</published>
+		<updated>2021-06-14T12:46:20-05:00</updated>
+		<id>https://alfredoramos.mx/tags/pipetables/</id>
+		<summary type="html">A collection of posts published under the pipetables tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>json-ld</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/json-ld/" hreflang="en" title="json-ld" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/json-ld/" hreflang="es" title="json-ld" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/tags/json-ld/</id>
+		<summary type="html">A collection of posts published under the json-ld tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>open-graph</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/open-graph/" hreflang="en" title="open-graph" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/open-graph/" hreflang="es" title="open-graph" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/tags/open-graph/</id>
+		<summary type="html">A collection of posts published under the open-graph tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>rdf</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/rdf/" hreflang="en" title="rdf" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/rdf/" hreflang="es" title="rdf" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/tags/rdf/</id>
+		<summary type="html">A collection of posts published under the rdf tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>schema-org</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/schema-org/" hreflang="en" title="schema-org" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/schema-org/" hreflang="es" title="schema-org" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/tags/schema-org/</id>
+		<summary type="html">A collection of posts published under the schema-org tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>seo</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/seo/" hreflang="en" title="seo" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/seo/" hreflang="es" title="seo" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/tags/seo/</id>
+		<summary type="html">A collection of posts published under the seo tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>twitter-cards</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/twitter-cards/" hreflang="en" title="twitter-cards" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/twitter-cards/" hreflang="es" title="twitter-cards" />
+		<published>2019-01-02T19:52:50-05:00</published>
+		<updated>2021-06-14T12:46:35-05:00</updated>
+		<id>https://alfredoramos.mx/tags/twitter-cards/</id>
+		<summary type="html">A collection of posts published under the twitter-cards tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>css</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/css/" hreflang="en" title="css" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/css/" hreflang="es" title="css" />
+		<published>2018-04-26T14:06:16-06:00</published>
+		<updated>2021-01-20T14:29:11-05:00</updated>
+		<id>https://alfredoramos.mx/tags/css/</id>
+		<summary type="html">A collection of posts published under the css tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>marquee</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/marquee/" hreflang="en" title="marquee" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/marquesina/" hreflang="es" title="marquesina" />
+		<published>2018-04-26T14:06:16-06:00</published>
+		<updated>2021-01-20T14:29:11-05:00</updated>
+		<id>https://alfredoramos.mx/tags/marquee/</id>
+		<summary type="html">A collection of posts published under the marquee tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>scss</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/scss/" hreflang="en" title="scss" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/scss/" hreflang="es" title="scss" />
+		<published>2018-04-26T14:06:16-06:00</published>
+		<updated>2021-01-20T14:29:11-05:00</updated>
+		<id>https://alfredoramos.mx/tags/scss/</id>
+		<summary type="html">A collection of posts published under the scss tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>imgur</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/imgur/" hreflang="en" title="imgur" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/imgur/" hreflang="es" title="imgur" />
+		<published>2017-05-13T18:29:16-05:00</published>
+		<updated>2021-06-14T12:47:05-05:00</updated>
+		<id>https://alfredoramos.mx/tags/imgur/</id>
+		<summary type="html">A collection of posts published under the imgur tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>auto-lock</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/auto-lock/" hreflang="en" title="auto-lock" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/auto-lock/" hreflang="es" title="auto-lock" />
+		<published>2017-05-11T18:52:54-05:00</published>
+		<updated>2021-06-14T12:46:10-05:00</updated>
+		<id>https://alfredoramos.mx/tags/auto-lock/</id>
+		<summary type="html">A collection of posts published under the auto-lock tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="en">
+		<title>spoiler</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/spoiler/" hreflang="en" title="spoiler" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/spoiler/" hreflang="es" title="spoiler" />
+		<published>2017-01-14T23:53:37-05:00</published>
+		<updated>2021-06-14T12:46:25-05:00</updated>
+		<id>https://alfredoramos.mx/tags/spoiler/</id>
+		<summary type="html">A collection of posts published under the spoiler tag.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+</feed>

@@ -1,0 +1,11 @@
+{
+	"stable": {
+		"1.0": {
+			"current": "1.0.0",
+			"announcement": "https://bitbucket.org/AbaddonOrmuz/phpbb-ext-custom-search",
+			"download": "https://bitbucket.org/AbaddonOrmuz/phpbb-ext-custom-search/downloads/alfredoramos_customsearch_1.0.0.zip",
+			"eol": null,
+			"security": false
+		}
+	}
+}

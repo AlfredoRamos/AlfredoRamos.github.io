@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>css • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the css tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/css/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/css/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/css/" hreflang="es" />
+	<updated>2018-04-26T14:06:16-06:00</updated>
+	<id>https://alfredoramos.mx/tags/css/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Simple CSS Marquee</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/simple-css-marquee/" hreflang="en" title="Simple CSS Marquee" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/marquesina-simple-en-css/" hreflang="es" title="Marquesina simple en CSS" />
+		<published>2018-04-26T14:06:16-06:00</published>
+		<updated>2021-01-20T14:29:11-05:00</updated>
+		<id>https://alfredoramos.mx/simple-css-marquee/</id>
+		<summary type="html">Simple CSS Marquee. Generates an animation effect that horizontally scrolls elements, like text or images. It tries to mimic what the obsolete &amp;lt;marquee&amp;gt; tag did, using only CSS.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="development" />
+		<category term="scss" />
+		<category term="css" />
+		<category term="marquee" />
+	</entry>
+</feed>

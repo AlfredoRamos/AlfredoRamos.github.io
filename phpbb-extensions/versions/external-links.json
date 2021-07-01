@@ -1,0 +1,10 @@
+{
+	"unstable": {
+		"0.2": {
+			"current": "0.2.0-dev",
+			"announcement": "https://github.com/AlfredoRamos/phpbb-ext-external-links",
+			"eol": null,
+			"security": false
+		}
+	}
+}

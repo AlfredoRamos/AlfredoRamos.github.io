@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>imgur • Alfredo Ramos</title>
+	<subtitle>A collection of posts published under the imgur tag.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/tags/imgur/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/tags/imgur/" hreflang="en" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/etiquetas/imgur/" hreflang="es" />
+	<updated>2017-05-13T18:29:16-05:00</updated>
+	<id>https://alfredoramos.mx/tags/imgur/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="en">
+		<title>Imgur extension for phpBB</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/imgur-extension-for-phpbb/" hreflang="en" title="Imgur extension for phpBB" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/extension-imgur-para-phpbb/" hreflang="es" title="Extensión Imgur para phpBB" />
+		<published>2017-05-13T18:29:16-05:00</published>
+		<updated>2021-06-14T12:47:05-05:00</updated>
+		<id>https://alfredoramos.mx/imgur-extension-for-phpbb/</id>
+		<summary type="html">Imgur extension for phpBB. With this extension you can click on the Imgur posting button and select the image(s) you want to upload. If the upload is successful it will add the image in the topic, private message or signature content. You can choose in the Administration Control Panel to show the uploaded image as plan text or with BBCode as URL, image (default) or thumbnail.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+		<category term="phpbb" />
+		<category term="phpbb-extension" />
+		<category term="imgur" />
+		<category term="bbcode" />
+	</entry>
+</feed>

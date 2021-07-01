@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+	<title>Categorías • Alfredo Ramos</title>
+	<subtitle>Una colección de artículos listados por categoría.</subtitle>
+	<link rel="self" type="application/atom+xml" href="https://alfredoramos.mx/es/categorias/index.atom" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/categorias/" hreflang="es" />
+	<link rel="alternate" type="text/html" href="https://alfredoramos.mx/categories/" hreflang="en" />
+	<updated>2020-09-18T00:48:17-05:00</updated>
+	<id>https://alfredoramos.mx/es/categorias/</id>
+	<author>
+		<name>Alfredo Ramos</name>
+		<uri>https://alfredoramos.mx/es/</uri>
+	</author>
+	<rights>© 2015-2021 Alfredo Ramos</rights>
+	<entry xml:lang="es">
+		<title>phpbb</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/categorias/phpbb/" hreflang="es" title="phpbb" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/categories/phpbb/" hreflang="en" title="phpbb" />
+		<published>2020-09-18T00:48:17-05:00</published>
+		<updated>2021-06-14T12:47:40-05:00</updated>
+		<id>https://alfredoramos.mx/es/categorias/phpbb/</id>
+		<summary type="html">Una colección de artículos publicados en la categoría phpbb.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+	<entry xml:lang="es">
+		<title>desarrollo</title>
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/es/categorias/desarrollo/" hreflang="es" title="desarrollo" />
+		<link rel="alternate" type="text/html" href="https://alfredoramos.mx/categories/development/" hreflang="en" title="development" />
+		<published>2018-04-26T14:06:16-06:00</published>
+		<updated>2021-01-20T14:29:11-05:00</updated>
+		<id>https://alfredoramos.mx/es/categorias/desarrollo/</id>
+		<summary type="html">Una colección de artículos publicados en la categoría desarrollo.</summary>
+		<author>
+			<name>Alfredo Ramos</name>
+			<uri>https://twitter.com/varsmx</uri>
+		</author>
+	</entry>
+</feed>
